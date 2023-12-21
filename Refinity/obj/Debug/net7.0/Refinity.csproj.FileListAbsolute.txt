@@ -1,0 +1,12 @@
+/Users/francesco/Projects/Refinity/Refinity/bin/Debug/net7.0/Refinity.deps.json
+/Users/francesco/Projects/Refinity/Refinity/bin/Debug/net7.0/Refinity.dll
+/Users/francesco/Projects/Refinity/Refinity/bin/Debug/net7.0/Refinity.pdb
+/Users/francesco/Projects/Refinity/Refinity/obj/Debug/net7.0/Refinity.csproj.AssemblyReference.cache
+/Users/francesco/Projects/Refinity/Refinity/obj/Debug/net7.0/Refinity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/francesco/Projects/Refinity/Refinity/obj/Debug/net7.0/Refinity.AssemblyInfoInputs.cache
+/Users/francesco/Projects/Refinity/Refinity/obj/Debug/net7.0/Refinity.AssemblyInfo.cs
+/Users/francesco/Projects/Refinity/Refinity/obj/Debug/net7.0/Refinity.csproj.CoreCompileInputs.cache
+/Users/francesco/Projects/Refinity/Refinity/obj/Debug/net7.0/Refinity.dll
+/Users/francesco/Projects/Refinity/Refinity/obj/Debug/net7.0/refint/Refinity.dll
+/Users/francesco/Projects/Refinity/Refinity/obj/Debug/net7.0/Refinity.pdb
+/Users/francesco/Projects/Refinity/Refinity/obj/Debug/net7.0/ref/Refinity.dll

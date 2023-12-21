@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Testing/1.0.0": {
+        "dependencies": {
+          "Refinity": "1.0.0"
+        },
+        "runtime": {
+          "Testing.dll": {}
+        }
+      },
+      "Refinity/1.0.0": {
+        "runtime": {
+          "Refinity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Testing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Refinity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
