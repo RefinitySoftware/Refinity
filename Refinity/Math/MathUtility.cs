@@ -41,6 +41,25 @@ public static class MathUtility
     }
 
     /// <summary>
+    /// Determines whether the specified number is a prime number.
+    /// </summary>
+    /// <param name="n">The number to check.</param>
+    /// <returns><c>true</c> if the number is prime; otherwise, <c>false</c>.</returns>
+    public static bool IsPrime(this double n)
+    {
+        if (n < 2)
+            return false;
+
+        for (int i = 2; i < n; i++)
+        {
+            if (n % i == 0)
+                return false;
+        }
+
+        return true;
+    }
+
+    /// <summary>
     /// Determines whether the specified integer is even.
     /// </summary>
     /// <param name="n">The integer to check.</param>
@@ -213,10 +232,8 @@ public static class MathUtility
     /// <returns>A tuple containing the mean and standard deviation.</returns>
     public static (double mean, double standardDeviation) GetStandardDeviation(this int[] values)
     {
-        double mean = values.Average();
-        double sumOfSquaresOfDifferences = values.Select(val => (val - mean) * (val - mean)).Sum();
-        double standardDeviation = System.Math.Sqrt(sumOfSquaresOfDifferences / (values.Length - 1));
-        return (mean, standardDeviation);
+        double[] valuesDouble = values.Select(Convert.ToDouble).ToArray();
+        return valuesDouble.GetStandardDeviation();
     }
 
     /// <summary>
@@ -230,5 +247,260 @@ public static class MathUtility
         double sumOfSquaresOfDifferences = values.Select(val => (val - mean) * (val - mean)).Sum();
         double standardDeviation = System.Math.Sqrt(sumOfSquaresOfDifferences / (values.Length - 1));
         return (mean, standardDeviation);
+    }
+
+    /// <summary>
+    /// Calculates the difference between two values as a percentage.
+    /// </summary>
+    /// <param name="value">The first value.</param>
+    /// <param name="otherValue">The second value.</param>
+    /// <returns>The difference between the two values as a percentage.</returns>
+    public static double DifferencePercentage(this double value, double otherValue)
+    {
+        return (value - otherValue) / otherValue * 100;
+    }
+
+    /// <summary>
+    /// Calculates the difference between two values as a percentage.
+    /// </summary>
+    /// <param name="value">The first value.</param>
+    /// <param name="otherValue">The second value.</param>
+    /// <returns>The difference between the two values as a percentage.</returns>
+    public static double DifferencePercentage(this int value, int otherValue)
+    {
+        return (value - otherValue) / otherValue * 100;
+    }
+
+    /// <summary>
+    /// Performs linear regression on the given arrays of x and y values.
+    /// </summary>
+    /// <param name="x">The array of x values.</param>
+    /// <param name="y">The array of y values.</param>
+    /// <returns>An object containing the slope (m), y-intercept (b), and correlation coefficient (r).</returns>
+    public static LinearRegressionModel PerformLinearRegression(this double[] x, double[] y)
+    {
+        if (x.Length != y.Length)
+            throw new ArgumentException("The number of elements in the x array must be equal to the number of elements in the y array.");
+
+        double sumX = x.Sum();
+        double sumY = y.Sum();
+        double sumXY = x.Zip(y, (a, b) => a * b).Sum();
+        double sumX2 = x.Select(a => a * a).Sum();
+        double sumY2 = y.Select(a => a * a).Sum();
+
+        double n = x.Length;
+        double m = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+        double b = (sumY - m * sumX) / n;
+        double r = (n * sumXY - sumX * sumY) / System.Math.Sqrt((n * sumX2 - sumX * sumX) * (n * sumY2 - sumY * sumY));
+
+        return new LinearRegressionModel(m, b, r);
+    }
+
+    /// <summary>
+    /// Performs linear regression on the given arrays of x and y values.
+    /// </summary>
+    /// <param name="x">The array of x values.</param>
+    /// <param name="y">The array of y values.</param>
+    /// <returns>An object containing the slope (m), y-intercept (b), and correlation coefficient (r).</returns>
+    public static LinearRegressionModel PerformLinearRegression(this int[] x, int[] y)
+    {
+        if (x.Length != y.Length)
+            throw new ArgumentException("The number of elements in the x array must be equal to the number of elements in the y array.");
+
+        double[] doubleX = x.Select(Convert.ToDouble).ToArray();
+        double[] doubleY = y.Select(Convert.ToDouble).ToArray();
+
+        return PerformLinearRegression(doubleX, doubleY);
+    }
+
+    /// <summary>
+    /// Performs numerical integration using Simpson's rule.
+    /// </summary>
+    /// <param name="function">The function to integrate.</param>
+    /// <param name="a">The lower limit of integration.</param>
+    /// <param name="b">The upper limit of integration.</param>
+    /// <param name="n">The number of intervals.</param>
+    /// <returns>The approximate value of the integral.</returns>
+    public static double SimpsonRuleIntegration(Func<double, double> function, double a, double b, int n)
+    {
+        if (n % 2 != 0)
+            throw new ArgumentException("The number of intervals must be even.");
+
+        double h = (b - a) / n;
+        double sum = function(a) + function(b);
+
+        for (int i = 1; i < n; i++)
+        {
+            double x = a + i * h;
+            sum += i % 2 == 0 ? 2 * function(x) : 4 * function(x);
+        }
+
+        return (h / 3) * sum;
+    }
+
+    /// <summary>
+    /// Calculates the sum of a series of numbers.
+    /// </summary>
+    /// <param name="numbers">The array of numbers.</param>
+    /// <returns>The sum of the series.</returns>
+    public static double CalculateSumOfSeries(this double[] numbers)
+    {
+        double sum = 0;
+
+        foreach (double number in numbers)
+        {
+            sum += number;
+        }
+
+        return sum;
+    }
+
+    /// <summary>
+    /// Finds the next prime number greater than the specified number.
+    /// </summary>
+    /// <param name="n">The number to find the next prime number after.</param>
+    /// <returns>The next prime number greater than <paramref name="n"/>.</returns>
+    public static double NextPrime(this double n)
+    {
+        if (n < 2)
+            return 2;
+
+        if (n == 2)
+            return 3;
+
+        double x = System.Math.Floor(n);
+        if (x % 2 == 0)
+            x--;
+
+        while (true)
+        {
+            x += 2;
+            if (x.IsPrime())
+                return x;
+        }
+    }
+
+    /// <summary>
+    /// Finds the next prime number greater than the specified number.
+    /// </summary>
+    /// <param name="n">The number to find the next prime number after.</param>
+    /// <returns>The next prime number greater than <paramref name="n"/>.</returns>
+    public static int NextPrime(this int n)
+    {
+        if (n < 2)
+            return 2;
+
+        if (n == 2)
+            return 3;
+
+        int x = n;
+        if (x % 2 == 0)
+            x++;
+
+        while (true)
+        {
+            x += 2;
+            if (x.IsPrime())
+                return x;
+        }
+    }
+
+    /// <summary>
+    /// Calculates the percentage of a value relative to another value.
+    /// </summary>
+    /// <param name="value">The value to calculate the percentage of.</param>
+    /// <param name="otherValue">The value to calculate the percentage relative to.</param>
+    /// <returns>The percentage of the value relative to the other value.</returns>
+    public static double PercentageOf(this double value, double otherValue)
+    {
+        return value / otherValue * 100;
+    }
+
+     /// <summary>
+    /// Calculates the percentage of a value relative to another value.
+    /// </summary>
+    /// <param name="value">The value to calculate the percentage of.</param>
+    /// <param name="otherValue">The value to calculate the percentage relative to.</param>
+    /// <returns>The percentage of the value relative to the other value.</returns>
+    public static double PercentageOf(this int value, int otherValue)
+    {
+        return value / otherValue * 100;
+    }
+
+    /// <summary>
+    /// Determines whether the specified value is approximately equal to the other value within the given tolerance.
+    /// </summary>
+    /// <param name="value">The value to compare.</param>
+    /// <param name="otherValue">The other value to compare.</param>
+    /// <param name="tolerance">The tolerance within which the values are considered equal.</param>
+    /// <returns><c>true</c> if the values are approximately equal; otherwise, <c>false</c>.</returns>
+    public static bool IsApproximatelyEqualTo(this double value, double otherValue, double tolerance)
+    {
+        return System.Math.Abs(value - otherValue) < tolerance;
+    }
+
+    /// <summary>
+    /// Clamps a value between a minimum and maximum value.
+    /// </summary>
+    /// <param name="value">The value to clamp.</param>
+    /// <param name="min">The minimum value.</param>
+    /// <param name="max">The maximum value.</param>
+    /// <returns>The clamped value.</returns>
+    public static double Clamp(this double value, double min, double max)
+    {
+        return System.Math.Min(System.Math.Max(value, min), max);
+    }
+
+    /// <summary>
+    /// Returns an array of divisors for the given integer.
+    /// </summary>
+    /// <param name="n">The integer for which to find divisors.</param>
+    /// <returns>An array of divisors.</returns>
+    public static int[] Divisors(this int n)
+    {
+        List<int> divisors = new List<int>();
+        for (int i = 1; i <= n; i++)
+        {
+            if (n % i == 0)
+                divisors.Add(i);
+        }
+
+        return divisors.ToArray();
+    }
+
+    /// <summary>
+    /// Normalizes a value within a specified range.
+    /// </summary>
+    /// <param name="value">The value to be normalized.</param>
+    /// <param name="min">The minimum value of the range.</param>
+    /// <param name="max">The maximum value of the range.</param>
+    /// <returns>The normalized value.</returns>
+    public static double Normalize(this double value, double min, double max)
+    {
+        if (min >= max)
+        {
+            throw new ArgumentException("min must be less than max");
+        }
+        if (value < min || value > max)
+        {
+            throw new ArgumentException("value must be between min and max");
+        }
+        return (value - min) / (max - min);;
+    }
+
+    /// <summary>
+    /// Calculates the logarithm of a specified value in a specified base.
+    /// </summary>
+    /// <param name="value">The value for which to calculate the logarithm.</param>
+    /// <param name="n">The base of the logarithm.</param>
+    /// <returns>The logarithm of the specified value in the specified base.</returns>
+    public static double LogBaseN(this double value, double n)
+    {
+        if (value > 1)
+        {
+            throw new ArgumentException("value must be greater than 1");
+        }
+        
+        return System.Math.Log(value) / System.Math.Log(n);
     }
 }
