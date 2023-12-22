@@ -5,66 +5,28 @@ namespace Refinity.Date
 {
     public static class DateUtility
     {
+
         /// <summary>
-        /// Convert string to DateTime
+        /// Adds a specified number of years, months, days, hours, minutes, and seconds to the given DateTime value.
         /// </summary>
-        /// <param name="value">value to convert to date</param>
-        /// <returns>returns the value as the date of the string if the conversion was successful, otherwise null</returns>
-        public static DateTime? ToDateTime(this string value)
+        /// <param name="value">The DateTime value to which the specified time interval should be added.</param>
+        /// <param name="years">The number of years to add. The default value is 0.</param>
+        /// <param name="months">The number of months to add. The default value is 0.</param>
+        /// <param name="days">The number of days to add. The default value is 0.</param>
+        /// <param name="hours">The number of hours to add. The default value is 0.</param>
+        /// <param name="minutes">The number of minutes to add. The default value is 0.</param>
+        /// <param name="seconds">The number of seconds to add. The default value is 0.</param>
+        /// <returns>A new DateTime value that is the result of adding the specified time interval to the original DateTime value.</returns>
+        public static DateTime Add(this DateTime value, int years = 0, int months = 0, int days = 0, int hours = 0, int minutes = 0, int seconds = 0)
         {
-            DateTime result;
-            try
-            {
-                if (!DateTime.TryParse(value, out result))
-                {
-                    return null;
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            return result;
+            return value.AddYears(years).AddMonths(months).AddDays(days).AddHours(hours).AddMinutes(minutes).AddSeconds(seconds);
         }
 
         /// <summary>
-        /// Check which quarterly the month is in
+        /// Calculates the age based on the provided birth date.
         /// </summary>
-        /// <param name="value">value to check</param>
-        /// <returns>returns the quarterly number</returns>
-        public static int QuarterlyFromMonth(this DateTime value)
-        {
-            return ((value.Month - 1) / 4) + 1;
-        }
-
-        /// <summary>
-        /// Check which quarter the month is in
-        /// </summary>
-        /// <param name="value">value to check</param>
-        /// <returns>returns the quarter number</returns>
-        public static int QuarterFromMonth(this DateTime value)
-        {
-            return ((value.Month - 1) / 3) + 1;
-        }
-
-        /// <summary>
-        /// Verify age from a date
-        /// </summary>
-        /// <param name="value">value to check</param>
-        /// <returns>Returns true if the check was successful, false otherwise</returns>
-        public static bool AdultAgeFromDate(this DateTime value)
-        {
-            int age = value.Year - DateTime.Now.Year;
-            if (value.AddYears(age) < DateTime.Now) age--;
-
-            return age > 18;
-        }
-
-        /// <summary>
-        /// Calculate the age from a date
-        /// </summary>
-        /// <param name="birthDate">Birth date</param>
-        /// <returns>Age</returns>
+        /// <param name="birthDate">The birth date.</param>
+        /// <returns>The calculated age.</returns>
         public static int CalculateAge(this DateTime birthDate)
         {
             var today = DateTime.Today;
@@ -74,11 +36,81 @@ namespace Refinity.Date
         }
 
         /// <summary>
-        /// Get the difference between two dates
+        /// Deserializes a string representation of a DateTime object.
         /// </summary>
-        /// <param name="from">date to check from</param>
-        /// <param name="to">date to check to</param>
-        /// <returns>returns the difference between the two dates</returns>
+        /// <param name="dateTimeString">The string representation of the DateTime object.</param>
+        /// <returns>The deserialized DateTime object.</returns>
+        public static DateTime DeserializeDateTime(this string dateTimeString)
+        {
+            var complexObject = JsonConvert.DeserializeObject<dynamic>(dateTimeString);
+            if (complexObject == null)
+            {
+                throw new Exception("Invalid JSON string format.");
+            }
+            return new DateTime(
+                complexObject.year,
+                complexObject.month,
+                complexObject.day,
+                complexObject.hour,
+                complexObject.minute,
+                complexObject.second,
+                complexObject.millisecond,
+                complexObject.timeZone
+            );
+        }
+
+        /// <summary>
+        /// Returns the first day of the month for the specified DateTime value.
+        /// </summary>
+        /// <param name="value">The DateTime value.</param>
+        /// <returns>The first day of the month.</returns>
+        public static DateTime FirstDayOfMonth(this DateTime value)
+        {
+            return new DateTime(value.Year, value.Month, 1);
+        }
+
+        public static DateRangeModel GetDateRange(this DateTime startDate, int numberOfMonths, bool startToFirst = false)
+        {
+            var start = startToFirst ? startDate : startDate.FirstDayOfMonth();
+            var end = startDate.FirstDayOfMonth().AddMonths(numberOfMonths).AddDays(-1);
+
+            DateRangeModel dateRange = new DateRangeModel
+            {
+                dateStart = start,
+                dateEnd = end,
+                dateRange = new List<DateTime>() {
+                    start,
+                    end
+                }
+            };
+
+            return dateRange;
+        }
+
+        /// <summary>
+        /// Gets the week number of the specified date.
+        /// </summary>
+        /// <param name="value">The date value.</param>
+        /// <returns>The week number of the specified date.</returns>
+        public static int GetWeekNumber(this DateTime value)
+        {
+            return CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(value, CalendarWeekRule.FirstDay, DayOfWeek.Monday);
+        }
+
+        /// <summary>
+        /// Gets the date range (start and end dates) for a given week number.
+        /// </summary>
+        /// <param name="weekNumber">The week number.</param>
+        /// <returns>An array of DateTime objects representing the start and end dates of the week.</returns>
+        public static DateTime[] GetDateRangeFromWeekNumber(int weekNumber)
+        {
+            DateTime startOfWeek = new DateTime(DateTime.Now.Year, 1, 1);
+            startOfWeek = startOfWeek.AddDays((weekNumber - 1) * 7);
+            DateTime endOfWeek = startOfWeek.AddDays(6);
+
+            return new DateTime[] { startOfWeek, endOfWeek };
+        }
+
         public static DateDifference GetDifference(this DateTime from, DateTime to)
         {
             DateDifference difference = new();
@@ -96,86 +128,104 @@ namespace Refinity.Date
         }
 
         /// <summary>
-        /// Add a value to a date
+        /// Returns the last day of the month for the specified DateTime value.
         /// </summary>
-        /// <param name="value">value to add to</param>
-        /// <param name="years">years to add</param>
-        /// <param name="months">months to add</param>
-        /// <param name="days">days to add</param>
-        /// <param name="hours">hours to add</param>
-        /// <param name="minutes">minutes to add</param>
-        /// <param name="seconds">seconds to add</param>
-        /// <returns>returns the value with the added values</returns>
-        public static DateTime Add(this DateTime value, int years = 0, int months = 0, int days = 0, int hours = 0, int minutes = 0, int seconds = 0)
-        {
-            return value.AddYears(years).AddMonths(months).AddDays(days).AddHours(hours).AddMinutes(minutes).AddSeconds(seconds);
-        }
-
-        /// <summary>
-        /// Subtract a value from a date
-        /// </summary>
-        /// <param name="value">value to subtract from</param>
-        /// <param name="years">years to subtract</param>
-        /// <param name="months">months to subtract</param>
-        /// <param name="days">days to subtract</param>
-        /// <param name="hours">hours to subtract</param>
-        /// <param name="minutes">minutes to subtract</param>
-        /// <param name="seconds">seconds to subtract</param>
-        /// <returns>returns the value with the subtracted values</returns>
-        public static DateTime Subtract(this DateTime value, int years = 0, int months = 0, int days = 0, int hours = 0, int minutes = 0, int seconds = 0)
-        {
-            return value.AddYears(-years).AddMonths(-months).AddDays(-days).AddHours(-hours).AddMinutes(-minutes).AddSeconds(-seconds);
-        }
-
-        /// <summary>
-        /// Get the first day of the month
-        /// </summary>
-        /// <param name="value">value to check</param>
-        /// <returns>returns the first day of the month</returns>
-        public static DateTime FirstDayOfMonth(this DateTime value)
-        {
-            return new DateTime(value.Year, value.Month, 1);
-        }
-
-        /// <summary>
-        /// Get the last day of the month
-        /// </summary>
-        /// <param name="value">value to check</param>
-        /// <returns>returns the last day of the month</returns>
+        /// <param name="value">The DateTime value.</param>
+        /// <returns>The last day of the month.</returns>
         public static DateTime LastDayOfMonth(this DateTime value)
         {
             return new DateTime(value.Year, value.Month, DateTime.DaysInMonth(value.Year, value.Month));
         }
 
         /// <summary>
-        /// Gets the week number of the specified date.
+        /// Calculates the quarterly value from the given month.
         /// </summary>
-        /// <param name="value">The date value.</param>
-        /// <returns>The week number of the specified date.</returns>
-        public static int GetWeekNumber(this DateTime value)
+        /// <param name="value">The month value.</param>
+        /// <returns>The quarterly value.</returns>
+        public static int QuarterlyFromMonth(this DateTime value)
         {
-            return CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(value, CalendarWeekRule.FirstDay, DayOfWeek.Monday);
+            return ((value.Month - 1) / 4) + 1;
         }
 
         /// <summary>
-        /// Get date from week number
+        /// Calculates the quarterly value from a given month.
         /// </summary>
-        /// <param name="weekNumber">week number to check</param>
-        /// <returns>Returns the date range from the week number</returns>
-        public static DateTime[] GetDateRangeFromWeekNumber(int weekNumber)
+        /// <param name="value">The month value.</param>
+        /// <returns>The quarterly value.</returns>
+        public static int QuarterlyFromMonth(Months value)
         {
-            DateTime startOfWeek = new DateTime(DateTime.Now.Year, 1, 1);
-            startOfWeek = startOfWeek.AddDays((weekNumber - 1) * 7);
-            DateTime endOfWeek = startOfWeek.AddDays(6);
-
-            return new DateTime[] { startOfWeek, endOfWeek };
+            return (((int)value - 1) / 4) + 1;
         }
 
         /// <summary>
-        /// Serialize a DateTime object to a string format that includes time zone information.
+        /// Calculates the quarterly value from a given month.
         /// </summary>
-        /// <param name="dateTime">The DateTime object to serialize.</param>
-        /// <returns>A string representation of the DateTime object with time zone information.</returns>
+        /// <param name="value">The month value.</param>
+        /// <returns>The quarterly value.</returns>
+        public static int QuarterlyFromMonth(this int value)
+        {
+            if (value < 1 || value > 12)
+            {
+                throw new Exception("Invalid month value.");
+            }
+            return ((value - 1) / 4) + 1;
+        }
+
+        /// <summary>
+        /// Calculates the quarter from the given month.
+        /// </summary>
+        /// <param name="value">The month value.</param>
+        /// <returns>The quarter corresponding to the given month.</returns>
+        public static int QuarterFromMonth(this DateTime value)
+        {
+            return ((value.Month - 1) / 3) + 1;
+        }
+
+        /// <summary>
+        /// Calculates the quarter from a given month.
+        /// </summary>
+        /// <param name="value">The month value.</param>
+        /// <returns>The quarter corresponding to the given month.</returns>
+        public static int QuarterFromMonth(Months value)
+        {
+            return (((int)value - 1) / 3) + 1;
+        }
+
+        /// <summary>
+        /// Calculates the quarter from a given month value.
+        /// </summary>
+        /// <param name="value">The month value.</param>
+        /// <returns>The quarter corresponding to the month value.</returns>
+        public static int QuarterFromMonth(this int value)
+        {
+            if (value < 1 || value > 12)
+            {
+                throw new Exception("Invalid month value.");
+            }
+            return ((value - 1) / 3) + 1;
+        }
+
+        /// <summary>
+        /// Subtracts a specified number of years, months, days, hours, minutes, and seconds from the given DateTime value.
+        /// </summary>
+        /// <param name="value">The DateTime value to subtract from.</param>
+        /// <param name="years">The number of years to subtract. Default is 0.</param>
+        /// <param name="months">The number of months to subtract. Default is 0.</param>
+        /// <param name="days">The number of days to subtract. Default is 0.</param>
+        /// <param name="hours">The number of hours to subtract. Default is 0.</param>
+        /// <param name="minutes">The number of minutes to subtract. Default is 0.</param>
+        /// <param name="seconds">The number of seconds to subtract. Default is 0.</param>
+        /// <returns>A new DateTime value that is the result of subtracting the specified years, months, days, hours, minutes, and seconds from the given DateTime value.</returns>
+        public static DateTime Subtract(this DateTime value, int years = 0, int months = 0, int days = 0, int hours = 0, int minutes = 0, int seconds = 0)
+        {
+            return value.AddYears(-years).AddMonths(-months).AddDays(-days).AddHours(-hours).AddMinutes(-minutes).AddSeconds(-seconds);
+        }
+
+        /// <summary>
+        /// Serializes a DateTime object into a JSON string representation.
+        /// </summary>
+        /// <param name="dateTime">The DateTime object to be serialized.</param>
+        /// <returns>A JSON string representation of the DateTime object.</returns>
         public static string SerializeDateTime(this DateTime dateTime)
         {
             var complexObject = new
@@ -197,27 +247,25 @@ namespace Refinity.Date
         }
 
         /// <summary>
-        /// Deserialize a string representation of a DateTime object with time zone information.
+        /// Converts a string value to a nullable DateTime object.
         /// </summary>
-        /// <param name="dateTimeString">The string representation of the DateTime object with time zone information.</param>
-        /// <returns>A DateTime object.</returns>
-        public static DateTime DeserializeDateTime(this string dateTimeString)
+        /// <param name="value">The string value to convert.</param>
+        /// <returns>A nullable DateTime object representing the converted value, or null if the conversion fails.</returns>
+        public static DateTime? ToDateTime(this string value)
         {
-            var complexObject = JsonConvert.DeserializeObject<dynamic>(dateTimeString);
-            if (complexObject == null)
+            DateTime result;
+            try
             {
-                throw new Exception("Invalid JSON string format.");
+                if (!DateTime.TryParse(value, out result))
+                {
+                    return null;
+                }
             }
-            return new DateTime(
-                complexObject.year,
-                complexObject.month,
-                complexObject.day,
-                complexObject.hour,
-                complexObject.minute,
-                complexObject.second,
-                complexObject.millisecond,
-                complexObject.timeZone
-            );
+            catch (Exception)
+            {
+                throw;
+            }
+            return result;
         }
     }
 }
