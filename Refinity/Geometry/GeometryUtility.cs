@@ -4,7 +4,7 @@ public static class GeometryUtility
 {
     /// <summary>
     /// Calculates the area of a circle.
-    /// </summary>
+     /// </summary>
     /// <param name="radius">The radius of the circle.</param>
     /// <returns>The area of the circle.</returns>
     public static double AreaOfCircle(double radius)
@@ -74,17 +74,6 @@ public static class GeometryUtility
     /// <param name="diagonal2">The second diagonal of the rhombus.</param>
     /// <returns>The area of the rhombus.</returns>
     public static double AreaOfRhombus(double diagonal1, double diagonal2)
-    {
-        return diagonal1 * diagonal2 / 2;
-    }
-
-    /// <summary>
-    /// Calculates the area of a kite.
-    /// </summary>
-    /// <param name="diagonal1">The first diagonal of the kite.</param>
-    /// <param name="diagonal2">The second diagonal of the kite.</param>
-    /// <returns>The area of the kite.</returns>
-    public static double AreaOfKite(double diagonal1, double diagonal2)
     {
         return diagonal1 * diagonal2 / 2;
     }
