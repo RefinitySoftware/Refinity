@@ -416,7 +416,7 @@ public static class MathUtility
         return value / otherValue * 100;
     }
 
-     /// <summary>
+    /// <summary>
     /// Calculates the percentage of a value relative to another value.
     /// </summary>
     /// <param name="value">The value to calculate the percentage of.</param>
@@ -485,7 +485,7 @@ public static class MathUtility
         {
             throw new ArgumentException("value must be between min and max");
         }
-        return (value - min) / (max - min);;
+        return (value - min) / (max - min); ;
     }
 
     /// <summary>
@@ -500,7 +500,173 @@ public static class MathUtility
         {
             throw new ArgumentException("value must be greater than 1");
         }
-        
+
         return System.Math.Log(value) / System.Math.Log(n);
+    }
+
+    /// <summary>
+    /// Determines whether the specified value is within the specified range.
+    /// </summary>
+    /// <param name="value">The value to check.</param>
+    /// <param name="min">The minimum value of the range.</param>
+    /// <param name="max">The maximum value of the range.</param>
+    /// <returns>true if the value is within the range; otherwise, false.</returns>
+    public static bool IsInRange(this double value, double min, double max)
+    {
+        return value >= min && value <= max;
+    }
+
+    /// <summary>
+    /// Formats a double value as a percentage string.
+    /// </summary>
+    /// <param name="value">The double value to format.</param>
+    /// <param name="decimalPlaces">The number of decimal places to include in the formatted string. Default is 2.</param>
+    /// <returns>A string representation of the double value formatted as a percentage.</returns>
+    public static string FormatPercentage(this double value, int decimalPlaces = 2)
+    {
+        return $"{value.ToString($"F{decimalPlaces}")}%";
+    }
+
+    /// <summary>
+    /// Converts a number to scientific notation.
+    /// </summary>
+    /// <param name="number">The number to convert.</param>
+    /// <returns>The number in scientific notation.</returns>
+    public static string ToScientificNotation(this double number)
+    {
+        return number.ToString("0.###E+0");
+    }
+
+    /// <summary>
+    /// Calculates the sum of an arithmetic series up to a given number of terms.
+    /// </summary>
+    /// <param name="value">The first term of the series.</param>
+    /// <param name="n">The number of terms in the series.</param>
+    /// <returns>The sum of the arithmetic series.</returns>
+    public static double SumTo(this double value, double n)
+    {
+        return n / 2 * (2 * value + (n - 1) * value);
+    }
+
+    /// <summary>
+    /// Calculates the sum of an arithmetic series up to a given number of terms.
+    /// </summary>
+    /// <param name="value">The first term of the series.</param>
+    /// <param name="n">The number of terms in the series.</param>
+    /// <returns>The sum of the arithmetic series.</returns>
+    public static double SumTo(this int value, int n)
+    {
+        return n / 2 * (2 * value + (n - 1) * value);
+    }
+
+    /// <summary>
+    /// Inverts the specified value.
+    /// </summary>
+    /// <param name="value">The value to invert.</param>
+    /// <returns>The inverted value.</returns>
+    public static double Invert(this double value)
+    {
+        return 1 / value;
+    }
+
+    /// <summary>
+    /// Inverts the specified integer value.
+    /// </summary>
+    /// <param name="value">The value to invert.</param>
+    /// <returns>The inverted value.</returns>
+    public static double Invert(this int value)
+    {
+        return 1 / value;
+    }
+
+    /// <summary>
+    /// Converts a double value to degrees, minutes, and seconds format.
+    /// </summary>
+    /// <param name="value">The double value to convert.</param>
+    /// <returns>A string representation of the value in degrees, minutes, and seconds format.</returns>
+    public static string ToDegreesMinutesSeconds(this double value)
+    {
+        int degrees = (int)value;
+        double minutes = (value - degrees) * 60;
+        double seconds = (minutes - (int)minutes) * 60;
+
+        return $"{degrees}° {minutes}' {seconds}\"";
+    }
+
+    /// <summary>
+    /// Converts degrees to radians.
+    /// </summary>
+    /// <param name="degrees">The angle in degrees.</param>
+    /// <returns>The angle in radians.</returns>
+    public static double DegreesToRadians(this double degrees)
+    {
+        return degrees * System.Math.PI / 180;
+    }
+
+    /// <summary>
+    /// Converts an angle from radians to degrees.
+    /// </summary>
+    /// <param name="radians">The angle in radians.</param>
+    /// <returns>The angle in degrees.</returns>
+    public static double RadiansToDegrees(this double radians)
+    {
+        return radians * 180 / System.Math.PI;
+    }
+
+    /// <summary>
+    /// Calculates the median value of an array of numbers.
+    /// </summary>
+    /// <param name="numbers">The array of numbers.</param>
+    /// <returns>The median value.</returns>
+    public static double Median(params double[] numbers)
+    {
+        Array.Sort(numbers);
+        int length = numbers.Length;
+        int midIndex = length / 2;
+
+        if (length % 2 == 0)
+        {
+            return (numbers[midIndex - 1] + numbers[midIndex]) / 2;
+        }
+        else
+        {
+            return numbers[midIndex];
+        }
+    }
+
+    /// <summary>
+    /// Calculates the mode value of an array of numbers.
+    /// </summary>
+    /// <param name="numbers">The array of numbers.</param>
+    /// <returns>The mode value.</returns>
+    public static double Mode(params double[] numbers)
+    {
+        Dictionary<double, int> frequency = new Dictionary<double, int>();
+
+        foreach (double number in numbers)
+        {
+            if (frequency.ContainsKey(number))
+            {
+                frequency[number]++;
+            }
+            else
+            {
+                frequency[number] = 1;
+            }
+        }
+
+        double mode = 0;
+        int maxFrequency = 0;
+
+        foreach (KeyValuePair<double, int> pair in frequency)
+        {
+            if (pair.Value > maxFrequency)
+            {
+                mode = pair.Key;
+                maxFrequency = pair.Value;
+            }
+        }
+
+        return mode;
     }
 }
