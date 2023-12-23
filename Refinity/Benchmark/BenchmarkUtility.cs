@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using System.Text;
 using Refinity.Benchmark.Models;
 
 namespace Refinity.Benchmark
@@ -20,16 +19,18 @@ namespace Refinity.Benchmark
                 Method = nameof(testMethod),
                 Iterations = iterations
             };
-            var stopwatch = new Stopwatch();
+            Stopwatch stopwatch = new Stopwatch();
             try
             {
-                stopwatch.Start();
+                double timeElapsed = 0;
                 for (int i = 0; i < iterations; i++)
                 {
+                    stopwatch.Start();
                     testMethod();
+                    stopwatch.Stop();
+                    timeElapsed += stopwatch.Elapsed.TotalMilliseconds;
                 }
-                stopwatch.Stop();
-                result.ElapsedTimeMs = stopwatch.Elapsed.TotalMilliseconds;
+                result.ElapsedTimeMs = timeElapsed / iterations;
                 result.Result = BenchmarkResult.Success;
             }
             catch (Exception ex)
