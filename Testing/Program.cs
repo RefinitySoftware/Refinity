@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
-using Refinity.Benchmark;
-using Refinity.Benchmark.Models;
+using Refinity.ML;
+using Refinity.ML.Models;
 using Refinity.Math;
 
 public static partial class Program
@@ -9,8 +9,14 @@ public static partial class Program
     {
         try
         {
-            BenchmarkModels result = BenchmarkUtility.RunCodeBenchmark(testMethod);
-            Console.WriteLine($"Method: {result.Method} - Result: {result.Result} - Elapsed Time: {result.ElapsedTimeMs.ToString(CultureInfo.InvariantCulture)}ms");
+            string[] features = {"Years_of_Experience","Age","Education_Level","Location","Salary"};
+            string labelColumnName = "Salary";
+            string featureColumnName = "Features";
+            string outputColumnName = "Salary";
+            string inputColumnName = "Features";
+            string scoreColumnName = "Score";
+            MLModels mLModels = new MLModels(features, labelColumnName, featureColumnName, outputColumnName, inputColumnName, scoreColumnName);
+            MLUtility.LinearRegressionModel<CustomModel>(@"C:\Users\gasto\Desktop\Progetti\Refinity\Testing\data\salary_regression_dataset.csv", mLModels);
         }
         catch (Exception ex)
         {
