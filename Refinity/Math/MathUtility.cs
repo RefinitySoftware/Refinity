@@ -41,6 +41,25 @@ public static class MathUtility
     }
 
     /// <summary>
+    /// Determines whether the specified number is a prime number.
+    /// </summary>
+    /// <param name="n">The number to check.</param>
+    /// <returns><c>true</c> if the number is prime; otherwise, <c>false</c>.</returns>
+    public static bool IsPrime(this double n)
+    {
+        if (n < 2)
+            return false;
+
+        for (int i = 2; i < n; i++)
+        {
+            if (n % i == 0)
+                return false;
+        }
+
+        return true;
+    }
+
+    /// <summary>
     /// Determines whether the specified integer is even.
     /// </summary>
     /// <param name="n">The integer to check.</param>
@@ -213,10 +232,8 @@ public static class MathUtility
     /// <returns>A tuple containing the mean and standard deviation.</returns>
     public static (double mean, double standardDeviation) GetStandardDeviation(this int[] values)
     {
-        double mean = values.Average();
-        double sumOfSquaresOfDifferences = values.Select(val => (val - mean) * (val - mean)).Sum();
-        double standardDeviation = System.Math.Sqrt(sumOfSquaresOfDifferences / (values.Length - 1));
-        return (mean, standardDeviation);
+        double[] valuesDouble = values.Select(Convert.ToDouble).ToArray();
+        return valuesDouble.GetStandardDeviation();
     }
 
     /// <summary>
@@ -230,5 +247,432 @@ public static class MathUtility
         double sumOfSquaresOfDifferences = values.Select(val => (val - mean) * (val - mean)).Sum();
         double standardDeviation = System.Math.Sqrt(sumOfSquaresOfDifferences / (values.Length - 1));
         return (mean, standardDeviation);
+    }
+
+    /// <summary>
+    /// Calculates the difference between a new value and an old value as a percentage.
+    /// </summary>
+    /// <param name="newValue">The new value.</param>
+    /// <param name="oldValue">The old value.</param>
+    /// <returns>The difference between the new value and the old value as a percentage.</returns>
+    public static double DifferencePercentage(this double newValue, double oldValue)
+    {
+        return (newValue - oldValue) / oldValue * 100;
+    }
+
+    /// <summary>
+    /// Calculates the difference between a new value and an old value as a percentage.
+    /// </summary>
+    /// <param name="newValue">The new value.</param>
+    /// <param name="oldValue">The old value.</param>
+    /// <returns>The difference between the new value and the old value as a percentage.</returns>
+    public static double DifferencePercentage(this int newValue, int oldValue)
+    {
+        return (newValue - oldValue) / oldValue * 100;
+    }
+
+    /// <summary>
+    /// Performs linear regression on the given arrays of x and y values.
+    /// </summary>
+    /// <param name="x">The array of x values.</param>
+    /// <param name="y">The array of y values.</param>
+    /// <returns>An object containing the slope (m), y-intercept (b), and correlation coefficient (r).</returns>
+    public static LinearRegressionModel PerformLinearRegression(this double[] x, double[] y)
+    {
+        if (x.Length != y.Length)
+            throw new ArgumentException("The number of elements in the x array must be equal to the number of elements in the y array.");
+
+        double sumX = x.Sum();
+        double sumY = y.Sum();
+        double sumXY = x.Zip(y, (a, b) => a * b).Sum();
+        double sumX2 = x.Select(a => a * a).Sum();
+        double sumY2 = y.Select(a => a * a).Sum();
+
+        double n = x.Length;
+        double m = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+        double b = (sumY - m * sumX) / n;
+        double r = (n * sumXY - sumX * sumY) / System.Math.Sqrt((n * sumX2 - sumX * sumX) * (n * sumY2 - sumY * sumY));
+
+        return new LinearRegressionModel(m, b, r);
+    }
+
+    /// <summary>
+    /// Performs linear regression on the given arrays of x and y values.
+    /// </summary>
+    /// <param name="x">The array of x values.</param>
+    /// <param name="y">The array of y values.</param>
+    /// <returns>An object containing the slope (m), y-intercept (b), and correlation coefficient (r).</returns>
+    public static LinearRegressionModel PerformLinearRegression(this int[] x, int[] y)
+    {
+        if (x.Length != y.Length)
+            throw new ArgumentException("The number of elements in the x array must be equal to the number of elements in the y array.");
+
+        double[] doubleX = x.Select(Convert.ToDouble).ToArray();
+        double[] doubleY = y.Select(Convert.ToDouble).ToArray();
+
+        return PerformLinearRegression(doubleX, doubleY);
+    }
+
+    /// <summary>
+    /// Performs numerical integration using Simpson's rule.
+    /// </summary>
+    /// <param name="function">The function to integrate.</param>
+    /// <param name="a">The lower limit of integration.</param>
+    /// <param name="b">The upper limit of integration.</param>
+    /// <param name="n">The number of intervals.</param>
+    /// <returns>The approximate value of the integral.</returns>
+    public static double SimpsonRuleIntegration(Func<double, double> function, double a, double b, int n)
+    {
+        if (n % 2 != 0)
+            throw new ArgumentException("The number of intervals must be even.");
+
+        double h = (b - a) / n;
+        double sum = function(a) + function(b);
+
+        for (int i = 1; i < n; i++)
+        {
+            double x = a + i * h;
+            sum += i % 2 == 0 ? 2 * function(x) : 4 * function(x);
+        }
+
+        return (h / 3) * sum;
+    }
+
+    /// <summary>
+    /// Finds the next prime number greater than the specified number.
+    /// </summary>
+    /// <param name="n">The number to find the next prime number after.</param>
+    /// <returns>The next prime number greater than <paramref name="n"/>.</returns>
+    public static double NextPrime(this double n)
+    {
+        if (n < 2)
+            return 2;
+
+        if (n == 2)
+            return 3;
+
+        double x = System.Math.Floor(n);
+        if (x % 2 == 0)
+            x--;
+
+        while (true)
+        {
+            x += 2;
+            if (x.IsPrime())
+                return x;
+        }
+    }
+
+    /// <summary>
+    /// Finds the next prime number greater than the specified number.
+    /// </summary>
+    /// <param name="n">The number to find the next prime number after.</param>
+    /// <returns>The next prime number greater than <paramref name="n"/>.</returns>
+    public static int NextPrime(this int n)
+    {
+        if (n < 2)
+            return 2;
+
+        if (n == 2)
+            return 3;
+
+        int x = n;
+        if (x % 2 == 0)
+            x++;
+
+        while (true)
+        {
+            x += 2;
+            if (x.IsPrime())
+                return x;
+        }
+    }
+
+    /// <summary>
+    /// Calculates the percentage of a value relative to another value.
+    /// </summary>
+    /// <param name="value">The value to calculate the percentage of.</param>
+    /// <param name="otherValue">The value to calculate the percentage relative to.</param>
+    /// <returns>The percentage of the value relative to the other value.</returns>
+    public static double PercentageOf(this double value, double otherValue)
+    {
+        return value / otherValue * 100;
+    }
+
+    /// <summary>
+    /// Calculates the percentage of a value relative to another value.
+    /// </summary>
+    /// <param name="value">The value to calculate the percentage of.</param>
+    /// <param name="otherValue">The value to calculate the percentage relative to.</param>
+    /// <returns>The percentage of the value relative to the other value.</returns>
+    public static double PercentageOf(this int value, int otherValue)
+    {
+        return value / otherValue * 100;
+    }
+
+    /// <summary>
+    /// Determines whether the specified value is approximately equal to the other value within the given tolerance.
+    /// </summary>
+    /// <param name="value">The value to compare.</param>
+    /// <param name="otherValue">The other value to compare.</param>
+    /// <param name="tolerance">The tolerance within which the values are considered equal.</param>
+    /// <returns><c>true</c> if the values are approximately equal; otherwise, <c>false</c>.</returns>
+    public static bool IsApproximatelyEqualTo(this double value, double otherValue, double tolerance)
+    {
+        return System.Math.Abs(value - otherValue) < tolerance;
+    }
+
+    /// <summary>
+    /// Clamps a value between a minimum and maximum value.
+    /// </summary>
+    /// <param name="value">The value to clamp.</param>
+    /// <param name="min">The minimum value.</param>
+    /// <param name="max">The maximum value.</param>
+    /// <returns>The clamped value.</returns>
+    public static double Clamp(this double value, double min, double max)
+    {
+        return System.Math.Min(System.Math.Max(value, min), max);
+    }
+
+    /// <summary>
+    /// Returns an array of divisors for the given integer.
+    /// </summary>
+    /// <param name="n">The integer for which to find divisors.</param>
+    /// <returns>An array of divisors.</returns>
+    public static int[] Divisors(this int n)
+    {
+        List<int> divisors = new List<int>();
+        for (int i = 1; i <= n; i++)
+        {
+            if (n % i == 0)
+                divisors.Add(i);
+        }
+
+        return divisors.ToArray();
+    }
+
+    /// <summary>
+    /// Normalizes a value within a specified range.
+    /// </summary>
+    /// <param name="value">The value to be normalized.</param>
+    /// <param name="min">The minimum value of the range.</param>
+    /// <param name="max">The maximum value of the range.</param>
+    /// <returns>The normalized value.</returns>
+    public static double Normalize(this double value, double min, double max)
+    {
+        if (min >= max)
+        {
+            throw new ArgumentException("min must be less than max");
+        }
+        if (value < min || value > max)
+        {
+            throw new ArgumentException("value must be between min and max");
+        }
+        return (value - min) / (max - min); ;
+    }
+
+    /// <summary>
+    /// Calculates the logarithm of a specified value in a specified base.
+    /// </summary>
+    /// <param name="value">The value for which to calculate the logarithm.</param>
+    /// <param name="n">The base of the logarithm.</param>
+    /// <returns>The logarithm of the specified value in the specified base.</returns>
+    public static double LogBaseN(this double value, double n)
+    {
+        if (value > 1)
+        {
+            throw new ArgumentException("value must be greater than 1");
+        }
+
+        return System.Math.Log(value) / System.Math.Log(n);
+    }
+
+    /// <summary>
+    /// Determines whether the specified value is within the specified range.
+    /// </summary>
+    /// <param name="value">The value to check.</param>
+    /// <param name="min">The minimum value of the range.</param>
+    /// <param name="max">The maximum value of the range.</param>
+    /// <returns>true if the value is within the range; otherwise, false.</returns>
+    public static bool IsInRange(this double value, double min, double max)
+    {
+        return value >= min && value <= max;
+    }
+
+    /// <summary>
+    /// Formats a double value as a percentage string.
+    /// </summary>
+    /// <param name="value">The double value to format.</param>
+    /// <param name="decimalPlaces">The number of decimal places to include in the formatted string. Default is 2.</param>
+    /// <returns>A string representation of the double value formatted as a percentage.</returns>
+    public static string ToStringPercentage(this double value, int decimalPlaces = 2)
+    {
+        return $"{value.ToString($"F{decimalPlaces}")}%";
+    }
+
+    /// <summary>
+    /// Converts a number to scientific notation.
+    /// </summary>
+    /// <param name="number">The number to convert.</param>
+    /// <returns>The number in scientific notation.</returns>
+    public static string ToScientificNotation(this double number)
+    {
+        return number.ToString("0.###E+0");
+    }
+
+    /// <summary>
+    /// Calculates the sum of an arithmetic series up to a given number of terms.
+    /// </summary>
+    /// <param name="value">The first term of the series.</param>
+    /// <param name="n">The number of terms in the series.</param>
+    /// <returns>The sum of the arithmetic series.</returns>
+    public static double SumTo(this double value, double n)
+    {
+        return n / 2 * (2 * value + (n - 1) * value);
+    }
+
+    /// <summary>
+    /// Calculates the sum of an arithmetic series up to a given number of terms.
+    /// </summary>
+    /// <param name="value">The first term of the series.</param>
+    /// <param name="n">The number of terms in the series.</param>
+    /// <returns>The sum of the arithmetic series.</returns>
+    public static double SumTo(this int value, int n)
+    {
+        return n / 2 * (2 * value + (n - 1) * value);
+    }
+
+    /// <summary>
+    /// Inverts the specified value.
+    /// </summary>
+    /// <param name="value">The value to invert.</param>
+    /// <returns>The inverted value.</returns>
+    public static double Invert(this double value)
+    {
+        return 1 / value;
+    }
+
+    /// <summary>
+    /// Inverts the specified integer value.
+    /// </summary>
+    /// <param name="value">The value to invert.</param>
+    /// <returns>The inverted value.</returns>
+    public static double Invert(this int value)
+    {
+        return 1 / value;
+    }
+
+    /// <summary>
+    /// Converts the given degrees to a string representation in hours, minutes, and seconds format.
+    /// </summary>
+    /// <param name="degrees">The degrees to convert.</param>
+    /// <returns>A string representation of the degrees in hours, minutes, and seconds format.</returns>
+    public static string DegreesToHMSString(this double degrees)
+    {
+        (int hours, int minutes, double seconds) = DegreesToHMS(degrees);
+        return $"{hours}h {minutes}m {seconds.ToString("F2")}s";
+    }
+
+    /// <summary>
+    /// Converts degrees to hours, minutes, and seconds.
+    /// </summary>
+    /// <param name="degrees">The degrees to convert.</param>
+    /// <returns>A tuple containing the hours, minutes, and seconds.</returns>
+    public static (int hours, int minutes, double seconds) DegreesToHMS(double degrees)
+    {
+        // Ensure the value is in the range [0, 360)
+        degrees = degrees % 360;
+        if (degrees < 0) degrees += 360;
+
+        // Convert degrees to hours (1 hour = 15 degrees)
+        double totalHours = degrees / 15;
+        
+        // Extract hours
+        int hours = (int)totalHours;
+
+        // Convert the fraction to minutes (1 minute = 1/60 hour)
+        double totalMinutes = (totalHours - hours) * 60;
+        int minutes = (int)totalMinutes;
+
+        // Convert the fraction to seconds (1 second = 1/60 minute)
+        double seconds = (totalMinutes - minutes) * 60;
+        return (hours, minutes, seconds);
+    }
+
+    /// <summary>
+    /// Converts degrees to radians.
+    /// </summary>
+    /// <param name="degrees">The angle in degrees.</param>
+    /// <returns>The angle in radians.</returns>
+    public static double DegreesToRadians(this double degrees)
+    {
+        return degrees * System.Math.PI / 180;
+    }
+
+    /// <summary>
+    /// Converts an angle from radians to degrees.
+    /// </summary>
+    /// <param name="radians">The angle in radians.</param>
+    /// <returns>The angle in degrees.</returns>
+    public static double RadiansToDegrees(this double radians)
+    {
+        return radians * 180 / System.Math.PI;
+    }
+
+    /// <summary>
+    /// Calculates the median value of an array of numbers.
+    /// </summary>
+    /// <param name="numbers">The array of numbers.</param>
+    /// <returns>The median value.</returns>
+    public static double Median(params double[] numbers)
+    {
+        Array.Sort(numbers);
+        int length = numbers.Length;
+        int midIndex = length / 2;
+
+        if (length % 2 == 0)
+        {
+            return (numbers[midIndex - 1] + numbers[midIndex]) / 2;
+        }
+        else
+        {
+            return numbers[midIndex];
+        }
+    }
+
+    /// <summary>
+    /// Calculates the mode value of an array of numbers.
+    /// </summary>
+    /// <param name="numbers">The array of numbers.</param>
+    /// <returns>The mode value.</returns>
+    public static double Mode(params double[] numbers)
+    {
+        Dictionary<double, int> frequency = new Dictionary<double, int>();
+
+        foreach (double number in numbers)
+        {
+            if (frequency.ContainsKey(number))
+            {
+                frequency[number]++;
+            }
+            else
+            {
+                frequency[number] = 1;
+            }
+        }
+
+        double mode = 0;
+        int maxFrequency = 0;
+
+        foreach (KeyValuePair<double, int> pair in frequency)
+        {
+            if (pair.Value > maxFrequency)
+            {
+                mode = pair.Key;
+                maxFrequency = pair.Value;
+            }
+        }
+
+        return mode;
     }
 }
