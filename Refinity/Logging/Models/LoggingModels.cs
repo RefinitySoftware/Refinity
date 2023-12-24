@@ -1,19 +1,34 @@
 namespace Refinity.Logging.Models;
 
-public class LogEntry
-{
-    public required string Message { get; set; }
-    public LogLevel Level { get; set; } = LogLevel.Info;
-    public string? Exception { get; set; }
-    public DateTime Timestamp { get; set; }
-}
-
 public enum LogLevel
 {
-    Trace,
-    Debug,
-    Info,
-    Warn,
-    Error,
-    Fatal
+    TRACE,
+    DEBUG,
+    INFO,
+    WARNING,
+    ERROR,
+    FATAL
+}
+public class LogColorHelper
+{
+    public static ConsoleColor GetLogLevelColor(LogLevel logLevel)
+    {
+        switch (logLevel)
+        {
+            case LogLevel.TRACE:
+                return ConsoleColor.Gray;
+            case LogLevel.DEBUG:
+                return ConsoleColor.Blue;
+            case LogLevel.INFO:
+                return ConsoleColor.Green;
+            case LogLevel.WARNING:
+                return ConsoleColor.Yellow;
+            case LogLevel.ERROR:
+                return ConsoleColor.Red;
+            case LogLevel.FATAL:
+                return ConsoleColor.Magenta;
+            default:
+                return ConsoleColor.White;
+        }
+    }
 }
