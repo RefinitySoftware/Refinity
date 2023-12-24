@@ -250,25 +250,25 @@ public static class MathUtility
     }
 
     /// <summary>
-    /// Calculates the difference between two values as a percentage.
+    /// Calculates the difference between a new value and an old value as a percentage.
     /// </summary>
-    /// <param name="value">The first value.</param>
-    /// <param name="otherValue">The second value.</param>
-    /// <returns>The difference between the two values as a percentage.</returns>
-    public static double DifferencePercentage(this double value, double otherValue)
+    /// <param name="newValue">The new value.</param>
+    /// <param name="oldValue">The old value.</param>
+    /// <returns>The difference between the new value and the old value as a percentage.</returns>
+    public static double DifferencePercentage(this double newValue, double oldValue)
     {
-        return (value - otherValue) / otherValue * 100;
+        return (newValue - oldValue) / oldValue * 100;
     }
 
     /// <summary>
-    /// Calculates the difference between two values as a percentage.
+    /// Calculates the difference between a new value and an old value as a percentage.
     /// </summary>
-    /// <param name="value">The first value.</param>
-    /// <param name="otherValue">The second value.</param>
-    /// <returns>The difference between the two values as a percentage.</returns>
-    public static double DifferencePercentage(this int value, int otherValue)
+    /// <param name="newValue">The new value.</param>
+    /// <param name="oldValue">The old value.</param>
+    /// <returns>The difference between the new value and the old value as a percentage.</returns>
+    public static double DifferencePercentage(this int newValue, int oldValue)
     {
-        return (value - otherValue) / otherValue * 100;
+        return (newValue - oldValue) / oldValue * 100;
     }
 
     /// <summary>
@@ -336,23 +336,6 @@ public static class MathUtility
         }
 
         return (h / 3) * sum;
-    }
-
-    /// <summary>
-    /// Calculates the sum of a series of numbers.
-    /// </summary>
-    /// <param name="numbers">The array of numbers.</param>
-    /// <returns>The sum of the series.</returns>
-    public static double CalculateSumOfSeries(this double[] numbers)
-    {
-        double sum = 0;
-
-        foreach (double number in numbers)
-        {
-            sum += number;
-        }
-
-        return sum;
     }
 
     /// <summary>
@@ -522,7 +505,7 @@ public static class MathUtility
     /// <param name="value">The double value to format.</param>
     /// <param name="decimalPlaces">The number of decimal places to include in the formatted string. Default is 2.</param>
     /// <returns>A string representation of the double value formatted as a percentage.</returns>
-    public static string FormatPercentage(this double value, int decimalPlaces = 2)
+    public static string ToStringPercentage(this double value, int decimalPlaces = 2)
     {
         return $"{value.ToString($"F{decimalPlaces}")}%";
     }
@@ -580,17 +563,40 @@ public static class MathUtility
     }
 
     /// <summary>
-    /// Converts a double value to degrees, minutes, and seconds format.
+    /// Converts the given degrees to a string representation in hours, minutes, and seconds format.
     /// </summary>
-    /// <param name="value">The double value to convert.</param>
-    /// <returns>A string representation of the value in degrees, minutes, and seconds format.</returns>
-    public static string ToDegreesMinutesSeconds(this double value)
+    /// <param name="degrees">The degrees to convert.</param>
+    /// <returns>A string representation of the degrees in hours, minutes, and seconds format.</returns>
+    public static string DegreesToHMSString(this double degrees)
     {
-        int degrees = (int)value;
-        double minutes = (value - degrees) * 60;
-        double seconds = (minutes - (int)minutes) * 60;
+        (int hours, int minutes, double seconds) = DegreesToHMS(degrees);
+        return $"{hours}h {minutes}m {seconds.ToString("F2")}s";
+    }
 
-        return $"{degrees}° {minutes}' {seconds}\"";
+    /// <summary>
+    /// Converts degrees to hours, minutes, and seconds.
+    /// </summary>
+    /// <param name="degrees">The degrees to convert.</param>
+    /// <returns>A tuple containing the hours, minutes, and seconds.</returns>
+    public static (int hours, int minutes, double seconds) DegreesToHMS(double degrees)
+    {
+        // Ensure the value is in the range [0, 360)
+        degrees = degrees % 360;
+        if (degrees < 0) degrees += 360;
+
+        // Convert degrees to hours (1 hour = 15 degrees)
+        double totalHours = degrees / 15;
+        
+        // Extract hours
+        int hours = (int)totalHours;
+
+        // Convert the fraction to minutes (1 minute = 1/60 hour)
+        double totalMinutes = (totalHours - hours) * 60;
+        int minutes = (int)totalMinutes;
+
+        // Convert the fraction to seconds (1 second = 1/60 minute)
+        double seconds = (totalMinutes - minutes) * 60;
+        return (hours, minutes, seconds);
     }
 
     /// <summary>

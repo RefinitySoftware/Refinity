@@ -1,15 +1,16 @@
-﻿using System.Globalization;
-using Refinity.Logging.Models;
-using Refinity.Logging;
+﻿using Refinity.Logging;
+using Refinity.Strings;
+using Refinity.Math;
 
 public static partial class Program
 {
-    static LoggingUtility loggingUtility = new("test", LogFileType.CONSOLE);
     public static void Main()
     {
         try
         {
-            loggingUtility.Debug("This is a debug message.");
+            string htmlTest = "<html><head><title>Test </title></head> <body><h1> Test</h1></body></html>";
+            var result = htmlTest.RemoveHTMLTags().RemoveWhitespace();
+            Console.WriteLine(200.0.DegreesToHMSString());
         }
         catch (Exception ex)
         {
