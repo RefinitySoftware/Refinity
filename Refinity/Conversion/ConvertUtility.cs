@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.IO;
 
 namespace Refinity.Conversion
 {
@@ -13,16 +10,20 @@ namespace Refinity.Conversion
             return Convert.ToBase64String(bytes);
         }
 
-        public static List<T> ConvertCsvToObject<T>(Stream stream, Func<string[], T> createObjectFunc)
+        public static List<T> ConvertCsvToObject<T>(Stream stream, Func<string[], T> createObjectFunc, char delimiter = ',')
         {
             List<T> objects = new List<T>();
 
             using (StreamReader reader = new StreamReader(stream))
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                while (!reader.EndOfStream)
                 {
-                    string[] values = line.Split(',');
+                    string? line = reader.ReadLine();
+                    if (line == null)
+                    {
+                        continue;
+                    }
+                    string[] values = line.Split(delimiter);
 
                     T obj = createObjectFunc(values);
                     objects.Add(obj);
@@ -32,17 +33,21 @@ namespace Refinity.Conversion
             return objects;
         }
 
-        public static DataTable ConvertCsvToDataTable(string path)
+        public static DataTable ConvertCsvToDataTable(string path, char delimiter = ',')
         {
             DataTable dataTable = new DataTable();
 
             using (StreamReader reader = new StreamReader(path))
             {
-                string line;
                 bool isFirstLine = true;
-                while ((line = reader.ReadLine()) != null)
+                while (!reader.EndOfStream)
                 {
-                    string[] values = line.Split(',');
+                    string? line = reader.ReadLine();
+                    if (line == null)
+                    {
+                        continue;
+                    }
+                    string[] values = line.Split(delimiter);
 
                     if (isFirstLine)
                     {

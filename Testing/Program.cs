@@ -1,8 +1,4 @@
-﻿using Refinity.Logging;
-using Refinity.Strings;
-using Refinity.Math;
-
-try
+﻿try
 {
     // var dateRange = DateUtility.GetDateRangeFromWeekNumber(12);
     // var age = dateTime.Value.CalculateAge();
