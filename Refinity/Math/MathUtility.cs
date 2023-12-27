@@ -250,28 +250,6 @@ public static class MathUtility
     }
 
     /// <summary>
-    /// Calculates the difference between a new value and an old value as a percentage.
-    /// </summary>
-    /// <param name="newValue">The new value.</param>
-    /// <param name="oldValue">The old value.</param>
-    /// <returns>The difference between the new value and the old value as a percentage.</returns>
-    public static double DifferencePercentage(this double newValue, double oldValue)
-    {
-        return (newValue - oldValue) / oldValue * 100;
-    }
-
-    /// <summary>
-    /// Calculates the difference between a new value and an old value as a percentage.
-    /// </summary>
-    /// <param name="newValue">The new value.</param>
-    /// <param name="oldValue">The old value.</param>
-    /// <returns>The difference between the new value and the old value as a percentage.</returns>
-    public static double DifferencePercentage(this int newValue, int oldValue)
-    {
-        return (newValue - oldValue) / oldValue * 100;
-    }
-
-    /// <summary>
     /// Performs linear regression on the given arrays of x and y values.
     /// </summary>
     /// <param name="x">The array of x values.</param>
