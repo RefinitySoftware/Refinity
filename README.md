@@ -20,6 +20,7 @@ To use Refinity in your project, follow these steps:
 - Import the library in your C# files:
 
 ## Usage
+#### Refinity is designed to be intuitive. Here’s a quick example of how you can use one of the extension methods:
 ```cs
 using Refinity;
 int a = 100;
@@ -27,7 +28,7 @@ a.Fibonacci();
 // It returns the Fibonacci sequence of 100 numbers.
 ```
 
-### Refinity is designed to be intuitive. Here’s a quick example of how you can use one of the extension methods:
+
 
 License
 
