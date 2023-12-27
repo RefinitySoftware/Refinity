@@ -23,11 +23,24 @@ To use Refinity in your project, follow these steps:
 
 Refinity is designed to be intuitive. Here’s a quick example of how you can use one of the extension methods:
 
+## Math
+
 ```cs
 using Refinity.Math;
-int a = 100;
-a.Fibonacci(); 
-// It returns the Fibonacci sequence of 100 numbers.
+int a = 10;
+a.Fibonacci(); // 55
+```
+
+## Finance
+
+```cs
+using Refinity.Math;
+using Refinity.Finance;
+
+double start = 1020.0;
+double end = 1000.0;
+double difference = start.DifferencePercentage(end); // 2
+string diffString = difference.ToStringPercentage(); // "2,00%"
 ```
 
 License
