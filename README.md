@@ -24,7 +24,7 @@ To use Refinity in your project, follow these steps:
 Refinity is designed to be intuitive. Here’s a quick example of how you can use one of the extension methods:
 
 ```cs
-using Refinity;
+using Refinity.Math;
 int a = 100;
 a.Fibonacci(); 
 // It returns the Fibonacci sequence of 100 numbers.
