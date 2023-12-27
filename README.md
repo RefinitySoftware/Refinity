@@ -1,35 +1,33 @@
-Introduction
+# Refinity
 
-Welcome to Refinity – a comprehensive C# library designed to boost developer productivity. Our library is packed with a wide range of extension methods, each crafted to streamline your coding experience and enhance your projects.
+Welcome to Refinity, a comprehensive C# library designed to boost developer productivity. Our library is packed with a wide range of extension methods, each crafted to streamline your coding experience and enhance your projects.
 
-Features
+## Features
 
-	•	Wide Range of Extension Methods: Covering various aspects of C# programming to make your code more efficient and readable.
-	•	Easy Integration: Seamlessly integrates with existing C# projects, requiring minimal setup.
-	•	High-Quality Code: Written with best practices in mind, ensuring reliability and performance.
-	•	Regular Updates: Continuously evolving with new methods and improvements based on community feedback.
+- Wide Range of Extension Methods: Covering various aspects of C# programming to make your code more efficient and readable.
+- Easy Integration: Seamlessly integrates with existing C# projects, requiring minimal setup.
+- High-Quality Code: Written with best practices in mind, ensuring reliability and performance.
+- Regular Updates: Continuously evolving with new methods and improvements based on community feedback.
 
-Installation
+## Installation
 
 To use Refinity in your project, follow these steps:
 
-	1.	Add the Refinity package to your project via NuGet:
+- Add the Refinity package to your project via NuGet:
 
-Install-Package Refinity
+		dotnet add package Refinity
 
+- Import the library in your C# files:
 
-	2.	Import the library in your C# files:
-
+## Usage
+```cs
 using Refinity;
-
-
-Usage
-
-Refinity is designed to be intuitive. Here’s a quick example of how you can use one of the extension methods:
-
 int a = 100;
 a.Fibonacci(); 
-#It returns the Fibonacci sequence of 100 numbers.
+// It returns the Fibonacci sequence of 100 numbers.
+```
+
+### Refinity is designed to be intuitive. Here’s a quick example of how you can use one of the extension methods:
 
 License
 
