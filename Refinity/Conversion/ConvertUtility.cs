@@ -67,5 +67,4 @@ namespace Refinity.Conversion
             return dataTable;
         }
     }
-
 }
