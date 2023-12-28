@@ -262,8 +262,6 @@
             double halfBaseDifference = (base1 - base2) / 2;
             return System.Math.Sqrt(halfBaseDifference * halfBaseDifference + height * height + side * side);
         }
-
-
     }
 
 }
