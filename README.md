@@ -43,11 +43,11 @@ double difference = start.DifferencePercentage(end); // 2
 string diffString = difference.ToStringPercentage(); // "2,00%"
 ```
 
-License
+## License
 
 Refinity is released under the MIT License. See the LICENSE file for more details.
 
-Contact
+## Contact
 
 For support or queries, reach out to us on this GitHub Repository!
 
