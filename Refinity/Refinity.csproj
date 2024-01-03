@@ -8,17 +8,12 @@
     <Authors>InfinitySoftware - Reflecto</Authors>
     <Company>InfinitySoftware - Reflecto</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Date\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Date\" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="3.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 </Project>
