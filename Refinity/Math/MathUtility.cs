@@ -1,4 +1,6 @@
-﻿namespace Refinity.Math;
+﻿using System.Data;
+
+namespace Refinity.Math;
 
 public static class MathUtility
 {
@@ -247,28 +249,6 @@ public static class MathUtility
         double sumOfSquaresOfDifferences = values.Select(val => (val - mean) * (val - mean)).Sum();
         double standardDeviation = System.Math.Sqrt(sumOfSquaresOfDifferences / (values.Length - 1));
         return (mean, standardDeviation);
-    }
-
-    /// <summary>
-    /// Calculates the difference between a new value and an old value as a percentage.
-    /// </summary>
-    /// <param name="newValue">The new value.</param>
-    /// <param name="oldValue">The old value.</param>
-    /// <returns>The difference between the new value and the old value as a percentage.</returns>
-    public static double DifferencePercentage(this double newValue, double oldValue)
-    {
-        return (newValue - oldValue) / oldValue * 100;
-    }
-
-    /// <summary>
-    /// Calculates the difference between a new value and an old value as a percentage.
-    /// </summary>
-    /// <param name="newValue">The new value.</param>
-    /// <param name="oldValue">The old value.</param>
-    /// <returns>The difference between the new value and the old value as a percentage.</returns>
-    public static double DifferencePercentage(this int newValue, int oldValue)
-    {
-        return (newValue - oldValue) / oldValue * 100;
     }
 
     /// <summary>
@@ -674,5 +654,230 @@ public static class MathUtility
         }
 
         return mode;
+    }
+
+    /// <summary>
+    /// Adds two matrices together.
+    /// </summary>
+    /// <param name="matrix1">The first matrix.</param>
+    /// <param name="matrix2">The second matrix.</param>
+    /// <returns>The result of the matrix addition.</returns>
+    public static dynamic MatrixAddition(dynamic matrix1, dynamic matrix2)
+    {
+        if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.GetLength(1) != matrix2.GetLength(1))
+        {
+            throw new ArgumentException("The matrices must have the same dimensions.");
+        }
+
+        int rows = matrix1.GetLength(0);
+        int columns = matrix1.GetLength(1);
+        dynamic result = new double[rows, columns];
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < columns; j++)
+            {
+                result[i, j] = matrix1[i, j] + matrix2[i, j];
+            }
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// Performs subtraction of two matrices.
+    /// </summary>
+    /// <param name="matrix1">The first matrix.</param>
+    /// <param name="matrix2">The second matrix.</param>
+    /// <returns>The result of the matrix subtraction.</returns>
+    public static dynamic MatrixSubtraction(dynamic matrix1, dynamic matrix2)
+    {
+        if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.GetLength(1) != matrix2.GetLength(1))
+        {
+            throw new ArgumentException("The matrices must have the same dimensions.");
+        }
+
+        int rows = matrix1.GetLength(0);
+        int columns = matrix1.GetLength(1);
+        dynamic result = new double[rows, columns];
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < columns; j++)
+            {
+                result[i, j] = matrix1[i, j] - matrix2[i, j];
+            }
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// Performs matrix multiplication on two dynamic matrices.
+    /// </summary>
+    /// <param name="matrix1">The first matrix.</param>
+    /// <param name="matrix2">The second matrix.</param>
+    /// <returns>The result of the matrix multiplication.</returns>
+    public static dynamic MatrixMultiplication(dynamic matrix1, dynamic matrix2)
+    {
+        if (matrix1.GetLength(1) != matrix2.GetLength(0))
+        {
+            throw new ArgumentException("The number of columns in the first matrix must be equal to the number of rows in the second matrix.");
+        }
+
+        int rows = matrix1.GetLength(0);
+        int columns = matrix2.GetLength(1);
+        dynamic result = new double[rows, columns];
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < columns; j++)
+            {
+                result[i, j] = 0;
+                for (int k = 0; k < matrix1.GetLength(1); k++)
+                {
+                    result[i, j] += matrix1[i, k] * matrix2[k, j];
+                }
+            }
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// Performs scalar multiplication on a matrix.
+    /// </summary>
+    /// <param name="matrix">The matrix to be multiplied.</param>
+    /// <param name="scalar">The scalar value to multiply the matrix by.</param>
+    /// <returns>The result of the matrix scalar multiplication.</returns>
+    public static dynamic MatrixScalarMultiplication(dynamic matrix, double scalar)
+    {
+        int rows = matrix.GetLength(0);
+        int columns = matrix.GetLength(1);
+        dynamic result = new double[rows, columns];
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < columns; j++)
+            {
+                result[i, j] = matrix[i, j] * scalar;
+            }
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// Transposes a matrix.
+    /// </summary>
+    /// <param name="matrix">The matrix to transpose.</param>
+    /// <returns>The transposed matrix.</returns>
+    public static dynamic MatrixTranspose(dynamic matrix)
+    {
+        int rows = matrix.GetLength(0);
+        int columns = matrix.GetLength(1);
+        dynamic result = new double[columns, rows];
+
+        for (int i = 0; i < columns; i++)
+        {
+            for (int j = 0; j < rows; j++)
+            {
+                result[i, j] = matrix[j, i];
+            }
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// Calculates the determinant of a matrix.
+    /// </summary>
+    /// <param name="matrix">The matrix for which to calculate the determinant.</param>
+    /// <returns>The determinant of the matrix.</returns>
+    private static dynamic MatrixDeterminant(dynamic matrix)
+    {
+        int rows = matrix.GetLength(0);
+        int columns = matrix.GetLength(1);
+        dynamic result = 0;
+
+        if (rows != columns)
+        {
+            throw new ArgumentException("The matrix must be square.");
+        }
+
+        if (rows == 2)
+        {
+            result = matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0];
+        }
+        else
+        {
+            for (int i = 0; i < rows; i++)
+            {
+                dynamic[,] subMatrix = new dynamic[rows - 1, columns - 1];
+                for (int j = 1; j < rows; j++)
+                {
+                    for (int k = 0; k < columns; k++)
+                    {
+                        if (k < i)
+                        {
+                            subMatrix[j - 1, k] = matrix[j, k];
+                        }
+                        else if (k > i)
+                        {
+                            subMatrix[j - 1, k - 1] = matrix[j, k];
+                        }
+                    }
+                }
+
+                result += System.Math.Pow(-1, i) * matrix[0, i] * MatrixDeterminant(subMatrix);
+            }
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// Represents a type that can hold values of any type.
+    /// </summary>
+    /// <remarks>
+    /// The <see cref="dynamic"/> type is used to bypass compile-time type checking and enable late binding.
+    /// It allows you to invoke members and perform operations on objects without knowing their specific type at compile time.
+    /// </remarks>
+    public static dynamic MatrixInverse(dynamic matrix)
+    {
+        int rows = matrix.GetLength(0);
+        int columns = matrix.GetLength(1);
+        dynamic result = new double[rows, columns];
+
+        if (rows != columns)
+        {
+            throw new ArgumentException("The matrix must be square.");
+        }
+
+        double determinant = MatrixDeterminant(matrix);
+        if (determinant == 0)
+        {
+            throw new ArgumentException("The matrix is not invertible.");
+        }
+
+        if (rows == 2)
+        {
+            result[0, 0] = matrix[1, 1];
+            result[0, 1] = -matrix[0, 1];
+            result[1, 0] = -matrix[1, 0];
+            result[1, 1] = matrix[0, 0];
+        }
+        else
+        {
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+
+                }
+            }
+        }
+
+        return MatrixScalarMultiplication(result, 1 / determinant);
     }
 }
