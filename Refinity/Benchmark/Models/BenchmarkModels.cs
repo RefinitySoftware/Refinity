@@ -14,9 +14,3 @@ public class BenchmarkModels
     public Exception? Exception { get; set; }
     public int Iterations { get; set; }
 }
-
-public enum BenchmarkResult
-{
-    Success,
-    Failure
-}
