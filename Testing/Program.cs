@@ -9,4 +9,5 @@ using Refinity.Logging;
 
 // Aggiungi i tuoi metodi di estensione qui per provare il codice
 var stream = File.OpenRead("TestLog.csv");
-var lista = ConvertUtility.ConvertCsvToObject<LogEntry>(stream, ';');
+var lista = ConvertUtility.ConvertCsvToObject<LogEntry>(stream, ';', true);
+Console.WriteLine(lista.Count);

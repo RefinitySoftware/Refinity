@@ -1,3 +1,5 @@
+using Refinity.Benchmark.Enums;
+
 namespace Refinity.Benchmark.Models;
 
 public class BenchmarkModels

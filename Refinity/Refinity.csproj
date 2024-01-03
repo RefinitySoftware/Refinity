@@ -3,6 +3,11 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Refinity</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>InfinitySoftware - Reflecto</Authors>
+    <Company>InfinitySoftware - Reflecto</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
