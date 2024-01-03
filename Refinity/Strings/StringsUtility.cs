@@ -13,9 +13,16 @@ public static class StringsUtility
     /// <returns>A new string with all whitespace characters removed.</returns>
     public static string RemoveWhitespace(this string input)
     {
-        return new string(input.ToCharArray()
-            .Where(c => !char.IsWhiteSpace(c))
-            .ToArray());
+        if (string.IsNullOrEmpty(input))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
+        else
+        {
+            return new string(input.ToCharArray()
+                .Where(c => !char.IsWhiteSpace(c))
+                .ToArray());
+        }
     }
 
     /// <summary>
@@ -47,7 +54,14 @@ public static class StringsUtility
     /// <returns>The string with HTML tags removed.</returns>
     public static string RemoveHTMLTags(this string input)
     {
-        return Regex.Replace(input, "<.*?>", string.Empty);
+        if (string.IsNullOrEmpty(input))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
+        else
+        {
+            return Regex.Replace(input, "<.*?>", string.Empty);
+        }
     }
 
     /// <summary>
@@ -57,6 +71,10 @@ public static class StringsUtility
     /// <returns>The reversed string.</returns>
     public static string Reverse(this string input)
     {
+        if (string.IsNullOrEmpty(input))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
         char[] charArray = input.ToCharArray();
         Array.Reverse(charArray);
         return new string(charArray);
@@ -70,6 +88,15 @@ public static class StringsUtility
     /// <returns>The truncated string.</returns>
     public static string Truncate(this string input, int maxLength)
     {
+        if (string.IsNullOrEmpty(input))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
+        else if (maxLength < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(maxLength), "The maximum length cannot be less than zero.");
+        }
+
         if (input.Length <= maxLength)
         {
             return input;
@@ -87,6 +114,10 @@ public static class StringsUtility
     /// <returns>True if the string is a palindrome; otherwise, false.</returns>
     public static bool IsPalindrome(this string input)
     {
+        if (string.IsNullOrEmpty(input))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
         string reversed = input.Reverse();
         return input.Equals(reversed, StringComparison.OrdinalIgnoreCase);
     }
@@ -98,6 +129,10 @@ public static class StringsUtility
     /// <returns>An array of strings representing the split camel case string.</returns>
     public static string[] SplitCamelCase(this string input)
     {
+        if (string.IsNullOrEmpty(input))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
         return Regex.Split(input, @"(?<!^)(?=[A-Z])");
     }
 
@@ -108,6 +143,10 @@ public static class StringsUtility
     /// <returns>The specified string converted to title case.</returns>
     public static string ToPascalCase(this string input)
     {
+        if (string.IsNullOrEmpty(input))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
         return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(input.ToLower());
     }
 
@@ -118,6 +157,10 @@ public static class StringsUtility
     /// <returns>The Base64 representation of the input string.</returns>
     public static string ToBase64(this string text)
     {
+        if (string.IsNullOrEmpty(text))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
         byte[] textBytes = Encoding.UTF8.GetBytes(text);
         return Convert.ToBase64String(textBytes);
     }
@@ -129,6 +172,10 @@ public static class StringsUtility
     /// <returns>The original UTF-8 representation of the base64 encoded string.</returns>
     public static string FromBase64(this string base64)
     {
+        if (string.IsNullOrEmpty(base64))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
         byte[] base64Bytes = Convert.FromBase64String(base64);
         return Encoding.UTF8.GetString(base64Bytes);
     }
@@ -141,6 +188,10 @@ public static class StringsUtility
     /// <returns>The Base64 representation of the input string.</returns>
     public static string ToBase64(this string text, Encoding encoding)
     {
+        if (string.IsNullOrEmpty(text))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
         byte[] textBytes = encoding.GetBytes(text);
         return Convert.ToBase64String(textBytes);
     }
@@ -153,6 +204,10 @@ public static class StringsUtility
     /// <returns>The original string represented by the Base64 encoded string.</returns>
     public static string FromBase64(this string base64, Encoding encoding)
     {
+        if (string.IsNullOrEmpty(base64))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
         byte[] base64Bytes = Convert.FromBase64String(base64);
         return encoding.GetString(base64Bytes);
     }

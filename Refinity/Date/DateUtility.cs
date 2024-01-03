@@ -29,6 +29,10 @@ public static class DateUtility
     public static int CalculateAge(this DateTime birthDate)
     {
         var today = DateTime.Today;
+        if (birthDate > today)
+        {
+            throw new ArgumentException("Birth date cannot be in the future.");
+        }
         var age = today.Year - birthDate.Year;
         if (birthDate.Date > today.AddYears(-age)) age--;
         return age;
@@ -70,8 +74,18 @@ public static class DateUtility
 
     public static DateRangeModel GetDateRange(this DateTime startDate, int numberOfMonths, bool startToFirst = false)
     {
+        if (numberOfMonths <= 0)
+        {
+            throw new ArgumentException("Number of months must be greater than zero.");
+        }
+
         var start = startToFirst ? startDate : startDate.FirstDayOfMonth();
         var end = startDate.FirstDayOfMonth().AddMonths(numberOfMonths).AddDays(-1);
+
+        if (end < start)
+        {
+            throw new ArgumentException("Invalid date range. End date is before start date.");
+        }
 
         DateRangeModel dateRange = new DateRangeModel
         {
@@ -103,6 +117,10 @@ public static class DateUtility
     /// <returns>An array of DateTime objects representing the start and end dates of the week.</returns>
     public static DateTime[] GetDateRangeFromWeekNumber(int weekNumber)
     {
+        if (weekNumber < 1 || weekNumber > 52)
+        {
+            throw new Exception("Invalid week number.");
+        }
         DateTime startOfWeek = new DateTime(DateTime.Now.Year, 1, 1);
         startOfWeek = startOfWeek.AddDays((weekNumber - 1) * 7);
         DateTime endOfWeek = startOfWeek.AddDays(6);
@@ -253,6 +271,11 @@ public static class DateUtility
     public static DateTime? ToDateTime(this string value)
     {
         DateTime result;
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            throw new ArgumentNullException(nameof(value), "The value cannot be null or empty.");
+        }
+
         try
         {
             if (!DateTime.TryParse(value, out result))
@@ -264,6 +287,7 @@ public static class DateUtility
         {
             throw;
         }
+
         return result;
     }
 }

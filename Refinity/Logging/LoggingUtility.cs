@@ -71,6 +71,16 @@ namespace Refinity.Logging
         /// <param name="severity">The severity of the error.</param>
         private void Log(string message, LogLevel logLevel, int severity = 0)
         {
+            if (severity < 0 || severity > 10)
+            {
+                throw new ArgumentOutOfRangeException(nameof(severity), "The severity must be between 0 and 10.");
+            }
+
+            if (string.IsNullOrEmpty(message))
+            {
+                throw new ArgumentNullException(nameof(message), "The message cannot be null or empty.");
+            }
+            
             DateTime timestamp = DateTime.Now;
             ConsoleColor logColors = LogColorHelper.GetLogLevelColor(logLevel);
             StringBuilder stringBuilder = new StringBuilder();

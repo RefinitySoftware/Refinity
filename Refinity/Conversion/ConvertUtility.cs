@@ -58,12 +58,15 @@ namespace Refinity.Conversion
                     }
                     else
                     {
-                        T obj = Activator.CreateInstance<T>();
                         if (headers == null)
                         {
-                            // TODO: Gestire se non ci sono intestazioni
                             throw new Exception("Headers not found");
                         }
+                        if (values.Length != headers.Length)
+                        {
+                            throw new Exception("The number of values in a row does not match the number of headers.");
+                        }
+                        T obj = Activator.CreateInstance<T>();
                         for (int i = 0; i < headers.Length; i++)
                         {
                             PropertyInfo? property = objectProperties.FirstOrDefault(p => p.Name == headers[i]);
@@ -101,6 +104,11 @@ namespace Refinity.Conversion
         {
             DataTable dataTable = new DataTable();
 
+            if (!File.Exists(path))
+            {
+                throw new FileNotFoundException("The specified CSV file does not exist.");
+            }
+
             using (StreamReader reader = new StreamReader(path))
             {
                 bool isFirstLine = true;
@@ -123,6 +131,10 @@ namespace Refinity.Conversion
                     }
                     else
                     {
+                        if (values.Length != dataTable.Columns.Count)
+                        {
+                            throw new InvalidDataException("The number of values in a row does not match the number of columns.");
+                        }
                         dataTable.Rows.Add(values);
                     }
                 }

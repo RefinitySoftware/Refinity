@@ -186,10 +186,20 @@ public static class FinanceUtility
     /// <returns>The calculated net present value.</returns>
     public static double CalculateNetPresentValue(double discountRate, List<double> cashFlows)
     {
+        if (cashFlows == null || cashFlows.Count == 0)
+        {
+            throw new ArgumentException("Cash flows cannot be null or empty.");
+        }
+
         double npv = 0;
 
         for (int i = 0; i < cashFlows.Count; i++)
         {
+            if (discountRate <= -1)
+            {
+                throw new ArgumentException("Discount rate must be greater than -1.");
+            }
+
             npv += cashFlows[i] / System.Math.Pow(1 + discountRate, i + 1);
         }
 
@@ -203,11 +213,19 @@ public static class FinanceUtility
     /// <returns>The calculated internal rate of return.</returns>
     public static double CalculateInternalRateOfReturn(List<double> cashFlows)
     {
+        if (cashFlows == null || cashFlows.Count == 0)
+        {
+            throw new ArgumentException("Cash flows cannot be null or empty.");
+        }
+
         double irr = 0;
         double epsilon = 0.0001;
         double guess = 0.1;
 
-        while (true)
+        int maxIterations = 1000;
+        int iteration = 0;
+
+        while (iteration < maxIterations)
         {
             double npv = 0;
 
@@ -218,12 +236,13 @@ public static class FinanceUtility
 
             if (System.Math.Abs(npv) < epsilon)
             {
-                break;
+                return irr;
             }
 
             irr += guess;
+            iteration++;
         }
 
-        return irr;
+        throw new InvalidOperationException("Unable to calculate internal rate of return.");
     }
 }
