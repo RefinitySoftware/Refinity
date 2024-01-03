@@ -16,7 +16,7 @@ public static class StringsUtility
         return new string(input.ToCharArray()
             .Where(c => !char.IsWhiteSpace(c))
             .ToArray());
-    }    
+    }
 
     /// <summary>
     /// Removes whitespace characters from a string.
@@ -209,7 +209,7 @@ public static class StringsUtility
     /// </summary>
     /// <param name="input">The string to convert.</param>
     /// <returns>The specified string converted to title case.</returns>
-    public static string ToTitleCase(this string input)
+    public static string ToPascalCase(this string input)
     {
         return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(input.ToLower());
     }
