@@ -3,7 +3,6 @@ using System.Text;
 using Refinity.Logging.Enums;
 using Refinity.Logging.Models;
 using Refinity.Conversion;
-using Microsoft.ML.Data;
 
 namespace Refinity.Logging
 {
