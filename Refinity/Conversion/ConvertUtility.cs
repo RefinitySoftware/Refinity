@@ -7,14 +7,6 @@ using Refinity.Strings;
 namespace Refinity.Conversion
 {
 
-    public class LogEntry
-    {
-        public DateTime Time { get; set; }
-        public string LogLevel { get; set; }
-        public string Message { get; set; }
-        public int Severity { get; set; }
-    }
-
     public static class ConvertUtility
     {
         /// <summary>
