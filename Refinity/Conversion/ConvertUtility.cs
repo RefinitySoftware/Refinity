@@ -1,12 +1,18 @@
 using System.Data;
 using System.Reflection;
 using System.Text;
-using Newtonsoft.Json;
 using Refinity.Strings;
 
 namespace Refinity.Conversion
 {
 
+    public class LogEntry
+    {
+        public DateTime Time { get; set; }
+        public string? LogLevel { get; set; }
+        public string? Message { get; set; }
+        public int Severity { get; set; }
+    }
     public static class ConvertUtility
     {
         /// <summary>
@@ -26,13 +32,16 @@ namespace Refinity.Conversion
         /// <typeparam name="T">The type of objects to convert to.</typeparam>
         /// <param name="stream">The stream containing the CSV data.</param>
         /// <param name="delimiter">The delimiter used to separate values in the CSV file. Default is ','.</param>
+        /// <param name="ignoreCaseHeader">If true, the header is case insensitive. Default is false.</param>
         /// <returns>A list of objects of type T.</returns>
-        public static List<T> ConvertCsvToObject<T>(Stream stream, char delimiter = ',')
+        public static List<T> ConvertCsvToObject<T>(Stream stream, char delimiter = ',', bool ignoreCaseHeader = false)
         {
+            List<PropertyInfo> objectProperties = typeof(T).GetProperties().ToList();
             List<T> objects = new();
+
             using StreamReader reader = new(stream);
             {
-                int counter = 0;
+                bool isFirstLine = true;
                 string[]? headers = null;
                 while (!reader.EndOfStream)
                 {
@@ -42,37 +51,43 @@ namespace Refinity.Conversion
                         continue;
                     }
                     string[] values = line.Split(delimiter);
-                    if (counter == 0)
+                    if (isFirstLine)
                     {
-                        // header
                         headers = values.Select(v => v.RemoveWhitespace()).ToArray();
+                        isFirstLine = false;
                     }
                     else
                     {
                         T obj = Activator.CreateInstance<T>();
                         if (headers == null)
                         {
-                            continue;
+                            // TODO: Gestire se non ci sono intestazioni
+                            throw new Exception("Headers not found");
                         }
-                        List<PropertyInfo> properties = typeof(T).GetProperties().ToList();
                         for (int i = 0; i < headers.Length; i++)
                         {
-                            PropertyInfo? property = properties.FirstOrDefault(p => p.Name == headers[i]);
-                            if (property != null)
+                            PropertyInfo? property = objectProperties.FirstOrDefault(p => p.Name == headers[i]);
+                            if (ignoreCaseHeader && property == null)
                             {
-                                object value = Convert.ChangeType(values[i], property.PropertyType);
-                                if(value is string){
-                                    value = ((string)value).Trim();
-                                }
-                                property.SetValue(obj, value);
+                                property = objectProperties.FirstOrDefault(p => p.Name.Equals(headers[i], StringComparison.OrdinalIgnoreCase));
                             }
+
+                            if (property == null)
+                            {
+                                throw new Exception($"Property \"{headers[i]}\" not found, if you want to ignore case set ignoreCaseHeader to true");
+                            }
+
+                            object value = Convert.ChangeType(values[i], property.PropertyType);
+                            if (value is string)
+                            {
+                                value = ((string)value).Trim();
+                            }
+                            property.SetValue(obj, value);
                         }
                         objects.Add(obj);
                     }
-                    counter++;
                 }
             }
-
             return objects;
         }
 
@@ -124,7 +139,7 @@ namespace Refinity.Conversion
         /// <param name="delimiter">The character used to separate values in the text file. Default is ','.</param>
         /// <param name="saveDelimiter">The character used to separate values in the CSV file. Default is ','.</param>
         /// <returns>True if the conversion is successful, false otherwise.</returns>
-        public static bool ConvertTextToCSV(string pathToTxt, string pathToCSV, char delimiter = ',', char saveDelimiter = ',', string[]? headers = null)
+        public static byte[] ConvertTextToCSV(string pathToTxt, char delimiter = ',', char saveDelimiter = ',', string[]? headers = null)
         {
             try
             {
@@ -140,13 +155,12 @@ namespace Refinity.Conversion
                     string[] values = line.Split(delimiter);
                     stringBuilder.AppendLine(string.Join(saveDelimiter, values));
                 }
-
-                File.WriteAllText(pathToCSV, stringBuilder.ToString());
-                return true;
+                byte[] bytes = Encoding.UTF8.GetBytes(stringBuilder.ToString());
+                return bytes;
             }
             catch (Exception)
             {
-                return false;
+                return Array.Empty<byte>();
             }
         }
     }

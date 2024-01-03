@@ -141,11 +141,11 @@ namespace Refinity.Logging
             Log(message, LogLevel.FATAL, severity);
         }
 
-        public void ConvertLogToCSV(char csvDelimiter = ';')
+        public byte[] ConvertLogToCSV(char csvDelimiter = ';')
         {
             char delimiter = '|';
-            string[] csvHeaders = {"Time", "Log Level", "Message", "Severity"};
-            ConvertUtility.ConvertTextToCSV(PathToLogFile, PathToLogFile[..PathToLogFile.LastIndexOf('.')] + ".csv", delimiter, csvDelimiter, csvHeaders);
+            string[] csvHeaders = {"Time", "LogLevel", "Message", "Severity"};
+            return ConvertUtility.ConvertTextToCSV(PathToLogFile, delimiter, csvDelimiter, csvHeaders);
         }
     }
 }
