@@ -1,0 +1,2058 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MathUtility
+ | Refinity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MathUtility
+ | Refinity ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Refinity">
+            Refinity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Refinity.Math.MathUtility">
+
+
+
+  <h1 id="Refinity_Math_MathUtility" data-uid="Refinity.Math.MathUtility" class="text-break">
+    Class MathUtility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Refinity.html">Refinity</a>.<a class="xref" href="Refinity.Math.html">Math</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Refinity.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MathUtility</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MathUtility</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Refinity_Math_MathUtility_Clamp_" data-uid="Refinity.Math.MathUtility.Clamp*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_Clamp_System_Double_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.Clamp(System.Double,System.Double,System.Double)">
+  Clamp(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clamps a value between a minimum and maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Clamp(this double value, double min, double max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value to clamp.</p>
+</dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The minimum value.</p>
+</dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The maximum value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The clamped value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_ConvertToBaseBinary_" data-uid="Refinity.Math.MathUtility.ConvertToBaseBinary*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_ConvertToBaseBinary_System_Int32_" data-uid="Refinity.Math.MathUtility.ConvertToBaseBinary(System.Int32)">
+  ConvertToBaseBinary(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an integer to its binary representation in base 2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ConvertToBaseBinary(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The binary representation of the input integer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_ConvertToBaseHexadecimal_" data-uid="Refinity.Math.MathUtility.ConvertToBaseHexadecimal*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_ConvertToBaseHexadecimal_System_Int32_" data-uid="Refinity.Math.MathUtility.ConvertToBaseHexadecimal(System.Int32)">
+  ConvertToBaseHexadecimal(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an integer to its hexadecimal representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ConvertToBaseHexadecimal(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The hexadecimal representation of the input integer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_ConvertToBaseOctal_" data-uid="Refinity.Math.MathUtility.ConvertToBaseOctal*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_ConvertToBaseOctal_System_Int32_" data-uid="Refinity.Math.MathUtility.ConvertToBaseOctal(System.Int32)">
+  ConvertToBaseOctal(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an integer to its octal representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ConvertToBaseOctal(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer to be converted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The octal representation of the input integer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_DegreesToHMS_" data-uid="Refinity.Math.MathUtility.DegreesToHMS*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_DegreesToHMS_System_Double_" data-uid="Refinity.Math.MathUtility.DegreesToHMS(System.Double)">
+  DegreesToHMS(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts degrees to hours, minutes, and seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (int hours, int minutes, double seconds) DegreesToHMS(double degrees)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>degrees</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The degrees to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.double-.hours">hours</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.double-.minutes">minutes</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.double-.seconds">seconds</a>)</dt>
+    <dd><p>A tuple containing the hours, minutes, and seconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_DegreesToHMSString_" data-uid="Refinity.Math.MathUtility.DegreesToHMSString*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_DegreesToHMSString_System_Double_" data-uid="Refinity.Math.MathUtility.DegreesToHMSString(System.Double)">
+  DegreesToHMSString(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the given degrees to a string representation in hours, minutes, and seconds format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string DegreesToHMSString(this double degrees)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>degrees</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The degrees to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string representation of the degrees in hours, minutes, and seconds format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_DegreesToRadians_" data-uid="Refinity.Math.MathUtility.DegreesToRadians*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_DegreesToRadians_System_Double_" data-uid="Refinity.Math.MathUtility.DegreesToRadians(System.Double)">
+  DegreesToRadians(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L587"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts degrees to radians.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DegreesToRadians(this double degrees)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>degrees</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The angle in degrees.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The angle in radians.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_Divisors_" data-uid="Refinity.Math.MathUtility.Divisors*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_Divisors_System_Int32_" data-uid="Refinity.Math.MathUtility.Divisors(System.Int32)">
+  Divisors(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an array of divisors for the given integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] Divisors(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer for which to find divisors.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>An array of divisors.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_Factorial_" data-uid="Refinity.Math.MathUtility.Factorial*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_Factorial_System_Int32_" data-uid="Refinity.Math.MathUtility.Factorial(System.Int32)">
+  Factorial(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the factorial of a non-negative integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Factorial(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The non-negative integer.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The factorial of the input integer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_Fibonacci_" data-uid="Refinity.Math.MathUtility.Fibonacci*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_Fibonacci_System_Int32_" data-uid="Refinity.Math.MathUtility.Fibonacci(System.Int32)">
+  Fibonacci(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the Fibonacci number for a given integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Fibonacci(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The input integer.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Fibonacci number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_GetStandardDeviation_" data-uid="Refinity.Math.MathUtility.GetStandardDeviation*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_GetStandardDeviation_System_Double___" data-uid="Refinity.Math.MathUtility.GetStandardDeviation(System.Double[])">
+  GetStandardDeviation(double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the mean and standard deviation of an array of doubles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (double mean, double standardDeviation) GetStandardDeviation(this double[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The array of doubles.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.mean">mean</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.standarddeviation">standardDeviation</a>)</dt>
+    <dd><p>A tuple containing the mean and standard deviation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_GetStandardDeviation_" data-uid="Refinity.Math.MathUtility.GetStandardDeviation*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_GetStandardDeviation_System_Int32___" data-uid="Refinity.Math.MathUtility.GetStandardDeviation(System.Int32[])">
+  GetStandardDeviation(int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the mean and standard deviation of an array of integers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (double mean, double standardDeviation) GetStandardDeviation(this int[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>The array of integers.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.mean">mean</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.standarddeviation">standardDeviation</a>)</dt>
+    <dd><p>A tuple containing the mean and standard deviation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_GreatestCommonDivisor_" data-uid="Refinity.Math.MathUtility.GreatestCommonDivisor*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_GreatestCommonDivisor_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.GreatestCommonDivisor(System.Int32,System.Int32)">
+  GreatestCommonDivisor(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the greatest common divisor (GCD) of two integers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GreatestCommonDivisor(this int a, int b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The first integer.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The second integer.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The greatest common divisor of the two integers.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_Invert_" data-uid="Refinity.Math.MathUtility.Invert*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_Invert_System_Double_" data-uid="Refinity.Math.MathUtility.Invert(System.Double)">
+  Invert(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inverts the specified value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Invert(this double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value to invert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The inverted value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_Invert_" data-uid="Refinity.Math.MathUtility.Invert*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_Invert_System_Int32_" data-uid="Refinity.Math.MathUtility.Invert(System.Int32)">
+  Invert(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inverts the specified integer value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Invert(this int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The value to invert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The inverted value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_IsApproximatelyEqualTo_" data-uid="Refinity.Math.MathUtility.IsApproximatelyEqualTo*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_IsApproximatelyEqualTo_System_Double_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.IsApproximatelyEqualTo(System.Double,System.Double,System.Double)">
+  IsApproximatelyEqualTo(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified value is approximately equal to the other value within the given tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsApproximatelyEqualTo(this double value, double otherValue, double tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value to compare.</p>
+</dd>
+    <dt><code>otherValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The other value to compare.</p>
+</dd>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The tolerance within which the values are considered equal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the values are approximately equal; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_IsDivisibleBy_" data-uid="Refinity.Math.MathUtility.IsDivisibleBy*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_IsDivisibleBy_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.IsDivisibleBy(System.Int32,System.Int32)">
+  IsDivisibleBy(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether an integer is divisible by a given divisor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDivisibleBy(this int n, int divisor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer to check for divisibility.</p>
+</dd>
+    <dt><code>divisor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The divisor to check against.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the integer is divisible by the divisor, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_IsDivisibleBy_" data-uid="Refinity.Math.MathUtility.IsDivisibleBy*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_IsDivisibleBy_System_Int32_System_Int32_System_Int32__" data-uid="Refinity.Math.MathUtility.IsDivisibleBy(System.Int32,System.Int32,System.Int32@)">
+  IsDivisibleBy(int, int, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether an integer is divisible by a given divisor and calculates the quotient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDivisibleBy(this int n, int divisor, out int quotient)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer to check for divisibility.</p>
+</dd>
+    <dt><code>divisor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The divisor to check against.</p>
+</dd>
+    <dt><code>quotient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The calculated quotient if the integer is divisible by the divisor.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the integer is divisible by the divisor, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_IsEven_" data-uid="Refinity.Math.MathUtility.IsEven*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_IsEven_System_Int32_" data-uid="Refinity.Math.MathUtility.IsEven(System.Int32)">
+  IsEven(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified integer is even.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEven(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the integer is even; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_IsInRange_" data-uid="Refinity.Math.MathUtility.IsInRange*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_IsInRange_System_Double_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.IsInRange(System.Double,System.Double,System.Double)">
+  IsInRange(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified value is within the specified range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInRange(this double value, double min, double max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value to check.</p>
+</dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The minimum value of the range.</p>
+</dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The maximum value of the range.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the value is within the range; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_IsOdd_" data-uid="Refinity.Math.MathUtility.IsOdd*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_IsOdd_System_Int32_" data-uid="Refinity.Math.MathUtility.IsOdd(System.Int32)">
+  IsOdd(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified integer is odd.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOdd(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the specified integer is odd; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_IsPrime_" data-uid="Refinity.Math.MathUtility.IsPrime*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_IsPrime_System_Double_" data-uid="Refinity.Math.MathUtility.IsPrime(System.Double)">
+  IsPrime(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified number is a prime number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPrime(this double n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The number to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the number is prime; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_IsPrime_" data-uid="Refinity.Math.MathUtility.IsPrime*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_IsPrime_System_Int32_" data-uid="Refinity.Math.MathUtility.IsPrime(System.Int32)">
+  IsPrime(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified number is a prime number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPrime(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the number is prime; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_LeastCommonMultiple_" data-uid="Refinity.Math.MathUtility.LeastCommonMultiple*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_LeastCommonMultiple_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.LeastCommonMultiple(System.Int32,System.Int32)">
+  LeastCommonMultiple(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the least common multiple (LCM) of two integers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LeastCommonMultiple(this int a, int b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The first integer.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The second integer.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The least common multiple of the two integers.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_LogBaseN_" data-uid="Refinity.Math.MathUtility.LogBaseN*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_LogBaseN_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.LogBaseN(System.Double,System.Double)">
+  LogBaseN(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the logarithm of a specified value in a specified base.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double LogBaseN(this double value, double n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value for which to calculate the logarithm.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The base of the logarithm.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The logarithm of the specified value in the specified base.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_MatrixAddition_" data-uid="Refinity.Math.MathUtility.MatrixAddition*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_MatrixAddition_System_Object_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixAddition(System.Object,System.Object)">
+  MatrixAddition(dynamic, dynamic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L665"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds two matrices together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixAddition(dynamic matrix1, dynamic matrix2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix1</code> <span class="xref">dynamic</span></dt>
+    <dd><p>The first matrix.</p>
+</dd>
+    <dt><code>matrix2</code> <span class="xref">dynamic</span></dt>
+    <dd><p>The second matrix.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">dynamic</span></dt>
+    <dd><p>The result of the matrix addition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_MatrixInverse_" data-uid="Refinity.Math.MathUtility.MatrixInverse*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_MatrixInverse_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixInverse(System.Object)">
+  MatrixInverse(dynamic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L842"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a type that can hold values of any type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixInverse(dynamic matrix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_MatrixMultiplication_" data-uid="Refinity.Math.MathUtility.MatrixMultiplication*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_MatrixMultiplication_System_Object_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixMultiplication(System.Object,System.Object)">
+  MatrixMultiplication(dynamic, dynamic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L721"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs matrix multiplication on two dynamic matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixMultiplication(dynamic matrix1, dynamic matrix2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix1</code> <span class="xref">dynamic</span></dt>
+    <dd><p>The first matrix.</p>
+</dd>
+    <dt><code>matrix2</code> <span class="xref">dynamic</span></dt>
+    <dd><p>The second matrix.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">dynamic</span></dt>
+    <dd><p>The result of the matrix multiplication.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_MatrixScalarMultiplication_" data-uid="Refinity.Math.MathUtility.MatrixScalarMultiplication*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_MatrixScalarMultiplication_System_Object_System_Double_" data-uid="Refinity.Math.MathUtility.MatrixScalarMultiplication(System.Object,System.Double)">
+  MatrixScalarMultiplication(dynamic, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs scalar multiplication on a matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixScalarMultiplication(dynamic matrix, double scalar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix</code> <span class="xref">dynamic</span></dt>
+    <dd><p>The matrix to be multiplied.</p>
+</dd>
+    <dt><code>scalar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The scalar value to multiply the matrix by.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">dynamic</span></dt>
+    <dd><p>The result of the matrix scalar multiplication.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_MatrixSubtraction_" data-uid="Refinity.Math.MathUtility.MatrixSubtraction*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_MatrixSubtraction_System_Object_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixSubtraction(System.Object,System.Object)">
+  MatrixSubtraction(dynamic, dynamic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L693"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs subtraction of two matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixSubtraction(dynamic matrix1, dynamic matrix2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix1</code> <span class="xref">dynamic</span></dt>
+    <dd><p>The first matrix.</p>
+</dd>
+    <dt><code>matrix2</code> <span class="xref">dynamic</span></dt>
+    <dd><p>The second matrix.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">dynamic</span></dt>
+    <dd><p>The result of the matrix subtraction.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_MatrixTranspose_" data-uid="Refinity.Math.MathUtility.MatrixTranspose*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_MatrixTranspose_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixTranspose(System.Object)">
+  MatrixTranspose(dynamic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L775"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transposes a matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixTranspose(dynamic matrix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix</code> <span class="xref">dynamic</span></dt>
+    <dd><p>The matrix to transpose.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">dynamic</span></dt>
+    <dd><p>The transposed matrix.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_Median_" data-uid="Refinity.Math.MathUtility.Median*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_Median_System_Double___" data-uid="Refinity.Math.MathUtility.Median(System.Double[])">
+  Median(params double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the median value of an array of numbers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Median(params double[] numbers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numbers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The array of numbers.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The median value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_Mode_" data-uid="Refinity.Math.MathUtility.Mode*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_Mode_System_Double___" data-uid="Refinity.Math.MathUtility.Mode(System.Double[])">
+  Mode(params double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the mode value of an array of numbers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Mode(params double[] numbers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numbers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The array of numbers.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The mode value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_NextPrime_" data-uid="Refinity.Math.MathUtility.NextPrime*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_NextPrime_System_Double_" data-uid="Refinity.Math.MathUtility.NextPrime(System.Double)">
+  NextPrime(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the next prime number greater than the specified number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double NextPrime(this double n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The number to find the next prime number after.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The next prime number greater than <code class="paramref">n</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_NextPrime_" data-uid="Refinity.Math.MathUtility.NextPrime*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_NextPrime_System_Int32_" data-uid="Refinity.Math.MathUtility.NextPrime(System.Int32)">
+  NextPrime(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the next prime number greater than the specified number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NextPrime(this int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number to find the next prime number after.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The next prime number greater than <code class="paramref">n</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_Normalize_" data-uid="Refinity.Math.MathUtility.Normalize*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_Normalize_System_Double_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.Normalize(System.Double,System.Double,System.Double)">
+  Normalize(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalizes a value within a specified range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Normalize(this double value, double min, double max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value to be normalized.</p>
+</dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The minimum value of the range.</p>
+</dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The maximum value of the range.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The normalized value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_PercentageOf_" data-uid="Refinity.Math.MathUtility.PercentageOf*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_PercentageOf_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.PercentageOf(System.Double,System.Double)">
+  PercentageOf(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the percentage of a value relative to another value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PercentageOf(this double value, double otherValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value to calculate the percentage of.</p>
+</dd>
+    <dt><code>otherValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value to calculate the percentage relative to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The percentage of the value relative to the other value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_PercentageOf_" data-uid="Refinity.Math.MathUtility.PercentageOf*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_PercentageOf_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.PercentageOf(System.Int32,System.Int32)">
+  PercentageOf(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the percentage of a value relative to another value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PercentageOf(this int value, int otherValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The value to calculate the percentage of.</p>
+</dd>
+    <dt><code>otherValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The value to calculate the percentage relative to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The percentage of the value relative to the other value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_PerformLinearRegression_" data-uid="Refinity.Math.MathUtility.PerformLinearRegression*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_PerformLinearRegression_System_Double___System_Double___" data-uid="Refinity.Math.MathUtility.PerformLinearRegression(System.Double[],System.Double[])">
+  PerformLinearRegression(double[], double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs linear regression on the given arrays of x and y values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearRegressionModel PerformLinearRegression(this double[] x, double[] y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The array of x values.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The array of y values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Refinity.Math.LinearRegressionModel.html">LinearRegressionModel</a></dt>
+    <dd><p>An object containing the slope (m), y-intercept (b), and correlation coefficient (r).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_PerformLinearRegression_" data-uid="Refinity.Math.MathUtility.PerformLinearRegression*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_PerformLinearRegression_System_Int32___System_Int32___" data-uid="Refinity.Math.MathUtility.PerformLinearRegression(System.Int32[],System.Int32[])">
+  PerformLinearRegression(int[], int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs linear regression on the given arrays of x and y values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearRegressionModel PerformLinearRegression(this int[] x, int[] y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>The array of x values.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>The array of y values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Refinity.Math.LinearRegressionModel.html">LinearRegressionModel</a></dt>
+    <dd><p>An object containing the slope (m), y-intercept (b), and correlation coefficient (r).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_RadiansToDegrees_" data-uid="Refinity.Math.MathUtility.RadiansToDegrees*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_RadiansToDegrees_System_Double_" data-uid="Refinity.Math.MathUtility.RadiansToDegrees(System.Double)">
+  RadiansToDegrees(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L597"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an angle from radians to degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RadiansToDegrees(this double radians)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radians</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The angle in radians.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The angle in degrees.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_SimpsonRuleIntegration_" data-uid="Refinity.Math.MathUtility.SimpsonRuleIntegration*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_SimpsonRuleIntegration_System_Func_System_Double_System_Double__System_Double_System_Double_System_Int32_" data-uid="Refinity.Math.MathUtility.SimpsonRuleIntegration(System.Func{System.Double,System.Double},System.Double,System.Double,System.Int32)">
+  SimpsonRuleIntegration(Func&lt;double, double&gt;, double, double, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs numerical integration using Simpson's rule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SimpsonRuleIntegration(Func&lt;double, double&gt; function, double a, double b, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>function</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The function to integrate.</p>
+</dd>
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The lower limit of integration.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The upper limit of integration.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of intervals.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The approximate value of the integral.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_SumTo_" data-uid="Refinity.Math.MathUtility.SumTo*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_SumTo_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.SumTo(System.Double,System.Double)">
+  SumTo(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the sum of an arithmetic series up to a given number of terms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SumTo(this double value, double n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The first term of the series.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The number of terms in the series.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The sum of the arithmetic series.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_SumTo_" data-uid="Refinity.Math.MathUtility.SumTo*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_SumTo_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.SumTo(System.Int32,System.Int32)">
+  SumTo(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the sum of an arithmetic series up to a given number of terms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SumTo(this int value, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The first term of the series.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of terms in the series.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The sum of the arithmetic series.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_ToScientificNotation_" data-uid="Refinity.Math.MathUtility.ToScientificNotation*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_ToScientificNotation_System_Double_" data-uid="Refinity.Math.MathUtility.ToScientificNotation(System.Double)">
+  ToScientificNotation(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a number to scientific notation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToScientificNotation(this double number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The number to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The number in scientific notation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Math_MathUtility_ToStringPercentage_" data-uid="Refinity.Math.MathUtility.ToStringPercentage*"></a>
+
+  <h3 id="Refinity_Math_MathUtility_ToStringPercentage_System_Double_System_Int32_" data-uid="Refinity.Math.MathUtility.ToStringPercentage(System.Double,System.Int32)">
+  ToStringPercentage(double, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Formats a double value as a percentage string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToStringPercentage(this double value, int decimalPlaces = 2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The double value to format.</p>
+</dd>
+    <dt><code>decimalPlaces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of decimal places to include in the formatted string. Default is 2.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string representation of the double value formatted as a percentage.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L5" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
