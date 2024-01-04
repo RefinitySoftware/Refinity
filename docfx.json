@@ -40,7 +40,10 @@
       "_appTitle": "Refinity",
       "_enableSearch": true,
       "_disableContribution": true,
-      "pdf": false
+      "_appLogoPath": "icon.png",
+      "pdf": false,
+      "_appFaviconPath": "icon.png",
+      "_gitContribute": "https://github.com/InfinitySoftware-House/Refinity"
     }
   }
 }
