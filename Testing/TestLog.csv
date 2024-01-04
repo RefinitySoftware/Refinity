@@ -1,7 +1,0 @@
-Time;LogLevel;message;Severity
-2024-01-03 09:47:20.128 ; INFO ; This is an info message. ; 0
-2024-01-03 09:49:08.255 ; INFO ; This is an info message. ; 4
-2024-01-03 10:01:21.320 ; INFO ; This is an info message. ; 4
-2024-01-03 10:02:45.280 ; INFO ; This is an info message. ; 3
-2024-01-03 10:04:50.366 ; INFO ; This is an info message. ; 4
-2024-01-03 10:06:44.164 ; INFO ; This is an info message. ; 5
