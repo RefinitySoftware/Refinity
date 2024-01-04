@@ -2,6 +2,9 @@
 
 namespace Refinity.Math;
 
+/// <summary>
+/// Represents a mathematical utility class.
+/// </summary>
 public static class MathUtility
 {
     /// <summary>
@@ -566,7 +569,7 @@ public static class MathUtility
 
         // Convert degrees to hours (1 hour = 15 degrees)
         double totalHours = degrees / 15;
-        
+
         // Extract hours
         int hours = (int)totalHours;
 

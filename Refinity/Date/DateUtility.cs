@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using Newtonsoft.Json;
+using Refinity.Enums;
 
 namespace Refinity.Date;
 public static class DateUtility
@@ -169,7 +170,7 @@ public static class DateUtility
     /// </summary>
     /// <param name="value">The month value.</param>
     /// <returns>The quarterly value.</returns>
-    public static int QuarterlyFromMonth(Months value)
+    public static int QuarterlyFromMonth(EnumMonths value)
     {
         return (((int)value - 1) / 4) + 1;
     }
@@ -203,7 +204,7 @@ public static class DateUtility
     /// </summary>
     /// <param name="value">The month value.</param>
     /// <returns>The quarter corresponding to the given month.</returns>
-    public static int QuarterFromMonth(Months value)
+    public static int QuarterFromMonth(EnumMonths value)
     {
         return (((int)value - 1) / 3) + 1;
     }
