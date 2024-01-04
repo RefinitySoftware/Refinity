@@ -33,7 +33,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: DateUtility
     path: Refinity/Date/DateUtility.cs
@@ -69,7 +69,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Add
     path: Refinity/Date/DateUtility.cs
@@ -126,7 +126,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateAge
     path: Refinity/Date/DateUtility.cs
@@ -165,7 +165,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: DeserializeDateTime
     path: Refinity/Date/DateUtility.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: FirstDayOfMonth
     path: Refinity/Date/DateUtility.cs
@@ -243,7 +243,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: GetDateRange
     path: Refinity/Date/DateUtility.cs
@@ -282,7 +282,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: GetWeekNumber
     path: Refinity/Date/DateUtility.cs
@@ -320,7 +320,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: GetDateRangeFromWeekNumber
     path: Refinity/Date/DateUtility.cs
@@ -359,7 +359,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: GetDifference
     path: Refinity/Date/DateUtility.cs
@@ -396,7 +396,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: LastDayOfMonth
     path: Refinity/Date/DateUtility.cs
@@ -435,7 +435,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: QuarterlyFromMonth
     path: Refinity/Date/DateUtility.cs
@@ -473,7 +473,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: QuarterlyFromMonth
     path: Refinity/Date/DateUtility.cs
@@ -509,7 +509,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: QuarterlyFromMonth
     path: Refinity/Date/DateUtility.cs
@@ -548,7 +548,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: QuarterFromMonth
     path: Refinity/Date/DateUtility.cs
@@ -586,7 +586,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: QuarterFromMonth
     path: Refinity/Date/DateUtility.cs
@@ -622,7 +622,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: QuarterFromMonth
     path: Refinity/Date/DateUtility.cs
@@ -661,7 +661,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Subtract
     path: Refinity/Date/DateUtility.cs
@@ -718,7 +718,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: SerializeDateTime
     path: Refinity/Date/DateUtility.cs
@@ -757,7 +757,7 @@ items:
   source:
     remote:
       path: Refinity/Date/DateUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ToDateTime
     path: Refinity/Date/DateUtility.cs

@@ -73,19 +73,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/francesco/.nuget/packages/": {}
+    "/Users/francescojr.venditti/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/francesco/Desktop/Progetti/Refinity/Testing/Testing.csproj",
+      "projectUniqueName": "/Users/francescojr.venditti/GitHub/Refinity/Testing/Testing.csproj",
       "projectName": "Testing",
-      "projectPath": "/Users/francesco/Desktop/Progetti/Refinity/Testing/Testing.csproj",
-      "packagesPath": "/Users/francesco/.nuget/packages/",
-      "outputPath": "/Users/francesco/Desktop/Progetti/Refinity/Testing/obj/",
+      "projectPath": "/Users/francescojr.venditti/GitHub/Refinity/Testing/Testing.csproj",
+      "packagesPath": "/Users/francescojr.venditti/.nuget/packages/",
+      "outputPath": "/Users/francescojr.venditti/GitHub/Refinity/Testing/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/francesco/.nuget/NuGet/NuGet.Config"
+        "/Users/francescojr.venditti/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -97,8 +97,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/francesco/Desktop/Progetti/Refinity/Refinity/Refinity.csproj": {
-              "projectPath": "/Users/francesco/Desktop/Progetti/Refinity/Refinity/Refinity.csproj"
+            "/Users/francescojr.venditti/GitHub/Refinity/Refinity/Refinity.csproj": {
+              "projectPath": "/Users/francescojr.venditti/GitHub/Refinity/Refinity/Refinity.csproj"
             }
           }
         }

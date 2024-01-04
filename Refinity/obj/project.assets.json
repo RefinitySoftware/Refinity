@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/francesco/.nuget/packages/": {}
+    "/Users/francescojr.venditti/.nuget/packages/": {}
   },
   "project": {
     "version": "0.0.1",
     "restore": {
-      "projectUniqueName": "/Users/francesco/Desktop/Progetti/Refinity/Refinity/Refinity.csproj",
+      "projectUniqueName": "/Users/francescojr.venditti/GitHub/Refinity/Refinity/Refinity.csproj",
       "projectName": "Refinity",
-      "projectPath": "/Users/francesco/Desktop/Progetti/Refinity/Refinity/Refinity.csproj",
-      "packagesPath": "/Users/francesco/.nuget/packages/",
-      "outputPath": "/Users/francesco/Desktop/Progetti/Refinity/Refinity/obj/",
+      "projectPath": "/Users/francescojr.venditti/GitHub/Refinity/Refinity/Refinity.csproj",
+      "packagesPath": "/Users/francescojr.venditti/.nuget/packages/",
+      "outputPath": "/Users/francescojr.venditti/GitHub/Refinity/Refinity/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/francesco/.nuget/NuGet/NuGet.Config"
+        "/Users/francescojr.venditti/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

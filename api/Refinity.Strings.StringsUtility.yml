@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: StringsUtility
     path: Refinity/Strings/StringsUtility.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: RemoveWhitespace
     path: Refinity/Strings/StringsUtility.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: RemoveTabs
     path: Refinity/Strings/StringsUtility.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: RemoveHTMLTags
     path: Refinity/Strings/StringsUtility.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Reverse
     path: Refinity/Strings/StringsUtility.cs
@@ -222,7 +222,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Truncate
     path: Refinity/Strings/StringsUtility.cs
@@ -264,7 +264,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: IsPalindrome
     path: Refinity/Strings/StringsUtility.cs
@@ -303,7 +303,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: SplitCamelCase
     path: Refinity/Strings/StringsUtility.cs
@@ -342,7 +342,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ToPascalCase
     path: Refinity/Strings/StringsUtility.cs
@@ -381,7 +381,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ToBase64
     path: Refinity/Strings/StringsUtility.cs
@@ -420,7 +420,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: FromBase64
     path: Refinity/Strings/StringsUtility.cs
@@ -459,7 +459,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ToBase64
     path: Refinity/Strings/StringsUtility.cs
@@ -501,7 +501,7 @@ items:
   source:
     remote:
       path: Refinity/Strings/StringsUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: FromBase64
     path: Refinity/Strings/StringsUtility.cs

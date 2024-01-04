@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Refinity
-build_property.ProjectDir = /Users/francesco/Desktop/Progetti/Refinity/Refinity/
+build_property.ProjectDir = /Users/francescojr.venditti/GitHub/Refinity/Refinity/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

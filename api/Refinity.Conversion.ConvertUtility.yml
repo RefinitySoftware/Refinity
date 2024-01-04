@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ConvertUtility
     path: Refinity/Conversion/ConvertUtility.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ConvertToBase64
     path: Refinity/Conversion/ConvertUtility.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ConvertCsvToObject
     path: Refinity/Conversion/ConvertUtility.cs
@@ -139,7 +139,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ConvertCsvToDataTable
     path: Refinity/Conversion/ConvertUtility.cs
@@ -180,7 +180,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ConvertTextToCSV
     path: Refinity/Conversion/ConvertUtility.cs

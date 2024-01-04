@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Refinity/Math/Models/LinearRegressionModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: LinearRegressionModel
     path: Refinity/Math/Models/LinearRegressionModel.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: Refinity/Math/Models/LinearRegressionModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: .ctor
     path: Refinity/Math/Models/LinearRegressionModel.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: Refinity/Math/Models/LinearRegressionModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Slope
     path: Refinity/Math/Models/LinearRegressionModel.cs
@@ -119,7 +119,7 @@ items:
   source:
     remote:
       path: Refinity/Math/Models/LinearRegressionModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Intercept
     path: Refinity/Math/Models/LinearRegressionModel.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: Refinity/Math/Models/LinearRegressionModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Correlation
     path: Refinity/Math/Models/LinearRegressionModel.cs

@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Refinity/Date/Models/DateDifferenceModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: DateDifference
     path: Refinity/Date/Models/DateDifferenceModel.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: Refinity/Date/Models/DateDifferenceModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Years
     path: Refinity/Date/Models/DateDifferenceModel.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: Refinity/Date/Models/DateDifferenceModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Months
     path: Refinity/Date/Models/DateDifferenceModel.cs
@@ -114,7 +114,7 @@ items:
   source:
     remote:
       path: Refinity/Date/Models/DateDifferenceModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Days
     path: Refinity/Date/Models/DateDifferenceModel.cs
@@ -143,7 +143,7 @@ items:
   source:
     remote:
       path: Refinity/Date/Models/DateDifferenceModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Hours
     path: Refinity/Date/Models/DateDifferenceModel.cs
@@ -172,7 +172,7 @@ items:
   source:
     remote:
       path: Refinity/Date/Models/DateDifferenceModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Minutes
     path: Refinity/Date/Models/DateDifferenceModel.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: Refinity/Date/Models/DateDifferenceModel.cs
-      branch: main
+      branch: dev
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Seconds
     path: Refinity/Date/Models/DateDifferenceModel.cs
