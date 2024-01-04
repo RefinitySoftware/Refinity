@@ -14,7 +14,7 @@ using Refinity;
 
 Here are various examples to showcase the power and versatility of Refinity in action.
 
-### String Enhancements
+## String Enhancements
 
 ```cs
 using Refinity.Strings;
@@ -32,7 +32,7 @@ class Program
 }
 ```
 
-### Date Operations
+## Date Operations
 
 ```cs
 using Refinity.Date;
@@ -47,7 +47,7 @@ class Program
 }
 ```
 
-### Advanced Use Cases
+## Advanced Use Cases
 
 ```cs
 using Refinity.Finance;
@@ -72,9 +72,9 @@ class Program
 
 Running into issues? Here's a quick guide to common problems and their solutions.
 
-## Additional Resources 📚
+<!-- ## Additional Resources 📚
 
-For more detailed tutorials, visit our [documentation](../api/Refinity.html).
+For more detailed tutorials, visit our [documentation](https://github.com/InfinitySoftware-House/Refinity). -->
 
 ## Community and Support 🤗
 
