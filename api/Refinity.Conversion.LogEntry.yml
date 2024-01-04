@@ -1,0 +1,475 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Conversion.LogEntry
+  commentId: T:Refinity.Conversion.LogEntry
+  id: LogEntry
+  parent: Refinity.Conversion
+  children:
+  - Refinity.Conversion.LogEntry.LogLevel
+  - Refinity.Conversion.LogEntry.Message
+  - Refinity.Conversion.LogEntry.Severity
+  - Refinity.Conversion.LogEntry.Time
+  langs:
+  - csharp
+  - vb
+  name: LogEntry
+  nameWithType: LogEntry
+  fullName: Refinity.Conversion.LogEntry
+  type: Class
+  source:
+    remote:
+      path: Refinity/Conversion/ConvertUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: LogEntry
+    path: Refinity/Conversion/ConvertUtility.cs
+    startLine: 8
+  assemblies:
+  - Refinity
+  namespace: Refinity.Conversion
+  syntax:
+    content: public class LogEntry
+    content.vb: Public Class LogEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Refinity.Conversion.LogEntry.Time
+  commentId: P:Refinity.Conversion.LogEntry.Time
+  id: Time
+  parent: Refinity.Conversion.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: LogEntry.Time
+  fullName: Refinity.Conversion.LogEntry.Time
+  type: Property
+  source:
+    remote:
+      path: Refinity/Conversion/ConvertUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Time
+    path: Refinity/Conversion/ConvertUtility.cs
+    startLine: 10
+  assemblies:
+  - Refinity
+  namespace: Refinity.Conversion
+  syntax:
+    content: public DateTime Time { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property Time As Date
+  overload: Refinity.Conversion.LogEntry.Time*
+- uid: Refinity.Conversion.LogEntry.LogLevel
+  commentId: P:Refinity.Conversion.LogEntry.LogLevel
+  id: LogLevel
+  parent: Refinity.Conversion.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogEntry.LogLevel
+  fullName: Refinity.Conversion.LogEntry.LogLevel
+  type: Property
+  source:
+    remote:
+      path: Refinity/Conversion/ConvertUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: LogLevel
+    path: Refinity/Conversion/ConvertUtility.cs
+    startLine: 11
+  assemblies:
+  - Refinity
+  namespace: Refinity.Conversion
+  syntax:
+    content: public string? LogLevel { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LogLevel As String
+  overload: Refinity.Conversion.LogEntry.LogLevel*
+- uid: Refinity.Conversion.LogEntry.Message
+  commentId: P:Refinity.Conversion.LogEntry.Message
+  id: Message
+  parent: Refinity.Conversion.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: LogEntry.Message
+  fullName: Refinity.Conversion.LogEntry.Message
+  type: Property
+  source:
+    remote:
+      path: Refinity/Conversion/ConvertUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Message
+    path: Refinity/Conversion/ConvertUtility.cs
+    startLine: 12
+  assemblies:
+  - Refinity
+  namespace: Refinity.Conversion
+  syntax:
+    content: public string? Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: Refinity.Conversion.LogEntry.Message*
+- uid: Refinity.Conversion.LogEntry.Severity
+  commentId: P:Refinity.Conversion.LogEntry.Severity
+  id: Severity
+  parent: Refinity.Conversion.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: Severity
+  nameWithType: LogEntry.Severity
+  fullName: Refinity.Conversion.LogEntry.Severity
+  type: Property
+  source:
+    remote:
+      path: Refinity/Conversion/ConvertUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Severity
+    path: Refinity/Conversion/ConvertUtility.cs
+    startLine: 13
+  assemblies:
+  - Refinity
+  namespace: Refinity.Conversion
+  syntax:
+    content: public int Severity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Severity As Integer
+  overload: Refinity.Conversion.LogEntry.Severity*
+references:
+- uid: Refinity.Conversion
+  commentId: N:Refinity.Conversion
+  href: Refinity.html
+  name: Refinity.Conversion
+  nameWithType: Refinity.Conversion
+  fullName: Refinity.Conversion
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Conversion
+    name: Conversion
+    href: Refinity.Conversion.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Conversion
+    name: Conversion
+    href: Refinity.Conversion.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Refinity.Conversion.LogEntry.Time*
+  commentId: Overload:Refinity.Conversion.LogEntry.Time
+  href: Refinity.Conversion.LogEntry.html#Refinity_Conversion_LogEntry_Time
+  name: Time
+  nameWithType: LogEntry.Time
+  fullName: Refinity.Conversion.LogEntry.Time
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Refinity.Conversion.LogEntry.LogLevel*
+  commentId: Overload:Refinity.Conversion.LogEntry.LogLevel
+  href: Refinity.Conversion.LogEntry.html#Refinity_Conversion_LogEntry_LogLevel
+  name: LogLevel
+  nameWithType: LogEntry.LogLevel
+  fullName: Refinity.Conversion.LogEntry.LogLevel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Refinity.Conversion.LogEntry.Message*
+  commentId: Overload:Refinity.Conversion.LogEntry.Message
+  href: Refinity.Conversion.LogEntry.html#Refinity_Conversion_LogEntry_Message
+  name: Message
+  nameWithType: LogEntry.Message
+  fullName: Refinity.Conversion.LogEntry.Message
+- uid: Refinity.Conversion.LogEntry.Severity*
+  commentId: Overload:Refinity.Conversion.LogEntry.Severity
+  href: Refinity.Conversion.LogEntry.html#Refinity_Conversion_LogEntry_Severity
+  name: Severity
+  nameWithType: LogEntry.Severity
+  fullName: Refinity.Conversion.LogEntry.Severity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

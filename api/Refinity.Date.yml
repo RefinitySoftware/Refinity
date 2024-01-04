@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Date
+  commentId: N:Refinity.Date
+  id: Refinity.Date
+  children:
+  - Refinity.Date.DateDifference
+  - Refinity.Date.DateUtility
+  langs:
+  - csharp
+  - vb
+  name: Refinity.Date
+  nameWithType: Refinity.Date
+  fullName: Refinity.Date
+  type: Namespace
+  assemblies:
+  - Refinity
+references:
+- uid: Refinity.Date.DateUtility
+  commentId: T:Refinity.Date.DateUtility
+  href: Refinity.Date.DateUtility.html
+  name: DateUtility
+  nameWithType: DateUtility
+  fullName: Refinity.Date.DateUtility
+- uid: Refinity.Date.DateDifference
+  commentId: T:Refinity.Date.DateDifference
+  parent: Refinity.Date
+  href: Refinity.Date.DateDifference.html
+  name: DateDifference
+  nameWithType: DateDifference
+  fullName: Refinity.Date.DateDifference
+- uid: Refinity.Date
+  commentId: N:Refinity.Date
+  href: Refinity.html
+  name: Refinity.Date
+  nameWithType: Refinity.Date
+  fullName: Refinity.Date
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Date
+    name: Date
+    href: Refinity.Date.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Date
+    name: Date
+    href: Refinity.Date.html

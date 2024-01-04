@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Logging.Models
+  commentId: N:Refinity.Logging.Models
+  id: Refinity.Logging.Models
+  children:
+  - Refinity.Logging.Models.LogColorHelper
+  langs:
+  - csharp
+  - vb
+  name: Refinity.Logging.Models
+  nameWithType: Refinity.Logging.Models
+  fullName: Refinity.Logging.Models
+  type: Namespace
+  assemblies:
+  - Refinity
+references:
+- uid: Refinity.Logging.Models.LogColorHelper
+  commentId: T:Refinity.Logging.Models.LogColorHelper
+  href: Refinity.Logging.Models.LogColorHelper.html
+  name: LogColorHelper
+  nameWithType: LogColorHelper
+  fullName: Refinity.Logging.Models.LogColorHelper
