@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Refinity/Benchmark/Models/BenchmarkModels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: BenchmarkModels
     path: Refinity/Benchmark/Models/BenchmarkModels.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: Refinity/Benchmark/Models/BenchmarkModels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: .ctor
     path: Refinity/Benchmark/Models/BenchmarkModels.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: Refinity/Benchmark/Models/BenchmarkModels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Result
     path: Refinity/Benchmark/Models/BenchmarkModels.cs
@@ -114,7 +114,7 @@ items:
   source:
     remote:
       path: Refinity/Benchmark/Models/BenchmarkModels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Method
     path: Refinity/Benchmark/Models/BenchmarkModels.cs
@@ -143,7 +143,7 @@ items:
   source:
     remote:
       path: Refinity/Benchmark/Models/BenchmarkModels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ElapsedTimeMs
     path: Refinity/Benchmark/Models/BenchmarkModels.cs
@@ -172,7 +172,7 @@ items:
   source:
     remote:
       path: Refinity/Benchmark/Models/BenchmarkModels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Exception
     path: Refinity/Benchmark/Models/BenchmarkModels.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: Refinity/Benchmark/Models/BenchmarkModels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Iterations
     path: Refinity/Benchmark/Models/BenchmarkModels.cs

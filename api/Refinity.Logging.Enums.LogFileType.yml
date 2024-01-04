@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogFiles.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: LogFileType
     path: Refinity/Logging/Enums/LogFiles.cs
@@ -44,7 +44,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogFiles.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: RTF
     path: Refinity/Logging/Enums/LogFiles.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogFiles.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: TXT
     path: Refinity/Logging/Enums/LogFiles.cs
@@ -96,7 +96,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogFiles.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CONSOLE
     path: Refinity/Logging/Enums/LogFiles.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogFiles.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: LOG
     path: Refinity/Logging/Enums/LogFiles.cs

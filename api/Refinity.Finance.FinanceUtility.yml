@@ -30,7 +30,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: FinanceUtility
     path: Refinity/Finance/FinanceUtility.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: DifferencePercentage
     path: Refinity/Finance/FinanceUtility.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: DifferencePercentage
     path: Refinity/Finance/FinanceUtility.cs
@@ -149,7 +149,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateInterest
     path: Refinity/Finance/FinanceUtility.cs
@@ -193,7 +193,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ApplyTax
     path: Refinity/Finance/FinanceUtility.cs
@@ -234,7 +234,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: DaysUntilDue
     path: Refinity/Finance/FinanceUtility.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: BreakEvenPoint
     path: Refinity/Finance/FinanceUtility.cs
@@ -316,7 +316,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateCompoundInterest
     path: Refinity/Finance/FinanceUtility.cs
@@ -361,7 +361,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ToCurrency
     path: Refinity/Finance/FinanceUtility.cs
@@ -400,7 +400,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ToCurrency
     path: Refinity/Finance/FinanceUtility.cs
@@ -441,7 +441,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: PredictFutureValue
     path: Refinity/Finance/FinanceUtility.cs
@@ -485,7 +485,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: PredictFutureValue
     path: Refinity/Finance/FinanceUtility.cs
@@ -532,7 +532,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: PaybackPeriod
     path: Refinity/Finance/FinanceUtility.cs
@@ -573,7 +573,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateSimpleInterest
     path: Refinity/Finance/FinanceUtility.cs
@@ -617,7 +617,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateNetPresentValue
     path: Refinity/Finance/FinanceUtility.cs
@@ -658,7 +658,7 @@ items:
   source:
     remote:
       path: Refinity/Finance/FinanceUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateInternalRateOfReturn
     path: Refinity/Finance/FinanceUtility.cs

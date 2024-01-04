@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Models/LoggingModels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: LogColorHelper
     path: Refinity/Logging/Models/LoggingModels.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Models/LoggingModels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: GetLogLevelColor
     path: Refinity/Logging/Models/LoggingModels.cs

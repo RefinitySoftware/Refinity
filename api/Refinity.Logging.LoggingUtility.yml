@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/LoggingUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: LoggingUtility
     path: Refinity/Logging/LoggingUtility.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/LoggingUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: .ctor
     path: Refinity/Logging/LoggingUtility.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/LoggingUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Info
     path: Refinity/Logging/LoggingUtility.cs
@@ -131,7 +131,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/LoggingUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Debug
     path: Refinity/Logging/LoggingUtility.cs
@@ -169,7 +169,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/LoggingUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Warn
     path: Refinity/Logging/LoggingUtility.cs
@@ -207,7 +207,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/LoggingUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Error
     path: Refinity/Logging/LoggingUtility.cs
@@ -245,7 +245,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/LoggingUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Fatal
     path: Refinity/Logging/LoggingUtility.cs
@@ -283,7 +283,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/LoggingUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ConvertLogToCSV
     path: Refinity/Logging/LoggingUtility.cs

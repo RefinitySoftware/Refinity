@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: LogEntry
     path: Refinity/Conversion/ConvertUtility.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Time
     path: Refinity/Conversion/ConvertUtility.cs
@@ -83,7 +83,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: LogLevel
     path: Refinity/Conversion/ConvertUtility.cs
@@ -112,7 +112,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Message
     path: Refinity/Conversion/ConvertUtility.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: Refinity/Conversion/ConvertUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: Severity
     path: Refinity/Conversion/ConvertUtility.cs

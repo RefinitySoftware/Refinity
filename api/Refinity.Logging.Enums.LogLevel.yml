@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogLevels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: LogLevel
     path: Refinity/Logging/Enums/LogLevels.cs
@@ -46,7 +46,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogLevels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: TRACE
     path: Refinity/Logging/Enums/LogLevels.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogLevels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: DEBUG
     path: Refinity/Logging/Enums/LogLevels.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogLevels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: INFO
     path: Refinity/Logging/Enums/LogLevels.cs
@@ -124,7 +124,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogLevels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: WARNING
     path: Refinity/Logging/Enums/LogLevels.cs
@@ -150,7 +150,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogLevels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ERROR
     path: Refinity/Logging/Enums/LogLevels.cs
@@ -176,7 +176,7 @@ items:
   source:
     remote:
       path: Refinity/Logging/Enums/LogLevels.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: FATAL
     path: Refinity/Logging/Enums/LogLevels.cs

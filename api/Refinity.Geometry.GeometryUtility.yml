@@ -37,7 +37,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: GeometryUtility
     path: Refinity/Geometry/GeometryUtility.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: AreaOfCircle
     path: Refinity/Geometry/GeometryUtility.cs
@@ -110,7 +110,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: AreaOfTriangle
     path: Refinity/Geometry/GeometryUtility.cs
@@ -151,7 +151,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: AreaOfRectangle
     path: Refinity/Geometry/GeometryUtility.cs
@@ -192,7 +192,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: AreaOfSquare
     path: Refinity/Geometry/GeometryUtility.cs
@@ -230,7 +230,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: AreaOfTrapezoid
     path: Refinity/Geometry/GeometryUtility.cs
@@ -274,7 +274,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: AreaOfParallelogram
     path: Refinity/Geometry/GeometryUtility.cs
@@ -315,7 +315,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: AreaOfRhombus
     path: Refinity/Geometry/GeometryUtility.cs
@@ -356,7 +356,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: AreaOfSector
     path: Refinity/Geometry/GeometryUtility.cs
@@ -397,7 +397,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ToCartesianCoordinates
     path: Refinity/Geometry/GeometryUtility.cs
@@ -438,7 +438,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: ToPolarCoordinates
     path: Refinity/Geometry/GeometryUtility.cs
@@ -479,7 +479,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateSlope
     path: Refinity/Geometry/GeometryUtility.cs
@@ -526,7 +526,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateDistance
     path: Refinity/Geometry/GeometryUtility.cs
@@ -573,7 +573,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateSquarePerimeter
     path: Refinity/Geometry/GeometryUtility.cs
@@ -611,7 +611,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateRectanglePerimeter
     path: Refinity/Geometry/GeometryUtility.cs
@@ -652,7 +652,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateRectangleDiagonal
     path: Refinity/Geometry/GeometryUtility.cs
@@ -693,7 +693,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateTrapezoidPerimeter
     path: Refinity/Geometry/GeometryUtility.cs
@@ -740,7 +740,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateParallelogramPerimeter
     path: Refinity/Geometry/GeometryUtility.cs
@@ -781,7 +781,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateRhombusPerimeter
     path: Refinity/Geometry/GeometryUtility.cs
@@ -819,7 +819,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateIsoscelesTrapezoidPerimeter
     path: Refinity/Geometry/GeometryUtility.cs
@@ -863,7 +863,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateIsoscelesTrapezoidSide
     path: Refinity/Geometry/GeometryUtility.cs
@@ -907,7 +907,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateRightTrapezoidPerimeter
     path: Refinity/Geometry/GeometryUtility.cs
@@ -954,7 +954,7 @@ items:
   source:
     remote:
       path: Refinity/Geometry/GeometryUtility.cs
-      branch: dev
+      branch: main
       repo: https://github.com/InfinitySoftware-House/Refinity.git
     id: CalculateRightTrapezoidDiagonal
     path: Refinity/Geometry/GeometryUtility.cs
