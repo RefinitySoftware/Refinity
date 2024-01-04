@@ -26,7 +26,7 @@ public static class FinanceUtility
     {
         return (value - otherValue) / otherValue * 100;
     }
-    
+
     /// <summary>
     /// Calculates the interest based on the principal amount, interest rate, and time period.
     /// </summary>
@@ -77,7 +77,6 @@ public static class FinanceUtility
         return fixedCosts / (sellingPrice - variableCosts);
     }
 
-    
     /// <summary>
     /// Calculates the compound interest based on the principal amount, interest rate, and time period.
     /// </summary>

@@ -129,6 +129,12 @@ public static class DateUtility
         return new DateTime[] { startOfWeek, endOfWeek };
     }
 
+    /// <summary>
+    /// Calculates the difference between two DateTime values.
+    /// </summary>
+    /// <param name="from">The starting DateTime value.</param>
+    /// <param name="to">The ending DateTime value.</param>
+    /// <returns>A DateDifference object containing the difference between the two DateTime values.</returns>
     public static DateDifference GetDifference(this DateTime from, DateTime to)
     {
         DateDifference difference = new();

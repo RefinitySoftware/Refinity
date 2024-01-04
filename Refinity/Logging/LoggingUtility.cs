@@ -1,6 +1,5 @@
 using System.Globalization;
 using System.Text;
-using Refinity.Logging.Models;
 using Refinity.Conversion;
 using Refinity.Enums;
 
@@ -13,7 +12,8 @@ namespace Refinity.Logging
 
         private string checkFileExtension(string fileName)
         {
-            if(fileName.Contains('.')){
+            if (fileName.Contains('.'))
+            {
                 fileName = fileName[..fileName.LastIndexOf('.')];
             }
             return fileName;
@@ -37,7 +37,7 @@ namespace Refinity.Logging
                     logFileName += EnumFileTypes.LOG.GetDescription();
                     break;
             }
-            EnumFileTypes = EnumFileTypes;
+            this.EnumFileTypes = EnumFileTypes;
             PathToLogFile = Path.Combine(Environment.CurrentDirectory, logFileName);
         }
 
@@ -79,11 +79,11 @@ namespace Refinity.Logging
             {
                 throw new ArgumentNullException(nameof(message), "The message cannot be null or empty.");
             }
-            
+
             DateTime timestamp = DateTime.Now;
-            ConsoleColor logColors = LogColorHelper.GetLogLevelColor(logLevel);
+            ConsoleColor logColors = GetLogLevelColor(logLevel);
             StringBuilder stringBuilder = new StringBuilder();
-            
+
             stringBuilder.AppendLine($"{timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture)} | {logLevel} | {message} | {severity}");
 
             switch (EnumFileTypes)
@@ -119,7 +119,7 @@ namespace Refinity.Logging
         {
             Log(message, EnumLogLevel.DEBUG, severity);
         }
- 
+
         /// <summary>
         /// Logs a warning message.
         /// </summary>
@@ -153,8 +153,30 @@ namespace Refinity.Logging
         public byte[] ConvertLogToCSV(char csvDelimiter = ';')
         {
             char delimiter = '|';
-            string[] csvHeaders = {"Time", "LogLevel", "Message", "Severity"};
+            string[] csvHeaders = { "Time", "LogLevel", "Message", "Severity" };
             return ConvertUtility.ConvertTextToCSV(PathToLogFile, delimiter, csvDelimiter, csvHeaders);
+        }
+
+        private static ConsoleColor GetLogLevelColor(EnumLogLevel logLevel)
+        {
+            switch (logLevel)
+            {
+                case EnumLogLevel.TRACE:
+                    return ConsoleColor.Gray;
+                case EnumLogLevel.DEBUG:
+                    return ConsoleColor.Blue;
+                case EnumLogLevel.INFO:
+                    return ConsoleColor.Green;
+                case EnumLogLevel.WARNING:
+                    return ConsoleColor.Yellow;
+                case EnumLogLevel.ERROR:
+                    return ConsoleColor.Red;
+                case EnumLogLevel.FATAL:
+                    return ConsoleColor.Magenta;
+                default:
+                    return ConsoleColor.White;
+            }
         }
     }
 }
+
