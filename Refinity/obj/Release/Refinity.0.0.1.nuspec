@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Refinity</id>
+    <version>0.0.1</version>
+    <authors>InfinitySoftware - Reflecto</authors>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <description>Package Description</description>
+    <copyright>Copyright (c) 2024 InfinitySoftware - Reflecto</copyright>
+    <repository type="git" url="https://github.com/InfinitySoftware-House/Refinity" commit="18bd8c70e61bfef29fbd0c9c1cf40a534042e5e8" />
+    <dependencies>
+      <group targetFramework="net7.0">
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/francesco/Desktop/Progetti/Refinity/Refinity/bin/Release/net7.0/Refinity.dll" target="lib/net7.0/Refinity.dll" />
+    <file src="/Users/francesco/Desktop/Progetti/Refinity/Refinity/README.md" target="/README.md" />
+    <file src="/Users/francesco/Desktop/Progetti/Refinity/Refinity/LICENSE.txt" target="LICENSE.txt" />
+    <file src="/Users/francesco/Desktop/Progetti/Refinity/Refinity/icon.png" target="/icon.png" />
+  </files>
+</package>

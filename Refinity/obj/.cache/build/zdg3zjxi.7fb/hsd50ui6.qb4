@@ -1,0 +1,2599 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MathUtility
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MathUtility
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Refinity.Math.MathUtility">
+  
+  
+  <h1 id="Refinity_Math_MathUtility" data-uid="Refinity.Math.MathUtility" class="text-break">Class MathUtility
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MathUtility</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Refinity.Math.html">Refinity.Math</a></h6>
+  <h6><strong>Assembly</strong>: Refinity.dll</h6>
+  <h5 id="Refinity_Math_MathUtility_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MathUtility : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_Clamp_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.Clamp(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L412">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_Clamp_" data-uid="Refinity.Math.MathUtility.Clamp*"></a>
+  <h4 id="Refinity_Math_MathUtility_Clamp_System_Double_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.Clamp(System.Double,System.Double,System.Double)">Clamp(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Clamps a value between a minimum and maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Clamp(this double value, double min, double max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to clamp.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The clamped value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_ConvertToBaseBinary_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.ConvertToBaseBinary(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L143">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_ConvertToBaseBinary_" data-uid="Refinity.Math.MathUtility.ConvertToBaseBinary*"></a>
+  <h4 id="Refinity_Math_MathUtility_ConvertToBaseBinary_System_Int32_" data-uid="Refinity.Math.MathUtility.ConvertToBaseBinary(System.Int32)">ConvertToBaseBinary(Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts an integer to its binary representation in base 2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ConvertToBaseBinary(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The integer to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The binary representation of the input integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_ConvertToBaseHexadecimal_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.ConvertToBaseHexadecimal(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L185">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_ConvertToBaseHexadecimal_" data-uid="Refinity.Math.MathUtility.ConvertToBaseHexadecimal*"></a>
+  <h4 id="Refinity_Math_MathUtility_ConvertToBaseHexadecimal_System_Int32_" data-uid="Refinity.Math.MathUtility.ConvertToBaseHexadecimal(System.Int32)">ConvertToBaseHexadecimal(Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts an integer to its hexadecimal representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ConvertToBaseHexadecimal(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The integer to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The hexadecimal representation of the input integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_ConvertToBaseOctal_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.ConvertToBaseOctal(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L164">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_ConvertToBaseOctal_" data-uid="Refinity.Math.MathUtility.ConvertToBaseOctal*"></a>
+  <h4 id="Refinity_Math_MathUtility_ConvertToBaseOctal_System_Int32_" data-uid="Refinity.Math.MathUtility.ConvertToBaseOctal(System.Int32)">ConvertToBaseOctal(Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts an integer to its octal representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ConvertToBaseOctal(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The integer to be converted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The octal representation of the input integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_DegreesToHMS_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.DegreesToHMS(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L561">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_DegreesToHMS_" data-uid="Refinity.Math.MathUtility.DegreesToHMS*"></a>
+  <h4 id="Refinity_Math_MathUtility_DegreesToHMS_System_Double_" data-uid="Refinity.Math.MathUtility.DegreesToHMS(System.Double)">DegreesToHMS(Double)</h4>
+  <div class="markdown level1 summary"><p>Converts degrees to hours, minutes, and seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (int hours, int minutes, double seconds) DegreesToHMS(double degrees)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">degrees</span></td>
+        <td><p>The degrees to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><p>A tuple containing the hours, minutes, and seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_DegreesToHMSString_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.DegreesToHMSString(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L550">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_DegreesToHMSString_" data-uid="Refinity.Math.MathUtility.DegreesToHMSString*"></a>
+  <h4 id="Refinity_Math_MathUtility_DegreesToHMSString_System_Double_" data-uid="Refinity.Math.MathUtility.DegreesToHMSString(System.Double)">DegreesToHMSString(Double)</h4>
+  <div class="markdown level1 summary"><p>Converts the given degrees to a string representation in hours, minutes, and seconds format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string DegreesToHMSString(this double degrees)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">degrees</span></td>
+        <td><p>The degrees to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string representation of the degrees in hours, minutes, and seconds format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_DegreesToRadians_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.DegreesToRadians(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L587">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_DegreesToRadians_" data-uid="Refinity.Math.MathUtility.DegreesToRadians*"></a>
+  <h4 id="Refinity_Math_MathUtility_DegreesToRadians_System_Double_" data-uid="Refinity.Math.MathUtility.DegreesToRadians(System.Double)">DegreesToRadians(Double)</h4>
+  <div class="markdown level1 summary"><p>Converts degrees to radians.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DegreesToRadians(this double degrees)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">degrees</span></td>
+        <td><p>The angle in degrees.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The angle in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_Divisors_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.Divisors(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L422">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_Divisors_" data-uid="Refinity.Math.MathUtility.Divisors*"></a>
+  <h4 id="Refinity_Math_MathUtility_Divisors_System_Int32_" data-uid="Refinity.Math.MathUtility.Divisors(System.Int32)">Divisors(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns an array of divisors for the given integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] Divisors(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The integer for which to find divisors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p>An array of divisors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_Factorial_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.Factorial(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L12">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_Factorial_" data-uid="Refinity.Math.MathUtility.Factorial*"></a>
+  <h4 id="Refinity_Math_MathUtility_Factorial_System_Int32_" data-uid="Refinity.Math.MathUtility.Factorial(System.Int32)">Factorial(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the factorial of a non-negative integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Factorial(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The non-negative integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The factorial of the input integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_Fibonacci_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.Fibonacci(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L216">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_Fibonacci_" data-uid="Refinity.Math.MathUtility.Fibonacci*"></a>
+  <h4 id="Refinity_Math_MathUtility_Fibonacci_System_Int32_" data-uid="Refinity.Math.MathUtility.Fibonacci(System.Int32)">Fibonacci(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the Fibonacci number for a given integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Fibonacci(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The input integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The Fibonacci number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_GetStandardDeviation_System_Double___.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.GetStandardDeviation(System.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L246">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_GetStandardDeviation_" data-uid="Refinity.Math.MathUtility.GetStandardDeviation*"></a>
+  <h4 id="Refinity_Math_MathUtility_GetStandardDeviation_System_Double___" data-uid="Refinity.Math.MathUtility.GetStandardDeviation(System.Double[])">GetStandardDeviation(Double[])</h4>
+  <div class="markdown level1 summary"><p>Calculates the mean and standard deviation of an array of doubles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (double mean, double standardDeviation) GetStandardDeviation(this double[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The array of doubles.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Double</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><p>A tuple containing the mean and standard deviation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_GetStandardDeviation_System_Int32___.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.GetStandardDeviation(System.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L235">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_GetStandardDeviation_" data-uid="Refinity.Math.MathUtility.GetStandardDeviation*"></a>
+  <h4 id="Refinity_Math_MathUtility_GetStandardDeviation_System_Int32___" data-uid="Refinity.Math.MathUtility.GetStandardDeviation(System.Int32[])">GetStandardDeviation(Int32[])</h4>
+  <div class="markdown level1 summary"><p>Calculates the mean and standard deviation of an array of integers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (double mean, double standardDeviation) GetStandardDeviation(this int[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The array of integers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Double</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><p>A tuple containing the mean and standard deviation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_GreatestCommonDivisor_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.GreatestCommonDivisor(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L114">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_GreatestCommonDivisor_" data-uid="Refinity.Math.MathUtility.GreatestCommonDivisor*"></a>
+  <h4 id="Refinity_Math_MathUtility_GreatestCommonDivisor_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.GreatestCommonDivisor(System.Int32,System.Int32)">GreatestCommonDivisor(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the greatest common divisor (GCD) of two integers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GreatestCommonDivisor(this int a, int b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first integer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The greatest common divisor of the two integers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_Invert_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.Invert(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L530">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_Invert_" data-uid="Refinity.Math.MathUtility.Invert*"></a>
+  <h4 id="Refinity_Math_MathUtility_Invert_System_Double_" data-uid="Refinity.Math.MathUtility.Invert(System.Double)">Invert(Double)</h4>
+  <div class="markdown level1 summary"><p>Inverts the specified value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Invert(this double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to invert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The inverted value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_Invert_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.Invert(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L540">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_Invert_" data-uid="Refinity.Math.MathUtility.Invert*"></a>
+  <h4 id="Refinity_Math_MathUtility_Invert_System_Int32_" data-uid="Refinity.Math.MathUtility.Invert(System.Int32)">Invert(Int32)</h4>
+  <div class="markdown level1 summary"><p>Inverts the specified integer value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Invert(this int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to invert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The inverted value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_IsApproximatelyEqualTo_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.IsApproximatelyEqualTo(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L400">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_IsApproximatelyEqualTo_" data-uid="Refinity.Math.MathUtility.IsApproximatelyEqualTo*"></a>
+  <h4 id="Refinity_Math_MathUtility_IsApproximatelyEqualTo_System_Double_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.IsApproximatelyEqualTo(System.Double,System.Double,System.Double)">IsApproximatelyEqualTo(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified value is approximately equal to the other value within the given tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsApproximatelyEqualTo(this double value, double otherValue, double tolerance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">otherValue</span></td>
+        <td><p>The other value to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>The tolerance within which the values are considered equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the values are approximately equal; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_IsDivisibleBy_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.IsDivisibleBy(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L90">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_IsDivisibleBy_" data-uid="Refinity.Math.MathUtility.IsDivisibleBy*"></a>
+  <h4 id="Refinity_Math_MathUtility_IsDivisibleBy_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.IsDivisibleBy(System.Int32,System.Int32)">IsDivisibleBy(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Determines whether an integer is divisible by a given divisor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDivisibleBy(this int n, int divisor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The integer to check for divisibility.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">divisor</span></td>
+        <td><p>The divisor to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the integer is divisible by the divisor, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_IsDivisibleBy_System_Int32_System_Int32_System_Int32__.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.IsDivisibleBy(System.Int32%2CSystem.Int32%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L102">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_IsDivisibleBy_" data-uid="Refinity.Math.MathUtility.IsDivisibleBy*"></a>
+  <h4 id="Refinity_Math_MathUtility_IsDivisibleBy_System_Int32_System_Int32_System_Int32__" data-uid="Refinity.Math.MathUtility.IsDivisibleBy(System.Int32,System.Int32,System.Int32@)">IsDivisibleBy(Int32, Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Determines whether an integer is divisible by a given divisor and calculates the quotient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDivisibleBy(this int n, int divisor, out int quotient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The integer to check for divisibility.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">divisor</span></td>
+        <td><p>The divisor to check against.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">quotient</span></td>
+        <td><p>The calculated quotient if the integer is divisible by the divisor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the integer is divisible by the divisor, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_IsEven_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.IsEven(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L69">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_IsEven_" data-uid="Refinity.Math.MathUtility.IsEven*"></a>
+  <h4 id="Refinity_Math_MathUtility_IsEven_System_Int32_" data-uid="Refinity.Math.MathUtility.IsEven(System.Int32)">IsEven(Int32)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified integer is even.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEven(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The integer to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the integer is even; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_IsInRange_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.IsInRange(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L477">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_IsInRange_" data-uid="Refinity.Math.MathUtility.IsInRange*"></a>
+  <h4 id="Refinity_Math_MathUtility_IsInRange_System_Double_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.IsInRange(System.Double,System.Double,System.Double)">IsInRange(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified value is within the specified range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInRange(this double value, double min, double max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value of the range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value of the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the value is within the range; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_IsOdd_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.IsOdd(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L79">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_IsOdd_" data-uid="Refinity.Math.MathUtility.IsOdd*"></a>
+  <h4 id="Refinity_Math_MathUtility_IsOdd_System_Int32_" data-uid="Refinity.Math.MathUtility.IsOdd(System.Int32)">IsOdd(Int32)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified integer is odd.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOdd(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The integer to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the specified integer is odd; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_IsPrime_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.IsPrime(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L50">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_IsPrime_" data-uid="Refinity.Math.MathUtility.IsPrime*"></a>
+  <h4 id="Refinity_Math_MathUtility_IsPrime_System_Double_" data-uid="Refinity.Math.MathUtility.IsPrime(System.Double)">IsPrime(Double)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified number is a prime number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPrime(this double n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The number to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the number is prime; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_IsPrime_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.IsPrime(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L31">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_IsPrime_" data-uid="Refinity.Math.MathUtility.IsPrime*"></a>
+  <h4 id="Refinity_Math_MathUtility_IsPrime_System_Int32_" data-uid="Refinity.Math.MathUtility.IsPrime(System.Int32)">IsPrime(Int32)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified number is a prime number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPrime(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The number to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the number is prime; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_LeastCommonMultiple_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.LeastCommonMultiple(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L133">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_LeastCommonMultiple_" data-uid="Refinity.Math.MathUtility.LeastCommonMultiple*"></a>
+  <h4 id="Refinity_Math_MathUtility_LeastCommonMultiple_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.LeastCommonMultiple(System.Int32,System.Int32)">LeastCommonMultiple(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the least common multiple (LCM) of two integers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LeastCommonMultiple(this int a, int b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first integer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The least common multiple of the two integers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_LogBaseN_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.LogBaseN(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L460">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_LogBaseN_" data-uid="Refinity.Math.MathUtility.LogBaseN*"></a>
+  <h4 id="Refinity_Math_MathUtility_LogBaseN_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.LogBaseN(System.Double,System.Double)">LogBaseN(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the logarithm of a specified value in a specified base.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double LogBaseN(this double value, double n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value for which to calculate the logarithm.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The base of the logarithm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The logarithm of the specified value in the specified base.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_MatrixAddition_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.MatrixAddition(System.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L665">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_MatrixAddition_" data-uid="Refinity.Math.MathUtility.MatrixAddition*"></a>
+  <h4 id="Refinity_Math_MathUtility_MatrixAddition_System_Object_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixAddition(System.Object,System.Object)">MatrixAddition(Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds two matrices together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixAddition(dynamic matrix1, dynamic matrix2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">matrix1</span></td>
+        <td><p>The first matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">matrix2</span></td>
+        <td><p>The second matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The result of the matrix addition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_MatrixInverse_System_Object_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.MatrixInverse(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L842">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_MatrixInverse_" data-uid="Refinity.Math.MathUtility.MatrixInverse*"></a>
+  <h4 id="Refinity_Math_MathUtility_MatrixInverse_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixInverse(System.Object)">MatrixInverse(Object)</h4>
+  <div class="markdown level1 summary"><p>Represents a type that can hold values of any type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixInverse(dynamic matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_MatrixMultiplication_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.MatrixMultiplication(System.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L721">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_MatrixMultiplication_" data-uid="Refinity.Math.MathUtility.MatrixMultiplication*"></a>
+  <h4 id="Refinity_Math_MathUtility_MatrixMultiplication_System_Object_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixMultiplication(System.Object,System.Object)">MatrixMultiplication(Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Performs matrix multiplication on two dynamic matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixMultiplication(dynamic matrix1, dynamic matrix2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">matrix1</span></td>
+        <td><p>The first matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">matrix2</span></td>
+        <td><p>The second matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The result of the matrix multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_MatrixScalarMultiplication_System_Object_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.MatrixScalarMultiplication(System.Object%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L753">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_MatrixScalarMultiplication_" data-uid="Refinity.Math.MathUtility.MatrixScalarMultiplication*"></a>
+  <h4 id="Refinity_Math_MathUtility_MatrixScalarMultiplication_System_Object_System_Double_" data-uid="Refinity.Math.MathUtility.MatrixScalarMultiplication(System.Object,System.Double)">MatrixScalarMultiplication(Object, Double)</h4>
+  <div class="markdown level1 summary"><p>Performs scalar multiplication on a matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixScalarMultiplication(dynamic matrix, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td><p>The matrix to be multiplied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>The scalar value to multiply the matrix by.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The result of the matrix scalar multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_MatrixSubtraction_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.MatrixSubtraction(System.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L693">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_MatrixSubtraction_" data-uid="Refinity.Math.MathUtility.MatrixSubtraction*"></a>
+  <h4 id="Refinity_Math_MathUtility_MatrixSubtraction_System_Object_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixSubtraction(System.Object,System.Object)">MatrixSubtraction(Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Performs subtraction of two matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixSubtraction(dynamic matrix1, dynamic matrix2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">matrix1</span></td>
+        <td><p>The first matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">matrix2</span></td>
+        <td><p>The second matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The result of the matrix subtraction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_MatrixTranspose_System_Object_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.MatrixTranspose(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L775">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_MatrixTranspose_" data-uid="Refinity.Math.MathUtility.MatrixTranspose*"></a>
+  <h4 id="Refinity_Math_MathUtility_MatrixTranspose_System_Object_" data-uid="Refinity.Math.MathUtility.MatrixTranspose(System.Object)">MatrixTranspose(Object)</h4>
+  <div class="markdown level1 summary"><p>Transposes a matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic MatrixTranspose(dynamic matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td><p>The matrix to transpose.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The transposed matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_Median_System_Double___.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.Median(System.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L607">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_Median_" data-uid="Refinity.Math.MathUtility.Median*"></a>
+  <h4 id="Refinity_Math_MathUtility_Median_System_Double___" data-uid="Refinity.Math.MathUtility.Median(System.Double[])">Median(Double[])</h4>
+  <div class="markdown level1 summary"><p>Calculates the median value of an array of numbers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Median(params double[] numbers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">numbers</span></td>
+        <td><p>The array of numbers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The median value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_Mode_System_Double___.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.Mode(System.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L628">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_Mode_" data-uid="Refinity.Math.MathUtility.Mode*"></a>
+  <h4 id="Refinity_Math_MathUtility_Mode_System_Double___" data-uid="Refinity.Math.MathUtility.Mode(System.Double[])">Mode(Double[])</h4>
+  <div class="markdown level1 summary"><p>Calculates the mode value of an array of numbers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Mode(params double[] numbers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">numbers</span></td>
+        <td><p>The array of numbers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The mode value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_NextPrime_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.NextPrime(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L326">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_NextPrime_" data-uid="Refinity.Math.MathUtility.NextPrime*"></a>
+  <h4 id="Refinity_Math_MathUtility_NextPrime_System_Double_" data-uid="Refinity.Math.MathUtility.NextPrime(System.Double)">NextPrime(Double)</h4>
+  <div class="markdown level1 summary"><p>Finds the next prime number greater than the specified number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double NextPrime(this double n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The number to find the next prime number after.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The next prime number greater than <code data-dev-comment-type="paramref" class="paramref">n</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_NextPrime_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.NextPrime(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L351">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_NextPrime_" data-uid="Refinity.Math.MathUtility.NextPrime*"></a>
+  <h4 id="Refinity_Math_MathUtility_NextPrime_System_Int32_" data-uid="Refinity.Math.MathUtility.NextPrime(System.Int32)">NextPrime(Int32)</h4>
+  <div class="markdown level1 summary"><p>Finds the next prime number greater than the specified number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NextPrime(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The number to find the next prime number after.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The next prime number greater than <code data-dev-comment-type="paramref" class="paramref">n</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_Normalize_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.Normalize(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L441">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_Normalize_" data-uid="Refinity.Math.MathUtility.Normalize*"></a>
+  <h4 id="Refinity_Math_MathUtility_Normalize_System_Double_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.Normalize(System.Double,System.Double,System.Double)">Normalize(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Normalizes a value within a specified range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Normalize(this double value, double min, double max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be normalized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value of the range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value of the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The normalized value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_PercentageOf_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.PercentageOf(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L377">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_PercentageOf_" data-uid="Refinity.Math.MathUtility.PercentageOf*"></a>
+  <h4 id="Refinity_Math_MathUtility_PercentageOf_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.PercentageOf(System.Double,System.Double)">PercentageOf(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the percentage of a value relative to another value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PercentageOf(this double value, double otherValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to calculate the percentage of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">otherValue</span></td>
+        <td><p>The value to calculate the percentage relative to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The percentage of the value relative to the other value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_PercentageOf_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.PercentageOf(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L388">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_PercentageOf_" data-uid="Refinity.Math.MathUtility.PercentageOf*"></a>
+  <h4 id="Refinity_Math_MathUtility_PercentageOf_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.PercentageOf(System.Int32,System.Int32)">PercentageOf(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the percentage of a value relative to another value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PercentageOf(this int value, int otherValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to calculate the percentage of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">otherValue</span></td>
+        <td><p>The value to calculate the percentage relative to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The percentage of the value relative to the other value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_PerformLinearRegression_System_Double___System_Double___.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.PerformLinearRegression(System.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L260">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_PerformLinearRegression_" data-uid="Refinity.Math.MathUtility.PerformLinearRegression*"></a>
+  <h4 id="Refinity_Math_MathUtility_PerformLinearRegression_System_Double___System_Double___" data-uid="Refinity.Math.MathUtility.PerformLinearRegression(System.Double[],System.Double[])">PerformLinearRegression(Double[], Double[])</h4>
+  <div class="markdown level1 summary"><p>Performs linear regression on the given arrays of x and y values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearRegressionModel PerformLinearRegression(this double[] x, double[] y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The array of x values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The array of y values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Refinity.Math.LinearRegressionModel.html">LinearRegressionModel</a></td>
+        <td><p>An object containing the slope (m), y-intercept (b), and correlation coefficient (r).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_PerformLinearRegression_System_Int32___System_Int32___.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.PerformLinearRegression(System.Int32%5B%5D%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L285">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_PerformLinearRegression_" data-uid="Refinity.Math.MathUtility.PerformLinearRegression*"></a>
+  <h4 id="Refinity_Math_MathUtility_PerformLinearRegression_System_Int32___System_Int32___" data-uid="Refinity.Math.MathUtility.PerformLinearRegression(System.Int32[],System.Int32[])">PerformLinearRegression(Int32[], Int32[])</h4>
+  <div class="markdown level1 summary"><p>Performs linear regression on the given arrays of x and y values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearRegressionModel PerformLinearRegression(this int[] x, int[] y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The array of x values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The array of y values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Refinity.Math.LinearRegressionModel.html">LinearRegressionModel</a></td>
+        <td><p>An object containing the slope (m), y-intercept (b), and correlation coefficient (r).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_RadiansToDegrees_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.RadiansToDegrees(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L597">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_RadiansToDegrees_" data-uid="Refinity.Math.MathUtility.RadiansToDegrees*"></a>
+  <h4 id="Refinity_Math_MathUtility_RadiansToDegrees_System_Double_" data-uid="Refinity.Math.MathUtility.RadiansToDegrees(System.Double)">RadiansToDegrees(Double)</h4>
+  <div class="markdown level1 summary"><p>Converts an angle from radians to degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RadiansToDegrees(this double radians)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">radians</span></td>
+        <td><p>The angle in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The angle in degrees.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_SimpsonRuleIntegration_Func_System_Double_System_Double__System_Double_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.SimpsonRuleIntegration(Func%7BSystem.Double%2CSystem.Double%7D%2CSystem.Double%2CSystem.Double%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L304">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_SimpsonRuleIntegration_" data-uid="Refinity.Math.MathUtility.SimpsonRuleIntegration*"></a>
+  <h4 id="Refinity_Math_MathUtility_SimpsonRuleIntegration_Func_System_Double_System_Double__System_Double_System_Double_System_Int32_" data-uid="Refinity.Math.MathUtility.SimpsonRuleIntegration(Func{System.Double,System.Double},System.Double,System.Double,System.Int32)">SimpsonRuleIntegration(Func&lt;Double, Double&gt;, Double, Double, Int32)</h4>
+  <div class="markdown level1 summary"><p>Performs numerical integration using Simpson's rule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SimpsonRuleIntegration(Func&lt;double, double&gt; function, double a, double b, int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Double</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The function to integrate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The lower limit of integration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The upper limit of integration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The number of intervals.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The approximate value of the integral.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_SumTo_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.SumTo(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L509">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_SumTo_" data-uid="Refinity.Math.MathUtility.SumTo*"></a>
+  <h4 id="Refinity_Math_MathUtility_SumTo_System_Double_System_Double_" data-uid="Refinity.Math.MathUtility.SumTo(System.Double,System.Double)">SumTo(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the sum of an arithmetic series up to a given number of terms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SumTo(this double value, double n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The first term of the series.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The number of terms in the series.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The sum of the arithmetic series.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_SumTo_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.SumTo(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L520">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_SumTo_" data-uid="Refinity.Math.MathUtility.SumTo*"></a>
+  <h4 id="Refinity_Math_MathUtility_SumTo_System_Int32_System_Int32_" data-uid="Refinity.Math.MathUtility.SumTo(System.Int32,System.Int32)">SumTo(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the sum of an arithmetic series up to a given number of terms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SumTo(this int value, int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The first term of the series.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The number of terms in the series.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The sum of the arithmetic series.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_ToScientificNotation_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.ToScientificNotation(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L498">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_ToScientificNotation_" data-uid="Refinity.Math.MathUtility.ToScientificNotation*"></a>
+  <h4 id="Refinity_Math_MathUtility_ToScientificNotation_System_Double_" data-uid="Refinity.Math.MathUtility.ToScientificNotation(System.Double)">ToScientificNotation(Double)</h4>
+  <div class="markdown level1 summary"><p>Converts a number to scientific notation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToScientificNotation(this double number)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">number</span></td>
+        <td><p>The number to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The number in scientific notation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility_ToStringPercentage_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility.ToStringPercentage(System.Double%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L488">View Source</a>
+  </span>
+  <a id="Refinity_Math_MathUtility_ToStringPercentage_" data-uid="Refinity.Math.MathUtility.ToStringPercentage*"></a>
+  <h4 id="Refinity_Math_MathUtility_ToStringPercentage_System_Double_System_Int32_" data-uid="Refinity.Math.MathUtility.ToStringPercentage(System.Double,System.Int32)">ToStringPercentage(Double, Int32)</h4>
+  <div class="markdown level1 summary"><p>Formats a double value as a percentage string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToStringPercentage(this double value, int decimalPlaces = 2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The double value to format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">decimalPlaces</span></td>
+        <td><p>The number of decimal places to include in the formatted string. Default is 2.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string representation of the double value formatted as a percentage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Math_MathUtility.md&amp;value=---%0Auid%3A%20Refinity.Math.MathUtility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Math/MathUtility.cs/#L5" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
