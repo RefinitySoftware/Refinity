@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Refinity</id>
+    <version>1.0.0</version>
+    <authors>Refinity</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="56e0d47ba18acc825add601b63c6dc912debefe0" />
+    <dependencies>
+      <group targetFramework="net7.0">
+        <dependency id="Microsoft.ML" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/francesco/Desktop/Progetti/Refinity/Refinity/bin/Release/net7.0/Refinity.dll" target="lib/net7.0/Refinity.dll" />
+  </files>
+</package>

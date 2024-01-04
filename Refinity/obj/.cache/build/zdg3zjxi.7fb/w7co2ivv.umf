@@ -1,0 +1,997 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FinanceUtility
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FinanceUtility
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Refinity.Finance.FinanceUtility">
+  
+  
+  <h1 id="Refinity_Finance_FinanceUtility" data-uid="Refinity.Finance.FinanceUtility" class="text-break">Class FinanceUtility
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FinanceUtility</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Refinity.Finance.html">Refinity.Finance</a></h6>
+  <h6><strong>Assembly</strong>: Refinity.dll</h6>
+  <h5 id="Refinity_Finance_FinanceUtility_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FinanceUtility : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_ApplyTax_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.ApplyTax(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L48">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_ApplyTax_" data-uid="Refinity.Finance.FinanceUtility.ApplyTax*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_ApplyTax_System_Double_System_Double_" data-uid="Refinity.Finance.FinanceUtility.ApplyTax(System.Double,System.Double)">ApplyTax(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Applies tax to the given amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ApplyTax(double amount, double taxRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to apply tax to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">taxRate</span></td>
+        <td><p>The tax rate in percentage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The amount with tax applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_BreakEvenPoint_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.BreakEvenPoint(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L70">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_BreakEvenPoint_" data-uid="Refinity.Finance.FinanceUtility.BreakEvenPoint*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_BreakEvenPoint_System_Double_System_Double_System_Double_" data-uid="Refinity.Finance.FinanceUtility.BreakEvenPoint(System.Double,System.Double,System.Double)">BreakEvenPoint(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the break-even point based on fixed costs, variable costs, and selling price per unit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double BreakEvenPoint(double fixedCosts, double variableCosts, double sellingPrice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">fixedCosts</span></td>
+        <td><p>The total fixed costs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">variableCosts</span></td>
+        <td><p>The variable costs per unit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">sellingPrice</span></td>
+        <td><p>The selling price per unit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The break-even point in units.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_CalculateCompoundInterest_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.CalculateCompoundInterest(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L88">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_CalculateCompoundInterest_" data-uid="Refinity.Finance.FinanceUtility.CalculateCompoundInterest*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_CalculateCompoundInterest_System_Double_System_Double_System_Double_" data-uid="Refinity.Finance.FinanceUtility.CalculateCompoundInterest(System.Double,System.Double,System.Double)">CalculateCompoundInterest(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the compound interest based on the principal amount, interest rate, and time period.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateCompoundInterest(double principal, double interestRate, double timePeriod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">principal</span></td>
+        <td><p>The principal amount.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">interestRate</span></td>
+        <td><p>The interest rate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">timePeriod</span></td>
+        <td><p>The time period in years.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The calculated compound interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_CalculateInterest_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.CalculateInterest(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L37">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_CalculateInterest_" data-uid="Refinity.Finance.FinanceUtility.CalculateInterest*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_CalculateInterest_System_Double_System_Double_System_Double_" data-uid="Refinity.Finance.FinanceUtility.CalculateInterest(System.Double,System.Double,System.Double)">CalculateInterest(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the interest based on the principal amount, interest rate, and time period.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateInterest(double principal, double interestRate, double timePeriod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">principal</span></td>
+        <td><p>The principal amount.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">interestRate</span></td>
+        <td><p>The interest rate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">timePeriod</span></td>
+        <td><p>The time period in years.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The calculated interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_CalculateInternalRateOfReturn_List_System_Double__.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.CalculateInternalRateOfReturn(List%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L214">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_CalculateInternalRateOfReturn_" data-uid="Refinity.Finance.FinanceUtility.CalculateInternalRateOfReturn*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_CalculateInternalRateOfReturn_List_System_Double__" data-uid="Refinity.Finance.FinanceUtility.CalculateInternalRateOfReturn(List{System.Double})">CalculateInternalRateOfReturn(List&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the internal rate of return (IRR) of a series of cash flows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateInternalRateOfReturn(List&lt;double&gt; cashFlows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">cashFlows</span></td>
+        <td><p>The cash flows.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The calculated internal rate of return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_CalculateNetPresentValue_System_Double_List_System_Double__.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.CalculateNetPresentValue(System.Double%2CList%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L187">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_CalculateNetPresentValue_" data-uid="Refinity.Finance.FinanceUtility.CalculateNetPresentValue*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_CalculateNetPresentValue_System_Double_List_System_Double__" data-uid="Refinity.Finance.FinanceUtility.CalculateNetPresentValue(System.Double,List{System.Double})">CalculateNetPresentValue(Double, List&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the net present value (NPV) of a series of cash flows based on a discount rate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateNetPresentValue(double discountRate, List&lt;double&gt; cashFlows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">discountRate</span></td>
+        <td><p>The discount rate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">cashFlows</span></td>
+        <td><p>The cash flows.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The calculated net present value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_CalculateSimpleInterest_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.CalculateSimpleInterest(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L176">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_CalculateSimpleInterest_" data-uid="Refinity.Finance.FinanceUtility.CalculateSimpleInterest*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_CalculateSimpleInterest_System_Double_System_Double_System_Double_" data-uid="Refinity.Finance.FinanceUtility.CalculateSimpleInterest(System.Double,System.Double,System.Double)">CalculateSimpleInterest(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the simple interest based on the principal amount, interest rate, and time period.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateSimpleInterest(double principal, double interestRate, double timePeriod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">principal</span></td>
+        <td><p>The principal amount.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">interestRate</span></td>
+        <td><p>The interest rate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">timePeriod</span></td>
+        <td><p>The time period in years.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The calculated simple interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_DaysUntilDue_DateTime_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.DaysUntilDue(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L58">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_DaysUntilDue_" data-uid="Refinity.Finance.FinanceUtility.DaysUntilDue*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_DaysUntilDue_DateTime_" data-uid="Refinity.Finance.FinanceUtility.DaysUntilDue(DateTime)">DaysUntilDue(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Calculates the number of days until the specified due date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DaysUntilDue(DateTime dueDate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">dueDate</span></td>
+        <td><p>The due date to calculate the days until.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of days until the due date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_DifferencePercentage_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.DifferencePercentage(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L14">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_DifferencePercentage_" data-uid="Refinity.Finance.FinanceUtility.DifferencePercentage*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_DifferencePercentage_System_Double_System_Double_" data-uid="Refinity.Finance.FinanceUtility.DifferencePercentage(System.Double,System.Double)">DifferencePercentage(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the difference between two values as a percentage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DifferencePercentage(this double value, double otherValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The first value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">otherValue</span></td>
+        <td><p>The second value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The difference between the two values as a percentage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_DifferencePercentage_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.DifferencePercentage(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L25">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_DifferencePercentage_" data-uid="Refinity.Finance.FinanceUtility.DifferencePercentage*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_DifferencePercentage_System_Int32_System_Int32_" data-uid="Refinity.Finance.FinanceUtility.DifferencePercentage(System.Int32,System.Int32)">DifferencePercentage(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the difference between two integers as a percentage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DifferencePercentage(this int value, int otherValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The first integer value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">otherValue</span></td>
+        <td><p>The second integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The difference between the two integers as a percentage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_PaybackPeriod_System_Double_List_System_Double__.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.PaybackPeriod(System.Double%2CList%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L147">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_PaybackPeriod_" data-uid="Refinity.Finance.FinanceUtility.PaybackPeriod*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_PaybackPeriod_System_Double_List_System_Double__" data-uid="Refinity.Finance.FinanceUtility.PaybackPeriod(System.Double,List{System.Double})">PaybackPeriod(Double, List&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the time required to recover the cost of an investment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PaybackPeriod(double initialInvestment, List&lt;double&gt; cashFlows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">initialInvestment</span></td>
+        <td><p>The initial investment cost.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">cashFlows</span></td>
+        <td><p>The cash flows generated by the investment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The payback period in years.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_PredictFutureValue_System_Double_System_Double_DateTime_DateTime_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.PredictFutureValue(System.Double%2CSystem.Double%2CDateTime%2CDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L135">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_PredictFutureValue_" data-uid="Refinity.Finance.FinanceUtility.PredictFutureValue*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_PredictFutureValue_System_Double_System_Double_DateTime_DateTime_" data-uid="Refinity.Finance.FinanceUtility.PredictFutureValue(System.Double,System.Double,DateTime,DateTime)">PredictFutureValue(Double, Double, DateTime, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Predicts the future value based on the present value, interest rate, start date, and end date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PredictFutureValue(double presentValue, double interestRate, DateTime startDate, DateTime endDate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">presentValue</span></td>
+        <td><p>The present value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">interestRate</span></td>
+        <td><p>The interest rate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">startDate</span></td>
+        <td><p>The start date.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">endDate</span></td>
+        <td><p>The end date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The predicted future value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_PredictFutureValue_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.PredictFutureValue(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L122">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_PredictFutureValue_" data-uid="Refinity.Finance.FinanceUtility.PredictFutureValue*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_PredictFutureValue_System_Double_System_Double_System_Double_" data-uid="Refinity.Finance.FinanceUtility.PredictFutureValue(System.Double,System.Double,System.Double)">PredictFutureValue(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the future value of a present value based on the interest rate and time period.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PredictFutureValue(double presentValue, double interestRate, double timePeriod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">presentValue</span></td>
+        <td><p>The present value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">interestRate</span></td>
+        <td><p>The interest rate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">timePeriod</span></td>
+        <td><p>The time period in years.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The future value of the present value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_ToCurrency_System_Double_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.ToCurrency(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L99">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_ToCurrency_" data-uid="Refinity.Finance.FinanceUtility.ToCurrency*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_ToCurrency_System_Double_" data-uid="Refinity.Finance.FinanceUtility.ToCurrency(System.Double)">ToCurrency(Double)</h4>
+  <div class="markdown level1 summary"><p>Converts a double value to a currency string representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToCurrency(this double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The double value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string representation of the double value formatted as currency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility_ToCurrency_System_Double_CultureInfo_.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility.ToCurrency(System.Double%2CCultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L110">View Source</a>
+  </span>
+  <a id="Refinity_Finance_FinanceUtility_ToCurrency_" data-uid="Refinity.Finance.FinanceUtility.ToCurrency*"></a>
+  <h4 id="Refinity_Finance_FinanceUtility_ToCurrency_System_Double_CultureInfo_" data-uid="Refinity.Finance.FinanceUtility.ToCurrency(System.Double,CultureInfo)">ToCurrency(Double, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified integer value to a currency string representation using the specified culture information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToCurrency(this double value, CultureInfo cultureInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The integer value to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">cultureInfo</span></td>
+        <td><p>The culture information used for formatting the currency string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string representation of the specified integer value formatted as a currency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Finance_FinanceUtility.md&amp;value=---%0Auid%3A%20Refinity.Finance.FinanceUtility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Finance/FinanceUtility.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
