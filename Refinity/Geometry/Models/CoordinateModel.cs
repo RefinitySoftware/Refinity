@@ -1,4 +1,4 @@
-﻿namespace Refinity;
+﻿namespace Refinity.Geometry;
 
 /// <summary>
 /// Represents a coordinate model with X, Y, and optional Z values.

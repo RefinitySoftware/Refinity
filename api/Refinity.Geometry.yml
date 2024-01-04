@@ -4,6 +4,7 @@ items:
   commentId: N:Refinity.Geometry
   id: Refinity.Geometry
   children:
+  - Refinity.Geometry.CoordinateModel
   - Refinity.Geometry.GeometryUtility
   langs:
   - csharp
@@ -21,3 +22,32 @@ references:
   name: GeometryUtility
   nameWithType: GeometryUtility
   fullName: Refinity.Geometry.GeometryUtility
+- uid: Refinity.Geometry.CoordinateModel
+  commentId: T:Refinity.Geometry.CoordinateModel
+  parent: Refinity.Geometry
+  href: Refinity.Geometry.CoordinateModel.html
+  name: CoordinateModel
+  nameWithType: CoordinateModel
+  fullName: Refinity.Geometry.CoordinateModel
+- uid: Refinity.Geometry
+  commentId: N:Refinity.Geometry
+  href: Refinity.html
+  name: Refinity.Geometry
+  nameWithType: Refinity.Geometry
+  fullName: Refinity.Geometry
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Geometry
+    name: Geometry
+    href: Refinity.Geometry.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Geometry
+    name: Geometry
+    href: Refinity.Geometry.html

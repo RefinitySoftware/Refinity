@@ -375,7 +375,7 @@ items:
     - id: to
       type: System.DateTime
     return:
-      type: Refinity.DateDifference
+      type: Refinity.Date.DateDifference
     content.vb: Public Shared Function GetDifference(from As Date, [to] As Date) As DateDifference
   overload: Refinity.Date.DateUtility.GetDifference*
   nameWithType.vb: DateUtility.GetDifference(Date, Date)
@@ -1162,19 +1162,13 @@ references:
   name: GetDifference
   nameWithType: DateUtility.GetDifference
   fullName: Refinity.Date.DateUtility.GetDifference
-- uid: Refinity.DateDifference
-  commentId: T:Refinity.DateDifference
-  parent: Refinity
-  href: Refinity.DateDifference.html
+- uid: Refinity.Date.DateDifference
+  commentId: T:Refinity.Date.DateDifference
+  parent: Refinity.Date
+  href: Refinity.Date.DateDifference.html
   name: DateDifference
   nameWithType: DateDifference
-  fullName: Refinity.DateDifference
-- uid: Refinity
-  commentId: N:Refinity
-  href: Refinity.html
-  name: Refinity
-  nameWithType: Refinity
-  fullName: Refinity
+  fullName: Refinity.Date.DateDifference
 - uid: Refinity.Date.DateUtility.LastDayOfMonth*
   commentId: Overload:Refinity.Date.DateUtility.LastDayOfMonth
   href: Refinity.Date.DateUtility.html#Refinity_Date_DateUtility_LastDayOfMonth_System_DateTime_

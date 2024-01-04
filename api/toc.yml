@@ -1,12 +1,5 @@
 ### YamlMime:TableOfContent
 items:
-- uid: Refinity
-  name: Refinity
-  items:
-  - uid: Refinity.CoordinateModel
-    name: CoordinateModel
-  - uid: Refinity.DateDifference
-    name: DateDifference
 - uid: Refinity.Benchmark
   name: Refinity.Benchmark
   items:
@@ -32,6 +25,8 @@ items:
 - uid: Refinity.Date
   name: Refinity.Date
   items:
+  - uid: Refinity.Date.DateDifference
+    name: DateDifference
   - uid: Refinity.Date.DateUtility
     name: DateUtility
 - uid: Refinity.Finance
@@ -42,6 +37,8 @@ items:
 - uid: Refinity.Geometry
   name: Refinity.Geometry
   items:
+  - uid: Refinity.Geometry.CoordinateModel
+    name: CoordinateModel
   - uid: Refinity.Geometry.GeometryUtility
     name: GeometryUtility
 - uid: Refinity.Logging

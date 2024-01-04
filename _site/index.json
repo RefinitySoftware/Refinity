@@ -59,6 +59,11 @@
     "title": "Class CoordinateModel | Refinity",
     "keywords": "Class CoordinateModel Namespace Refinity Assembly Refinity.dll Represents a coordinate model with X, Y, and optional Z values. public class CoordinateModel Inheritance object CoordinateModel Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties X Gets or sets the X value of the coordinate. public double X { get; set; } Property Value double Y Gets or sets the Y value of the coordinate. public double Y { get; set; } Property Value double Z Gets or sets the optional Z value of the coordinate. public double? Z { get; set; } Property Value double?"
   },
+  "api/Refinity.Date.DateDifference.html": {
+    "href": "api/Refinity.Date.DateDifference.html",
+    "title": "Class DateDifference | Refinity",
+    "keywords": "Class DateDifference Namespace Refinity.Date Assembly Refinity.dll public class DateDifference Inheritance object DateDifference Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Days public int Days { get; set; } Property Value int Hours public int Hours { get; set; } Property Value int Minutes public int Minutes { get; set; } Property Value int Months public int Months { get; set; } Property Value int Seconds public int Seconds { get; set; } Property Value int Years public int Years { get; set; } Property Value int"
+  },
   "api/Refinity.Date.DateUtility.html": {
     "href": "api/Refinity.Date.DateUtility.html",
     "title": "Class DateUtility | Refinity",
@@ -67,7 +72,7 @@
   "api/Refinity.Date.html": {
     "href": "api/Refinity.Date.html",
     "title": "Namespace Refinity.Date | Refinity",
-    "keywords": "Namespace Refinity.Date Classes DateUtility"
+    "keywords": "Namespace Refinity.Date Classes DateDifference DateUtility"
   },
   "api/Refinity.DateDifference.html": {
     "href": "api/Refinity.DateDifference.html",
@@ -84,6 +89,11 @@
     "title": "Namespace Refinity.Finance | Refinity",
     "keywords": "Namespace Refinity.Finance Classes FinanceUtility"
   },
+  "api/Refinity.Geometry.CoordinateModel.html": {
+    "href": "api/Refinity.Geometry.CoordinateModel.html",
+    "title": "Class CoordinateModel | Refinity",
+    "keywords": "Class CoordinateModel Namespace Refinity.Geometry Assembly Refinity.dll Represents a coordinate model with X, Y, and optional Z values. public class CoordinateModel Inheritance object CoordinateModel Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties X Gets or sets the X value of the coordinate. public double X { get; set; } Property Value double Y Gets or sets the Y value of the coordinate. public double Y { get; set; } Property Value double Z Gets or sets the optional Z value of the coordinate. public double? Z { get; set; } Property Value double?"
+  },
   "api/Refinity.Geometry.GeometryUtility.html": {
     "href": "api/Refinity.Geometry.GeometryUtility.html",
     "title": "Class GeometryUtility | Refinity",
@@ -92,7 +102,7 @@
   "api/Refinity.Geometry.html": {
     "href": "api/Refinity.Geometry.html",
     "title": "Namespace Refinity.Geometry | Refinity",
-    "keywords": "Namespace Refinity.Geometry Classes GeometryUtility"
+    "keywords": "Namespace Refinity.Geometry Classes CoordinateModel Represents a coordinate model with X, Y, and optional Z values. GeometryUtility"
   },
   "api/Refinity.Logging.Enums.LogFileType.html": {
     "href": "api/Refinity.Logging.Enums.LogFileType.html",

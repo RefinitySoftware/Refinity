@@ -132,6 +132,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Refinity.Date.DateDifference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Refinity.Date.DateDifference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Refinity.Date.DateUtility.yml",
       "output": {
         ".html": {
@@ -176,6 +186,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Refinity.Finance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Refinity.Geometry.CoordinateModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Refinity.Geometry.CoordinateModel.html"
         }
       },
       "version": ""

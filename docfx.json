@@ -39,7 +39,8 @@
       "_appName": "Refinity",
       "_appTitle": "Refinity",
       "_enableSearch": true,
-      "pdf": true
+      "_disableContribution": true,
+      "pdf": false
     }
   }
 }
