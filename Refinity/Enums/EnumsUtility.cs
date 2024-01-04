@@ -485,8 +485,67 @@ public enum EnumPressureUnits
     Psi
 }
 
+/// <summary>
+/// Represents the result of a benchmark operation.
+/// </summary>
 public enum EnumBenchmarkResult
 {
+    [Description("Success")]
     Success,
+    [Description("Failure")]
     Failure
+}
+
+/// <summary>
+/// Represents the language codes for different languages with their descriptions.
+/// </summary>
+public enum EnumLanguageCodes
+{
+    [Description("English")]
+    EN,
+
+    [Description("Spanish")]
+    ES,
+
+    [Description("French")]
+    FR,
+
+    [Description("German")]
+    DE,
+
+    [Description("Italian")]
+    IT,
+
+    [Description("Japanese")]
+    JA,
+
+    [Description("Korean")]
+    KO,
+
+    [Description("Chinese")]
+    ZH,
+    [Description("Arabic")]
+    AR,
+    [Description("Bulgarian")]
+    BG,
+    [Description("Catalan")]
+    CA,
+    [Description("Czech")]
+    CS,
+    [Description("Danish")]
+    DA,
+    [Description("Dutch")]
+    NL,
+    [Description("Estonian")]
+    ET,
+    [Description("Finnish")]
+    FI,
+    [Description("Greek")]
+    EL,
+    [Description("Hebrew")]
+    HE,
+    [Description("Hindi")]
+    HI,
+    [Description("Hungarian")]
+    HU,
 }
