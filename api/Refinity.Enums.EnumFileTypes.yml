@@ -1,0 +1,843 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumFileTypes
+  commentId: T:Refinity.Enums.EnumFileTypes
+  id: EnumFileTypes
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumFileTypes.BMP
+  - Refinity.Enums.EnumFileTypes.BZ2
+  - Refinity.Enums.EnumFileTypes.CONSOLE
+  - Refinity.Enums.EnumFileTypes.CSV
+  - Refinity.Enums.EnumFileTypes.DOC
+  - Refinity.Enums.EnumFileTypes.DOCX
+  - Refinity.Enums.EnumFileTypes.GIF
+  - Refinity.Enums.EnumFileTypes.GZ
+  - Refinity.Enums.EnumFileTypes.JPEG
+  - Refinity.Enums.EnumFileTypes.JPG
+  - Refinity.Enums.EnumFileTypes.JSON
+  - Refinity.Enums.EnumFileTypes.LOG
+  - Refinity.Enums.EnumFileTypes.PDF
+  - Refinity.Enums.EnumFileTypes.PNG
+  - Refinity.Enums.EnumFileTypes.RAR
+  - Refinity.Enums.EnumFileTypes.RTF
+  - Refinity.Enums.EnumFileTypes.TAR
+  - Refinity.Enums.EnumFileTypes.TIF
+  - Refinity.Enums.EnumFileTypes.TIFF
+  - Refinity.Enums.EnumFileTypes.TXT
+  - Refinity.Enums.EnumFileTypes.XLS
+  - Refinity.Enums.EnumFileTypes.XLSX
+  - Refinity.Enums.EnumFileTypes.XML
+  - Refinity.Enums.EnumFileTypes.XZ
+  - Refinity.Enums.EnumFileTypes.ZIP
+  - Refinity.Enums.EnumFileTypes._7Z
+  langs:
+  - csharp
+  - vb
+  name: EnumFileTypes
+  nameWithType: EnumFileTypes
+  fullName: Refinity.Enums.EnumFileTypes
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumFileTypes
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 92
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents the file types as extensions in description attribute.
+  example: []
+  syntax:
+    content: public enum EnumFileTypes
+    content.vb: Public Enum EnumFileTypes
+  extensionMethods:
+  - Refinity.Enums.EnumFileTypes.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumFileTypes.RTF
+  commentId: F:Refinity.Enums.EnumFileTypes.RTF
+  id: RTF
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: RTF
+  nameWithType: EnumFileTypes.RTF
+  fullName: Refinity.Enums.EnumFileTypes.RTF
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: RTF
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 94
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: RTF = 0
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.TXT
+  commentId: F:Refinity.Enums.EnumFileTypes.TXT
+  id: TXT
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: TXT
+  nameWithType: EnumFileTypes.TXT
+  fullName: Refinity.Enums.EnumFileTypes.TXT
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: TXT
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 96
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: TXT = 1
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.CONSOLE
+  commentId: F:Refinity.Enums.EnumFileTypes.CONSOLE
+  id: CONSOLE
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: CONSOLE
+  nameWithType: EnumFileTypes.CONSOLE
+  fullName: Refinity.Enums.EnumFileTypes.CONSOLE
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CONSOLE
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 98
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: CONSOLE = 2
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.LOG
+  commentId: F:Refinity.Enums.EnumFileTypes.LOG
+  id: LOG
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: LOG
+  nameWithType: EnumFileTypes.LOG
+  fullName: Refinity.Enums.EnumFileTypes.LOG
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: LOG
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 100
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: LOG = 3
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.XML
+  commentId: F:Refinity.Enums.EnumFileTypes.XML
+  id: XML
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: XML
+  nameWithType: EnumFileTypes.XML
+  fullName: Refinity.Enums.EnumFileTypes.XML
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: XML
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 102
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: XML = 4
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.JSON
+  commentId: F:Refinity.Enums.EnumFileTypes.JSON
+  id: JSON
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: JSON
+  nameWithType: EnumFileTypes.JSON
+  fullName: Refinity.Enums.EnumFileTypes.JSON
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: JSON
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 104
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: JSON = 5
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.CSV
+  commentId: F:Refinity.Enums.EnumFileTypes.CSV
+  id: CSV
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: CSV
+  nameWithType: EnumFileTypes.CSV
+  fullName: Refinity.Enums.EnumFileTypes.CSV
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CSV
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 106
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: CSV = 6
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.XLS
+  commentId: F:Refinity.Enums.EnumFileTypes.XLS
+  id: XLS
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: XLS
+  nameWithType: EnumFileTypes.XLS
+  fullName: Refinity.Enums.EnumFileTypes.XLS
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: XLS
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 108
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: XLS = 7
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.XLSX
+  commentId: F:Refinity.Enums.EnumFileTypes.XLSX
+  id: XLSX
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: XLSX
+  nameWithType: EnumFileTypes.XLSX
+  fullName: Refinity.Enums.EnumFileTypes.XLSX
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: XLSX
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 110
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: XLSX = 8
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.DOC
+  commentId: F:Refinity.Enums.EnumFileTypes.DOC
+  id: DOC
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: DOC
+  nameWithType: EnumFileTypes.DOC
+  fullName: Refinity.Enums.EnumFileTypes.DOC
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: DOC
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 112
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: DOC = 9
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.DOCX
+  commentId: F:Refinity.Enums.EnumFileTypes.DOCX
+  id: DOCX
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: DOCX
+  nameWithType: EnumFileTypes.DOCX
+  fullName: Refinity.Enums.EnumFileTypes.DOCX
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: DOCX
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 114
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: DOCX = 10
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.PDF
+  commentId: F:Refinity.Enums.EnumFileTypes.PDF
+  id: PDF
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: PDF
+  nameWithType: EnumFileTypes.PDF
+  fullName: Refinity.Enums.EnumFileTypes.PDF
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: PDF
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 116
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: PDF = 11
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.ZIP
+  commentId: F:Refinity.Enums.EnumFileTypes.ZIP
+  id: ZIP
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: ZIP
+  nameWithType: EnumFileTypes.ZIP
+  fullName: Refinity.Enums.EnumFileTypes.ZIP
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: ZIP
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 118
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: ZIP = 12
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.RAR
+  commentId: F:Refinity.Enums.EnumFileTypes.RAR
+  id: RAR
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: RAR
+  nameWithType: EnumFileTypes.RAR
+  fullName: Refinity.Enums.EnumFileTypes.RAR
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: RAR
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 120
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: RAR = 13
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes._7Z
+  commentId: F:Refinity.Enums.EnumFileTypes._7Z
+  id: _7Z
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: _7Z
+  nameWithType: EnumFileTypes._7Z
+  fullName: Refinity.Enums.EnumFileTypes._7Z
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: _7Z
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 122
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: _7Z = 14
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.TAR
+  commentId: F:Refinity.Enums.EnumFileTypes.TAR
+  id: TAR
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: TAR
+  nameWithType: EnumFileTypes.TAR
+  fullName: Refinity.Enums.EnumFileTypes.TAR
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: TAR
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 124
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: TAR = 15
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.GZ
+  commentId: F:Refinity.Enums.EnumFileTypes.GZ
+  id: GZ
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: GZ
+  nameWithType: EnumFileTypes.GZ
+  fullName: Refinity.Enums.EnumFileTypes.GZ
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: GZ
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 126
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: GZ = 16
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.BZ2
+  commentId: F:Refinity.Enums.EnumFileTypes.BZ2
+  id: BZ2
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: BZ2
+  nameWithType: EnumFileTypes.BZ2
+  fullName: Refinity.Enums.EnumFileTypes.BZ2
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: BZ2
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 128
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: BZ2 = 17
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.XZ
+  commentId: F:Refinity.Enums.EnumFileTypes.XZ
+  id: XZ
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: XZ
+  nameWithType: EnumFileTypes.XZ
+  fullName: Refinity.Enums.EnumFileTypes.XZ
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: XZ
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 130
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: XZ = 18
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.JPG
+  commentId: F:Refinity.Enums.EnumFileTypes.JPG
+  id: JPG
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: JPG
+  nameWithType: EnumFileTypes.JPG
+  fullName: Refinity.Enums.EnumFileTypes.JPG
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: JPG
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 132
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: JPG = 19
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.JPEG
+  commentId: F:Refinity.Enums.EnumFileTypes.JPEG
+  id: JPEG
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: JPEG
+  nameWithType: EnumFileTypes.JPEG
+  fullName: Refinity.Enums.EnumFileTypes.JPEG
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: JPEG
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 134
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: JPEG = 20
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.PNG
+  commentId: F:Refinity.Enums.EnumFileTypes.PNG
+  id: PNG
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: PNG
+  nameWithType: EnumFileTypes.PNG
+  fullName: Refinity.Enums.EnumFileTypes.PNG
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: PNG
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 136
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: PNG = 21
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.GIF
+  commentId: F:Refinity.Enums.EnumFileTypes.GIF
+  id: GIF
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: GIF
+  nameWithType: EnumFileTypes.GIF
+  fullName: Refinity.Enums.EnumFileTypes.GIF
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: GIF
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 138
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: GIF = 22
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.BMP
+  commentId: F:Refinity.Enums.EnumFileTypes.BMP
+  id: BMP
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: BMP
+  nameWithType: EnumFileTypes.BMP
+  fullName: Refinity.Enums.EnumFileTypes.BMP
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: BMP
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 140
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: BMP = 23
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.TIFF
+  commentId: F:Refinity.Enums.EnumFileTypes.TIFF
+  id: TIFF
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: TIFF
+  nameWithType: EnumFileTypes.TIFF
+  fullName: Refinity.Enums.EnumFileTypes.TIFF
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: TIFF
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 142
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: TIFF = 24
+    return:
+      type: Refinity.Enums.EnumFileTypes
+- uid: Refinity.Enums.EnumFileTypes.TIF
+  commentId: F:Refinity.Enums.EnumFileTypes.TIF
+  id: TIF
+  parent: Refinity.Enums.EnumFileTypes
+  langs:
+  - csharp
+  - vb
+  name: TIF
+  nameWithType: EnumFileTypes.TIF
+  fullName: Refinity.Enums.EnumFileTypes.TIF
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: TIF
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 144
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: TIF = 25
+    return:
+      type: Refinity.Enums.EnumFileTypes
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumFileTypes.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumFileTypes>(EnumFileTypes)
+  nameWithType: EnumsUtility.GetDescription<EnumFileTypes>(EnumFileTypes)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumFileTypes>(Refinity.Enums.EnumFileTypes)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumFileTypes)(EnumFileTypes)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumFileTypes)(Refinity.Enums.EnumFileTypes)
+  name.vb: GetDescription(Of EnumFileTypes)(EnumFileTypes)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumFileTypes)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumFileTypes
+    name: EnumFileTypes
+    href: Refinity.Enums.EnumFileTypes.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumFileTypes
+    name: EnumFileTypes
+    href: Refinity.Enums.EnumFileTypes.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumFileTypes)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumFileTypes
+    name: EnumFileTypes
+    href: Refinity.Enums.EnumFileTypes.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumFileTypes
+    name: EnumFileTypes
+    href: Refinity.Enums.EnumFileTypes.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumFileTypes
+  commentId: T:Refinity.Enums.EnumFileTypes
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumFileTypes.html
+  name: EnumFileTypes
+  nameWithType: EnumFileTypes
+  fullName: Refinity.Enums.EnumFileTypes

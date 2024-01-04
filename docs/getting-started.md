@@ -17,19 +17,55 @@ Here are various examples to showcase the power and versatility of Refinity in a
 ### String Enhancements
 
 ```cs
-// Add code demonstrating string manipulation
+using Refinity.Strings;
+
+class Program
+{
+    static void Main()
+    {
+        string htmlString = "<p>This is a <b>bold</b> paragraph.</p>";
+        string result = htmlString.RemoveHTMLTags();
+
+        Console.WriteLine("Original String: " + htmlString); // <p>This is a <b>bold</b> paragraph.</p>
+        Console.WriteLine("String after removing HTML tags: " + result); // This is a bold paragraph.
+    }
+}
 ```
 
-### Data Operations
+### Date Operations
 
 ```cs
-// Code snippet showing data handling
+using Refinity.Date;
+
+class Program
+{
+    static void Main()
+    {
+        DateTime date = new DateTime(2023, (int)EnumMonths.June, 10);
+        date.GetWeekNumber(); // 20
+    }
+}
 ```
 
 ### Advanced Use Cases
 
 ```cs
-// Example showcasing advanced features
+using Refinity.Finance;
+using Refinity.Math;
+
+class Program
+{
+    static void Main()
+    {
+        int value1 = 50;
+        int value2 = 30;
+
+        double differencePercentage = value1.DifferencePercentage(value2);
+
+        Console.WriteLine($"The percentage difference between {value1} and {value2} is: {differencePercentage}%");  // 66,66666666666666%
+        differencePercentage = differencePercentage.ToStringPercentage(); // 66,67%
+    }
+}
 ```
 
 ## Troubleshooting Tips 🛠️
@@ -38,10 +74,10 @@ Running into issues? Here's a quick guide to common problems and their solutions
 
 ## Additional Resources 📚
 
-<!-- For more detailed tutorials, visit our [documentation](../api/Refinity.html). -->
+For more detailed tutorials, visit our [documentation](../api/Refinity.html).
 
 ## Community and Support 🤗
 
-Connect with our community on platforms like [GitHub](#) or [Discord](#) for support, sharing, and contributions.
+Connect with our community on platforms like [GitHub](https://github.com/InfinitySoftware-House/Refinity) for support, sharing, and contributions.
 
 Let Refinity elevate your coding journey! 💻

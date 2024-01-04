@@ -1,0 +1,330 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumWeekDays
+  commentId: T:Refinity.Enums.EnumWeekDays
+  id: EnumWeekDays
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumWeekDays.Friday
+  - Refinity.Enums.EnumWeekDays.Monday
+  - Refinity.Enums.EnumWeekDays.Saturday
+  - Refinity.Enums.EnumWeekDays.Sunday
+  - Refinity.Enums.EnumWeekDays.Thursday
+  - Refinity.Enums.EnumWeekDays.Tuesday
+  - Refinity.Enums.EnumWeekDays.Wednesday
+  langs:
+  - csharp
+  - vb
+  name: EnumWeekDays
+  nameWithType: EnumWeekDays
+  fullName: Refinity.Enums.EnumWeekDays
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumWeekDays
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 223
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents the days of the week.
+  example: []
+  syntax:
+    content: public enum EnumWeekDays
+    content.vb: Public Enum EnumWeekDays
+  extensionMethods:
+  - Refinity.Enums.EnumWeekDays.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumWeekDays.Monday
+  commentId: F:Refinity.Enums.EnumWeekDays.Monday
+  id: Monday
+  parent: Refinity.Enums.EnumWeekDays
+  langs:
+  - csharp
+  - vb
+  name: Monday
+  nameWithType: EnumWeekDays.Monday
+  fullName: Refinity.Enums.EnumWeekDays.Monday
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Monday
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 225
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Monday = 0
+    return:
+      type: Refinity.Enums.EnumWeekDays
+- uid: Refinity.Enums.EnumWeekDays.Tuesday
+  commentId: F:Refinity.Enums.EnumWeekDays.Tuesday
+  id: Tuesday
+  parent: Refinity.Enums.EnumWeekDays
+  langs:
+  - csharp
+  - vb
+  name: Tuesday
+  nameWithType: EnumWeekDays.Tuesday
+  fullName: Refinity.Enums.EnumWeekDays.Tuesday
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Tuesday
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 227
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Tuesday = 1
+    return:
+      type: Refinity.Enums.EnumWeekDays
+- uid: Refinity.Enums.EnumWeekDays.Wednesday
+  commentId: F:Refinity.Enums.EnumWeekDays.Wednesday
+  id: Wednesday
+  parent: Refinity.Enums.EnumWeekDays
+  langs:
+  - csharp
+  - vb
+  name: Wednesday
+  nameWithType: EnumWeekDays.Wednesday
+  fullName: Refinity.Enums.EnumWeekDays.Wednesday
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Wednesday
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 229
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Wednesday = 2
+    return:
+      type: Refinity.Enums.EnumWeekDays
+- uid: Refinity.Enums.EnumWeekDays.Thursday
+  commentId: F:Refinity.Enums.EnumWeekDays.Thursday
+  id: Thursday
+  parent: Refinity.Enums.EnumWeekDays
+  langs:
+  - csharp
+  - vb
+  name: Thursday
+  nameWithType: EnumWeekDays.Thursday
+  fullName: Refinity.Enums.EnumWeekDays.Thursday
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Thursday
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 231
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Thursday = 3
+    return:
+      type: Refinity.Enums.EnumWeekDays
+- uid: Refinity.Enums.EnumWeekDays.Friday
+  commentId: F:Refinity.Enums.EnumWeekDays.Friday
+  id: Friday
+  parent: Refinity.Enums.EnumWeekDays
+  langs:
+  - csharp
+  - vb
+  name: Friday
+  nameWithType: EnumWeekDays.Friday
+  fullName: Refinity.Enums.EnumWeekDays.Friday
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Friday
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 233
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Friday = 4
+    return:
+      type: Refinity.Enums.EnumWeekDays
+- uid: Refinity.Enums.EnumWeekDays.Saturday
+  commentId: F:Refinity.Enums.EnumWeekDays.Saturday
+  id: Saturday
+  parent: Refinity.Enums.EnumWeekDays
+  langs:
+  - csharp
+  - vb
+  name: Saturday
+  nameWithType: EnumWeekDays.Saturday
+  fullName: Refinity.Enums.EnumWeekDays.Saturday
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Saturday
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 235
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Saturday = 5
+    return:
+      type: Refinity.Enums.EnumWeekDays
+- uid: Refinity.Enums.EnumWeekDays.Sunday
+  commentId: F:Refinity.Enums.EnumWeekDays.Sunday
+  id: Sunday
+  parent: Refinity.Enums.EnumWeekDays
+  langs:
+  - csharp
+  - vb
+  name: Sunday
+  nameWithType: EnumWeekDays.Sunday
+  fullName: Refinity.Enums.EnumWeekDays.Sunday
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Sunday
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 237
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Sunday = 6
+    return:
+      type: Refinity.Enums.EnumWeekDays
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumWeekDays.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumWeekDays>(EnumWeekDays)
+  nameWithType: EnumsUtility.GetDescription<EnumWeekDays>(EnumWeekDays)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumWeekDays>(Refinity.Enums.EnumWeekDays)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumWeekDays)(EnumWeekDays)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumWeekDays)(Refinity.Enums.EnumWeekDays)
+  name.vb: GetDescription(Of EnumWeekDays)(EnumWeekDays)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumWeekDays)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumWeekDays
+    name: EnumWeekDays
+    href: Refinity.Enums.EnumWeekDays.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumWeekDays
+    name: EnumWeekDays
+    href: Refinity.Enums.EnumWeekDays.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumWeekDays)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumWeekDays
+    name: EnumWeekDays
+    href: Refinity.Enums.EnumWeekDays.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumWeekDays
+    name: EnumWeekDays
+    href: Refinity.Enums.EnumWeekDays.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumWeekDays
+  commentId: T:Refinity.Enums.EnumWeekDays
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumWeekDays.html
+  name: EnumWeekDays
+  nameWithType: EnumWeekDays
+  fullName: Refinity.Enums.EnumWeekDays

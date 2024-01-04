@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Benchmark.Models
+  commentId: N:Refinity.Benchmark.Models
+  id: Refinity.Benchmark.Models
+  children:
+  - Refinity.Benchmark.Models.BenchmarkModels
+  langs:
+  - csharp
+  - vb
+  name: Refinity.Benchmark.Models
+  nameWithType: Refinity.Benchmark.Models
+  fullName: Refinity.Benchmark.Models
+  type: Namespace
+  assemblies:
+  - Refinity
+references:
+- uid: Refinity.Benchmark.Models.BenchmarkModels
+  commentId: T:Refinity.Benchmark.Models.BenchmarkModels
+  parent: Refinity.Benchmark.Models
+  href: Refinity.Benchmark.Models.BenchmarkModels.html
+  name: BenchmarkModels
+  nameWithType: BenchmarkModels
+  fullName: Refinity.Benchmark.Models.BenchmarkModels
+- uid: Refinity.Benchmark.Models
+  commentId: N:Refinity.Benchmark.Models
+  href: Refinity.html
+  name: Refinity.Benchmark.Models
+  nameWithType: Refinity.Benchmark.Models
+  fullName: Refinity.Benchmark.Models
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Benchmark
+    name: Benchmark
+    href: Refinity.Benchmark.html
+  - name: .
+  - uid: Refinity.Benchmark.Models
+    name: Models
+    href: Refinity.Benchmark.Models.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Benchmark
+    name: Benchmark
+    href: Refinity.Benchmark.html
+  - name: .
+  - uid: Refinity.Benchmark.Models
+    name: Models
+    href: Refinity.Benchmark.Models.html

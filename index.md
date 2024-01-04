@@ -28,4 +28,19 @@ Refinity is released under the MIT License. This gives you the freedom to use, m
 
 Got questions or suggestions? Join us in making the C# world more productive! Reach out on our GitHub Repository for support or queries.
 
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+
+## 🆘 Support
+
+If you encounter any problems, please open an issue in our [GitHub repository](https://github.com/InfinitySoftware-House/Refinity).
+
+
 _Refinity: Empowering developers, one line of code at a time!_ 💻

@@ -398,5 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 #Site Documentation
-_site/
-api/
+# _site/
+# api/

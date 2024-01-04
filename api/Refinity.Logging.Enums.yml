@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Logging.Enums
+  commentId: N:Refinity.Logging.Enums
+  id: Refinity.Logging.Enums
+  children:
+  - Refinity.Logging.Enums.LogFileType
+  - Refinity.Logging.Enums.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Refinity.Logging.Enums
+  nameWithType: Refinity.Logging.Enums
+  fullName: Refinity.Logging.Enums
+  type: Namespace
+  assemblies:
+  - Refinity
+references:
+- uid: Refinity.Logging.Enums.LogFileType
+  commentId: T:Refinity.Logging.Enums.LogFileType
+  parent: Refinity.Logging.Enums
+  href: Refinity.Logging.Enums.LogFileType.html
+  name: LogFileType
+  nameWithType: LogFileType
+  fullName: Refinity.Logging.Enums.LogFileType
+- uid: Refinity.Logging.Enums.LogLevel
+  commentId: T:Refinity.Logging.Enums.LogLevel
+  parent: Refinity.Logging.Enums
+  href: Refinity.Logging.Enums.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Refinity.Logging.Enums.LogLevel
+- uid: Refinity.Logging.Enums
+  commentId: N:Refinity.Logging.Enums
+  href: Refinity.html
+  name: Refinity.Logging.Enums
+  nameWithType: Refinity.Logging.Enums
+  fullName: Refinity.Logging.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Logging
+    name: Logging
+    href: Refinity.Logging.html
+  - name: .
+  - uid: Refinity.Logging.Enums
+    name: Enums
+    href: Refinity.Logging.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Logging
+    name: Logging
+    href: Refinity.Logging.html
+  - name: .
+  - uid: Refinity.Logging.Enums
+    name: Enums
+    href: Refinity.Logging.Enums.html

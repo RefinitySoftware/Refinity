@@ -1,0 +1,1005 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumCurrency
+  commentId: T:Refinity.Enums.EnumCurrency
+  id: EnumCurrency
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumCurrency.Australian_Dollar
+  - Refinity.Enums.EnumCurrency.Brazilian_Real
+  - Refinity.Enums.EnumCurrency.British_Pound
+  - Refinity.Enums.EnumCurrency.Canadian_Dollar
+  - Refinity.Enums.EnumCurrency.Chinese_Yuan
+  - Refinity.Enums.EnumCurrency.Czech_Koruna
+  - Refinity.Enums.EnumCurrency.Danish_Krone
+  - Refinity.Enums.EnumCurrency.Euro
+  - Refinity.Enums.EnumCurrency.Hong_Kong_Dollar
+  - Refinity.Enums.EnumCurrency.Hungarian_Forint
+  - Refinity.Enums.EnumCurrency.Indian_Rupee
+  - Refinity.Enums.EnumCurrency.Indonesian_Rupiah
+  - Refinity.Enums.EnumCurrency.Israeli_Shekel
+  - Refinity.Enums.EnumCurrency.Japanese_Yen
+  - Refinity.Enums.EnumCurrency.Malaysian_Ringgit
+  - Refinity.Enums.EnumCurrency.Mexican_Peso
+  - Refinity.Enums.EnumCurrency.New_Zealand_Dollar
+  - Refinity.Enums.EnumCurrency.Norwegian_Krone
+  - Refinity.Enums.EnumCurrency.Philippine_Peso
+  - Refinity.Enums.EnumCurrency.Polish_Zloty
+  - Refinity.Enums.EnumCurrency.Romanian_Leu
+  - Refinity.Enums.EnumCurrency.Russian_Ruble
+  - Refinity.Enums.EnumCurrency.Saudi_Riyal
+  - Refinity.Enums.EnumCurrency.Singapore_Dollar
+  - Refinity.Enums.EnumCurrency.South_African_Rand
+  - Refinity.Enums.EnumCurrency.South_Korean_Won
+  - Refinity.Enums.EnumCurrency.Swedish_Krona
+  - Refinity.Enums.EnumCurrency.Swiss_Franc
+  - Refinity.Enums.EnumCurrency.Thai_Baht
+  - Refinity.Enums.EnumCurrency.Turkish_Lira
+  - Refinity.Enums.EnumCurrency.UAE_Dirham
+  - Refinity.Enums.EnumCurrency.US_Dollar
+  langs:
+  - csharp
+  - vb
+  name: EnumCurrency
+  nameWithType: EnumCurrency
+  fullName: Refinity.Enums.EnumCurrency
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumCurrency
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 265
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents different currency types with their symbols as description attribute.
+  example: []
+  syntax:
+    content: public enum EnumCurrency
+    content.vb: Public Enum EnumCurrency
+  extensionMethods:
+  - Refinity.Enums.EnumCurrency.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumCurrency.US_Dollar
+  commentId: F:Refinity.Enums.EnumCurrency.US_Dollar
+  id: US_Dollar
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: US_Dollar
+  nameWithType: EnumCurrency.US_Dollar
+  fullName: Refinity.Enums.EnumCurrency.US_Dollar
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: US_Dollar
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 267
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: US_Dollar = 0
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Euro
+  commentId: F:Refinity.Enums.EnumCurrency.Euro
+  id: Euro
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Euro
+  nameWithType: EnumCurrency.Euro
+  fullName: Refinity.Enums.EnumCurrency.Euro
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Euro
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 269
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Euro = 1
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.British_Pound
+  commentId: F:Refinity.Enums.EnumCurrency.British_Pound
+  id: British_Pound
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: British_Pound
+  nameWithType: EnumCurrency.British_Pound
+  fullName: Refinity.Enums.EnumCurrency.British_Pound
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: British_Pound
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 271
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: British_Pound = 2
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Japanese_Yen
+  commentId: F:Refinity.Enums.EnumCurrency.Japanese_Yen
+  id: Japanese_Yen
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Japanese_Yen
+  nameWithType: EnumCurrency.Japanese_Yen
+  fullName: Refinity.Enums.EnumCurrency.Japanese_Yen
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Japanese_Yen
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 273
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Japanese_Yen = 3
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Canadian_Dollar
+  commentId: F:Refinity.Enums.EnumCurrency.Canadian_Dollar
+  id: Canadian_Dollar
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Canadian_Dollar
+  nameWithType: EnumCurrency.Canadian_Dollar
+  fullName: Refinity.Enums.EnumCurrency.Canadian_Dollar
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Canadian_Dollar
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 275
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Canadian_Dollar = 4
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Australian_Dollar
+  commentId: F:Refinity.Enums.EnumCurrency.Australian_Dollar
+  id: Australian_Dollar
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Australian_Dollar
+  nameWithType: EnumCurrency.Australian_Dollar
+  fullName: Refinity.Enums.EnumCurrency.Australian_Dollar
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Australian_Dollar
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 277
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Australian_Dollar = 5
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Swiss_Franc
+  commentId: F:Refinity.Enums.EnumCurrency.Swiss_Franc
+  id: Swiss_Franc
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Swiss_Franc
+  nameWithType: EnumCurrency.Swiss_Franc
+  fullName: Refinity.Enums.EnumCurrency.Swiss_Franc
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Swiss_Franc
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 279
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Swiss_Franc = 6
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Chinese_Yuan
+  commentId: F:Refinity.Enums.EnumCurrency.Chinese_Yuan
+  id: Chinese_Yuan
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Chinese_Yuan
+  nameWithType: EnumCurrency.Chinese_Yuan
+  fullName: Refinity.Enums.EnumCurrency.Chinese_Yuan
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Chinese_Yuan
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 281
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Chinese_Yuan = 7
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Swedish_Krona
+  commentId: F:Refinity.Enums.EnumCurrency.Swedish_Krona
+  id: Swedish_Krona
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Swedish_Krona
+  nameWithType: EnumCurrency.Swedish_Krona
+  fullName: Refinity.Enums.EnumCurrency.Swedish_Krona
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Swedish_Krona
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 283
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Swedish_Krona = 8
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.New_Zealand_Dollar
+  commentId: F:Refinity.Enums.EnumCurrency.New_Zealand_Dollar
+  id: New_Zealand_Dollar
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: New_Zealand_Dollar
+  nameWithType: EnumCurrency.New_Zealand_Dollar
+  fullName: Refinity.Enums.EnumCurrency.New_Zealand_Dollar
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: New_Zealand_Dollar
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 285
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: New_Zealand_Dollar = 9
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Mexican_Peso
+  commentId: F:Refinity.Enums.EnumCurrency.Mexican_Peso
+  id: Mexican_Peso
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Mexican_Peso
+  nameWithType: EnumCurrency.Mexican_Peso
+  fullName: Refinity.Enums.EnumCurrency.Mexican_Peso
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Mexican_Peso
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 287
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Mexican_Peso = 10
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Singapore_Dollar
+  commentId: F:Refinity.Enums.EnumCurrency.Singapore_Dollar
+  id: Singapore_Dollar
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Singapore_Dollar
+  nameWithType: EnumCurrency.Singapore_Dollar
+  fullName: Refinity.Enums.EnumCurrency.Singapore_Dollar
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Singapore_Dollar
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 289
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Singapore_Dollar = 11
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Hong_Kong_Dollar
+  commentId: F:Refinity.Enums.EnumCurrency.Hong_Kong_Dollar
+  id: Hong_Kong_Dollar
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Hong_Kong_Dollar
+  nameWithType: EnumCurrency.Hong_Kong_Dollar
+  fullName: Refinity.Enums.EnumCurrency.Hong_Kong_Dollar
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Hong_Kong_Dollar
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 291
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Hong_Kong_Dollar = 12
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Norwegian_Krone
+  commentId: F:Refinity.Enums.EnumCurrency.Norwegian_Krone
+  id: Norwegian_Krone
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Norwegian_Krone
+  nameWithType: EnumCurrency.Norwegian_Krone
+  fullName: Refinity.Enums.EnumCurrency.Norwegian_Krone
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Norwegian_Krone
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 293
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Norwegian_Krone = 13
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.South_Korean_Won
+  commentId: F:Refinity.Enums.EnumCurrency.South_Korean_Won
+  id: South_Korean_Won
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: South_Korean_Won
+  nameWithType: EnumCurrency.South_Korean_Won
+  fullName: Refinity.Enums.EnumCurrency.South_Korean_Won
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: South_Korean_Won
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 295
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: South_Korean_Won = 14
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Turkish_Lira
+  commentId: F:Refinity.Enums.EnumCurrency.Turkish_Lira
+  id: Turkish_Lira
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Turkish_Lira
+  nameWithType: EnumCurrency.Turkish_Lira
+  fullName: Refinity.Enums.EnumCurrency.Turkish_Lira
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Turkish_Lira
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 297
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Turkish_Lira = 15
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Russian_Ruble
+  commentId: F:Refinity.Enums.EnumCurrency.Russian_Ruble
+  id: Russian_Ruble
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Russian_Ruble
+  nameWithType: EnumCurrency.Russian_Ruble
+  fullName: Refinity.Enums.EnumCurrency.Russian_Ruble
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Russian_Ruble
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 299
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Russian_Ruble = 16
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Indian_Rupee
+  commentId: F:Refinity.Enums.EnumCurrency.Indian_Rupee
+  id: Indian_Rupee
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Indian_Rupee
+  nameWithType: EnumCurrency.Indian_Rupee
+  fullName: Refinity.Enums.EnumCurrency.Indian_Rupee
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Indian_Rupee
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 301
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Indian_Rupee = 17
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Brazilian_Real
+  commentId: F:Refinity.Enums.EnumCurrency.Brazilian_Real
+  id: Brazilian_Real
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Brazilian_Real
+  nameWithType: EnumCurrency.Brazilian_Real
+  fullName: Refinity.Enums.EnumCurrency.Brazilian_Real
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Brazilian_Real
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 303
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Brazilian_Real = 18
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.South_African_Rand
+  commentId: F:Refinity.Enums.EnumCurrency.South_African_Rand
+  id: South_African_Rand
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: South_African_Rand
+  nameWithType: EnumCurrency.South_African_Rand
+  fullName: Refinity.Enums.EnumCurrency.South_African_Rand
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: South_African_Rand
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 305
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: South_African_Rand = 19
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Saudi_Riyal
+  commentId: F:Refinity.Enums.EnumCurrency.Saudi_Riyal
+  id: Saudi_Riyal
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Saudi_Riyal
+  nameWithType: EnumCurrency.Saudi_Riyal
+  fullName: Refinity.Enums.EnumCurrency.Saudi_Riyal
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Saudi_Riyal
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 307
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Saudi_Riyal = 20
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.UAE_Dirham
+  commentId: F:Refinity.Enums.EnumCurrency.UAE_Dirham
+  id: UAE_Dirham
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: UAE_Dirham
+  nameWithType: EnumCurrency.UAE_Dirham
+  fullName: Refinity.Enums.EnumCurrency.UAE_Dirham
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: UAE_Dirham
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 309
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: UAE_Dirham = 21
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Danish_Krone
+  commentId: F:Refinity.Enums.EnumCurrency.Danish_Krone
+  id: Danish_Krone
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Danish_Krone
+  nameWithType: EnumCurrency.Danish_Krone
+  fullName: Refinity.Enums.EnumCurrency.Danish_Krone
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Danish_Krone
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 311
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Danish_Krone = 22
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Polish_Zloty
+  commentId: F:Refinity.Enums.EnumCurrency.Polish_Zloty
+  id: Polish_Zloty
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Polish_Zloty
+  nameWithType: EnumCurrency.Polish_Zloty
+  fullName: Refinity.Enums.EnumCurrency.Polish_Zloty
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Polish_Zloty
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 313
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Polish_Zloty = 23
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Israeli_Shekel
+  commentId: F:Refinity.Enums.EnumCurrency.Israeli_Shekel
+  id: Israeli_Shekel
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Israeli_Shekel
+  nameWithType: EnumCurrency.Israeli_Shekel
+  fullName: Refinity.Enums.EnumCurrency.Israeli_Shekel
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Israeli_Shekel
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 315
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Israeli_Shekel = 24
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Philippine_Peso
+  commentId: F:Refinity.Enums.EnumCurrency.Philippine_Peso
+  id: Philippine_Peso
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Philippine_Peso
+  nameWithType: EnumCurrency.Philippine_Peso
+  fullName: Refinity.Enums.EnumCurrency.Philippine_Peso
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Philippine_Peso
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 317
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Philippine_Peso = 25
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Czech_Koruna
+  commentId: F:Refinity.Enums.EnumCurrency.Czech_Koruna
+  id: Czech_Koruna
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Czech_Koruna
+  nameWithType: EnumCurrency.Czech_Koruna
+  fullName: Refinity.Enums.EnumCurrency.Czech_Koruna
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Czech_Koruna
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 319
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Czech_Koruna = 26
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Indonesian_Rupiah
+  commentId: F:Refinity.Enums.EnumCurrency.Indonesian_Rupiah
+  id: Indonesian_Rupiah
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Indonesian_Rupiah
+  nameWithType: EnumCurrency.Indonesian_Rupiah
+  fullName: Refinity.Enums.EnumCurrency.Indonesian_Rupiah
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Indonesian_Rupiah
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 321
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Indonesian_Rupiah = 27
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Thai_Baht
+  commentId: F:Refinity.Enums.EnumCurrency.Thai_Baht
+  id: Thai_Baht
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Thai_Baht
+  nameWithType: EnumCurrency.Thai_Baht
+  fullName: Refinity.Enums.EnumCurrency.Thai_Baht
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Thai_Baht
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 323
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Thai_Baht = 28
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Malaysian_Ringgit
+  commentId: F:Refinity.Enums.EnumCurrency.Malaysian_Ringgit
+  id: Malaysian_Ringgit
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Malaysian_Ringgit
+  nameWithType: EnumCurrency.Malaysian_Ringgit
+  fullName: Refinity.Enums.EnumCurrency.Malaysian_Ringgit
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Malaysian_Ringgit
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 325
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Malaysian_Ringgit = 29
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Hungarian_Forint
+  commentId: F:Refinity.Enums.EnumCurrency.Hungarian_Forint
+  id: Hungarian_Forint
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Hungarian_Forint
+  nameWithType: EnumCurrency.Hungarian_Forint
+  fullName: Refinity.Enums.EnumCurrency.Hungarian_Forint
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Hungarian_Forint
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 327
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Hungarian_Forint = 30
+    return:
+      type: Refinity.Enums.EnumCurrency
+- uid: Refinity.Enums.EnumCurrency.Romanian_Leu
+  commentId: F:Refinity.Enums.EnumCurrency.Romanian_Leu
+  id: Romanian_Leu
+  parent: Refinity.Enums.EnumCurrency
+  langs:
+  - csharp
+  - vb
+  name: Romanian_Leu
+  nameWithType: EnumCurrency.Romanian_Leu
+  fullName: Refinity.Enums.EnumCurrency.Romanian_Leu
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Romanian_Leu
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 329
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Romanian_Leu = 31
+    return:
+      type: Refinity.Enums.EnumCurrency
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumCurrency.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumCurrency>(EnumCurrency)
+  nameWithType: EnumsUtility.GetDescription<EnumCurrency>(EnumCurrency)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumCurrency>(Refinity.Enums.EnumCurrency)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumCurrency)(EnumCurrency)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumCurrency)(Refinity.Enums.EnumCurrency)
+  name.vb: GetDescription(Of EnumCurrency)(EnumCurrency)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumCurrency)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumCurrency
+    name: EnumCurrency
+    href: Refinity.Enums.EnumCurrency.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumCurrency
+    name: EnumCurrency
+    href: Refinity.Enums.EnumCurrency.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumCurrency)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumCurrency
+    name: EnumCurrency
+    href: Refinity.Enums.EnumCurrency.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumCurrency
+    name: EnumCurrency
+    href: Refinity.Enums.EnumCurrency.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumCurrency
+  commentId: T:Refinity.Enums.EnumCurrency
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumCurrency.html
+  name: EnumCurrency
+  nameWithType: EnumCurrency
+  fullName: Refinity.Enums.EnumCurrency

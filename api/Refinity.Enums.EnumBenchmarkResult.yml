@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumBenchmarkResult
+  commentId: T:Refinity.Enums.EnumBenchmarkResult
+  id: EnumBenchmarkResult
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumBenchmarkResult.Failure
+  - Refinity.Enums.EnumBenchmarkResult.Success
+  langs:
+  - csharp
+  - vb
+  name: EnumBenchmarkResult
+  nameWithType: EnumBenchmarkResult
+  fullName: Refinity.Enums.EnumBenchmarkResult
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumBenchmarkResult
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 383
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents the result of a benchmark operation.
+  example: []
+  syntax:
+    content: public enum EnumBenchmarkResult
+    content.vb: Public Enum EnumBenchmarkResult
+  extensionMethods:
+  - Refinity.Enums.EnumBenchmarkResult.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumBenchmarkResult.Success
+  commentId: F:Refinity.Enums.EnumBenchmarkResult.Success
+  id: Success
+  parent: Refinity.Enums.EnumBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: EnumBenchmarkResult.Success
+  fullName: Refinity.Enums.EnumBenchmarkResult.Success
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Success
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 385
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Success = 0
+    return:
+      type: Refinity.Enums.EnumBenchmarkResult
+- uid: Refinity.Enums.EnumBenchmarkResult.Failure
+  commentId: F:Refinity.Enums.EnumBenchmarkResult.Failure
+  id: Failure
+  parent: Refinity.Enums.EnumBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: Failure
+  nameWithType: EnumBenchmarkResult.Failure
+  fullName: Refinity.Enums.EnumBenchmarkResult.Failure
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Failure
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 387
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Failure = 1
+    return:
+      type: Refinity.Enums.EnumBenchmarkResult
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumBenchmarkResult.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumBenchmarkResult>(EnumBenchmarkResult)
+  nameWithType: EnumsUtility.GetDescription<EnumBenchmarkResult>(EnumBenchmarkResult)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumBenchmarkResult>(Refinity.Enums.EnumBenchmarkResult)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumBenchmarkResult)(EnumBenchmarkResult)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumBenchmarkResult)(Refinity.Enums.EnumBenchmarkResult)
+  name.vb: GetDescription(Of EnumBenchmarkResult)(EnumBenchmarkResult)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumBenchmarkResult)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumBenchmarkResult
+    name: EnumBenchmarkResult
+    href: Refinity.Enums.EnumBenchmarkResult.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumBenchmarkResult
+    name: EnumBenchmarkResult
+    href: Refinity.Enums.EnumBenchmarkResult.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumBenchmarkResult)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumBenchmarkResult
+    name: EnumBenchmarkResult
+    href: Refinity.Enums.EnumBenchmarkResult.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumBenchmarkResult
+    name: EnumBenchmarkResult
+    href: Refinity.Enums.EnumBenchmarkResult.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumBenchmarkResult
+  commentId: T:Refinity.Enums.EnumBenchmarkResult
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumBenchmarkResult.html
+  name: EnumBenchmarkResult
+  nameWithType: EnumBenchmarkResult
+  fullName: Refinity.Enums.EnumBenchmarkResult

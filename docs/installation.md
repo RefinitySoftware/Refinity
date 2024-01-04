@@ -1,8 +1,4 @@
-# 🚀 Introducing Refinity
-
-Welcome to Refinity! This guide will help you get started with installing and using Refinity in your C# projects.
-
-## 📦 Installation
+# 📦 Installation
 
 To install Refinity, follow these steps:
 
@@ -23,16 +19,6 @@ If you prefer using the command line, you can install Refinity using the .NET CL
 ```console
 dotnet add package Refinity
 ```
-
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
 
 ## 🆘 Support
 

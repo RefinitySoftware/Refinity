@@ -24,7 +24,9 @@ public static class FinanceUtility
     /// <returns>The difference between the two integers as a percentage.</returns>
     public static double DifferencePercentage(this int value, int otherValue)
     {
-        return (value - otherValue) / otherValue * 100;
+        double doubleValue = value - otherValue;
+        double doubleOtherValue = otherValue;
+        return doubleValue / doubleOtherValue * 100;
     }
 
     /// <summary>

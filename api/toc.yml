@@ -1,0 +1,107 @@
+### YamlMime:TableOfContent
+items:
+- uid: Refinity.Benchmark
+  name: Refinity.Benchmark
+  items:
+  - uid: Refinity.Benchmark.BenchmarkUtility
+    name: BenchmarkUtility
+- uid: Refinity.Benchmark.Models
+  name: Refinity.Benchmark.Models
+  items:
+  - uid: Refinity.Benchmark.Models.BenchmarkModels
+    name: BenchmarkModels
+- uid: Refinity.Conversion
+  name: Refinity.Conversion
+  items:
+  - uid: Refinity.Conversion.ConvertUtility
+    name: ConvertUtility
+  - uid: Refinity.Conversion.LogEntry
+    name: LogEntry
+- uid: Refinity.Date
+  name: Refinity.Date
+  items:
+  - uid: Refinity.Date.DateDifference
+    name: DateDifference
+  - uid: Refinity.Date.DateRangeModel
+    name: DateRangeModel
+  - uid: Refinity.Date.DateUtility
+    name: DateUtility
+- uid: Refinity.Enums
+  name: Refinity.Enums
+  items:
+  - uid: Refinity.Enums.EnumBenchmarkResult
+    name: EnumBenchmarkResult
+  - uid: Refinity.Enums.EnumColor
+    name: EnumColor
+  - uid: Refinity.Enums.EnumCurrency
+    name: EnumCurrency
+  - uid: Refinity.Enums.EnumFileTypes
+    name: EnumFileTypes
+  - uid: Refinity.Enums.EnumLanguageCodes
+    name: EnumLanguageCodes
+  - uid: Refinity.Enums.EnumLogLevel
+    name: EnumLogLevel
+  - uid: Refinity.Enums.EnumMonths
+    name: EnumMonths
+  - uid: Refinity.Enums.EnumPressureUnits
+    name: EnumPressureUnits
+  - uid: Refinity.Enums.EnumScaleGrams
+    name: EnumScaleGrams
+  - uid: Refinity.Enums.EnumScaleJoules
+    name: EnumScaleJoules
+  - uid: Refinity.Enums.EnumScaleLiters
+    name: EnumScaleLiters
+  - uid: Refinity.Enums.EnumScaleMeters
+    name: EnumScaleMeters
+  - uid: Refinity.Enums.EnumScaleMiles
+    name: EnumScaleMiles
+  - uid: Refinity.Enums.EnumScaleOnces
+    name: EnumScaleOnces
+  - uid: Refinity.Enums.EnumScalePascal
+    name: EnumScalePascal
+  - uid: Refinity.Enums.EnumScaleTime
+    name: EnumScaleTime
+  - uid: Refinity.Enums.EnumScaleVolts
+    name: EnumScaleVolts
+  - uid: Refinity.Enums.EnumScaleWatts
+    name: EnumScaleWatts
+  - uid: Refinity.Enums.EnumTemperatureUnits
+    name: EnumTemperatureUnits
+  - uid: Refinity.Enums.EnumUnitSystem
+    name: EnumUnitSystem
+  - uid: Refinity.Enums.EnumWeekDays
+    name: EnumWeekDays
+  - uid: Refinity.Enums.EnumWeekDaysShort
+    name: EnumWeekDaysShort
+  - uid: Refinity.Enums.EnumsUtility
+    name: EnumsUtility
+- uid: Refinity.Finance
+  name: Refinity.Finance
+  items:
+  - uid: Refinity.Finance.FinanceUtility
+    name: FinanceUtility
+- uid: Refinity.Geometry
+  name: Refinity.Geometry
+  items:
+  - uid: Refinity.Geometry.CoordinateModel
+    name: CoordinateModel
+  - uid: Refinity.Geometry.GeometryUtility
+    name: GeometryUtility
+- uid: Refinity.Logging
+  name: Refinity.Logging
+  items:
+  - uid: Refinity.Logging.LoggingUtility
+    name: LoggingUtility
+- uid: Refinity.Math
+  name: Refinity.Math
+  items:
+  - uid: Refinity.Math.LinearRegressionModel
+    name: LinearRegressionModel
+  - uid: Refinity.Math.MathUtility
+    name: MathUtility
+- uid: Refinity.Strings
+  name: Refinity.Strings
+  items:
+  - uid: Refinity.Strings.StringsUtility
+    name: StringsUtility
+memberLayout: SamePage

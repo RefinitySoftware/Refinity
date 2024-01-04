@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumPressureUnits
+  commentId: T:Refinity.Enums.EnumPressureUnits
+  id: EnumPressureUnits
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumPressureUnits.Atmosphere
+  - Refinity.Enums.EnumPressureUnits.Bar
+  - Refinity.Enums.EnumPressureUnits.Pascal
+  - Refinity.Enums.EnumPressureUnits.Psi
+  - Refinity.Enums.EnumPressureUnits.Torr
+  langs:
+  - csharp
+  - vb
+  name: EnumPressureUnits
+  nameWithType: EnumPressureUnits
+  fullName: Refinity.Enums.EnumPressureUnits
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumPressureUnits
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 362
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents the units of pressure.
+  example: []
+  syntax:
+    content: public enum EnumPressureUnits
+    content.vb: Public Enum EnumPressureUnits
+  extensionMethods:
+  - Refinity.Enums.EnumPressureUnits.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumPressureUnits.Pascal
+  commentId: F:Refinity.Enums.EnumPressureUnits.Pascal
+  id: Pascal
+  parent: Refinity.Enums.EnumPressureUnits
+  langs:
+  - csharp
+  - vb
+  name: Pascal
+  nameWithType: EnumPressureUnits.Pascal
+  fullName: Refinity.Enums.EnumPressureUnits.Pascal
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Pascal
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 364
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Pascal = 0
+    return:
+      type: Refinity.Enums.EnumPressureUnits
+- uid: Refinity.Enums.EnumPressureUnits.Bar
+  commentId: F:Refinity.Enums.EnumPressureUnits.Bar
+  id: Bar
+  parent: Refinity.Enums.EnumPressureUnits
+  langs:
+  - csharp
+  - vb
+  name: Bar
+  nameWithType: EnumPressureUnits.Bar
+  fullName: Refinity.Enums.EnumPressureUnits.Bar
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Bar
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 367
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Bar = 1
+    return:
+      type: Refinity.Enums.EnumPressureUnits
+- uid: Refinity.Enums.EnumPressureUnits.Atmosphere
+  commentId: F:Refinity.Enums.EnumPressureUnits.Atmosphere
+  id: Atmosphere
+  parent: Refinity.Enums.EnumPressureUnits
+  langs:
+  - csharp
+  - vb
+  name: Atmosphere
+  nameWithType: EnumPressureUnits.Atmosphere
+  fullName: Refinity.Enums.EnumPressureUnits.Atmosphere
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Atmosphere
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 370
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Atmosphere = 2
+    return:
+      type: Refinity.Enums.EnumPressureUnits
+- uid: Refinity.Enums.EnumPressureUnits.Torr
+  commentId: F:Refinity.Enums.EnumPressureUnits.Torr
+  id: Torr
+  parent: Refinity.Enums.EnumPressureUnits
+  langs:
+  - csharp
+  - vb
+  name: Torr
+  nameWithType: EnumPressureUnits.Torr
+  fullName: Refinity.Enums.EnumPressureUnits.Torr
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Torr
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 373
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Torr = 3
+    return:
+      type: Refinity.Enums.EnumPressureUnits
+- uid: Refinity.Enums.EnumPressureUnits.Psi
+  commentId: F:Refinity.Enums.EnumPressureUnits.Psi
+  id: Psi
+  parent: Refinity.Enums.EnumPressureUnits
+  langs:
+  - csharp
+  - vb
+  name: Psi
+  nameWithType: EnumPressureUnits.Psi
+  fullName: Refinity.Enums.EnumPressureUnits.Psi
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Psi
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 376
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Psi = 4
+    return:
+      type: Refinity.Enums.EnumPressureUnits
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumPressureUnits.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumPressureUnits>(EnumPressureUnits)
+  nameWithType: EnumsUtility.GetDescription<EnumPressureUnits>(EnumPressureUnits)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumPressureUnits>(Refinity.Enums.EnumPressureUnits)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumPressureUnits)(EnumPressureUnits)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumPressureUnits)(Refinity.Enums.EnumPressureUnits)
+  name.vb: GetDescription(Of EnumPressureUnits)(EnumPressureUnits)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumPressureUnits)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumPressureUnits
+    name: EnumPressureUnits
+    href: Refinity.Enums.EnumPressureUnits.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumPressureUnits
+    name: EnumPressureUnits
+    href: Refinity.Enums.EnumPressureUnits.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumPressureUnits)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumPressureUnits
+    name: EnumPressureUnits
+    href: Refinity.Enums.EnumPressureUnits.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumPressureUnits
+    name: EnumPressureUnits
+    href: Refinity.Enums.EnumPressureUnits.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumPressureUnits
+  commentId: T:Refinity.Enums.EnumPressureUnits
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumPressureUnits.html
+  name: EnumPressureUnits
+  nameWithType: EnumPressureUnits
+  fullName: Refinity.Enums.EnumPressureUnits

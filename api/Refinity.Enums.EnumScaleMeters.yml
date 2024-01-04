@@ -1,0 +1,519 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumScaleMeters
+  commentId: T:Refinity.Enums.EnumScaleMeters
+  id: EnumScaleMeters
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumScaleMeters.Attometers
+  - Refinity.Enums.EnumScaleMeters.Centimeters
+  - Refinity.Enums.EnumScaleMeters.Decameters
+  - Refinity.Enums.EnumScaleMeters.Decimeters
+  - Refinity.Enums.EnumScaleMeters.Femtometers
+  - Refinity.Enums.EnumScaleMeters.Gigameters
+  - Refinity.Enums.EnumScaleMeters.Hectometers
+  - Refinity.Enums.EnumScaleMeters.Kilometers
+  - Refinity.Enums.EnumScaleMeters.Megameters
+  - Refinity.Enums.EnumScaleMeters.Meters
+  - Refinity.Enums.EnumScaleMeters.Micrometers
+  - Refinity.Enums.EnumScaleMeters.Millimeters
+  - Refinity.Enums.EnumScaleMeters.Nanometers
+  - Refinity.Enums.EnumScaleMeters.Picometers
+  langs:
+  - csharp
+  - vb
+  name: EnumScaleMeters
+  nameWithType: EnumScaleMeters
+  fullName: Refinity.Enums.EnumScaleMeters
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumScaleMeters
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 487
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents a set of scale units in meters.
+  example: []
+  syntax:
+    content: public enum EnumScaleMeters
+    content.vb: Public Enum EnumScaleMeters
+  extensionMethods:
+  - Refinity.Enums.EnumScaleMeters.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumScaleMeters.Gigameters
+  commentId: F:Refinity.Enums.EnumScaleMeters.Gigameters
+  id: Gigameters
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Gigameters
+  nameWithType: EnumScaleMeters.Gigameters
+  fullName: Refinity.Enums.EnumScaleMeters.Gigameters
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Gigameters
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 489
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Gigameters = 0
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Megameters
+  commentId: F:Refinity.Enums.EnumScaleMeters.Megameters
+  id: Megameters
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Megameters
+  nameWithType: EnumScaleMeters.Megameters
+  fullName: Refinity.Enums.EnumScaleMeters.Megameters
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Megameters
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 492
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Megameters = 1
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Kilometers
+  commentId: F:Refinity.Enums.EnumScaleMeters.Kilometers
+  id: Kilometers
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Kilometers
+  nameWithType: EnumScaleMeters.Kilometers
+  fullName: Refinity.Enums.EnumScaleMeters.Kilometers
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Kilometers
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 495
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Kilometers = 2
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Hectometers
+  commentId: F:Refinity.Enums.EnumScaleMeters.Hectometers
+  id: Hectometers
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Hectometers
+  nameWithType: EnumScaleMeters.Hectometers
+  fullName: Refinity.Enums.EnumScaleMeters.Hectometers
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Hectometers
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 498
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Hectometers = 3
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Decameters
+  commentId: F:Refinity.Enums.EnumScaleMeters.Decameters
+  id: Decameters
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Decameters
+  nameWithType: EnumScaleMeters.Decameters
+  fullName: Refinity.Enums.EnumScaleMeters.Decameters
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Decameters
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 501
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Decameters = 4
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Meters
+  commentId: F:Refinity.Enums.EnumScaleMeters.Meters
+  id: Meters
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Meters
+  nameWithType: EnumScaleMeters.Meters
+  fullName: Refinity.Enums.EnumScaleMeters.Meters
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Meters
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 504
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Meters = 5
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Decimeters
+  commentId: F:Refinity.Enums.EnumScaleMeters.Decimeters
+  id: Decimeters
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Decimeters
+  nameWithType: EnumScaleMeters.Decimeters
+  fullName: Refinity.Enums.EnumScaleMeters.Decimeters
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Decimeters
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 507
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Decimeters = 6
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Centimeters
+  commentId: F:Refinity.Enums.EnumScaleMeters.Centimeters
+  id: Centimeters
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Centimeters
+  nameWithType: EnumScaleMeters.Centimeters
+  fullName: Refinity.Enums.EnumScaleMeters.Centimeters
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Centimeters
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 510
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Centimeters = 7
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Millimeters
+  commentId: F:Refinity.Enums.EnumScaleMeters.Millimeters
+  id: Millimeters
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Millimeters
+  nameWithType: EnumScaleMeters.Millimeters
+  fullName: Refinity.Enums.EnumScaleMeters.Millimeters
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Millimeters
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 513
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Millimeters = 8
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Micrometers
+  commentId: F:Refinity.Enums.EnumScaleMeters.Micrometers
+  id: Micrometers
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Micrometers
+  nameWithType: EnumScaleMeters.Micrometers
+  fullName: Refinity.Enums.EnumScaleMeters.Micrometers
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Micrometers
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 516
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Micrometers = 9
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Nanometers
+  commentId: F:Refinity.Enums.EnumScaleMeters.Nanometers
+  id: Nanometers
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Nanometers
+  nameWithType: EnumScaleMeters.Nanometers
+  fullName: Refinity.Enums.EnumScaleMeters.Nanometers
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Nanometers
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 519
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Nanometers = 10
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Picometers
+  commentId: F:Refinity.Enums.EnumScaleMeters.Picometers
+  id: Picometers
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Picometers
+  nameWithType: EnumScaleMeters.Picometers
+  fullName: Refinity.Enums.EnumScaleMeters.Picometers
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Picometers
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 522
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Picometers = 11
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Femtometers
+  commentId: F:Refinity.Enums.EnumScaleMeters.Femtometers
+  id: Femtometers
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Femtometers
+  nameWithType: EnumScaleMeters.Femtometers
+  fullName: Refinity.Enums.EnumScaleMeters.Femtometers
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Femtometers
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 525
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Femtometers = 12
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+- uid: Refinity.Enums.EnumScaleMeters.Attometers
+  commentId: F:Refinity.Enums.EnumScaleMeters.Attometers
+  id: Attometers
+  parent: Refinity.Enums.EnumScaleMeters
+  langs:
+  - csharp
+  - vb
+  name: Attometers
+  nameWithType: EnumScaleMeters.Attometers
+  fullName: Refinity.Enums.EnumScaleMeters.Attometers
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Attometers
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 528
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Attometers = 13
+    return:
+      type: Refinity.Enums.EnumScaleMeters
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumScaleMeters.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumScaleMeters>(EnumScaleMeters)
+  nameWithType: EnumsUtility.GetDescription<EnumScaleMeters>(EnumScaleMeters)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumScaleMeters>(Refinity.Enums.EnumScaleMeters)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumScaleMeters)(EnumScaleMeters)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumScaleMeters)(Refinity.Enums.EnumScaleMeters)
+  name.vb: GetDescription(Of EnumScaleMeters)(EnumScaleMeters)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumScaleMeters)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumScaleMeters
+    name: EnumScaleMeters
+    href: Refinity.Enums.EnumScaleMeters.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumScaleMeters
+    name: EnumScaleMeters
+    href: Refinity.Enums.EnumScaleMeters.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumScaleMeters)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumScaleMeters
+    name: EnumScaleMeters
+    href: Refinity.Enums.EnumScaleMeters.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumScaleMeters
+    name: EnumScaleMeters
+    href: Refinity.Enums.EnumScaleMeters.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumScaleMeters
+  commentId: T:Refinity.Enums.EnumScaleMeters
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumScaleMeters.html
+  name: EnumScaleMeters
+  nameWithType: EnumScaleMeters
+  fullName: Refinity.Enums.EnumScaleMeters
