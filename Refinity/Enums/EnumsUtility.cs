@@ -1,7 +1,5 @@
-using System;
 using System.ComponentModel;
 using System.Globalization;
-using System.Linq;
 
 namespace Refinity.Enums;
 public static class EnumsUtility
@@ -23,7 +21,12 @@ public static class EnumsUtility
             {
                 if (val == e.ToInt32(CultureInfo.InvariantCulture))
                 {
-                    var memInfo = type.GetMember(type.GetEnumName(val));
+                    var member = type.GetEnumName(val);
+                    if (member == null)
+                    {
+                        throw new ArgumentException("Enum name not found.");
+                    }
+                    var memInfo = type.GetMember(member);
                     var descriptionAttribute = memInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false).FirstOrDefault() as DescriptionAttribute;
 
                     if (descriptionAttribute != null)
@@ -34,7 +37,7 @@ public static class EnumsUtility
             }
         }
 
-        return null;
+        throw new ArgumentException("Enum value not found.");
     }
 
     /// <summary>
@@ -49,8 +52,7 @@ public static class EnumsUtility
         {
             return (T)Enum.ToObject(typeof(T), number);
         }
-
-        return default;
+        throw new ArgumentException("Enum value not found.");
     }
 }
 
@@ -585,10 +587,6 @@ public enum EnumLanguageCodes
     PL,
     [Description("Serbian")]
     SR,
-    [Description("Slovak")]
-    SK,
-    [Description("Slovenian")]
-    SL,
     [Description("Welsh")]
     CY
 }
