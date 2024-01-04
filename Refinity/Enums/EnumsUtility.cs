@@ -3,56 +3,54 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 
-namespace Refinity.Enums
+namespace Refinity.Enums;
+public static class EnumsUtility
 {
-    public static class EnumsUtility
+    /// <summary>
+    /// Retrieves the description attribute value of an enum value.
+    /// </summary>
+    /// <typeparam name="T">The enum type.</typeparam>
+    /// <param name="e">The enum value.</param>
+    /// <returns>The description attribute value of the enum value, or null if not found.</returns>
+    public static string GetDescription<T>(this T e) where T : IConvertible
     {
-        /// <summary>
-        /// Retrieves the description attribute value of an enum value.
-        /// </summary>
-        /// <typeparam name="T">The enum type.</typeparam>
-        /// <param name="e">The enum value.</param>
-        /// <returns>The description attribute value of the enum value, or null if not found.</returns>
-        public static string GetDescription<T>(this T e) where T : IConvertible
+        if (e is Enum)
         {
-            if (e is Enum)
+            Type type = e.GetType();
+            Array values = System.Enum.GetValues(type);
+
+            foreach (int val in values)
             {
-                Type type = e.GetType();
-                Array values = System.Enum.GetValues(type);
-
-                foreach (int val in values)
+                if (val == e.ToInt32(CultureInfo.InvariantCulture))
                 {
-                    if (val == e.ToInt32(CultureInfo.InvariantCulture))
-                    {
-                        var memInfo = type.GetMember(type.GetEnumName(val));
-                        var descriptionAttribute = memInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false).FirstOrDefault() as DescriptionAttribute;
+                    var memInfo = type.GetMember(type.GetEnumName(val));
+                    var descriptionAttribute = memInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false).FirstOrDefault() as DescriptionAttribute;
 
-                        if (descriptionAttribute != null)
-                        {
-                            return descriptionAttribute.Description;
-                        }
+                    if (descriptionAttribute != null)
+                    {
+                        return descriptionAttribute.Description;
                     }
                 }
             }
-
-            return null;
         }
 
-        /// <summary>
-        /// Retrieves the enum value by its number.
-        /// </summary>
-        /// <typeparam name="T">The enum type.</typeparam>
-        /// <param name="number">The number representing the enum value.</param>
-        /// <returns>The enum value corresponding to the number, or null if not found.</returns>
-        public static T GetEnumByNumber<T>(int number) where T : Enum
+        return null;
+    }
+
+    /// <summary>
+    /// Retrieves the enum value by its number.
+    /// </summary>
+    /// <typeparam name="T">The enum type.</typeparam>
+    /// <param name="number">The number representing the enum value.</param>
+    /// <returns>The enum value corresponding to the number, or null if not found.</returns>
+    public static T GetEnumByNumber<T>(int number) where T : Enum
+    {
+        if (Enum.IsDefined(typeof(T), number))
         {
-            if (Enum.IsDefined(typeof(T), number))
-            {
-                return (T)Enum.ToObject(typeof(T), number);
-            }
-
-            return default;
+            return (T)Enum.ToObject(typeof(T), number);
         }
+
+        return default;
     }
 }
 
