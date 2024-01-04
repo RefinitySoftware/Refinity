@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refinity", "Refinity\Refinity.csproj", "{DAD8E27A-8E97-46C8-AEEA-0739400CA788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{40205EBB-A3B4-4A4E-950F-624C4884AEA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityTests", "RefinityTests\RefinityTests.csproj", "{9A16D768-A1F4-4218-89FC-BAA13E6CFF94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAD8E27A-8E97-46C8-AEEA-0739400CA788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD8E27A-8E97-46C8-AEEA-0739400CA788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD8E27A-8E97-46C8-AEEA-0739400CA788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD8E27A-8E97-46C8-AEEA-0739400CA788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40205EBB-A3B4-4A4E-950F-624C4884AEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40205EBB-A3B4-4A4E-950F-624C4884AEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40205EBB-A3B4-4A4E-950F-624C4884AEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40205EBB-A3B4-4A4E-950F-624C4884AEA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A16D768-A1F4-4218-89FC-BAA13E6CFF94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A16D768-A1F4-4218-89FC-BAA13E6CFF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A16D768-A1F4-4218-89FC-BAA13E6CFF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A16D768-A1F4-4218-89FC-BAA13E6CFF94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD00527B-A2E8-41E3-A4F1-3F51542CB321}
+	EndGlobalSection
+EndGlobal

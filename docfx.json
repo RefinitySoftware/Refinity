@@ -1,0 +1,49 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../Refinity",
+          "files": [
+            "**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "templates/default",
+      "templates/modern"
+    ],
+    "globalMetadata": {
+      "_appName": "Refinity",
+      "_appTitle": "Refinity",
+      "_enableSearch": true,
+      "_disableContribution": true,
+      "_appLogoPath": "icon.png",
+      "pdf": false,
+      "_appFaviconPath": "icon.png",
+      "_gitContribute": "https://github.com/InfinitySoftware-House/Refinity"
+    }
+  }
+}
