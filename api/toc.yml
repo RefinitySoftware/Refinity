@@ -1,0 +1,66 @@
+### YamlMime:TableOfContent
+items:
+- uid: Refinity
+  name: Refinity
+  items:
+  - uid: Refinity.CoordinateModel
+    name: CoordinateModel
+  - uid: Refinity.DateDifference
+    name: DateDifference
+- uid: Refinity.Benchmark
+  name: Refinity.Benchmark
+  items:
+  - uid: Refinity.Benchmark.BenchmarkUtility
+    name: BenchmarkUtility
+- uid: Refinity.Benchmark.Models
+  name: Refinity.Benchmark.Models
+  items:
+  - uid: Refinity.Benchmark.Models.BenchmarkModels
+    name: BenchmarkModels
+  - uid: Refinity.Benchmark.Models.BenchmarkResult
+    name: BenchmarkResult
+- uid: Refinity.Conversion
+  name: Refinity.Conversion
+  items:
+  - uid: Refinity.Conversion.ConvertUtility
+    name: ConvertUtility
+- uid: Refinity.Date
+  name: Refinity.Date
+  items:
+  - uid: Refinity.Date.DateUtility
+    name: DateUtility
+- uid: Refinity.Finance
+  name: Refinity.Finance
+  items:
+  - uid: Refinity.Finance.FinanceUtility
+    name: FinanceUtility
+- uid: Refinity.Geometry
+  name: Refinity.Geometry
+  items:
+  - uid: Refinity.Geometry.GeometryUtility
+    name: GeometryUtility
+- uid: Refinity.Logging
+  name: Refinity.Logging
+  items:
+  - uid: Refinity.Logging.LoggingUtility
+    name: LoggingUtility
+- uid: Refinity.Logging.Models
+  name: Refinity.Logging.Models
+  items:
+  - uid: Refinity.Logging.Models.LogColorHelper
+    name: LogColorHelper
+  - uid: Refinity.Logging.Models.LogLevel
+    name: LogLevel
+- uid: Refinity.Math
+  name: Refinity.Math
+  items:
+  - uid: Refinity.Math.LinearRegressionModel
+    name: LinearRegressionModel
+  - uid: Refinity.Math.MathUtility
+    name: MathUtility
+- uid: Refinity.Strings
+  name: Refinity.Strings
+  items:
+  - uid: Refinity.Strings.StringsUtility
+    name: StringsUtility
+memberLayout: SamePage

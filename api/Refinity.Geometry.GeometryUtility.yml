@@ -1,0 +1,1405 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Geometry.GeometryUtility
+  commentId: T:Refinity.Geometry.GeometryUtility
+  id: GeometryUtility
+  parent: Refinity.Geometry
+  children:
+  - Refinity.Geometry.GeometryUtility.AreaOfCircle(System.Double)
+  - Refinity.Geometry.GeometryUtility.AreaOfParallelogram(System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.AreaOfRectangle(System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.AreaOfRhombus(System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.AreaOfSector(System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.AreaOfSquare(System.Double)
+  - Refinity.Geometry.GeometryUtility.AreaOfTrapezoid(System.Double,System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.AreaOfTriangle(System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateDistance(System.Double,System.Double,System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter(System.Double,System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide(System.Double,System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter(System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal(System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter(System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter(System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal(System.Double,System.Double,System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateSlope(System.Double,System.Double,System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter(System.Double)
+  - Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.ToCartesianCoordinates(System.Double,System.Double)
+  - Refinity.Geometry.GeometryUtility.ToPolarCoordinates(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: GeometryUtility
+  nameWithType: GeometryUtility
+  fullName: Refinity.Geometry.GeometryUtility
+  type: Class
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: GeometryUtility
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 2
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  syntax:
+    content: public static class GeometryUtility
+    content.vb: Public Module GeometryUtility
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Refinity.Geometry.GeometryUtility.AreaOfCircle(System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.AreaOfCircle(System.Double)
+  id: AreaOfCircle(System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: AreaOfCircle(double)
+  nameWithType: GeometryUtility.AreaOfCircle(double)
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfCircle(double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: AreaOfCircle
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 9
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the area of a circle.
+  example: []
+  syntax:
+    content: public static double AreaOfCircle(double radius)
+    parameters:
+    - id: radius
+      type: System.Double
+      description: The radius of the circle.
+    return:
+      type: System.Double
+      description: The area of the circle.
+    content.vb: Public Shared Function AreaOfCircle(radius As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.AreaOfCircle*
+  nameWithType.vb: GeometryUtility.AreaOfCircle(Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.AreaOfCircle(Double)
+  name.vb: AreaOfCircle(Double)
+- uid: Refinity.Geometry.GeometryUtility.AreaOfTriangle(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.AreaOfTriangle(System.Double,System.Double)
+  id: AreaOfTriangle(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: AreaOfTriangle(double, double)
+  nameWithType: GeometryUtility.AreaOfTriangle(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfTriangle(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: AreaOfTriangle
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 20
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the area of a triangle.
+  example: []
+  syntax:
+    content: public static double AreaOfTriangle(double @base, double height)
+    parameters:
+    - id: base
+      type: System.Double
+      description: The base of the triangle.
+    - id: height
+      type: System.Double
+      description: The height of the triangle.
+    return:
+      type: System.Double
+      description: The area of the triangle.
+    content.vb: Public Shared Function AreaOfTriangle(base As Double, height As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.AreaOfTriangle*
+  nameWithType.vb: GeometryUtility.AreaOfTriangle(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.AreaOfTriangle(Double, Double)
+  name.vb: AreaOfTriangle(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.AreaOfRectangle(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.AreaOfRectangle(System.Double,System.Double)
+  id: AreaOfRectangle(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: AreaOfRectangle(double, double)
+  nameWithType: GeometryUtility.AreaOfRectangle(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfRectangle(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: AreaOfRectangle
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 31
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the area of a rectangle.
+  example: []
+  syntax:
+    content: public static double AreaOfRectangle(double length, double width)
+    parameters:
+    - id: length
+      type: System.Double
+      description: The length of the rectangle.
+    - id: width
+      type: System.Double
+      description: The width of the rectangle.
+    return:
+      type: System.Double
+      description: The area of the rectangle.
+    content.vb: Public Shared Function AreaOfRectangle(length As Double, width As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.AreaOfRectangle*
+  nameWithType.vb: GeometryUtility.AreaOfRectangle(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.AreaOfRectangle(Double, Double)
+  name.vb: AreaOfRectangle(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.AreaOfSquare(System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.AreaOfSquare(System.Double)
+  id: AreaOfSquare(System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: AreaOfSquare(double)
+  nameWithType: GeometryUtility.AreaOfSquare(double)
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfSquare(double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: AreaOfSquare
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 41
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the area of a square.
+  example: []
+  syntax:
+    content: public static double AreaOfSquare(double side)
+    parameters:
+    - id: side
+      type: System.Double
+      description: The side of the square.
+    return:
+      type: System.Double
+      description: The area of the square.
+    content.vb: Public Shared Function AreaOfSquare(side As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.AreaOfSquare*
+  nameWithType.vb: GeometryUtility.AreaOfSquare(Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.AreaOfSquare(Double)
+  name.vb: AreaOfSquare(Double)
+- uid: Refinity.Geometry.GeometryUtility.AreaOfTrapezoid(System.Double,System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.AreaOfTrapezoid(System.Double,System.Double,System.Double)
+  id: AreaOfTrapezoid(System.Double,System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: AreaOfTrapezoid(double, double, double)
+  nameWithType: GeometryUtility.AreaOfTrapezoid(double, double, double)
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfTrapezoid(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: AreaOfTrapezoid
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 53
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the area of a trapezoid.
+  example: []
+  syntax:
+    content: public static double AreaOfTrapezoid(double base1, double base2, double height)
+    parameters:
+    - id: base1
+      type: System.Double
+      description: The first base of the trapezoid.
+    - id: base2
+      type: System.Double
+      description: The second base of the trapezoid.
+    - id: height
+      type: System.Double
+      description: The height of the trapezoid.
+    return:
+      type: System.Double
+      description: The area of the trapezoid.
+    content.vb: Public Shared Function AreaOfTrapezoid(base1 As Double, base2 As Double, height As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.AreaOfTrapezoid*
+  nameWithType.vb: GeometryUtility.AreaOfTrapezoid(Double, Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.AreaOfTrapezoid(Double, Double, Double)
+  name.vb: AreaOfTrapezoid(Double, Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.AreaOfParallelogram(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.AreaOfParallelogram(System.Double,System.Double)
+  id: AreaOfParallelogram(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: AreaOfParallelogram(double, double)
+  nameWithType: GeometryUtility.AreaOfParallelogram(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfParallelogram(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: AreaOfParallelogram
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 64
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the area of a parallelogram.
+  example: []
+  syntax:
+    content: public static double AreaOfParallelogram(double @base, double height)
+    parameters:
+    - id: base
+      type: System.Double
+      description: The base of the parallelogram.
+    - id: height
+      type: System.Double
+      description: The height of the parallelogram.
+    return:
+      type: System.Double
+      description: The area of the parallelogram.
+    content.vb: Public Shared Function AreaOfParallelogram(base As Double, height As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.AreaOfParallelogram*
+  nameWithType.vb: GeometryUtility.AreaOfParallelogram(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.AreaOfParallelogram(Double, Double)
+  name.vb: AreaOfParallelogram(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.AreaOfRhombus(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.AreaOfRhombus(System.Double,System.Double)
+  id: AreaOfRhombus(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: AreaOfRhombus(double, double)
+  nameWithType: GeometryUtility.AreaOfRhombus(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfRhombus(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: AreaOfRhombus
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 75
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the area of a rhombus.
+  example: []
+  syntax:
+    content: public static double AreaOfRhombus(double diagonal1, double diagonal2)
+    parameters:
+    - id: diagonal1
+      type: System.Double
+      description: The first diagonal of the rhombus.
+    - id: diagonal2
+      type: System.Double
+      description: The second diagonal of the rhombus.
+    return:
+      type: System.Double
+      description: The area of the rhombus.
+    content.vb: Public Shared Function AreaOfRhombus(diagonal1 As Double, diagonal2 As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.AreaOfRhombus*
+  nameWithType.vb: GeometryUtility.AreaOfRhombus(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.AreaOfRhombus(Double, Double)
+  name.vb: AreaOfRhombus(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.AreaOfSector(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.AreaOfSector(System.Double,System.Double)
+  id: AreaOfSector(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: AreaOfSector(double, double)
+  nameWithType: GeometryUtility.AreaOfSector(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfSector(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: AreaOfSector
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 86
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the area of a sector.
+  example: []
+  syntax:
+    content: public static double AreaOfSector(double radius, double angle)
+    parameters:
+    - id: radius
+      type: System.Double
+      description: The radius of the sector.
+    - id: angle
+      type: System.Double
+      description: The angle of the sector.
+    return:
+      type: System.Double
+      description: The area of the sector.
+    content.vb: Public Shared Function AreaOfSector(radius As Double, angle As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.AreaOfSector*
+  nameWithType.vb: GeometryUtility.AreaOfSector(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.AreaOfSector(Double, Double)
+  name.vb: AreaOfSector(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.ToCartesianCoordinates(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.ToCartesianCoordinates(System.Double,System.Double)
+  id: ToCartesianCoordinates(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: ToCartesianCoordinates(double, double)
+  nameWithType: GeometryUtility.ToCartesianCoordinates(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.ToCartesianCoordinates(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: ToCartesianCoordinates
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 97
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Converts Cartesian coordinates to cartesian coordinates.
+  example: []
+  syntax:
+    content: public static CoordinateModel ToCartesianCoordinates(double radius, double angle)
+    parameters:
+    - id: radius
+      type: System.Double
+      description: The radius.
+    - id: angle
+      type: System.Double
+      description: The angle.
+    return:
+      type: Refinity.CoordinateModel
+      description: ''
+    content.vb: Public Shared Function ToCartesianCoordinates(radius As Double, angle As Double) As CoordinateModel
+  overload: Refinity.Geometry.GeometryUtility.ToCartesianCoordinates*
+  nameWithType.vb: GeometryUtility.ToCartesianCoordinates(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.ToCartesianCoordinates(Double, Double)
+  name.vb: ToCartesianCoordinates(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.ToPolarCoordinates(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.ToPolarCoordinates(System.Double,System.Double)
+  id: ToPolarCoordinates(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: ToPolarCoordinates(double, double)
+  nameWithType: GeometryUtility.ToPolarCoordinates(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.ToPolarCoordinates(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: ToPolarCoordinates
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 112
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Converts Cartesian coordinates to polar coordinates.
+  example: []
+  syntax:
+    content: public static CoordinateModel ToPolarCoordinates(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The x-coordinate.
+    - id: y
+      type: System.Double
+      description: The y-coordinate.
+    return:
+      type: Refinity.CoordinateModel
+      description: ''
+    content.vb: Public Shared Function ToPolarCoordinates(x As Double, y As Double) As CoordinateModel
+  overload: Refinity.Geometry.GeometryUtility.ToPolarCoordinates*
+  nameWithType.vb: GeometryUtility.ToPolarCoordinates(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.ToPolarCoordinates(Double, Double)
+  name.vb: ToPolarCoordinates(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateSlope(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateSlope(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateSlope(System.Double,System.Double,System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateSlope(double, double, double, double)
+  nameWithType: GeometryUtility.CalculateSlope(double, double, double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateSlope(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateSlope
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 129
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the slope between two points on a Cartesian plane.
+  example: []
+  syntax:
+    content: public static double CalculateSlope(double x1, double y1, double x2, double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+      description: The x-coordinate of the first point.
+    - id: y1
+      type: System.Double
+      description: The y-coordinate of the first point.
+    - id: x2
+      type: System.Double
+      description: The x-coordinate of the second point.
+    - id: y2
+      type: System.Double
+      description: The y-coordinate of the second point.
+    return:
+      type: System.Double
+      description: The slope between the two points.
+    content.vb: Public Shared Function CalculateSlope(x1 As Double, y1 As Double, x2 As Double, y2 As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateSlope*
+  nameWithType.vb: GeometryUtility.CalculateSlope(Double, Double, Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateSlope(Double, Double, Double, Double)
+  name.vb: CalculateSlope(Double, Double, Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateDistance(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateDistance(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateDistance(System.Double,System.Double,System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateDistance(double, double, double, double)
+  nameWithType: GeometryUtility.CalculateDistance(double, double, double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateDistance(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateDistance
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 142
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the distance between two points in a two-dimensional space.
+  example: []
+  syntax:
+    content: public static double CalculateDistance(double x1, double y1, double x2, double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+      description: The x-coordinate of the first point.
+    - id: y1
+      type: System.Double
+      description: The y-coordinate of the first point.
+    - id: x2
+      type: System.Double
+      description: The x-coordinate of the second point.
+    - id: y2
+      type: System.Double
+      description: The y-coordinate of the second point.
+    return:
+      type: System.Double
+      description: The distance between the two points.
+    content.vb: Public Shared Function CalculateDistance(x1 As Double, y1 As Double, x2 As Double, y2 As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateDistance*
+  nameWithType.vb: GeometryUtility.CalculateDistance(Double, Double, Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateDistance(Double, Double, Double, Double)
+  name.vb: CalculateDistance(Double, Double, Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter(System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter(System.Double)
+  id: CalculateSquarePerimeter(System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateSquarePerimeter(double)
+  nameWithType: GeometryUtility.CalculateSquarePerimeter(double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter(double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateSquarePerimeter
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 152
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the perimeter of a square.
+  example: []
+  syntax:
+    content: public static double CalculateSquarePerimeter(double side)
+    parameters:
+    - id: side
+      type: System.Double
+      description: The length of a side of the square.
+    return:
+      type: System.Double
+      description: The perimeter of the square.
+    content.vb: Public Shared Function CalculateSquarePerimeter(side As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter*
+  nameWithType.vb: GeometryUtility.CalculateSquarePerimeter(Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter(Double)
+  name.vb: CalculateSquarePerimeter(Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter(System.Double,System.Double)
+  id: CalculateRectanglePerimeter(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateRectanglePerimeter(double, double)
+  nameWithType: GeometryUtility.CalculateRectanglePerimeter(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateRectanglePerimeter
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 163
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the perimeter of a rectangle.
+  example: []
+  syntax:
+    content: public static double CalculateRectanglePerimeter(double length, double width)
+    parameters:
+    - id: length
+      type: System.Double
+      description: The length of the rectangle.
+    - id: width
+      type: System.Double
+      description: The width of the rectangle.
+    return:
+      type: System.Double
+      description: The perimeter of the rectangle.
+    content.vb: Public Shared Function CalculateRectanglePerimeter(length As Double, width As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter*
+  nameWithType.vb: GeometryUtility.CalculateRectanglePerimeter(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter(Double, Double)
+  name.vb: CalculateRectanglePerimeter(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal(System.Double,System.Double)
+  id: CalculateRectangleDiagonal(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateRectangleDiagonal(double, double)
+  nameWithType: GeometryUtility.CalculateRectangleDiagonal(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateRectangleDiagonal
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 174
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the diagonal length of a rectangle using its length and width.
+  example: []
+  syntax:
+    content: public static double CalculateRectangleDiagonal(double length, double width)
+    parameters:
+    - id: length
+      type: System.Double
+      description: The length of the rectangle.
+    - id: width
+      type: System.Double
+      description: The width of the rectangle.
+    return:
+      type: System.Double
+      description: The diagonal length of the rectangle.
+    content.vb: Public Shared Function CalculateRectangleDiagonal(length As Double, width As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal*
+  nameWithType.vb: GeometryUtility.CalculateRectangleDiagonal(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal(Double, Double)
+  name.vb: CalculateRectangleDiagonal(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateTrapezoidPerimeter(double, double, double, double)
+  nameWithType: GeometryUtility.CalculateTrapezoidPerimeter(double, double, double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateTrapezoidPerimeter
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 187
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the perimeter of a trapezoid.
+  example: []
+  syntax:
+    content: public static double CalculateTrapezoidPerimeter(double base1, double base2, double side1, double side2)
+    parameters:
+    - id: base1
+      type: System.Double
+      description: The length of the first base of the trapezoid.
+    - id: base2
+      type: System.Double
+      description: The length of the second base of the trapezoid.
+    - id: side1
+      type: System.Double
+      description: The length of the first side of the trapezoid.
+    - id: side2
+      type: System.Double
+      description: The length of the second side of the trapezoid.
+    return:
+      type: System.Double
+      description: The perimeter of the trapezoid.
+    content.vb: Public Shared Function CalculateTrapezoidPerimeter(base1 As Double, base2 As Double, side1 As Double, side2 As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter*
+  nameWithType.vb: GeometryUtility.CalculateTrapezoidPerimeter(Double, Double, Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter(Double, Double, Double, Double)
+  name.vb: CalculateTrapezoidPerimeter(Double, Double, Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter(System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter(System.Double,System.Double)
+  id: CalculateParallelogramPerimeter(System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateParallelogramPerimeter(double, double)
+  nameWithType: GeometryUtility.CalculateParallelogramPerimeter(double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter(double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateParallelogramPerimeter
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 198
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the perimeter of a parallelogram.
+  example: []
+  syntax:
+    content: public static double CalculateParallelogramPerimeter(double baseLength, double sideLength)
+    parameters:
+    - id: baseLength
+      type: System.Double
+      description: The length of the base of the parallelogram.
+    - id: sideLength
+      type: System.Double
+      description: The length of the side of the parallelogram.
+    return:
+      type: System.Double
+      description: The perimeter of the parallelogram.
+    content.vb: Public Shared Function CalculateParallelogramPerimeter(baseLength As Double, sideLength As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter*
+  nameWithType.vb: GeometryUtility.CalculateParallelogramPerimeter(Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter(Double, Double)
+  name.vb: CalculateParallelogramPerimeter(Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter(System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter(System.Double)
+  id: CalculateRhombusPerimeter(System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateRhombusPerimeter(double)
+  nameWithType: GeometryUtility.CalculateRhombusPerimeter(double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter(double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateRhombusPerimeter
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 208
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the perimeter of a rhombus given the length of its side.
+  example: []
+  syntax:
+    content: public static double CalculateRhombusPerimeter(double side)
+    parameters:
+    - id: side
+      type: System.Double
+      description: The length of the side of the rhombus.
+    return:
+      type: System.Double
+      description: The perimeter of the rhombus.
+    content.vb: Public Shared Function CalculateRhombusPerimeter(side As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter*
+  nameWithType.vb: GeometryUtility.CalculateRhombusPerimeter(Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter(Double)
+  name.vb: CalculateRhombusPerimeter(Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter(System.Double,System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter(System.Double,System.Double,System.Double)
+  id: CalculateIsoscelesTrapezoidPerimeter(System.Double,System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateIsoscelesTrapezoidPerimeter(double, double, double)
+  nameWithType: GeometryUtility.CalculateIsoscelesTrapezoidPerimeter(double, double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateIsoscelesTrapezoidPerimeter
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 220
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the perimeter of an isosceles trapezoid.
+  example: []
+  syntax:
+    content: public static double CalculateIsoscelesTrapezoidPerimeter(double base1, double base2, double side)
+    parameters:
+    - id: base1
+      type: System.Double
+      description: The length of the first base.
+    - id: base2
+      type: System.Double
+      description: The length of the second base.
+    - id: side
+      type: System.Double
+      description: The length of the side.
+    return:
+      type: System.Double
+      description: The perimeter of the isosceles trapezoid.
+    content.vb: Public Shared Function CalculateIsoscelesTrapezoidPerimeter(base1 As Double, base2 As Double, side As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter*
+  nameWithType.vb: GeometryUtility.CalculateIsoscelesTrapezoidPerimeter(Double, Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter(Double, Double, Double)
+  name.vb: CalculateIsoscelesTrapezoidPerimeter(Double, Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide(System.Double,System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide(System.Double,System.Double,System.Double)
+  id: CalculateIsoscelesTrapezoidSide(System.Double,System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateIsoscelesTrapezoidSide(double, double, double)
+  nameWithType: GeometryUtility.CalculateIsoscelesTrapezoidSide(double, double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateIsoscelesTrapezoidSide
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 232
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the length of a side of an isosceles trapezoid given the lengths of its bases and height.
+  example: []
+  syntax:
+    content: public static double CalculateIsoscelesTrapezoidSide(double base1, double base2, double height)
+    parameters:
+    - id: base1
+      type: System.Double
+      description: The length of the first base of the trapezoid.
+    - id: base2
+      type: System.Double
+      description: The length of the second base of the trapezoid.
+    - id: height
+      type: System.Double
+      description: The height of the trapezoid.
+    return:
+      type: System.Double
+      description: The length of the side of the trapezoid.
+    content.vb: Public Shared Function CalculateIsoscelesTrapezoidSide(base1 As Double, base2 As Double, height As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide*
+  nameWithType.vb: GeometryUtility.CalculateIsoscelesTrapezoidSide(Double, Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide(Double, Double, Double)
+  name.vb: CalculateIsoscelesTrapezoidSide(Double, Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateRightTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateRightTrapezoidPerimeter(double, double, double, double)
+  nameWithType: GeometryUtility.CalculateRightTrapezoidPerimeter(double, double, double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateRightTrapezoidPerimeter
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 246
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the perimeter of a right trapezoid.
+  example: []
+  syntax:
+    content: public static double CalculateRightTrapezoidPerimeter(double base1, double base2, double height, double side)
+    parameters:
+    - id: base1
+      type: System.Double
+      description: The length of the first base.
+    - id: base2
+      type: System.Double
+      description: The length of the second base.
+    - id: height
+      type: System.Double
+      description: The height of the trapezoid.
+    - id: side
+      type: System.Double
+      description: The length of the side.
+    return:
+      type: System.Double
+      description: The perimeter of the right trapezoid.
+    content.vb: Public Shared Function CalculateRightTrapezoidPerimeter(base1 As Double, base2 As Double, height As Double, side As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter*
+  nameWithType.vb: GeometryUtility.CalculateRightTrapezoidPerimeter(Double, Double, Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter(Double, Double, Double, Double)
+  name.vb: CalculateRightTrapezoidPerimeter(Double, Double, Double, Double)
+- uid: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateRightTrapezoidDiagonal(System.Double,System.Double,System.Double,System.Double)
+  parent: Refinity.Geometry.GeometryUtility
+  langs:
+  - csharp
+  - vb
+  name: CalculateRightTrapezoidDiagonal(double, double, double, double)
+  nameWithType: GeometryUtility.CalculateRightTrapezoidDiagonal(double, double, double, double)
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Geometry/GeometryUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CalculateRightTrapezoidDiagonal
+    path: Refinity/Geometry/GeometryUtility.cs
+    startLine: 259
+  assemblies:
+  - Refinity
+  namespace: Refinity.Geometry
+  summary: Calculates the diagonal of a right trapezoid.
+  example: []
+  syntax:
+    content: public static double CalculateRightTrapezoidDiagonal(double base1, double base2, double height, double side)
+    parameters:
+    - id: base1
+      type: System.Double
+      description: The length of the first base of the trapezoid.
+    - id: base2
+      type: System.Double
+      description: The length of the second base of the trapezoid.
+    - id: height
+      type: System.Double
+      description: The height of the trapezoid.
+    - id: side
+      type: System.Double
+      description: The length of the side of the trapezoid.
+    return:
+      type: System.Double
+      description: The diagonal of the right trapezoid.
+    content.vb: Public Shared Function CalculateRightTrapezoidDiagonal(base1 As Double, base2 As Double, height As Double, side As Double) As Double
+  overload: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal*
+  nameWithType.vb: GeometryUtility.CalculateRightTrapezoidDiagonal(Double, Double, Double, Double)
+  fullName.vb: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal(Double, Double, Double, Double)
+  name.vb: CalculateRightTrapezoidDiagonal(Double, Double, Double, Double)
+references:
+- uid: Refinity.Geometry
+  commentId: N:Refinity.Geometry
+  href: Refinity.html
+  name: Refinity.Geometry
+  nameWithType: Refinity.Geometry
+  fullName: Refinity.Geometry
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Geometry
+    name: Geometry
+    href: Refinity.Geometry.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Geometry
+    name: Geometry
+    href: Refinity.Geometry.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Refinity.Geometry.GeometryUtility.AreaOfCircle*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.AreaOfCircle
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_AreaOfCircle_System_Double_
+  name: AreaOfCircle
+  nameWithType: GeometryUtility.AreaOfCircle
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfCircle
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Refinity.Geometry.GeometryUtility.AreaOfTriangle*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.AreaOfTriangle
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_AreaOfTriangle_System_Double_System_Double_
+  name: AreaOfTriangle
+  nameWithType: GeometryUtility.AreaOfTriangle
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfTriangle
+- uid: Refinity.Geometry.GeometryUtility.AreaOfRectangle*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.AreaOfRectangle
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_AreaOfRectangle_System_Double_System_Double_
+  name: AreaOfRectangle
+  nameWithType: GeometryUtility.AreaOfRectangle
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfRectangle
+- uid: Refinity.Geometry.GeometryUtility.AreaOfSquare*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.AreaOfSquare
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_AreaOfSquare_System_Double_
+  name: AreaOfSquare
+  nameWithType: GeometryUtility.AreaOfSquare
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfSquare
+- uid: Refinity.Geometry.GeometryUtility.AreaOfTrapezoid*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.AreaOfTrapezoid
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_AreaOfTrapezoid_System_Double_System_Double_System_Double_
+  name: AreaOfTrapezoid
+  nameWithType: GeometryUtility.AreaOfTrapezoid
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfTrapezoid
+- uid: Refinity.Geometry.GeometryUtility.AreaOfParallelogram*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.AreaOfParallelogram
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_AreaOfParallelogram_System_Double_System_Double_
+  name: AreaOfParallelogram
+  nameWithType: GeometryUtility.AreaOfParallelogram
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfParallelogram
+- uid: Refinity.Geometry.GeometryUtility.AreaOfRhombus*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.AreaOfRhombus
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_AreaOfRhombus_System_Double_System_Double_
+  name: AreaOfRhombus
+  nameWithType: GeometryUtility.AreaOfRhombus
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfRhombus
+- uid: Refinity.Geometry.GeometryUtility.AreaOfSector*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.AreaOfSector
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_AreaOfSector_System_Double_System_Double_
+  name: AreaOfSector
+  nameWithType: GeometryUtility.AreaOfSector
+  fullName: Refinity.Geometry.GeometryUtility.AreaOfSector
+- uid: Refinity.Geometry.GeometryUtility.ToCartesianCoordinates*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.ToCartesianCoordinates
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_ToCartesianCoordinates_System_Double_System_Double_
+  name: ToCartesianCoordinates
+  nameWithType: GeometryUtility.ToCartesianCoordinates
+  fullName: Refinity.Geometry.GeometryUtility.ToCartesianCoordinates
+- uid: Refinity.CoordinateModel
+  commentId: T:Refinity.CoordinateModel
+  parent: Refinity
+  href: Refinity.CoordinateModel.html
+  name: CoordinateModel
+  nameWithType: CoordinateModel
+  fullName: Refinity.CoordinateModel
+- uid: Refinity
+  commentId: N:Refinity
+  href: Refinity.html
+  name: Refinity
+  nameWithType: Refinity
+  fullName: Refinity
+- uid: Refinity.Geometry.GeometryUtility.ToPolarCoordinates*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.ToPolarCoordinates
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_ToPolarCoordinates_System_Double_System_Double_
+  name: ToPolarCoordinates
+  nameWithType: GeometryUtility.ToPolarCoordinates
+  fullName: Refinity.Geometry.GeometryUtility.ToPolarCoordinates
+- uid: Refinity.Geometry.GeometryUtility.CalculateSlope*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateSlope
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateSlope_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateSlope
+  nameWithType: GeometryUtility.CalculateSlope
+  fullName: Refinity.Geometry.GeometryUtility.CalculateSlope
+- uid: Refinity.Geometry.GeometryUtility.CalculateDistance*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateDistance
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateDistance_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateDistance
+  nameWithType: GeometryUtility.CalculateDistance
+  fullName: Refinity.Geometry.GeometryUtility.CalculateDistance
+- uid: Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateSquarePerimeter_System_Double_
+  name: CalculateSquarePerimeter
+  nameWithType: GeometryUtility.CalculateSquarePerimeter
+  fullName: Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter
+- uid: Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateRectanglePerimeter_System_Double_System_Double_
+  name: CalculateRectanglePerimeter
+  nameWithType: GeometryUtility.CalculateRectanglePerimeter
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter
+- uid: Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateRectangleDiagonal_System_Double_System_Double_
+  name: CalculateRectangleDiagonal
+  nameWithType: GeometryUtility.CalculateRectangleDiagonal
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal
+- uid: Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateTrapezoidPerimeter_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateTrapezoidPerimeter
+  nameWithType: GeometryUtility.CalculateTrapezoidPerimeter
+  fullName: Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter
+- uid: Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateParallelogramPerimeter_System_Double_System_Double_
+  name: CalculateParallelogramPerimeter
+  nameWithType: GeometryUtility.CalculateParallelogramPerimeter
+  fullName: Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter
+- uid: Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateRhombusPerimeter_System_Double_
+  name: CalculateRhombusPerimeter
+  nameWithType: GeometryUtility.CalculateRhombusPerimeter
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter
+- uid: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateIsoscelesTrapezoidPerimeter_System_Double_System_Double_System_Double_
+  name: CalculateIsoscelesTrapezoidPerimeter
+  nameWithType: GeometryUtility.CalculateIsoscelesTrapezoidPerimeter
+  fullName: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter
+- uid: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateIsoscelesTrapezoidSide_System_Double_System_Double_System_Double_
+  name: CalculateIsoscelesTrapezoidSide
+  nameWithType: GeometryUtility.CalculateIsoscelesTrapezoidSide
+  fullName: Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide
+- uid: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateRightTrapezoidPerimeter_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateRightTrapezoidPerimeter
+  nameWithType: GeometryUtility.CalculateRightTrapezoidPerimeter
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter
+- uid: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal*
+  commentId: Overload:Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal
+  href: Refinity.Geometry.GeometryUtility.html#Refinity_Geometry_GeometryUtility_CalculateRightTrapezoidDiagonal_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateRightTrapezoidDiagonal
+  nameWithType: GeometryUtility.CalculateRightTrapezoidDiagonal
+  fullName: Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal

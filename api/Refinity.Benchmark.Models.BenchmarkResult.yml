@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Benchmark.Models.BenchmarkResult
+  commentId: T:Refinity.Benchmark.Models.BenchmarkResult
+  id: BenchmarkResult
+  parent: Refinity.Benchmark.Models
+  children:
+  - Refinity.Benchmark.Models.BenchmarkResult.Failure
+  - Refinity.Benchmark.Models.BenchmarkResult.Success
+  langs:
+  - csharp
+  - vb
+  name: BenchmarkResult
+  nameWithType: BenchmarkResult
+  fullName: Refinity.Benchmark.Models.BenchmarkResult
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Benchmark/Models/BenchmarkModels.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: BenchmarkResult
+    path: Refinity/Benchmark/Models/BenchmarkModels.cs
+    startLine: 17
+  assemblies:
+  - Refinity
+  namespace: Refinity.Benchmark.Models
+  syntax:
+    content: public enum BenchmarkResult
+    content.vb: Public Enum BenchmarkResult
+- uid: Refinity.Benchmark.Models.BenchmarkResult.Success
+  commentId: F:Refinity.Benchmark.Models.BenchmarkResult.Success
+  id: Success
+  parent: Refinity.Benchmark.Models.BenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: BenchmarkResult.Success
+  fullName: Refinity.Benchmark.Models.BenchmarkResult.Success
+  type: Field
+  source:
+    remote:
+      path: Refinity/Benchmark/Models/BenchmarkModels.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Success
+    path: Refinity/Benchmark/Models/BenchmarkModels.cs
+    startLine: 19
+  assemblies:
+  - Refinity
+  namespace: Refinity.Benchmark.Models
+  syntax:
+    content: Success = 0
+    return:
+      type: Refinity.Benchmark.Models.BenchmarkResult
+- uid: Refinity.Benchmark.Models.BenchmarkResult.Failure
+  commentId: F:Refinity.Benchmark.Models.BenchmarkResult.Failure
+  id: Failure
+  parent: Refinity.Benchmark.Models.BenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: Failure
+  nameWithType: BenchmarkResult.Failure
+  fullName: Refinity.Benchmark.Models.BenchmarkResult.Failure
+  type: Field
+  source:
+    remote:
+      path: Refinity/Benchmark/Models/BenchmarkModels.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Failure
+    path: Refinity/Benchmark/Models/BenchmarkModels.cs
+    startLine: 20
+  assemblies:
+  - Refinity
+  namespace: Refinity.Benchmark.Models
+  syntax:
+    content: Failure = 1
+    return:
+      type: Refinity.Benchmark.Models.BenchmarkResult
+references:
+- uid: Refinity.Benchmark.Models
+  commentId: N:Refinity.Benchmark.Models
+  href: Refinity.html
+  name: Refinity.Benchmark.Models
+  nameWithType: Refinity.Benchmark.Models
+  fullName: Refinity.Benchmark.Models
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Benchmark
+    name: Benchmark
+    href: Refinity.Benchmark.html
+  - name: .
+  - uid: Refinity.Benchmark.Models
+    name: Models
+    href: Refinity.Benchmark.Models.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Benchmark
+    name: Benchmark
+    href: Refinity.Benchmark.html
+  - name: .
+  - uid: Refinity.Benchmark.Models
+    name: Models
+    href: Refinity.Benchmark.Models.html
+- uid: Refinity.Benchmark.Models.BenchmarkResult
+  commentId: T:Refinity.Benchmark.Models.BenchmarkResult
+  parent: Refinity.Benchmark.Models
+  href: Refinity.Benchmark.Models.BenchmarkResult.html
+  name: BenchmarkResult
+  nameWithType: BenchmarkResult
+  fullName: Refinity.Benchmark.Models.BenchmarkResult

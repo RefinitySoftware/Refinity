@@ -1,0 +1,571 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Logging.LoggingUtility
+  commentId: T:Refinity.Logging.LoggingUtility
+  id: LoggingUtility
+  parent: Refinity.Logging
+  children:
+  - Refinity.Logging.LoggingUtility.#ctor(System.String,LogFileType)
+  - Refinity.Logging.LoggingUtility.Debug(System.String)
+  - Refinity.Logging.LoggingUtility.Error(System.String)
+  - Refinity.Logging.LoggingUtility.Fatal(System.String)
+  - Refinity.Logging.LoggingUtility.Info(System.String)
+  - Refinity.Logging.LoggingUtility.Warn(System.String)
+  langs:
+  - csharp
+  - vb
+  name: LoggingUtility
+  nameWithType: LoggingUtility
+  fullName: Refinity.Logging.LoggingUtility
+  type: Class
+  source:
+    remote:
+      path: Refinity/Logging/LoggingUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: LoggingUtility
+    path: Refinity/Logging/LoggingUtility.cs
+    startLine: 6
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging
+  syntax:
+    content: public class LoggingUtility
+    content.vb: Public Class LoggingUtility
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Refinity.Logging.LoggingUtility.#ctor(System.String,LogFileType)
+  commentId: M:Refinity.Logging.LoggingUtility.#ctor(System.String,LogFileType)
+  id: '#ctor(System.String,LogFileType)'
+  parent: Refinity.Logging.LoggingUtility
+  langs:
+  - csharp
+  - vb
+  name: LoggingUtility(string, LogFileType)
+  nameWithType: LoggingUtility.LoggingUtility(string, LogFileType)
+  fullName: Refinity.Logging.LoggingUtility.LoggingUtility(string, LogFileType)
+  type: Constructor
+  source:
+    remote:
+      path: Refinity/Logging/LoggingUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: .ctor
+    path: Refinity/Logging/LoggingUtility.cs
+    startLine: 14
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging
+  summary: Represents a utility class for logging.
+  example: []
+  syntax:
+    content: public LoggingUtility(string logFileName, LogFileType logFileType = LogFileType.TXT)
+    parameters:
+    - id: logFileName
+      type: System.String
+    - id: logFileType
+      type: LogFileType
+    content.vb: Public Sub New(logFileName As String, logFileType As LogFileType = LogFileType.TXT)
+  overload: Refinity.Logging.LoggingUtility.#ctor*
+  nameWithType.vb: LoggingUtility.New(String, LogFileType)
+  fullName.vb: Refinity.Logging.LoggingUtility.New(String, LogFileType)
+  name.vb: New(String, LogFileType)
+- uid: Refinity.Logging.LoggingUtility.Info(System.String)
+  commentId: M:Refinity.Logging.LoggingUtility.Info(System.String)
+  id: Info(System.String)
+  parent: Refinity.Logging.LoggingUtility
+  langs:
+  - csharp
+  - vb
+  name: Info(string)
+  nameWithType: LoggingUtility.Info(string)
+  fullName: Refinity.Logging.LoggingUtility.Info(string)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Logging/LoggingUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Info
+    path: Refinity/Logging/LoggingUtility.cs
+    startLine: 88
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging
+  summary: Logs an informational message.
+  example: []
+  syntax:
+    content: public void Info(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to be logged.
+    content.vb: Public Sub Info(message As String)
+  overload: Refinity.Logging.LoggingUtility.Info*
+  nameWithType.vb: LoggingUtility.Info(String)
+  fullName.vb: Refinity.Logging.LoggingUtility.Info(String)
+  name.vb: Info(String)
+- uid: Refinity.Logging.LoggingUtility.Debug(System.String)
+  commentId: M:Refinity.Logging.LoggingUtility.Debug(System.String)
+  id: Debug(System.String)
+  parent: Refinity.Logging.LoggingUtility
+  langs:
+  - csharp
+  - vb
+  name: Debug(string)
+  nameWithType: LoggingUtility.Debug(string)
+  fullName: Refinity.Logging.LoggingUtility.Debug(string)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Logging/LoggingUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Debug
+    path: Refinity/Logging/LoggingUtility.cs
+    startLine: 97
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging
+  summary: Writes a debug message to the log.
+  example: []
+  syntax:
+    content: public void Debug(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to be logged.
+    content.vb: Public Sub Debug(message As String)
+  overload: Refinity.Logging.LoggingUtility.Debug*
+  nameWithType.vb: LoggingUtility.Debug(String)
+  fullName.vb: Refinity.Logging.LoggingUtility.Debug(String)
+  name.vb: Debug(String)
+- uid: Refinity.Logging.LoggingUtility.Warn(System.String)
+  commentId: M:Refinity.Logging.LoggingUtility.Warn(System.String)
+  id: Warn(System.String)
+  parent: Refinity.Logging.LoggingUtility
+  langs:
+  - csharp
+  - vb
+  name: Warn(string)
+  nameWithType: LoggingUtility.Warn(string)
+  fullName: Refinity.Logging.LoggingUtility.Warn(string)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Logging/LoggingUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Warn
+    path: Refinity/Logging/LoggingUtility.cs
+    startLine: 106
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging
+  summary: Logs a warning message.
+  example: []
+  syntax:
+    content: public void Warn(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to be logged.
+    content.vb: Public Sub Warn(message As String)
+  overload: Refinity.Logging.LoggingUtility.Warn*
+  nameWithType.vb: LoggingUtility.Warn(String)
+  fullName.vb: Refinity.Logging.LoggingUtility.Warn(String)
+  name.vb: Warn(String)
+- uid: Refinity.Logging.LoggingUtility.Error(System.String)
+  commentId: M:Refinity.Logging.LoggingUtility.Error(System.String)
+  id: Error(System.String)
+  parent: Refinity.Logging.LoggingUtility
+  langs:
+  - csharp
+  - vb
+  name: Error(string)
+  nameWithType: LoggingUtility.Error(string)
+  fullName: Refinity.Logging.LoggingUtility.Error(string)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Logging/LoggingUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Error
+    path: Refinity/Logging/LoggingUtility.cs
+    startLine: 115
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging
+  summary: Logs an error message.
+  example: []
+  syntax:
+    content: public void Error(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to be logged.
+    content.vb: Public Sub [Error](message As String)
+  overload: Refinity.Logging.LoggingUtility.Error*
+  nameWithType.vb: LoggingUtility.Error(String)
+  fullName.vb: Refinity.Logging.LoggingUtility.Error(String)
+  name.vb: Error(String)
+- uid: Refinity.Logging.LoggingUtility.Fatal(System.String)
+  commentId: M:Refinity.Logging.LoggingUtility.Fatal(System.String)
+  id: Fatal(System.String)
+  parent: Refinity.Logging.LoggingUtility
+  langs:
+  - csharp
+  - vb
+  name: Fatal(string)
+  nameWithType: LoggingUtility.Fatal(string)
+  fullName: Refinity.Logging.LoggingUtility.Fatal(string)
+  type: Method
+  source:
+    remote:
+      path: Refinity/Logging/LoggingUtility.cs
+      branch: main
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Fatal
+    path: Refinity/Logging/LoggingUtility.cs
+    startLine: 124
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging
+  summary: Logs a fatal error message.
+  example: []
+  syntax:
+    content: public void Fatal(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to be logged.
+    content.vb: Public Sub Fatal(message As String)
+  overload: Refinity.Logging.LoggingUtility.Fatal*
+  nameWithType.vb: LoggingUtility.Fatal(String)
+  fullName.vb: Refinity.Logging.LoggingUtility.Fatal(String)
+  name.vb: Fatal(String)
+references:
+- uid: Refinity.Logging
+  commentId: N:Refinity.Logging
+  href: Refinity.html
+  name: Refinity.Logging
+  nameWithType: Refinity.Logging
+  fullName: Refinity.Logging
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Logging
+    name: Logging
+    href: Refinity.Logging.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Logging
+    name: Logging
+    href: Refinity.Logging.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Refinity.Logging.LoggingUtility.#ctor*
+  commentId: Overload:Refinity.Logging.LoggingUtility.#ctor
+  href: Refinity.Logging.LoggingUtility.html#Refinity_Logging_LoggingUtility__ctor_System_String_LogFileType_
+  name: LoggingUtility
+  nameWithType: LoggingUtility.LoggingUtility
+  fullName: Refinity.Logging.LoggingUtility.LoggingUtility
+  nameWithType.vb: LoggingUtility.New
+  fullName.vb: Refinity.Logging.LoggingUtility.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LogFileType
+  commentId: T:LogFileType
+  href: LogFileType.html
+  name: LogFileType
+  nameWithType: LogFileType
+  fullName: LogFileType
+- uid: Refinity.Logging.LoggingUtility.Info*
+  commentId: Overload:Refinity.Logging.LoggingUtility.Info
+  href: Refinity.Logging.LoggingUtility.html#Refinity_Logging_LoggingUtility_Info_System_String_
+  name: Info
+  nameWithType: LoggingUtility.Info
+  fullName: Refinity.Logging.LoggingUtility.Info
+- uid: Refinity.Logging.LoggingUtility.Debug*
+  commentId: Overload:Refinity.Logging.LoggingUtility.Debug
+  href: Refinity.Logging.LoggingUtility.html#Refinity_Logging_LoggingUtility_Debug_System_String_
+  name: Debug
+  nameWithType: LoggingUtility.Debug
+  fullName: Refinity.Logging.LoggingUtility.Debug
+- uid: Refinity.Logging.LoggingUtility.Warn*
+  commentId: Overload:Refinity.Logging.LoggingUtility.Warn
+  href: Refinity.Logging.LoggingUtility.html#Refinity_Logging_LoggingUtility_Warn_System_String_
+  name: Warn
+  nameWithType: LoggingUtility.Warn
+  fullName: Refinity.Logging.LoggingUtility.Warn
+- uid: Refinity.Logging.LoggingUtility.Error*
+  commentId: Overload:Refinity.Logging.LoggingUtility.Error
+  href: Refinity.Logging.LoggingUtility.html#Refinity_Logging_LoggingUtility_Error_System_String_
+  name: Error
+  nameWithType: LoggingUtility.Error
+  fullName: Refinity.Logging.LoggingUtility.Error
+- uid: Refinity.Logging.LoggingUtility.Fatal*
+  commentId: Overload:Refinity.Logging.LoggingUtility.Fatal
+  href: Refinity.Logging.LoggingUtility.html#Refinity_Logging_LoggingUtility_Fatal_System_String_
+  name: Fatal
+  nameWithType: LoggingUtility.Fatal
+  fullName: Refinity.Logging.LoggingUtility.Fatal

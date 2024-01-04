@@ -1,0 +1,1131 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GeometryUtility
+ | Refinity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GeometryUtility
+ | Refinity ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/InfinitySoftware-House/Refinity/new/main/apiSpec/new?filename=Refinity_Geometry_GeometryUtility.md&amp;value=---%0Auid%3A%20Refinity.Geometry.GeometryUtility%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Refinity">
+            Refinity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Refinity.Geometry.GeometryUtility">
+
+
+
+  <h1 id="Refinity_Geometry_GeometryUtility" data-uid="Refinity.Geometry.GeometryUtility" class="text-break">
+    Class GeometryUtility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Refinity.html">Refinity</a>.<a class="xref" href="Refinity.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Refinity.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GeometryUtility</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GeometryUtility</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Refinity_Geometry_GeometryUtility_AreaOfCircle_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfCircle*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_AreaOfCircle_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfCircle(System.Double)">
+  AreaOfCircle(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the area of a circle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AreaOfCircle(double radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The radius of the circle.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The area of the circle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_AreaOfParallelogram_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfParallelogram*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_AreaOfParallelogram_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfParallelogram(System.Double,System.Double)">
+  AreaOfParallelogram(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the area of a parallelogram.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AreaOfParallelogram(double @base, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>base</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The base of the parallelogram.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The height of the parallelogram.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The area of the parallelogram.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_AreaOfRectangle_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfRectangle*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_AreaOfRectangle_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfRectangle(System.Double,System.Double)">
+  AreaOfRectangle(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the area of a rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AreaOfRectangle(double length, double width)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the rectangle.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The width of the rectangle.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The area of the rectangle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_AreaOfRhombus_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfRhombus*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_AreaOfRhombus_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfRhombus(System.Double,System.Double)">
+  AreaOfRhombus(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the area of a rhombus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AreaOfRhombus(double diagonal1, double diagonal2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>diagonal1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The first diagonal of the rhombus.</p>
+</dd>
+    <dt><code>diagonal2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The second diagonal of the rhombus.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The area of the rhombus.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_AreaOfSector_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfSector*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_AreaOfSector_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfSector(System.Double,System.Double)">
+  AreaOfSector(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the area of a sector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AreaOfSector(double radius, double angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The radius of the sector.</p>
+</dd>
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The angle of the sector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The area of the sector.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_AreaOfSquare_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfSquare*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_AreaOfSquare_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfSquare(System.Double)">
+  AreaOfSquare(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the area of a square.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AreaOfSquare(double side)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The side of the square.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The area of the square.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_AreaOfTrapezoid_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfTrapezoid*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_AreaOfTrapezoid_System_Double_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfTrapezoid(System.Double,System.Double,System.Double)">
+  AreaOfTrapezoid(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the area of a trapezoid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AreaOfTrapezoid(double base1, double base2, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>base1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The first base of the trapezoid.</p>
+</dd>
+    <dt><code>base2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The second base of the trapezoid.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The height of the trapezoid.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The area of the trapezoid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_AreaOfTriangle_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfTriangle*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_AreaOfTriangle_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.AreaOfTriangle(System.Double,System.Double)">
+  AreaOfTriangle(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the area of a triangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AreaOfTriangle(double @base, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>base</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The base of the triangle.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The height of the triangle.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The area of the triangle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateDistance_" data-uid="Refinity.Geometry.GeometryUtility.CalculateDistance*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateDistance_System_Double_System_Double_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateDistance(System.Double,System.Double,System.Double,System.Double)">
+  CalculateDistance(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the distance between two points in a two-dimensional space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateDistance(double x1, double y1, double x2, double y2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate of the first point.</p>
+</dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate of the first point.</p>
+</dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate of the second point.</p>
+</dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate of the second point.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The distance between the two points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateIsoscelesTrapezoidPerimeter_" data-uid="Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateIsoscelesTrapezoidPerimeter_System_Double_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidPerimeter(System.Double,System.Double,System.Double)">
+  CalculateIsoscelesTrapezoidPerimeter(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the perimeter of an isosceles trapezoid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateIsoscelesTrapezoidPerimeter(double base1, double base2, double side)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>base1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the first base.</p>
+</dd>
+    <dt><code>base2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the second base.</p>
+</dd>
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the side.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The perimeter of the isosceles trapezoid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateIsoscelesTrapezoidSide_" data-uid="Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateIsoscelesTrapezoidSide_System_Double_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateIsoscelesTrapezoidSide(System.Double,System.Double,System.Double)">
+  CalculateIsoscelesTrapezoidSide(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the length of a side of an isosceles trapezoid given the lengths of its bases and height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateIsoscelesTrapezoidSide(double base1, double base2, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>base1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the first base of the trapezoid.</p>
+</dd>
+    <dt><code>base2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the second base of the trapezoid.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The height of the trapezoid.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the side of the trapezoid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateParallelogramPerimeter_" data-uid="Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateParallelogramPerimeter_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateParallelogramPerimeter(System.Double,System.Double)">
+  CalculateParallelogramPerimeter(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the perimeter of a parallelogram.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateParallelogramPerimeter(double baseLength, double sideLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baseLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the base of the parallelogram.</p>
+</dd>
+    <dt><code>sideLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the side of the parallelogram.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The perimeter of the parallelogram.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateRectangleDiagonal_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateRectangleDiagonal_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRectangleDiagonal(System.Double,System.Double)">
+  CalculateRectangleDiagonal(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the diagonal length of a rectangle using its length and width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateRectangleDiagonal(double length, double width)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the rectangle.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The width of the rectangle.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The diagonal length of the rectangle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateRectanglePerimeter_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateRectanglePerimeter_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRectanglePerimeter(System.Double,System.Double)">
+  CalculateRectanglePerimeter(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the perimeter of a rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateRectanglePerimeter(double length, double width)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the rectangle.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The width of the rectangle.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The perimeter of the rectangle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateRhombusPerimeter_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateRhombusPerimeter_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRhombusPerimeter(System.Double)">
+  CalculateRhombusPerimeter(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the perimeter of a rhombus given the length of its side.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateRhombusPerimeter(double side)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the side of the rhombus.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The perimeter of the rhombus.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateRightTrapezoidDiagonal_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateRightTrapezoidDiagonal_System_Double_System_Double_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidDiagonal(System.Double,System.Double,System.Double,System.Double)">
+  CalculateRightTrapezoidDiagonal(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the diagonal of a right trapezoid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateRightTrapezoidDiagonal(double base1, double base2, double height, double side)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>base1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the first base of the trapezoid.</p>
+</dd>
+    <dt><code>base2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the second base of the trapezoid.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The height of the trapezoid.</p>
+</dd>
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the side of the trapezoid.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The diagonal of the right trapezoid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateRightTrapezoidPerimeter_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateRightTrapezoidPerimeter_System_Double_System_Double_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateRightTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)">
+  CalculateRightTrapezoidPerimeter(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the perimeter of a right trapezoid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateRightTrapezoidPerimeter(double base1, double base2, double height, double side)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>base1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the first base.</p>
+</dd>
+    <dt><code>base2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the second base.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The height of the trapezoid.</p>
+</dd>
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the side.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The perimeter of the right trapezoid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateSlope_" data-uid="Refinity.Geometry.GeometryUtility.CalculateSlope*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateSlope_System_Double_System_Double_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateSlope(System.Double,System.Double,System.Double,System.Double)">
+  CalculateSlope(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the slope between two points on a Cartesian plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateSlope(double x1, double y1, double x2, double y2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate of the first point.</p>
+</dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate of the first point.</p>
+</dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate of the second point.</p>
+</dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate of the second point.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The slope between the two points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateSquarePerimeter_" data-uid="Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateSquarePerimeter_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateSquarePerimeter(System.Double)">
+  CalculateSquarePerimeter(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the perimeter of a square.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateSquarePerimeter(double side)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of a side of the square.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The perimeter of the square.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_CalculateTrapezoidPerimeter_" data-uid="Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_CalculateTrapezoidPerimeter_System_Double_System_Double_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.CalculateTrapezoidPerimeter(System.Double,System.Double,System.Double,System.Double)">
+  CalculateTrapezoidPerimeter(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the perimeter of a trapezoid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateTrapezoidPerimeter(double base1, double base2, double side1, double side2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>base1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the first base of the trapezoid.</p>
+</dd>
+    <dt><code>base2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the second base of the trapezoid.</p>
+</dd>
+    <dt><code>side1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the first side of the trapezoid.</p>
+</dd>
+    <dt><code>side2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The length of the second side of the trapezoid.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The perimeter of the trapezoid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_ToCartesianCoordinates_" data-uid="Refinity.Geometry.GeometryUtility.ToCartesianCoordinates*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_ToCartesianCoordinates_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.ToCartesianCoordinates(System.Double,System.Double)">
+  ToCartesianCoordinates(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts Cartesian coordinates to cartesian coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoordinateModel ToCartesianCoordinates(double radius, double angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The radius.</p>
+</dd>
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The angle.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Refinity.CoordinateModel.html">CoordinateModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Geometry_GeometryUtility_ToPolarCoordinates_" data-uid="Refinity.Geometry.GeometryUtility.ToPolarCoordinates*"></a>
+
+  <h3 id="Refinity_Geometry_GeometryUtility_ToPolarCoordinates_System_Double_System_Double_" data-uid="Refinity.Geometry.GeometryUtility.ToPolarCoordinates(System.Double,System.Double)">
+  ToPolarCoordinates(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts Cartesian coordinates to polar coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoordinateModel ToPolarCoordinates(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Refinity.CoordinateModel.html">CoordinateModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/InfinitySoftware-House/Refinity/blob/main/Refinity/Geometry/GeometryUtility.cs/#L3" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

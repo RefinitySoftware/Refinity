@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Date
+  commentId: N:Refinity.Date
+  id: Refinity.Date
+  children:
+  - Refinity.Date.DateUtility
+  langs:
+  - csharp
+  - vb
+  name: Refinity.Date
+  nameWithType: Refinity.Date
+  fullName: Refinity.Date
+  type: Namespace
+  assemblies:
+  - Refinity
+references:
+- uid: Refinity.Date.DateUtility
+  commentId: T:Refinity.Date.DateUtility
+  href: Refinity.Date.DateUtility.html
+  name: DateUtility
+  nameWithType: DateUtility
+  fullName: Refinity.Date.DateUtility
