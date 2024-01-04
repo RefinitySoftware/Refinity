@@ -503,25 +503,18 @@ public enum EnumLanguageCodes
 {
     [Description("English")]
     EN,
-
     [Description("Spanish")]
     ES,
-
     [Description("French")]
     FR,
-
     [Description("German")]
     DE,
-
     [Description("Italian")]
     IT,
-
     [Description("Japanese")]
     JA,
-
     [Description("Korean")]
     KO,
-
     [Description("Chinese")]
     ZH,
     [Description("Arabic")]
@@ -548,4 +541,54 @@ public enum EnumLanguageCodes
     HI,
     [Description("Hungarian")]
     HU,
+    [Description("Portuguese")]
+    PT,
+    [Description("Romanian")]
+    RO,
+    [Description("Russian")]
+    RU,
+    [Description("Slovak")]
+    SK,
+    [Description("Slovenian")]
+    SL,
+    [Description("Swedish")]
+    SV,
+    [Description("Turkish")]
+    TR,
+    [Description("Ukrainian")]
+    UK,
+    [Description("Vietnamese")]
+    VI,
+    [Description("Albanian")]
+    SQ,
+    [Description("Belarusian")]
+    BE,
+    [Description("Bosnian")]
+    BS,
+    [Description("Croatian")]
+    HR,
+    [Description("Icelandic")]
+    IS,
+    [Description("Irish")]
+    GA,
+    [Description("Latvian")]
+    LV,
+    [Description("Lithuanian")]
+    LT,
+    [Description("Macedonian")]
+    MK,
+    [Description("Maltese")]
+    MT,
+    [Description("Norwegian")]
+    NO,
+    [Description("Polish")]
+    PL,
+    [Description("Serbian")]
+    SR,
+    [Description("Slovak")]
+    SK,
+    [Description("Slovenian")]
+    SL,
+    [Description("Welsh")]
+    CY
 }
