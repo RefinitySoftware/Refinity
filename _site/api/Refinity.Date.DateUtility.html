@@ -1,0 +1,917 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DateUtility
+ | Refinity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DateUtility
+ | Refinity ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/InfinitySoftware-House/Refinity/new/dev/apiSpec/new?filename=Refinity_Date_DateUtility.md&amp;value=---%0Auid%3A%20Refinity.Date.DateUtility%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Refinity">
+            Refinity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Refinity.Date.DateUtility">
+
+
+
+  <h1 id="Refinity_Date_DateUtility" data-uid="Refinity.Date.DateUtility" class="text-break">
+    Class DateUtility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Refinity.html">Refinity</a>.<a class="xref" href="Refinity.Date.html">Date</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Refinity.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DateUtility</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DateUtility</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Refinity_Date_DateUtility_Add_" data-uid="Refinity.Date.DateUtility.Add*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_Add_System_DateTime_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Refinity.Date.DateUtility.Add(System.DateTime,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  Add(DateTime, int, int, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a specified number of years, months, days, hours, minutes, and seconds to the given DateTime value. TEST TEST TEST</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime Add(this DateTime value, int years = 0, int months = 0, int days = 0, int hours = 0, int minutes = 0, int seconds = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The DateTime value to which the specified time interval should be added.</p>
+</dd>
+    <dt><code>years</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of years to add. The default value is 0.</p>
+</dd>
+    <dt><code>months</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of months to add. The default value is 0.</p>
+</dd>
+    <dt><code>days</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of days to add. The default value is 0.</p>
+</dd>
+    <dt><code>hours</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of hours to add. The default value is 0.</p>
+</dd>
+    <dt><code>minutes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of minutes to add. The default value is 0.</p>
+</dd>
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of seconds to add. The default value is 0.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A new DateTime value that is the result of adding the specified time interval to the original DateTime value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_CalculateAge_" data-uid="Refinity.Date.DateUtility.CalculateAge*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_CalculateAge_System_DateTime_" data-uid="Refinity.Date.DateUtility.CalculateAge(System.DateTime)">
+  CalculateAge(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the age based on the provided birth date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateAge(this DateTime birthDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>birthDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The birth date.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The calculated age.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_DeserializeDateTime_" data-uid="Refinity.Date.DateUtility.DeserializeDateTime*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_DeserializeDateTime_System_String_" data-uid="Refinity.Date.DateUtility.DeserializeDateTime(System.String)">
+  DeserializeDateTime(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a string representation of a DateTime object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime DeserializeDateTime(this string dateTimeString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTimeString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string representation of the DateTime object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The deserialized DateTime object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_FirstDayOfMonth_" data-uid="Refinity.Date.DateUtility.FirstDayOfMonth*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_FirstDayOfMonth_System_DateTime_" data-uid="Refinity.Date.DateUtility.FirstDayOfMonth(System.DateTime)">
+  FirstDayOfMonth(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the first day of the month for the specified DateTime value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime FirstDayOfMonth(this DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The DateTime value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The first day of the month.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_GetDateRange_" data-uid="Refinity.Date.DateUtility.GetDateRange*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_GetDateRange_System_DateTime_System_Int32_System_Boolean_" data-uid="Refinity.Date.DateUtility.GetDateRange(System.DateTime,System.Int32,System.Boolean)">
+  GetDateRange(DateTime, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateRangeModel GetDateRange(this DateTime startDate, int numberOfMonths, bool startToFirst = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>numberOfMonths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>startToFirst</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DateRangeModel.html">DateRangeModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_GetDateRangeFromWeekNumber_" data-uid="Refinity.Date.DateUtility.GetDateRangeFromWeekNumber*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_GetDateRangeFromWeekNumber_System_Int32_" data-uid="Refinity.Date.DateUtility.GetDateRangeFromWeekNumber(System.Int32)">
+  GetDateRangeFromWeekNumber(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the date range (start and end dates) for a given week number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime[] GetDateRangeFromWeekNumber(int weekNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weekNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The week number.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>[]</dt>
+    <dd><p>An array of DateTime objects representing the start and end dates of the week.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_GetDifference_" data-uid="Refinity.Date.DateUtility.GetDifference*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_GetDifference_System_DateTime_System_DateTime_" data-uid="Refinity.Date.DateUtility.GetDifference(System.DateTime,System.DateTime)">
+  GetDifference(DateTime, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateDifference GetDifference(this DateTime from, DateTime to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Refinity.Date.DateDifference.html">DateDifference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_GetWeekNumber_" data-uid="Refinity.Date.DateUtility.GetWeekNumber*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_GetWeekNumber_System_DateTime_" data-uid="Refinity.Date.DateUtility.GetWeekNumber(System.DateTime)">
+  GetWeekNumber(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the week number of the specified date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetWeekNumber(this DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The date value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The week number of the specified date.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_LastDayOfMonth_" data-uid="Refinity.Date.DateUtility.LastDayOfMonth*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_LastDayOfMonth_System_DateTime_" data-uid="Refinity.Date.DateUtility.LastDayOfMonth(System.DateTime)">
+  LastDayOfMonth(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the last day of the month for the specified DateTime value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime LastDayOfMonth(this DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The DateTime value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The last day of the month.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_QuarterFromMonth_" data-uid="Refinity.Date.DateUtility.QuarterFromMonth*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_QuarterFromMonth_Months_" data-uid="Refinity.Date.DateUtility.QuarterFromMonth(Months)">
+  QuarterFromMonth(Months)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the quarter from a given month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int QuarterFromMonth(Months value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Months.html">Months</a></dt>
+    <dd><p>The month value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The quarter corresponding to the given month.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_QuarterFromMonth_" data-uid="Refinity.Date.DateUtility.QuarterFromMonth*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_QuarterFromMonth_System_DateTime_" data-uid="Refinity.Date.DateUtility.QuarterFromMonth(System.DateTime)">
+  QuarterFromMonth(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the quarter from the given month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int QuarterFromMonth(this DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The month value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The quarter corresponding to the given month.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_QuarterFromMonth_" data-uid="Refinity.Date.DateUtility.QuarterFromMonth*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_QuarterFromMonth_System_Int32_" data-uid="Refinity.Date.DateUtility.QuarterFromMonth(System.Int32)">
+  QuarterFromMonth(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the quarter from a given month value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int QuarterFromMonth(this int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The month value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The quarter corresponding to the month value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_QuarterlyFromMonth_" data-uid="Refinity.Date.DateUtility.QuarterlyFromMonth*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_QuarterlyFromMonth_Months_" data-uid="Refinity.Date.DateUtility.QuarterlyFromMonth(Months)">
+  QuarterlyFromMonth(Months)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the quarterly value from a given month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int QuarterlyFromMonth(Months value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Months.html">Months</a></dt>
+    <dd><p>The month value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The quarterly value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_QuarterlyFromMonth_" data-uid="Refinity.Date.DateUtility.QuarterlyFromMonth*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_QuarterlyFromMonth_System_DateTime_" data-uid="Refinity.Date.DateUtility.QuarterlyFromMonth(System.DateTime)">
+  QuarterlyFromMonth(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the quarterly value from the given month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int QuarterlyFromMonth(this DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The month value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The quarterly value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_QuarterlyFromMonth_" data-uid="Refinity.Date.DateUtility.QuarterlyFromMonth*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_QuarterlyFromMonth_System_Int32_" data-uid="Refinity.Date.DateUtility.QuarterlyFromMonth(System.Int32)">
+  QuarterlyFromMonth(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the quarterly value from a given month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int QuarterlyFromMonth(this int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The month value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The quarterly value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_SerializeDateTime_" data-uid="Refinity.Date.DateUtility.SerializeDateTime*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_SerializeDateTime_System_DateTime_" data-uid="Refinity.Date.DateUtility.SerializeDateTime(System.DateTime)">
+  SerializeDateTime(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes a DateTime object into a JSON string representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeDateTime(this DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The DateTime object to be serialized.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A JSON string representation of the DateTime object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_Subtract_" data-uid="Refinity.Date.DateUtility.Subtract*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_Subtract_System_DateTime_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Refinity.Date.DateUtility.Subtract(System.DateTime,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  Subtract(DateTime, int, int, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subtracts a specified number of years, months, days, hours, minutes, and seconds from the given DateTime value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime Subtract(this DateTime value, int years = 0, int months = 0, int days = 0, int hours = 0, int minutes = 0, int seconds = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The DateTime value to subtract from.</p>
+</dd>
+    <dt><code>years</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of years to subtract. Default is 0.</p>
+</dd>
+    <dt><code>months</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of months to subtract. Default is 0.</p>
+</dd>
+    <dt><code>days</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of days to subtract. Default is 0.</p>
+</dd>
+    <dt><code>hours</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of hours to subtract. Default is 0.</p>
+</dd>
+    <dt><code>minutes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of minutes to subtract. Default is 0.</p>
+</dd>
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of seconds to subtract. Default is 0.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A new DateTime value that is the result of subtracting the specified years, months, days, hours, minutes, and seconds from the given DateTime value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Refinity_Date_DateUtility_ToDateTime_" data-uid="Refinity.Date.DateUtility.ToDateTime*"></a>
+
+  <h3 id="Refinity_Date_DateUtility_ToDateTime_System_String_" data-uid="Refinity.Date.DateUtility.ToDateTime(System.String)">
+  ToDateTime(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Refinity/Date/DateUtility.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a string value to a nullable DateTime object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime? ToDateTime(this string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string value to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd><p>A nullable DateTime object representing the converted value, or null if the conversion fails.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

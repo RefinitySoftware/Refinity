@@ -1,3 +1,4 @@
+namespace Refinity.Logging.Enums;
 public enum LogFileType
 {
     RTF,

@@ -1,3 +1,5 @@
+using Refinity.Benchmark.Enums;
+
 namespace Refinity.Benchmark.Models;
 
 public class BenchmarkModels
@@ -13,10 +15,4 @@ public class BenchmarkModels
     public double ElapsedTimeMs { get; set; }
     public Exception? Exception { get; set; }
     public int Iterations { get; set; }
-}
-
-public enum BenchmarkResult
-{
-    Success,
-    Failure
 }

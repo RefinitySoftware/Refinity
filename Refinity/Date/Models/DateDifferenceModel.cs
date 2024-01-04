@@ -1,4 +1,4 @@
-﻿namespace Refinity;
+﻿namespace Refinity.Date;
 
 public class DateDifference
 {

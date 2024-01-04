@@ -839,10 +839,6 @@ public static class MathUtility
     /// <summary>
     /// Represents a type that can hold values of any type.
     /// </summary>
-    /// <remarks>
-    /// The <see cref="dynamic"/> type is used to bypass compile-time type checking and enable late binding.
-    /// It allows you to invoke members and perform operations on objects without knowing their specific type at compile time.
-    /// </remarks>
     public static dynamic MatrixInverse(dynamic matrix)
     {
         int rows = matrix.GetLength(0);

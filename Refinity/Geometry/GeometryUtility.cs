@@ -9,6 +9,10 @@
         /// <returns>The area of the circle.</returns>
         public static double AreaOfCircle(double radius)
         {
+            if (radius < 0)
+            {
+                throw new ArgumentException("Radius cannot be negative.");
+            }
             return System.Math.PI * System.Math.Pow(radius, 2);
         }
 
@@ -20,6 +24,10 @@
         /// <returns>The area of the triangle.</returns>
         public static double AreaOfTriangle(double @base, double height)
         {
+            if (@base < 0 || height < 0)
+            {
+                throw new ArgumentException("Base and height cannot be negative.");
+            }
             return @base * height / 2;
         }
 
@@ -31,6 +39,10 @@
         /// <returns>The area of the rectangle.</returns>
         public static double AreaOfRectangle(double length, double width)
         {
+            if (length < 0 || width < 0)
+            {
+                throw new ArgumentException("Length and width cannot be negative.");
+            }
             return length * width;
         }
 
@@ -41,6 +53,10 @@
         /// <returns>The area of the square.</returns>
         public static double AreaOfSquare(double side)
         {
+            if (side < 0)
+            {
+                throw new ArgumentException("Side cannot be negative.");
+            }
             return System.Math.Pow(side, 2);
         }
 
@@ -53,6 +69,10 @@
         /// <returns>The area of the trapezoid.</returns>
         public static double AreaOfTrapezoid(double base1, double base2, double height)
         {
+            if (base1 < 0 || base2 < 0 || height < 0)
+            {
+                throw new ArgumentException("Bases and height cannot be negative.");
+            }
             return (base1 + base2) * height / 2;
         }
 
@@ -64,6 +84,10 @@
         /// <returns>The area of the parallelogram.</returns>
         public static double AreaOfParallelogram(double @base, double height)
         {
+            if (@base < 0 || height < 0)
+            {
+                throw new ArgumentException("Base and height cannot be negative.");
+            }
             return @base * height;
         }
 
@@ -75,6 +99,10 @@
         /// <returns>The area of the rhombus.</returns>
         public static double AreaOfRhombus(double diagonal1, double diagonal2)
         {
+            if (diagonal1 < 0 || diagonal2 < 0)
+            {
+                throw new ArgumentException("Diagonals cannot be negative.");
+            }
             return diagonal1 * diagonal2 / 2;
         }
 
@@ -86,6 +114,10 @@
         /// <returns>The area of the sector.</returns>
         public static double AreaOfSector(double radius, double angle)
         {
+            if (radius < 0 || angle < 0)
+            {
+                throw new ArgumentException("Radius and angle cannot be negative.");
+            }
             return System.Math.PI * System.Math.Pow(radius, 2) * angle / 360;
         }
 
@@ -97,6 +129,10 @@
         /// <returns></returns>
         public static CoordinateModel ToCartesianCoordinates(double radius, double angle)
         {
+            if (radius < 0)
+            {
+                throw new ArgumentException("Radius cannot be negative.");
+            }
             return new CoordinateModel
             {
                 X = radius * System.Math.Cos(angle),
@@ -129,6 +165,10 @@
         /// <returns>The slope between the two points.</returns>
         public static double CalculateSlope(double x1, double y1, double x2, double y2)
         {
+            if (x1 == x2)
+            {
+                throw new ArgumentException("The x-coordinates cannot be the same.");
+            }
             return (y2 - y1) / (x2 - x1);
         }
 
@@ -142,6 +182,10 @@
         /// <returns>The distance between the two points.</returns>
         public static double CalculateDistance(double x1, double y1, double x2, double y2)
         {
+            if (x1 == x2 && y1 == y2)
+            {
+                throw new ArgumentException("The points cannot be the same.");
+            }
             return System.Math.Sqrt(System.Math.Pow(x2 - x1, 2) + System.Math.Pow(y2 - y1, 2));
         }
 
@@ -152,6 +196,10 @@
         /// <returns>The perimeter of the square.</returns>
         public static double CalculateSquarePerimeter(double side)
         {
+            if (side < 0)
+            {
+                throw new ArgumentException("Side cannot be negative.");
+            }
             return 4 * side;
         }
 
@@ -163,6 +211,10 @@
         /// <returns>The perimeter of the rectangle.</returns>
         public static double CalculateRectanglePerimeter(double length, double width)
         {
+            if (length < 0 || width < 0)
+            {
+                throw new ArgumentException("Length and width cannot be negative.");
+            }
             return 2 * (length + width);
         }
 
@@ -174,6 +226,10 @@
         /// <returns>The diagonal length of the rectangle.</returns>
         public static double CalculateRectangleDiagonal(double length, double width)
         {
+            if (length < 0 || width < 0)
+            {
+                throw new ArgumentException("Length and width cannot be negative.");
+            }
             return System.Math.Sqrt(length * length + width * width);
         }
 
@@ -187,6 +243,10 @@
         /// <returns>The perimeter of the trapezoid.</returns>
         public static double CalculateTrapezoidPerimeter(double base1, double base2, double side1, double side2)
         {
+            if (base1 < 0 || base2 < 0 || side1 < 0 || side2 < 0)
+            {
+                throw new ArgumentException("Bases and sides cannot be negative.");
+            }
             return base1 + base2 + side1 + side2;
         }
 
@@ -198,6 +258,10 @@
         /// <returns>The perimeter of the parallelogram.</returns>
         public static double CalculateParallelogramPerimeter(double baseLength, double sideLength)
         {
+            if (baseLength < 0 || sideLength < 0)
+            {
+                throw new ArgumentException("Base and side cannot be negative.");
+            }
             return 2 * (baseLength + sideLength);
         }
 
@@ -208,6 +272,10 @@
         /// <returns>The perimeter of the rhombus.</returns>
         public static double CalculateRhombusPerimeter(double side)
         {
+            if (side < 0)
+            {
+                throw new ArgumentException("Side cannot be negative.");
+            }
             return 4 * side;
         }
 
@@ -220,6 +288,10 @@
         /// <returns>The perimeter of the isosceles trapezoid.</returns>
         public static double CalculateIsoscelesTrapezoidPerimeter(double base1, double base2, double side)
         {
+            if (base1 < 0 || base2 < 0 || side < 0)
+            {
+                throw new ArgumentException("Bases and side cannot be negative.");
+            }
             return base1 + base2 + 2 * side;
         }
 
@@ -232,7 +304,15 @@
         /// <returns>The length of the side of the trapezoid.</returns>
         public static double CalculateIsoscelesTrapezoidSide(double base1, double base2, double height)
         {
+            if (base1 < 0 || base2 < 0 || height < 0)
+            {
+                throw new ArgumentException("Bases and height cannot be negative.");
+            }
             double halfBaseDifference = (base1 - base2) / 2;
+            if (halfBaseDifference < 0)
+            {
+                throw new ArgumentException("The difference between the bases cannot be negative.");
+            }
             return System.Math.Sqrt(halfBaseDifference * halfBaseDifference + height * height);
         }
 
@@ -246,6 +326,10 @@
         /// <returns>The perimeter of the right trapezoid.</returns>
         public static double CalculateRightTrapezoidPerimeter(double base1, double base2, double height, double side)
         {
+            if (base1 < 0 || base2 < 0 || height < 0 || side < 0)
+            {
+                throw new ArgumentException("Bases, height, and side cannot be negative.");
+            }
             return base1 + base2 + height + side;
         }
 
@@ -259,7 +343,15 @@
         /// <returns>The diagonal of the right trapezoid.</returns>
         public static double CalculateRightTrapezoidDiagonal(double base1, double base2, double height, double side)
         {
+            if (base1 < 0 || base2 < 0 || height < 0 || side < 0)
+            {
+                throw new ArgumentException("Bases, height, and side cannot be negative.");
+            }
             double halfBaseDifference = (base1 - base2) / 2;
+            if (halfBaseDifference < 0)
+            {
+                throw new ArgumentException("The difference between the bases cannot be negative.");
+            }
             return System.Math.Sqrt(halfBaseDifference * halfBaseDifference + height * height + side * side);
         }
     }

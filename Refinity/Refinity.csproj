@@ -3,11 +3,23 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Refinity</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>InfinitySoftware - Reflecto</Authors>
+    <Company>InfinitySoftware - Reflecto</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/InfinitySoftware-House/Refinity</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType> 
+    <PackageIcon>icon.png</PackageIcon>
+    <Description></Description>
+    <Copyright>Copyright (c) 2024 InfinitySoftware - Reflecto</Copyright>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.ML" Version="3.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+     <None Include="icon.png" Pack="true" PackagePath="\"/>
   </ItemGroup>
 </Project>

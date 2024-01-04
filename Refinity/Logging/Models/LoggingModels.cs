@@ -1,14 +1,6 @@
 namespace Refinity.Logging.Models;
+using Refinity.Logging.Enums;
 
-public enum LogLevel
-{
-    TRACE,
-    DEBUG,
-    INFO,
-    WARNING,
-    ERROR,
-    FATAL
-}
 public class LogColorHelper
 {
     public static ConsoleColor GetLogLevelColor(LogLevel logLevel)
