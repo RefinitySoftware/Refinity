@@ -1,23 +1,23 @@
 namespace Refinity.Logging.Models;
-using Refinity.Logging.Enums;
+using Refinity.Enums;
 
 public class LogColorHelper
 {
-    public static ConsoleColor GetLogLevelColor(LogLevel logLevel)
+    public static ConsoleColor GetLogLevelColor(EnumLogLevel logLevel)
     {
         switch (logLevel)
         {
-            case LogLevel.TRACE:
+            case EnumLogLevel.TRACE:
                 return ConsoleColor.Gray;
-            case LogLevel.DEBUG:
+            case EnumLogLevel.DEBUG:
                 return ConsoleColor.Blue;
-            case LogLevel.INFO:
+            case EnumLogLevel.INFO:
                 return ConsoleColor.Green;
-            case LogLevel.WARNING:
+            case EnumLogLevel.WARNING:
                 return ConsoleColor.Yellow;
-            case LogLevel.ERROR:
+            case EnumLogLevel.ERROR:
                 return ConsoleColor.Red;
-            case LogLevel.FATAL:
+            case EnumLogLevel.FATAL:
                 return ConsoleColor.Magenta;
             default:
                 return ConsoleColor.White;

@@ -484,3 +484,9 @@ public enum EnumPressureUnits
     [Description("Psi")]
     Psi
 }
+
+public enum EnumBenchmarkResult
+{
+    Success,
+    Failure
+}
