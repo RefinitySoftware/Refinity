@@ -6,7 +6,7 @@ public static class DateUtility
 {
 
     /// <summary>
-    /// Adds a specified number of years, months, days, hours, minutes, and seconds to the given DateTime value. TEST TEST TEST
+    /// Adds a specified number of years, months, days, hours, minutes, and seconds to the given DateTime value.
     /// </summary>
     /// <param name="value">The DateTime value to which the specified time interval should be added.</param>
     /// <param name="years">The number of years to add. The default value is 0.</param>

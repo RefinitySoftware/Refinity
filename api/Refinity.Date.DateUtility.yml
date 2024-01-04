@@ -77,7 +77,7 @@ items:
   assemblies:
   - Refinity
   namespace: Refinity.Date
-  summary: Adds a specified number of years, months, days, hours, minutes, and seconds to the given DateTime value. TEST TEST TEST
+  summary: Adds a specified number of years, months, days, hours, minutes, and seconds to the given DateTime value.
   example: []
   syntax:
     content: public static DateTime Add(this DateTime value, int years = 0, int months = 0, int days = 0, int hours = 0, int minutes = 0, int seconds = 0)
