@@ -16,7 +16,6 @@
     <Description></Description>
     <Copyright>Copyright (c) 2024 InfinitySoftware - Reflecto</Copyright>
     <EnablePackageValidation>true</EnablePackageValidation>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>library, utility, math, finance, date, string, nuget, package</PackageTags>
   </PropertyGroup>
   <ItemGroup>
