@@ -13,10 +13,12 @@
     <RepositoryUrl>https://github.com/InfinitySoftware-House/Refinity</RepositoryUrl> 
     <RepositoryType>git</RepositoryType> 
     <PackageIcon>icon.png</PackageIcon>
-    <Description></Description>
+    <Description>A robust C# library designed to supercharge developer productivity!</Description>
     <Copyright>Copyright (c) 2024 InfinitySoftware - Reflecto</Copyright>
     <EnablePackageValidation>true</EnablePackageValidation>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>library, utility, math, finance, date, string, nuget, package</PackageTags>
+    <ProjectUrl>https://infinitysoftware-house.github.io/Refinity/</ProjectUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
