@@ -18,7 +18,7 @@
     <EnablePackageValidation>true</EnablePackageValidation>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>library, utility, math, finance, date, string, nuget, package</PackageTags>
-    <ProjectUrl>https://infinitysoftware-house.github.io/Refinity/</ProjectUrl>
+    <PackageProjectUrl>https://infinitysoftware-house.github.io/Refinity/</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
