@@ -1,5 +1,5 @@
 - name: Home
-  href: /index.html
+  href: index.html
 - name: Guide
   href: docs/
 - name: References
