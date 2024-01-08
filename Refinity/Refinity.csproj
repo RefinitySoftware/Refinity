@@ -15,11 +15,18 @@
     <PackageIcon>icon.png</PackageIcon>
     <Description></Description>
     <Copyright>Copyright (c) 2024 InfinitySoftware - Reflecto</Copyright>
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>library, utility, math, finance, date, string, nuget, package</PackageTags>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <None Include="README.md" Pack="true" PackagePath="\"/>
-    <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
-     <None Include="icon.png" Pack="true" PackagePath="\"/>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="LICENSE.txt" Pack="true" PackagePath="" />
+     <None Include="icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
