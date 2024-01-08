@@ -3,6 +3,9 @@ using System.Globalization;
 
 namespace Refinity.Finance;
 
+/// <summary>
+/// Provides utility methods for financial calculations.
+/// </summary>
 public static class FinanceUtility
 {
     /// <summary>
