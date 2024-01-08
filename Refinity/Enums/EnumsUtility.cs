@@ -2,6 +2,10 @@ using System.ComponentModel;
 using System.Globalization;
 
 namespace Refinity.Enums;
+
+/// <summary>
+/// Utility class for working with enums.
+/// </summary>
 public static class EnumsUtility
 {
     /// <summary>
@@ -92,6 +96,9 @@ public enum EnumMonths
 /// </summary>
 public enum EnumFileTypes
 {
+    /// <summary>
+    /// Represents the Rich Text Format file type.
+    /// </summary>
     [Description(".rft")]
     RTF,
     [Description(".txt")]
@@ -850,7 +857,9 @@ public enum EnumScaleLiters
     [Description("Femtoliters")]
     Femtoliters,
 
+    /// <summary>
+    /// Represents a volume measurement in attoliters.
+    /// </summary>
     [Description("Attoliters")]
     Attoliters
 }
-

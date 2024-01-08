@@ -17,11 +17,15 @@
     <Copyright>Copyright (c) 2024 InfinitySoftware - Reflecto</Copyright>
     <EnablePackageValidation>true</EnablePackageValidation>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageTags>library, utility, math, finance, date, string, nuget, package</PackageTags>
+    <PackageTags>ExtensionMethods, Productivity, CodeQuality, Efficiency, Readability, OpenSource, CommunityDriven, Integration</PackageTags>
     <PackageProjectUrl>https://infinitysoftware-house.github.io/Refinity/</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="MinVer" Version="4.3.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
