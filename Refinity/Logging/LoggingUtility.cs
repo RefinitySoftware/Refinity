@@ -5,6 +5,9 @@ using Refinity.Enums;
 
 namespace Refinity.Logging
 {
+    /// <summary>
+    /// Represents a utility class for logging.
+    /// </summary>
     public class LoggingUtility
     {
         private string PathToLogFile { get; set; }
@@ -150,6 +153,11 @@ namespace Refinity.Logging
             Log(message, EnumLogLevel.FATAL, severity);
         }
 
+        /// <summary>
+        /// Converts the log data to a CSV format.
+        /// </summary>
+        /// <param name="csvDelimiter">The delimiter character used in the CSV file. Default is ';'.</param>
+        /// <returns>An array of bytes representing the CSV data.</returns>
         public byte[] ConvertLogToCSV(char csvDelimiter = ';')
         {
             char delimiter = '|';

@@ -1,4 +1,8 @@
 ﻿namespace Refinity.Geometry;
+
+/// <summary>
+/// Represents the geometry utility.
+/// </summary>
 public static class GeometryUtility
 {
     /// <summary>

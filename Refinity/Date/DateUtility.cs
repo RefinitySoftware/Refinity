@@ -3,6 +3,10 @@ using Newtonsoft.Json;
 using Refinity.Enums;
 
 namespace Refinity.Date;
+
+/// <summary>
+/// Provides utility methods for working with DateTime values.
+/// </summary>
 public static class DateUtility
 {
 
@@ -73,6 +77,14 @@ public static class DateUtility
         return new DateTime(value.Year, value.Month, 1);
     }
 
+    /// <summary>
+    /// Gets the date range (start and end dates) for a given number of months.
+    /// </summary>
+    /// <param name="startDate"></param>
+    /// <param name="numberOfMonths"></param>
+    /// <param name="startToFirst"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentException"></exception>
     public static DateRangeModel GetDateRange(this DateTime startDate, int numberOfMonths, bool startToFirst = false)
     {
         if (numberOfMonths <= 0)

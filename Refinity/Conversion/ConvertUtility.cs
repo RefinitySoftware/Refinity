@@ -5,13 +5,34 @@ using Refinity.Strings;
 
 namespace Refinity.Conversion;
 
+/// <summary>
+/// Represents a log entry.
+/// </summary>
 public class LogEntry
 {
+    /// <summary>
+    /// Gets or sets the time of the log entry.
+    /// </summary>
     public DateTime Time { get; set; }
+
+    /// <summary>
+    /// Gets or sets the log level of the log entry.
+    /// </summary>
     public string? LogLevel { get; set; }
+
+    /// <summary>
+    /// Gets or sets the message of the log entry.
+    /// </summary>
     public string? Message { get; set; }
+
+    /// <summary>
+    /// Gets or sets the severity of the log entry.
+    /// </summary>
     public int Severity { get; set; }
 }
+/// <summary>
+/// Represents a utility for converting files.
+/// </summary>
 public static class ConvertUtility
 {
     /// <summary>
@@ -146,9 +167,9 @@ public static class ConvertUtility
     /// Converts a text file to a CSV file.
     /// </summary>
     /// <param name="pathToTxt">The path to the input text file.</param>
-    /// <param name="pathToCSV">The path to save the output CSV file.</param>
     /// <param name="delimiter">The character used to separate values in the text file. Default is ','.</param>
     /// <param name="saveDelimiter">The character used to separate values in the CSV file. Default is ','.</param>
+    /// <param name="headers">The headers to use in the CSV file. Default is null.</param>
     /// <returns>True if the conversion is successful, false otherwise.</returns>
     public static byte[] ConvertTextToCSV(string pathToTxt, char delimiter = ',', char saveDelimiter = ',', string[]? headers = null)
     {

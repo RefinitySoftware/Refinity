@@ -4,6 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace Refinity.Strings;
 
+/// <summary>
+/// Provides utility methods for manipulating strings.
+/// </summary>
 public static class StringsUtility
 {
     /// <summary>

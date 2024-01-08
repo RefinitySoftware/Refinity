@@ -3,6 +3,10 @@ using Refinity.Enums;
 using Refinity.Benchmark.Models;
 
 namespace Refinity.Benchmark;
+
+/// <summary>
+/// Provides utility methods for running benchmarks on methods and actions.
+/// </summary>
 public static class BenchmarkUtility
 {
     /// <summary>
