@@ -1,0 +1,762 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumColor
+  commentId: T:Refinity.Enums.EnumColor
+  id: EnumColor
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumColor.Black
+  - Refinity.Enums.EnumColor.Blue
+  - Refinity.Enums.EnumColor.Brown
+  - Refinity.Enums.EnumColor.Cyan
+  - Refinity.Enums.EnumColor.DeepPink
+  - Refinity.Enums.EnumColor.Gray
+  - Refinity.Enums.EnumColor.Green
+  - Refinity.Enums.EnumColor.Green2
+  - Refinity.Enums.EnumColor.HotPink
+  - Refinity.Enums.EnumColor.LightPink
+  - Refinity.Enums.EnumColor.Magenta
+  - Refinity.Enums.EnumColor.Maroon
+  - Refinity.Enums.EnumColor.MediumVioletRed
+  - Refinity.Enums.EnumColor.Navy
+  - Refinity.Enums.EnumColor.Olive
+  - Refinity.Enums.EnumColor.Orange
+  - Refinity.Enums.EnumColor.PaleVioletRed
+  - Refinity.Enums.EnumColor.Pink
+  - Refinity.Enums.EnumColor.Purple
+  - Refinity.Enums.EnumColor.Red
+  - Refinity.Enums.EnumColor.Teal
+  - Refinity.Enums.EnumColor.White
+  - Refinity.Enums.EnumColor.Yellow
+  langs:
+  - csharp
+  - vb
+  name: EnumColor
+  nameWithType: EnumColor
+  fullName: Refinity.Enums.EnumColor
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumColor
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 170
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents colors as hex values in description attribute.
+  example: []
+  syntax:
+    content: public enum EnumColor
+    content.vb: Public Enum EnumColor
+  extensionMethods:
+  - Refinity.Enums.EnumColor.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumColor.Red
+  commentId: F:Refinity.Enums.EnumColor.Red
+  id: Red
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Red
+  nameWithType: EnumColor.Red
+  fullName: Refinity.Enums.EnumColor.Red
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Red
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 172
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Red = 0
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Green
+  commentId: F:Refinity.Enums.EnumColor.Green
+  id: Green
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Green
+  nameWithType: EnumColor.Green
+  fullName: Refinity.Enums.EnumColor.Green
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Green
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 174
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Green = 1
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Blue
+  commentId: F:Refinity.Enums.EnumColor.Blue
+  id: Blue
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Blue
+  nameWithType: EnumColor.Blue
+  fullName: Refinity.Enums.EnumColor.Blue
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Blue
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 176
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Blue = 2
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Yellow
+  commentId: F:Refinity.Enums.EnumColor.Yellow
+  id: Yellow
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Yellow
+  nameWithType: EnumColor.Yellow
+  fullName: Refinity.Enums.EnumColor.Yellow
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Yellow
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 178
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Yellow = 3
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Magenta
+  commentId: F:Refinity.Enums.EnumColor.Magenta
+  id: Magenta
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Magenta
+  nameWithType: EnumColor.Magenta
+  fullName: Refinity.Enums.EnumColor.Magenta
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Magenta
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 180
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Magenta = 4
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Cyan
+  commentId: F:Refinity.Enums.EnumColor.Cyan
+  id: Cyan
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Cyan
+  nameWithType: EnumColor.Cyan
+  fullName: Refinity.Enums.EnumColor.Cyan
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Cyan
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 182
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Cyan = 5
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.White
+  commentId: F:Refinity.Enums.EnumColor.White
+  id: White
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: White
+  nameWithType: EnumColor.White
+  fullName: Refinity.Enums.EnumColor.White
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: White
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 184
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: White = 6
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Black
+  commentId: F:Refinity.Enums.EnumColor.Black
+  id: Black
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Black
+  nameWithType: EnumColor.Black
+  fullName: Refinity.Enums.EnumColor.Black
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Black
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 186
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Black = 7
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Gray
+  commentId: F:Refinity.Enums.EnumColor.Gray
+  id: Gray
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Gray
+  nameWithType: EnumColor.Gray
+  fullName: Refinity.Enums.EnumColor.Gray
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Gray
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 188
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Gray = 8
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Maroon
+  commentId: F:Refinity.Enums.EnumColor.Maroon
+  id: Maroon
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Maroon
+  nameWithType: EnumColor.Maroon
+  fullName: Refinity.Enums.EnumColor.Maroon
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Maroon
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 190
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Maroon = 9
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Olive
+  commentId: F:Refinity.Enums.EnumColor.Olive
+  id: Olive
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Olive
+  nameWithType: EnumColor.Olive
+  fullName: Refinity.Enums.EnumColor.Olive
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Olive
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 192
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Olive = 10
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Green2
+  commentId: F:Refinity.Enums.EnumColor.Green2
+  id: Green2
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Green2
+  nameWithType: EnumColor.Green2
+  fullName: Refinity.Enums.EnumColor.Green2
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Green2
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 194
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Green2 = 11
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Purple
+  commentId: F:Refinity.Enums.EnumColor.Purple
+  id: Purple
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Purple
+  nameWithType: EnumColor.Purple
+  fullName: Refinity.Enums.EnumColor.Purple
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Purple
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 196
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Purple = 12
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Teal
+  commentId: F:Refinity.Enums.EnumColor.Teal
+  id: Teal
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Teal
+  nameWithType: EnumColor.Teal
+  fullName: Refinity.Enums.EnumColor.Teal
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Teal
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 198
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Teal = 13
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Navy
+  commentId: F:Refinity.Enums.EnumColor.Navy
+  id: Navy
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Navy
+  nameWithType: EnumColor.Navy
+  fullName: Refinity.Enums.EnumColor.Navy
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Navy
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 200
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Navy = 14
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Orange
+  commentId: F:Refinity.Enums.EnumColor.Orange
+  id: Orange
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Orange
+  nameWithType: EnumColor.Orange
+  fullName: Refinity.Enums.EnumColor.Orange
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Orange
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 202
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Orange = 15
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Brown
+  commentId: F:Refinity.Enums.EnumColor.Brown
+  id: Brown
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Brown
+  nameWithType: EnumColor.Brown
+  fullName: Refinity.Enums.EnumColor.Brown
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Brown
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 204
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Brown = 16
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.Pink
+  commentId: F:Refinity.Enums.EnumColor.Pink
+  id: Pink
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: Pink
+  nameWithType: EnumColor.Pink
+  fullName: Refinity.Enums.EnumColor.Pink
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Pink
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 206
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Pink = 17
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.LightPink
+  commentId: F:Refinity.Enums.EnumColor.LightPink
+  id: LightPink
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: LightPink
+  nameWithType: EnumColor.LightPink
+  fullName: Refinity.Enums.EnumColor.LightPink
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: LightPink
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 208
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: LightPink = 18
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.HotPink
+  commentId: F:Refinity.Enums.EnumColor.HotPink
+  id: HotPink
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: HotPink
+  nameWithType: EnumColor.HotPink
+  fullName: Refinity.Enums.EnumColor.HotPink
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: HotPink
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 210
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: HotPink = 19
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.DeepPink
+  commentId: F:Refinity.Enums.EnumColor.DeepPink
+  id: DeepPink
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: DeepPink
+  nameWithType: EnumColor.DeepPink
+  fullName: Refinity.Enums.EnumColor.DeepPink
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: DeepPink
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 212
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: DeepPink = 20
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.MediumVioletRed
+  commentId: F:Refinity.Enums.EnumColor.MediumVioletRed
+  id: MediumVioletRed
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: MediumVioletRed
+  nameWithType: EnumColor.MediumVioletRed
+  fullName: Refinity.Enums.EnumColor.MediumVioletRed
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: MediumVioletRed
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 214
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: MediumVioletRed = 21
+    return:
+      type: Refinity.Enums.EnumColor
+- uid: Refinity.Enums.EnumColor.PaleVioletRed
+  commentId: F:Refinity.Enums.EnumColor.PaleVioletRed
+  id: PaleVioletRed
+  parent: Refinity.Enums.EnumColor
+  langs:
+  - csharp
+  - vb
+  name: PaleVioletRed
+  nameWithType: EnumColor.PaleVioletRed
+  fullName: Refinity.Enums.EnumColor.PaleVioletRed
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: PaleVioletRed
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 216
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: PaleVioletRed = 22
+    return:
+      type: Refinity.Enums.EnumColor
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumColor.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumColor>(EnumColor)
+  nameWithType: EnumsUtility.GetDescription<EnumColor>(EnumColor)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumColor>(Refinity.Enums.EnumColor)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumColor)(EnumColor)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumColor)(Refinity.Enums.EnumColor)
+  name.vb: GetDescription(Of EnumColor)(EnumColor)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumColor)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumColor
+    name: EnumColor
+    href: Refinity.Enums.EnumColor.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumColor
+    name: EnumColor
+    href: Refinity.Enums.EnumColor.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumColor)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumColor
+    name: EnumColor
+    href: Refinity.Enums.EnumColor.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumColor
+    name: EnumColor
+    href: Refinity.Enums.EnumColor.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumColor
+  commentId: T:Refinity.Enums.EnumColor
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumColor.html
+  name: EnumColor
+  nameWithType: EnumColor
+  fullName: Refinity.Enums.EnumColor

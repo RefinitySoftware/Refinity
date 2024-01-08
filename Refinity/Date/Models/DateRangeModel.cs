@@ -1,3 +1,5 @@
+namespace Refinity.Date;
+
 /// <summary>
 /// Represents a date range with start and end dates.
 /// </summary>

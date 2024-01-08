@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Logging.Enums.LogLevel
+  commentId: T:Refinity.Logging.Enums.LogLevel
+  id: LogLevel
+  parent: Refinity.Logging.Enums
+  children:
+  - Refinity.Logging.Enums.LogLevel.DEBUG
+  - Refinity.Logging.Enums.LogLevel.ERROR
+  - Refinity.Logging.Enums.LogLevel.FATAL
+  - Refinity.Logging.Enums.LogLevel.INFO
+  - Refinity.Logging.Enums.LogLevel.TRACE
+  - Refinity.Logging.Enums.LogLevel.WARNING
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Refinity.Logging.Enums.LogLevel
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Logging/Enums/LogLevels.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: LogLevel
+    path: Refinity/Logging/Enums/LogLevels.cs
+    startLine: 2
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging.Enums
+  syntax:
+    content: public enum LogLevel
+    content.vb: Public Enum LogLevel
+- uid: Refinity.Logging.Enums.LogLevel.TRACE
+  commentId: F:Refinity.Logging.Enums.LogLevel.TRACE
+  id: TRACE
+  parent: Refinity.Logging.Enums.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: TRACE
+  nameWithType: LogLevel.TRACE
+  fullName: Refinity.Logging.Enums.LogLevel.TRACE
+  type: Field
+  source:
+    remote:
+      path: Refinity/Logging/Enums/LogLevels.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: TRACE
+    path: Refinity/Logging/Enums/LogLevels.cs
+    startLine: 4
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging.Enums
+  syntax:
+    content: TRACE = 0
+    return:
+      type: Refinity.Logging.Enums.LogLevel
+- uid: Refinity.Logging.Enums.LogLevel.DEBUG
+  commentId: F:Refinity.Logging.Enums.LogLevel.DEBUG
+  id: DEBUG
+  parent: Refinity.Logging.Enums.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: DEBUG
+  nameWithType: LogLevel.DEBUG
+  fullName: Refinity.Logging.Enums.LogLevel.DEBUG
+  type: Field
+  source:
+    remote:
+      path: Refinity/Logging/Enums/LogLevels.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: DEBUG
+    path: Refinity/Logging/Enums/LogLevels.cs
+    startLine: 5
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging.Enums
+  syntax:
+    content: DEBUG = 1
+    return:
+      type: Refinity.Logging.Enums.LogLevel
+- uid: Refinity.Logging.Enums.LogLevel.INFO
+  commentId: F:Refinity.Logging.Enums.LogLevel.INFO
+  id: INFO
+  parent: Refinity.Logging.Enums.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: INFO
+  nameWithType: LogLevel.INFO
+  fullName: Refinity.Logging.Enums.LogLevel.INFO
+  type: Field
+  source:
+    remote:
+      path: Refinity/Logging/Enums/LogLevels.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: INFO
+    path: Refinity/Logging/Enums/LogLevels.cs
+    startLine: 6
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging.Enums
+  syntax:
+    content: INFO = 2
+    return:
+      type: Refinity.Logging.Enums.LogLevel
+- uid: Refinity.Logging.Enums.LogLevel.WARNING
+  commentId: F:Refinity.Logging.Enums.LogLevel.WARNING
+  id: WARNING
+  parent: Refinity.Logging.Enums.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: WARNING
+  nameWithType: LogLevel.WARNING
+  fullName: Refinity.Logging.Enums.LogLevel.WARNING
+  type: Field
+  source:
+    remote:
+      path: Refinity/Logging/Enums/LogLevels.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: WARNING
+    path: Refinity/Logging/Enums/LogLevels.cs
+    startLine: 7
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging.Enums
+  syntax:
+    content: WARNING = 3
+    return:
+      type: Refinity.Logging.Enums.LogLevel
+- uid: Refinity.Logging.Enums.LogLevel.ERROR
+  commentId: F:Refinity.Logging.Enums.LogLevel.ERROR
+  id: ERROR
+  parent: Refinity.Logging.Enums.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: ERROR
+  nameWithType: LogLevel.ERROR
+  fullName: Refinity.Logging.Enums.LogLevel.ERROR
+  type: Field
+  source:
+    remote:
+      path: Refinity/Logging/Enums/LogLevels.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: ERROR
+    path: Refinity/Logging/Enums/LogLevels.cs
+    startLine: 8
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging.Enums
+  syntax:
+    content: ERROR = 4
+    return:
+      type: Refinity.Logging.Enums.LogLevel
+- uid: Refinity.Logging.Enums.LogLevel.FATAL
+  commentId: F:Refinity.Logging.Enums.LogLevel.FATAL
+  id: FATAL
+  parent: Refinity.Logging.Enums.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: FATAL
+  nameWithType: LogLevel.FATAL
+  fullName: Refinity.Logging.Enums.LogLevel.FATAL
+  type: Field
+  source:
+    remote:
+      path: Refinity/Logging/Enums/LogLevels.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: FATAL
+    path: Refinity/Logging/Enums/LogLevels.cs
+    startLine: 9
+  assemblies:
+  - Refinity
+  namespace: Refinity.Logging.Enums
+  syntax:
+    content: FATAL = 5
+    return:
+      type: Refinity.Logging.Enums.LogLevel
+references:
+- uid: Refinity.Logging.Enums
+  commentId: N:Refinity.Logging.Enums
+  href: Refinity.html
+  name: Refinity.Logging.Enums
+  nameWithType: Refinity.Logging.Enums
+  fullName: Refinity.Logging.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Logging
+    name: Logging
+    href: Refinity.Logging.html
+  - name: .
+  - uid: Refinity.Logging.Enums
+    name: Enums
+    href: Refinity.Logging.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Logging
+    name: Logging
+    href: Refinity.Logging.html
+  - name: .
+  - uid: Refinity.Logging.Enums
+    name: Enums
+    href: Refinity.Logging.Enums.html
+- uid: Refinity.Logging.Enums.LogLevel
+  commentId: T:Refinity.Logging.Enums.LogLevel
+  parent: Refinity.Logging.Enums
+  href: Refinity.Logging.Enums.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Refinity.Logging.Enums.LogLevel

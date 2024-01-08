@@ -1,0 +1,1302 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumLanguageCodes
+  commentId: T:Refinity.Enums.EnumLanguageCodes
+  id: EnumLanguageCodes
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumLanguageCodes.AR
+  - Refinity.Enums.EnumLanguageCodes.BE
+  - Refinity.Enums.EnumLanguageCodes.BG
+  - Refinity.Enums.EnumLanguageCodes.BS
+  - Refinity.Enums.EnumLanguageCodes.CA
+  - Refinity.Enums.EnumLanguageCodes.CS
+  - Refinity.Enums.EnumLanguageCodes.CY
+  - Refinity.Enums.EnumLanguageCodes.DA
+  - Refinity.Enums.EnumLanguageCodes.DE
+  - Refinity.Enums.EnumLanguageCodes.EL
+  - Refinity.Enums.EnumLanguageCodes.EN
+  - Refinity.Enums.EnumLanguageCodes.ES
+  - Refinity.Enums.EnumLanguageCodes.ET
+  - Refinity.Enums.EnumLanguageCodes.FI
+  - Refinity.Enums.EnumLanguageCodes.FR
+  - Refinity.Enums.EnumLanguageCodes.GA
+  - Refinity.Enums.EnumLanguageCodes.HE
+  - Refinity.Enums.EnumLanguageCodes.HI
+  - Refinity.Enums.EnumLanguageCodes.HR
+  - Refinity.Enums.EnumLanguageCodes.HU
+  - Refinity.Enums.EnumLanguageCodes.IS
+  - Refinity.Enums.EnumLanguageCodes.IT
+  - Refinity.Enums.EnumLanguageCodes.JA
+  - Refinity.Enums.EnumLanguageCodes.KO
+  - Refinity.Enums.EnumLanguageCodes.LT
+  - Refinity.Enums.EnumLanguageCodes.LV
+  - Refinity.Enums.EnumLanguageCodes.MK
+  - Refinity.Enums.EnumLanguageCodes.MT
+  - Refinity.Enums.EnumLanguageCodes.NL
+  - Refinity.Enums.EnumLanguageCodes.NO
+  - Refinity.Enums.EnumLanguageCodes.PL
+  - Refinity.Enums.EnumLanguageCodes.PT
+  - Refinity.Enums.EnumLanguageCodes.RO
+  - Refinity.Enums.EnumLanguageCodes.RU
+  - Refinity.Enums.EnumLanguageCodes.SK
+  - Refinity.Enums.EnumLanguageCodes.SL
+  - Refinity.Enums.EnumLanguageCodes.SQ
+  - Refinity.Enums.EnumLanguageCodes.SR
+  - Refinity.Enums.EnumLanguageCodes.SV
+  - Refinity.Enums.EnumLanguageCodes.TR
+  - Refinity.Enums.EnumLanguageCodes.UK
+  - Refinity.Enums.EnumLanguageCodes.VI
+  - Refinity.Enums.EnumLanguageCodes.ZH
+  langs:
+  - csharp
+  - vb
+  name: EnumLanguageCodes
+  nameWithType: EnumLanguageCodes
+  fullName: Refinity.Enums.EnumLanguageCodes
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumLanguageCodes
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 394
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents the language codes for different languages with their descriptions.
+  example: []
+  syntax:
+    content: public enum EnumLanguageCodes
+    content.vb: Public Enum EnumLanguageCodes
+  extensionMethods:
+  - Refinity.Enums.EnumLanguageCodes.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumLanguageCodes.EN
+  commentId: F:Refinity.Enums.EnumLanguageCodes.EN
+  id: EN
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: EN
+  nameWithType: EnumLanguageCodes.EN
+  fullName: Refinity.Enums.EnumLanguageCodes.EN
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EN
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 396
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: EN = 0
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.ES
+  commentId: F:Refinity.Enums.EnumLanguageCodes.ES
+  id: ES
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: ES
+  nameWithType: EnumLanguageCodes.ES
+  fullName: Refinity.Enums.EnumLanguageCodes.ES
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: ES
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 398
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: ES = 1
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.FR
+  commentId: F:Refinity.Enums.EnumLanguageCodes.FR
+  id: FR
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: FR
+  nameWithType: EnumLanguageCodes.FR
+  fullName: Refinity.Enums.EnumLanguageCodes.FR
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: FR
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 400
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: FR = 2
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.DE
+  commentId: F:Refinity.Enums.EnumLanguageCodes.DE
+  id: DE
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: DE
+  nameWithType: EnumLanguageCodes.DE
+  fullName: Refinity.Enums.EnumLanguageCodes.DE
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: DE
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 402
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: DE = 3
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.IT
+  commentId: F:Refinity.Enums.EnumLanguageCodes.IT
+  id: IT
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: IT
+  nameWithType: EnumLanguageCodes.IT
+  fullName: Refinity.Enums.EnumLanguageCodes.IT
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: IT
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 404
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: IT = 4
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.JA
+  commentId: F:Refinity.Enums.EnumLanguageCodes.JA
+  id: JA
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: JA
+  nameWithType: EnumLanguageCodes.JA
+  fullName: Refinity.Enums.EnumLanguageCodes.JA
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: JA
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 406
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: JA = 5
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.KO
+  commentId: F:Refinity.Enums.EnumLanguageCodes.KO
+  id: KO
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: KO
+  nameWithType: EnumLanguageCodes.KO
+  fullName: Refinity.Enums.EnumLanguageCodes.KO
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: KO
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 408
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: KO = 6
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.ZH
+  commentId: F:Refinity.Enums.EnumLanguageCodes.ZH
+  id: ZH
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: ZH
+  nameWithType: EnumLanguageCodes.ZH
+  fullName: Refinity.Enums.EnumLanguageCodes.ZH
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: ZH
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 410
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: ZH = 7
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.AR
+  commentId: F:Refinity.Enums.EnumLanguageCodes.AR
+  id: AR
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: AR
+  nameWithType: EnumLanguageCodes.AR
+  fullName: Refinity.Enums.EnumLanguageCodes.AR
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: AR
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 412
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: AR = 8
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.BG
+  commentId: F:Refinity.Enums.EnumLanguageCodes.BG
+  id: BG
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: BG
+  nameWithType: EnumLanguageCodes.BG
+  fullName: Refinity.Enums.EnumLanguageCodes.BG
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: BG
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 414
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: BG = 9
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.CA
+  commentId: F:Refinity.Enums.EnumLanguageCodes.CA
+  id: CA
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: CA
+  nameWithType: EnumLanguageCodes.CA
+  fullName: Refinity.Enums.EnumLanguageCodes.CA
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CA
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 416
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: CA = 10
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.CS
+  commentId: F:Refinity.Enums.EnumLanguageCodes.CS
+  id: CS
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: CS
+  nameWithType: EnumLanguageCodes.CS
+  fullName: Refinity.Enums.EnumLanguageCodes.CS
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CS
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 418
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: CS = 11
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.DA
+  commentId: F:Refinity.Enums.EnumLanguageCodes.DA
+  id: DA
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: DA
+  nameWithType: EnumLanguageCodes.DA
+  fullName: Refinity.Enums.EnumLanguageCodes.DA
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: DA
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 420
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: DA = 12
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.NL
+  commentId: F:Refinity.Enums.EnumLanguageCodes.NL
+  id: NL
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: NL
+  nameWithType: EnumLanguageCodes.NL
+  fullName: Refinity.Enums.EnumLanguageCodes.NL
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: NL
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 422
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: NL = 13
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.ET
+  commentId: F:Refinity.Enums.EnumLanguageCodes.ET
+  id: ET
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: ET
+  nameWithType: EnumLanguageCodes.ET
+  fullName: Refinity.Enums.EnumLanguageCodes.ET
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: ET
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 424
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: ET = 14
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.FI
+  commentId: F:Refinity.Enums.EnumLanguageCodes.FI
+  id: FI
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: FI
+  nameWithType: EnumLanguageCodes.FI
+  fullName: Refinity.Enums.EnumLanguageCodes.FI
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: FI
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 426
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: FI = 15
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.EL
+  commentId: F:Refinity.Enums.EnumLanguageCodes.EL
+  id: EL
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: EL
+  nameWithType: EnumLanguageCodes.EL
+  fullName: Refinity.Enums.EnumLanguageCodes.EL
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EL
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 428
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: EL = 16
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.HE
+  commentId: F:Refinity.Enums.EnumLanguageCodes.HE
+  id: HE
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: HE
+  nameWithType: EnumLanguageCodes.HE
+  fullName: Refinity.Enums.EnumLanguageCodes.HE
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: HE
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 430
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: HE = 17
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.HI
+  commentId: F:Refinity.Enums.EnumLanguageCodes.HI
+  id: HI
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: HI
+  nameWithType: EnumLanguageCodes.HI
+  fullName: Refinity.Enums.EnumLanguageCodes.HI
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: HI
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 432
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: HI = 18
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.HU
+  commentId: F:Refinity.Enums.EnumLanguageCodes.HU
+  id: HU
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: HU
+  nameWithType: EnumLanguageCodes.HU
+  fullName: Refinity.Enums.EnumLanguageCodes.HU
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: HU
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 434
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: HU = 19
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.PT
+  commentId: F:Refinity.Enums.EnumLanguageCodes.PT
+  id: PT
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: PT
+  nameWithType: EnumLanguageCodes.PT
+  fullName: Refinity.Enums.EnumLanguageCodes.PT
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: PT
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 436
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: PT = 20
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.RO
+  commentId: F:Refinity.Enums.EnumLanguageCodes.RO
+  id: RO
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: RO
+  nameWithType: EnumLanguageCodes.RO
+  fullName: Refinity.Enums.EnumLanguageCodes.RO
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: RO
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 438
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: RO = 21
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.RU
+  commentId: F:Refinity.Enums.EnumLanguageCodes.RU
+  id: RU
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: RU
+  nameWithType: EnumLanguageCodes.RU
+  fullName: Refinity.Enums.EnumLanguageCodes.RU
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: RU
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 440
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: RU = 22
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.SK
+  commentId: F:Refinity.Enums.EnumLanguageCodes.SK
+  id: SK
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: SK
+  nameWithType: EnumLanguageCodes.SK
+  fullName: Refinity.Enums.EnumLanguageCodes.SK
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: SK
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 442
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: SK = 23
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.SL
+  commentId: F:Refinity.Enums.EnumLanguageCodes.SL
+  id: SL
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: SL
+  nameWithType: EnumLanguageCodes.SL
+  fullName: Refinity.Enums.EnumLanguageCodes.SL
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: SL
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 444
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: SL = 24
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.SV
+  commentId: F:Refinity.Enums.EnumLanguageCodes.SV
+  id: SV
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: SV
+  nameWithType: EnumLanguageCodes.SV
+  fullName: Refinity.Enums.EnumLanguageCodes.SV
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: SV
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 446
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: SV = 25
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.TR
+  commentId: F:Refinity.Enums.EnumLanguageCodes.TR
+  id: TR
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: TR
+  nameWithType: EnumLanguageCodes.TR
+  fullName: Refinity.Enums.EnumLanguageCodes.TR
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: TR
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 448
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: TR = 26
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.UK
+  commentId: F:Refinity.Enums.EnumLanguageCodes.UK
+  id: UK
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: UK
+  nameWithType: EnumLanguageCodes.UK
+  fullName: Refinity.Enums.EnumLanguageCodes.UK
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: UK
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 450
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: UK = 27
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.VI
+  commentId: F:Refinity.Enums.EnumLanguageCodes.VI
+  id: VI
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: VI
+  nameWithType: EnumLanguageCodes.VI
+  fullName: Refinity.Enums.EnumLanguageCodes.VI
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: VI
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 452
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: VI = 28
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.SQ
+  commentId: F:Refinity.Enums.EnumLanguageCodes.SQ
+  id: SQ
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: SQ
+  nameWithType: EnumLanguageCodes.SQ
+  fullName: Refinity.Enums.EnumLanguageCodes.SQ
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: SQ
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 454
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: SQ = 29
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.BE
+  commentId: F:Refinity.Enums.EnumLanguageCodes.BE
+  id: BE
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: BE
+  nameWithType: EnumLanguageCodes.BE
+  fullName: Refinity.Enums.EnumLanguageCodes.BE
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: BE
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 456
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: BE = 30
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.BS
+  commentId: F:Refinity.Enums.EnumLanguageCodes.BS
+  id: BS
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: BS
+  nameWithType: EnumLanguageCodes.BS
+  fullName: Refinity.Enums.EnumLanguageCodes.BS
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: BS
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 458
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: BS = 31
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.HR
+  commentId: F:Refinity.Enums.EnumLanguageCodes.HR
+  id: HR
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: HR
+  nameWithType: EnumLanguageCodes.HR
+  fullName: Refinity.Enums.EnumLanguageCodes.HR
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: HR
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 460
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: HR = 32
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.IS
+  commentId: F:Refinity.Enums.EnumLanguageCodes.IS
+  id: IS
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: IS
+  nameWithType: EnumLanguageCodes.IS
+  fullName: Refinity.Enums.EnumLanguageCodes.IS
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: IS
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 462
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: IS = 33
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.GA
+  commentId: F:Refinity.Enums.EnumLanguageCodes.GA
+  id: GA
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: GA
+  nameWithType: EnumLanguageCodes.GA
+  fullName: Refinity.Enums.EnumLanguageCodes.GA
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: GA
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 464
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: GA = 34
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.LV
+  commentId: F:Refinity.Enums.EnumLanguageCodes.LV
+  id: LV
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: LV
+  nameWithType: EnumLanguageCodes.LV
+  fullName: Refinity.Enums.EnumLanguageCodes.LV
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: LV
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 466
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: LV = 35
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.LT
+  commentId: F:Refinity.Enums.EnumLanguageCodes.LT
+  id: LT
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: LT
+  nameWithType: EnumLanguageCodes.LT
+  fullName: Refinity.Enums.EnumLanguageCodes.LT
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: LT
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 468
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: LT = 36
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.MK
+  commentId: F:Refinity.Enums.EnumLanguageCodes.MK
+  id: MK
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: MK
+  nameWithType: EnumLanguageCodes.MK
+  fullName: Refinity.Enums.EnumLanguageCodes.MK
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: MK
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 470
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: MK = 37
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.MT
+  commentId: F:Refinity.Enums.EnumLanguageCodes.MT
+  id: MT
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: MT
+  nameWithType: EnumLanguageCodes.MT
+  fullName: Refinity.Enums.EnumLanguageCodes.MT
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: MT
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 472
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: MT = 38
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.NO
+  commentId: F:Refinity.Enums.EnumLanguageCodes.NO
+  id: NO
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: NO
+  nameWithType: EnumLanguageCodes.NO
+  fullName: Refinity.Enums.EnumLanguageCodes.NO
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: NO
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 474
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: NO = 39
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.PL
+  commentId: F:Refinity.Enums.EnumLanguageCodes.PL
+  id: PL
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: PL
+  nameWithType: EnumLanguageCodes.PL
+  fullName: Refinity.Enums.EnumLanguageCodes.PL
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: PL
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 476
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: PL = 40
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.SR
+  commentId: F:Refinity.Enums.EnumLanguageCodes.SR
+  id: SR
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: SR
+  nameWithType: EnumLanguageCodes.SR
+  fullName: Refinity.Enums.EnumLanguageCodes.SR
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: SR
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 478
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: SR = 41
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+- uid: Refinity.Enums.EnumLanguageCodes.CY
+  commentId: F:Refinity.Enums.EnumLanguageCodes.CY
+  id: CY
+  parent: Refinity.Enums.EnumLanguageCodes
+  langs:
+  - csharp
+  - vb
+  name: CY
+  nameWithType: EnumLanguageCodes.CY
+  fullName: Refinity.Enums.EnumLanguageCodes.CY
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: CY
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 480
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: CY = 42
+    return:
+      type: Refinity.Enums.EnumLanguageCodes
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumLanguageCodes.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumLanguageCodes>(EnumLanguageCodes)
+  nameWithType: EnumsUtility.GetDescription<EnumLanguageCodes>(EnumLanguageCodes)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumLanguageCodes>(Refinity.Enums.EnumLanguageCodes)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumLanguageCodes)(EnumLanguageCodes)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumLanguageCodes)(Refinity.Enums.EnumLanguageCodes)
+  name.vb: GetDescription(Of EnumLanguageCodes)(EnumLanguageCodes)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumLanguageCodes)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumLanguageCodes
+    name: EnumLanguageCodes
+    href: Refinity.Enums.EnumLanguageCodes.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumLanguageCodes
+    name: EnumLanguageCodes
+    href: Refinity.Enums.EnumLanguageCodes.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumLanguageCodes)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumLanguageCodes
+    name: EnumLanguageCodes
+    href: Refinity.Enums.EnumLanguageCodes.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumLanguageCodes
+    name: EnumLanguageCodes
+    href: Refinity.Enums.EnumLanguageCodes.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumLanguageCodes
+  commentId: T:Refinity.Enums.EnumLanguageCodes
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumLanguageCodes.html
+  name: EnumLanguageCodes
+  nameWithType: EnumLanguageCodes
+  fullName: Refinity.Enums.EnumLanguageCodes

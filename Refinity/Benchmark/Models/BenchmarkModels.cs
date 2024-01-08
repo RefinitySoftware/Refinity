@@ -1,4 +1,4 @@
-using Refinity.Benchmark.Enums;
+using Refinity.Enums;
 
 namespace Refinity.Benchmark.Models;
 
@@ -6,11 +6,11 @@ public class BenchmarkModels
 {
     public BenchmarkModels()
     {
-        Result = BenchmarkResult.Success;
+        Result = EnumBenchmarkResult.Success;
         Method = string.Empty;
     }
 
-    public BenchmarkResult Result { get; set; }
+    public EnumBenchmarkResult Result { get; set; }
     public string Method { get; set; }
     public double ElapsedTimeMs { get; set; }
     public Exception? Exception { get; set; }

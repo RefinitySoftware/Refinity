@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using Refinity.Benchmark.Enums;
+using Refinity.Enums;
 using Refinity.Benchmark.Models;
 
 namespace Refinity.Benchmark;
@@ -31,11 +31,11 @@ public static class BenchmarkUtility
                 timeElapsed += stopwatch.Elapsed.TotalMilliseconds;
             }
             result.ElapsedTimeMs = timeElapsed / iterations;
-            result.Result = BenchmarkResult.Success;
+            result.Result = EnumBenchmarkResult.Success;
         }
         catch (Exception ex)
         {
-            result.Result = BenchmarkResult.Failure;
+            result.Result = EnumBenchmarkResult.Failure;
             result.ElapsedTimeMs = stopwatch.Elapsed.TotalMilliseconds;
             result.Exception = ex;
         }
@@ -67,11 +67,11 @@ public static class BenchmarkUtility
                 timeElapsed += stopwatch.Elapsed.TotalMilliseconds;
             }
             result.ElapsedTimeMs = timeElapsed / iterations;
-            result.Result = BenchmarkResult.Success;
+            result.Result = EnumBenchmarkResult.Success;
         }
         catch (Exception ex)
         {
-            result.Result = BenchmarkResult.Failure;
+            result.Result = EnumBenchmarkResult.Failure;
             result.ElapsedTimeMs = stopwatch.Elapsed.TotalMilliseconds;
             result.Exception = ex;
         }

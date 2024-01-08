@@ -1,19 +1,19 @@
 using System.Globalization;
 using System.Text;
-using Refinity.Logging.Enums;
-using Refinity.Logging.Models;
 using Refinity.Conversion;
+using Refinity.Enums;
 
 namespace Refinity.Logging
 {
     public class LoggingUtility
     {
         private string PathToLogFile { get; set; }
-        private LogFileType LogFileType { get; set; }
+        private EnumFileTypes EnumFileTypes { get; set; }
 
         private string checkFileExtension(string fileName)
         {
-            if(fileName.Contains('.')){
+            if (fileName.Contains('.'))
+            {
                 fileName = fileName[..fileName.LastIndexOf('.')];
             }
             return fileName;
@@ -22,22 +22,22 @@ namespace Refinity.Logging
         /// <summary>
         /// Represents a utility class for logging. logFileName should not include the file extension.
         /// </summary>
-        public LoggingUtility(string logFileName, LogFileType logFileType = LogFileType.TXT)
+        public LoggingUtility(string logFileName, EnumFileTypes EnumFileTypes = EnumFileTypes.TXT)
         {
             logFileName = checkFileExtension(logFileName);
-            switch (logFileType)
+            switch (EnumFileTypes)
             {
-                case LogFileType.RTF:
-                    logFileName += ".rtf";
+                case EnumFileTypes.RTF:
+                    logFileName += EnumFileTypes.RTF.GetDescription();
                     break;
-                case LogFileType.TXT:
-                    logFileName += ".txt";
+                case EnumFileTypes.TXT:
+                    logFileName += EnumFileTypes.TXT.GetDescription();
                     break;
-                case LogFileType.LOG:
-                    logFileName += ".log";
+                case EnumFileTypes.LOG:
+                    logFileName += EnumFileTypes.LOG.GetDescription();
                     break;
             }
-            LogFileType = logFileType;
+            this.EnumFileTypes = EnumFileTypes;
             PathToLogFile = Path.Combine(Environment.CurrentDirectory, logFileName);
         }
 
@@ -68,7 +68,7 @@ namespace Refinity.Logging
         /// <param name="message">The message to be logged.</param>
         /// <param name="logLevel">The log level of the message.</param>
         /// <param name="severity">The severity of the error.</param>
-        private void Log(string message, LogLevel logLevel, int severity = 0)
+        private void Log(string message, EnumLogLevel logLevel, int severity = 0)
         {
             if (severity < 0 || severity > 10)
             {
@@ -79,22 +79,22 @@ namespace Refinity.Logging
             {
                 throw new ArgumentNullException(nameof(message), "The message cannot be null or empty.");
             }
-            
+
             DateTime timestamp = DateTime.Now;
-            ConsoleColor logColors = LogColorHelper.GetLogLevelColor(logLevel);
+            ConsoleColor logColors = GetLogLevelColor(logLevel);
             StringBuilder stringBuilder = new StringBuilder();
-            
+
             stringBuilder.AppendLine($"{timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture)} | {logLevel} | {message} | {severity}");
 
-            switch (LogFileType)
+            switch (EnumFileTypes)
             {
-                case LogFileType.CONSOLE:
+                case EnumFileTypes.CONSOLE:
                     Console.ForegroundColor = logColors;
                     Console.WriteLine($"{stringBuilder}");
                     break;
-                case LogFileType.RTF:
-                case LogFileType.TXT:
-                case LogFileType.LOG:
+                case EnumFileTypes.RTF:
+                case EnumFileTypes.TXT:
+                case EnumFileTypes.LOG:
                     SaveToFile(stringBuilder);
                     break;
             }
@@ -107,7 +107,7 @@ namespace Refinity.Logging
         /// <param name="severity">The severity of the error.</param>
         public void Info(string message, int severity = 0)
         {
-            Log(message, LogLevel.INFO, severity);
+            Log(message, EnumLogLevel.INFO, severity);
         }
 
         /// <summary>
@@ -117,9 +117,9 @@ namespace Refinity.Logging
         /// <param name="severity">The severity of the error.</param>
         public void Debug(string message, int severity = 0)
         {
-            Log(message, LogLevel.DEBUG, severity);
+            Log(message, EnumLogLevel.DEBUG, severity);
         }
- 
+
         /// <summary>
         /// Logs a warning message.
         /// </summary>
@@ -127,7 +127,7 @@ namespace Refinity.Logging
         /// <param name="severity">The severity of the error.</param>
         public void Warn(string message, int severity = 0)
         {
-            Log(message, LogLevel.WARNING, severity);
+            Log(message, EnumLogLevel.WARNING, severity);
         }
 
         /// <summary>
@@ -137,7 +137,7 @@ namespace Refinity.Logging
         /// <param name="severity">The severity of the error.</param>
         public void Error(string message, int severity = 0)
         {
-            Log(message, LogLevel.ERROR, severity);
+            Log(message, EnumLogLevel.ERROR, severity);
         }
 
         /// <summary>
@@ -147,14 +147,36 @@ namespace Refinity.Logging
         /// <param name="severity">The severity of the error.</param>
         public void Fatal(string message, int severity = 0)
         {
-            Log(message, LogLevel.FATAL, severity);
+            Log(message, EnumLogLevel.FATAL, severity);
         }
 
         public byte[] ConvertLogToCSV(char csvDelimiter = ';')
         {
             char delimiter = '|';
-            string[] csvHeaders = {"Time", "LogLevel", "Message", "Severity"};
+            string[] csvHeaders = { "Time", "LogLevel", "Message", "Severity" };
             return ConvertUtility.ConvertTextToCSV(PathToLogFile, delimiter, csvDelimiter, csvHeaders);
+        }
+
+        private static ConsoleColor GetLogLevelColor(EnumLogLevel logLevel)
+        {
+            switch (logLevel)
+            {
+                case EnumLogLevel.TRACE:
+                    return ConsoleColor.Gray;
+                case EnumLogLevel.DEBUG:
+                    return ConsoleColor.Blue;
+                case EnumLogLevel.INFO:
+                    return ConsoleColor.Green;
+                case EnumLogLevel.WARNING:
+                    return ConsoleColor.Yellow;
+                case EnumLogLevel.ERROR:
+                    return ConsoleColor.Red;
+                case EnumLogLevel.FATAL:
+                    return ConsoleColor.Magenta;
+                default:
+                    return ConsoleColor.White;
+            }
         }
     }
 }
+

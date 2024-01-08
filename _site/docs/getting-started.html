@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>&#127775; Getting Started with Refinity | Refinity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="&#127775; Getting Started with Refinity | Refinity ">
+      
+      <link rel="icon" href="../icon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/InfinitySoftware-House/Refinity/blob/dev/docs/getting-started.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../icon.png" alt="Refinity">
+            Refinity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="-getting-started-with-refinity">🌟 Getting Started with Refinity</h1>
+
+<p>Welcome to your first steps with Refinity, your go-to library for enhancing your C# coding experience! Let's dive into how to get Refinity set up and explore its capabilities through hands-on examples. 🎉</p>
+<h2 id="initializing-refinity-in-your-project-">Initializing Refinity in Your Project 🔨</h2>
+<p>Include Refinity in your project like so:</p>
+<pre><code class="lang-cs">using Refinity;
+</code></pre>
+<h2 id="usage-examples-">Usage Examples 📖</h2>
+<p>Here are various examples to showcase the power and versatility of Refinity in action.</p>
+<h2 id="string-enhancements">String Enhancements</h2>
+<pre><code class="lang-cs">using Refinity.Strings;
+
+class Program
+{
+    static void Main()
+    {
+        string htmlString = &quot;&lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; paragraph.&lt;/p&gt;&quot;;
+        string result = htmlString.RemoveHTMLTags();
+
+        Console.WriteLine(&quot;Original String: &quot; + htmlString); // &lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; paragraph.&lt;/p&gt;
+        Console.WriteLine(&quot;String after removing HTML tags: &quot; + result); // This is a bold paragraph.
+    }
+}
+</code></pre>
+<h2 id="date-operations">Date Operations</h2>
+<pre><code class="lang-cs">using Refinity.Date;
+
+class Program
+{
+    static void Main()
+    {
+        DateTime date = new DateTime(2023, (int)EnumMonths.June, 10);
+        date.GetWeekNumber(); // 20
+    }
+}
+</code></pre>
+<h2 id="advanced-use-cases">Advanced Use Cases</h2>
+<pre><code class="lang-cs">using Refinity.Finance;
+using Refinity.Math;
+
+class Program
+{
+    static void Main()
+    {
+        int value1 = 50;
+        int value2 = 30;
+
+        double differencePercentage = value1.DifferencePercentage(value2);
+
+        Console.WriteLine($&quot;The percentage difference between {value1} and {value2} is: {differencePercentage}%&quot;);  // 66,66666666666666%
+        differencePercentage = differencePercentage.ToStringPercentage(); // 66,67%
+    }
+}
+</code></pre>
+<h2 id="troubleshooting-tips-">Troubleshooting Tips 🛠️</h2>
+<p>Running into issues? Here's a quick guide to common problems and their solutions.</p>
+<!-- ## Additional Resources 📚
+
+For more detailed tutorials, visit our [documentation](https://github.com/InfinitySoftware-House/Refinity). -->
+<h2 id="community-and-support-">Community and Support 🤗</h2>
+<p>Connect with our community on platforms like <a href="https://github.com/InfinitySoftware-House/Refinity">GitHub</a> for support, sharing, and contributions.</p>
+<p>Let Refinity elevate your coding journey! 💻</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,7 +1,5 @@
-using System;
 using System.ComponentModel;
 using System.Globalization;
-using System.Linq;
 
 namespace Refinity.Enums;
 public static class EnumsUtility
@@ -23,7 +21,12 @@ public static class EnumsUtility
             {
                 if (val == e.ToInt32(CultureInfo.InvariantCulture))
                 {
-                    var memInfo = type.GetMember(type.GetEnumName(val));
+                    var member = type.GetEnumName(val);
+                    if (member == null)
+                    {
+                        throw new ArgumentException("Enum name not found.");
+                    }
+                    var memInfo = type.GetMember(member);
                     var descriptionAttribute = memInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false).FirstOrDefault() as DescriptionAttribute;
 
                     if (descriptionAttribute != null)
@@ -34,7 +37,7 @@ public static class EnumsUtility
             }
         }
 
-        return null;
+        throw new ArgumentException("Enum value not found.");
     }
 
     /// <summary>
@@ -49,11 +52,9 @@ public static class EnumsUtility
         {
             return (T)Enum.ToObject(typeof(T), number);
         }
-
-        return default;
+        throw new ArgumentException("Enum value not found.");
     }
 }
-
 
 /// <summary>
 /// Represents the months of the year.
@@ -342,90 +343,6 @@ public enum EnumUnitSystem
 }
 
 /// <summary>
-/// Represents the units of length for measurements.
-/// </summary>
-public enum EnumLengthUnits
-{
-    [Description("Meters")]
-    Meters,
-
-    [Description("Kilometers")]
-    Kilometers,
-
-    [Description("Centimeters")]
-    Centimeters,
-
-    [Description("Millimeters")]
-    Millimeters,
-
-    [Description("Micrometers")]
-    Micrometers,
-
-    [Description("Nanometers")]
-    Nanometers,
-
-    [Description("Miles")]
-    Miles,
-
-    [Description("Yards")]
-    Yards,
-
-    [Description("Feet")]
-    Feet,
-
-    [Description("Inches")]
-    Inches
-}
-
-/// <summary>
-/// Represents the units of mass for a measurement.
-/// </summary>
-public enum EnumMassUnits
-{
-    [Description("Kilograms")]
-    Kilograms,
-
-    [Description("Grams")]
-    Grams,
-
-    [Description("Milligrams")]
-    Milligrams,
-
-    [Description("Micrograms")]
-    Micrograms,
-
-    [Description("Tonnes")]
-    Tonnes,
-
-    [Description("Pounds")]
-    Pounds,
-
-    [Description("Ounces")]
-    Ounces
-}
-
-/// <summary>
-/// Represents the units of time for enumeration.
-/// </summary>
-public enum EnumTimeUnits
-{
-    [Description("Seconds")]
-    Seconds,
-
-    [Description("Milliseconds")]
-    Milliseconds,
-
-    [Description("Minutes")]
-    Minutes,
-
-    [Description("Hours")]
-    Hours,
-
-    [Description("Days")]
-    Days
-}
-
-/// <summary>
 /// Represents the units of temperature.
 /// </summary>
 public enum EnumTemperatureUnits
@@ -438,30 +355,6 @@ public enum EnumTemperatureUnits
 
     [Description("Kelvin")]
     Kelvin
-}
-
-/// <summary>
-/// Represents the units of energy for the EnumEnergyUnits enum.
-/// </summary>
-public enum EnumEnergyUnits
-{
-    [Description("Joules")]
-    Joules,
-
-    [Description("Kilojoules")]
-    Kilojoules,
-
-    [Description("Calories")]
-    Calories,
-
-    [Description("Kilocalories")]
-    Kilocalories,
-
-    [Description("Watt Hours")]
-    WattHours,
-
-    [Description("Kilowatt Hours")]
-    KilowattHours
 }
 
 /// <summary>
@@ -484,3 +377,480 @@ public enum EnumPressureUnits
     [Description("Psi")]
     Psi
 }
+
+/// <summary>
+/// Represents the result of a benchmark operation.
+/// </summary>
+public enum EnumBenchmarkResult
+{
+    [Description("Success")]
+    Success,
+    [Description("Failure")]
+    Failure
+}
+
+/// <summary>
+/// Represents the language codes for different languages with their descriptions.
+/// </summary>
+public enum EnumLanguageCodes
+{
+    [Description("English")]
+    EN,
+    [Description("Spanish")]
+    ES,
+    [Description("French")]
+    FR,
+    [Description("German")]
+    DE,
+    [Description("Italian")]
+    IT,
+    [Description("Japanese")]
+    JA,
+    [Description("Korean")]
+    KO,
+    [Description("Chinese")]
+    ZH,
+    [Description("Arabic")]
+    AR,
+    [Description("Bulgarian")]
+    BG,
+    [Description("Catalan")]
+    CA,
+    [Description("Czech")]
+    CS,
+    [Description("Danish")]
+    DA,
+    [Description("Dutch")]
+    NL,
+    [Description("Estonian")]
+    ET,
+    [Description("Finnish")]
+    FI,
+    [Description("Greek")]
+    EL,
+    [Description("Hebrew")]
+    HE,
+    [Description("Hindi")]
+    HI,
+    [Description("Hungarian")]
+    HU,
+    [Description("Portuguese")]
+    PT,
+    [Description("Romanian")]
+    RO,
+    [Description("Russian")]
+    RU,
+    [Description("Slovak")]
+    SK,
+    [Description("Slovenian")]
+    SL,
+    [Description("Swedish")]
+    SV,
+    [Description("Turkish")]
+    TR,
+    [Description("Ukrainian")]
+    UK,
+    [Description("Vietnamese")]
+    VI,
+    [Description("Albanian")]
+    SQ,
+    [Description("Belarusian")]
+    BE,
+    [Description("Bosnian")]
+    BS,
+    [Description("Croatian")]
+    HR,
+    [Description("Icelandic")]
+    IS,
+    [Description("Irish")]
+    GA,
+    [Description("Latvian")]
+    LV,
+    [Description("Lithuanian")]
+    LT,
+    [Description("Macedonian")]
+    MK,
+    [Description("Maltese")]
+    MT,
+    [Description("Norwegian")]
+    NO,
+    [Description("Polish")]
+    PL,
+    [Description("Serbian")]
+    SR,
+    [Description("Welsh")]
+    CY
+}
+
+/// <summary>
+/// Represents a set of scale units in meters.
+/// </summary>
+public enum EnumScaleMeters
+{
+    [Description("Gigameters")]
+    Gigameters,
+
+    [Description("Megameters")]
+    Megameters,
+
+    [Description("Kilometers")]
+    Kilometers,
+
+    [Description("Hectometers")]
+    Hectometers,
+
+    [Description("Decameters")]
+    Decameters,
+
+    [Description("Meters")]
+    Meters,
+
+    [Description("Decimeters")]
+    Decimeters,
+
+    [Description("Centimeters")]
+    Centimeters,
+
+    [Description("Millimeters")]
+    Millimeters,
+
+    [Description("Micrometers")]
+    Micrometers,
+
+    [Description("Nanometers")]
+    Nanometers,
+
+    [Description("Picometers")]
+    Picometers,
+
+    [Description("Femtometers")]
+    Femtometers,
+
+    [Description("Attometers")]
+    Attometers
+}
+
+/// <summary>
+/// Represents the scale of weight in grams.
+/// </summary>
+public enum EnumScaleGrams
+{
+    [Description("Gigagrams")]
+    Gigagrams,
+
+    [Description("Megagrams")]
+    Megagrams,
+
+    [Description("Kilograms")]
+    Kilograms,
+
+    [Description("Hectograms")]
+    Hectograms,
+
+    [Description("Decagrams")]
+    Decagrams,
+
+    [Description("Grams")]
+    Grams,
+
+    [Description("Decigrams")]
+    Decigrams,
+
+    [Description("Centigrams")]
+    Centigrams,
+
+    [Description("Milligrams")]
+    Milligrams,
+
+    [Description("Micrograms")]
+    Micrograms,
+
+    [Description("Nanograms")]
+    Nanograms,
+
+    [Description("Picograms")]
+    Picograms,
+
+    [Description("Femtograms")]
+    Femtograms,
+
+    [Description("Attograms")]
+    Attograms
+}
+
+/// <summary>
+/// Represents the scale of time for a measurement.
+/// </summary>
+public enum EnumScaleTime
+{
+    [Description("Centuries")]
+    Centuries,
+
+    [Description("Decades")]
+    Decades,
+
+    [Description("Years")]
+    Years,
+
+    [Description("Months")]
+    Months,
+
+    [Description("Weeks")]
+    Weeks,
+
+    [Description("Days")]
+    Days,
+
+    [Description("Hours")]
+    Hours,
+
+    [Description("Minutes")]
+    Minutes,
+
+    [Description("Seconds")]
+    Seconds,
+
+    [Description("Milliseconds")]
+    Milliseconds,
+
+    [Description("Microseconds")]
+    Microseconds,
+
+    [Description("Nanoseconds")]
+    Nanoseconds,
+
+    [Description("Picoseconds")]
+    Picoseconds,
+
+    [Description("Femtoseconds")]
+    Femtoseconds,
+
+    [Description("Attoseconds")]
+    Attoseconds
+}
+
+/// <summary>
+/// Represents the scale of energy in joules.
+/// </summary>
+public enum EnumScaleJoules
+{
+    [Description("Gigajoules")]
+    Gigajoules,
+
+    [Description("Megajoules")]
+    Megajoules,
+
+    [Description("Kilojoules")]
+    Kilojoules,
+
+    [Description("Joules")]
+    Joules,
+
+    [Description("Millijoules")]
+    Millijoules,
+
+    [Description("Microjoules")]
+    Microjoules,
+
+    [Description("Nanojoules")]
+    Nanojoules,
+
+    [Description("Picojoules")]
+    Picojoules,
+
+    [Description("Femtojoules")]
+    Femtojoules,
+
+    [Description("Attojoules")]
+    Attojoules
+}
+
+/// <summary>
+/// Represents the scale of pressure in pascals.
+/// </summary>
+public enum EnumScalePascal
+{
+    [Description("Gigapascals")]
+    Gigapascals,
+
+    [Description("Megapascals")]
+    Megapascals,
+
+    [Description("Kilopascals")]
+    Kilopascals,
+
+    [Description("Hectopascals")]
+    Hectopascals,
+
+    [Description("Decapascals")]
+    Decapascals,
+
+    [Description("Pascals")]
+    Pascals,
+
+    [Description("Millipascals")]
+    Millipascals,
+
+    [Description("Micropascals")]
+    Micropascals,
+
+    [Description("Nanopascals")]
+    Nanopascals,
+
+    [Description("Picopascals")]
+    Picopascals,
+
+    [Description("Femtopascals")]
+    Femtopascals,
+
+    [Description("Attopascals")]
+    Attopascals
+}
+
+/// <summary>
+/// Represents the scale of miles.
+/// </summary>
+public enum EnumScaleMiles
+{
+    [Description("Megamiles")]
+    Megamiles,
+
+    [Description("Kilomiles")]
+    Kilomiles,
+
+    [Description("Miles")]
+    Miles,
+
+    [Description("Yards")]
+    Yards,
+
+    [Description("Feet")]
+    Feet,
+
+    [Description("Inches")]
+    Inches
+}
+
+/// <summary>
+/// Represents the scale units for weight measurement.
+/// </summary>
+public enum EnumScaleOnces
+{
+    [Description("Kiloounces")]
+    Kiloounces,
+
+    [Description("Ounces")]
+    Ounces,
+
+    [Description("Milliounces")]
+    Milliounces,
+
+    [Description("Microounces")]
+    Microounces
+}
+
+/// <summary>
+/// Represents the scale of power in watts.
+/// </summary>
+public enum EnumScaleWatts
+{
+    [Description("Terawatts")]
+    Terawatts,
+
+    [Description("Gigawatts")]
+    Gigawatts,
+
+    [Description("Megawatts")]
+    Megawatts,
+
+    [Description("Kilowatts")]
+    Kilowatts,
+
+    [Description("Watts")]
+    Watts,
+
+    [Description("Milliwatts")]
+    Milliwatts,
+
+    [Description("Microwatts")]
+    Microwatts,
+
+    [Description("Nanowatts")]
+    Nanowatts,
+
+    [Description("Picowatts")]
+    Picowatts,
+
+    [Description("Femtowatts")]
+    Femtowatts,
+
+    [Description("Attowatts")]
+    Attowatts
+}
+
+/// <summary>
+/// Represents the scale of voltage in different units.
+/// </summary>
+public enum EnumScaleVolts
+{
+    [Description("Kilovolts")]
+    Kilovolts,
+
+    [Description("Volts")]
+    Volts,
+
+    [Description("Millivolts")]
+    Millivolts,
+
+    [Description("Microvolts")]
+    Microvolts,
+
+    [Description("Nanovolts")]
+    Nanovolts,
+
+    [Description("Picovolts")]
+    Picovolts,
+
+    [Description("Femtovolts")]
+    Femtovolts,
+
+    [Description("Attovolts")]
+    Attovolts
+}
+
+/// <summary>
+/// Represents the scale of measurement in liters.
+/// </summary>
+public enum EnumScaleLiters
+{
+    [Description("Kiloliters")]
+    Kiloliters,
+
+    [Description("Liters")]
+    Liters,
+
+    [Description("Deciliters")]
+    Deciliters,
+
+    [Description("Centiliters")]
+    Centiliters,
+
+    [Description("Milliliters")]
+    Milliliters,
+
+    [Description("Microliters")]
+    Microliters,
+
+    [Description("Nanoliters")]
+    Nanoliters,
+
+    [Description("Picoliters")]
+    Picoliters,
+
+    [Description("Femtoliters")]
+    Femtoliters,
+
+    [Description("Attoliters")]
+    Attoliters
+}
+

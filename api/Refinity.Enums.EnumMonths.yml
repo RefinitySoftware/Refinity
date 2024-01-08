@@ -1,0 +1,465 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumMonths
+  commentId: T:Refinity.Enums.EnumMonths
+  id: EnumMonths
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumMonths.April
+  - Refinity.Enums.EnumMonths.August
+  - Refinity.Enums.EnumMonths.December
+  - Refinity.Enums.EnumMonths.February
+  - Refinity.Enums.EnumMonths.January
+  - Refinity.Enums.EnumMonths.July
+  - Refinity.Enums.EnumMonths.June
+  - Refinity.Enums.EnumMonths.March
+  - Refinity.Enums.EnumMonths.May
+  - Refinity.Enums.EnumMonths.November
+  - Refinity.Enums.EnumMonths.October
+  - Refinity.Enums.EnumMonths.September
+  langs:
+  - csharp
+  - vb
+  name: EnumMonths
+  nameWithType: EnumMonths
+  fullName: Refinity.Enums.EnumMonths
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumMonths
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 61
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents the months of the year.
+  example: []
+  syntax:
+    content: public enum EnumMonths
+    content.vb: Public Enum EnumMonths
+  extensionMethods:
+  - Refinity.Enums.EnumMonths.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumMonths.January
+  commentId: F:Refinity.Enums.EnumMonths.January
+  id: January
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: January
+  nameWithType: EnumMonths.January
+  fullName: Refinity.Enums.EnumMonths.January
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: January
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 63
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: January = 0
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.February
+  commentId: F:Refinity.Enums.EnumMonths.February
+  id: February
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: February
+  nameWithType: EnumMonths.February
+  fullName: Refinity.Enums.EnumMonths.February
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: February
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 65
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: February = 1
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.March
+  commentId: F:Refinity.Enums.EnumMonths.March
+  id: March
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: March
+  nameWithType: EnumMonths.March
+  fullName: Refinity.Enums.EnumMonths.March
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: March
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 67
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: March = 2
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.April
+  commentId: F:Refinity.Enums.EnumMonths.April
+  id: April
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: April
+  nameWithType: EnumMonths.April
+  fullName: Refinity.Enums.EnumMonths.April
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: April
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 69
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: April = 3
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.May
+  commentId: F:Refinity.Enums.EnumMonths.May
+  id: May
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: May
+  nameWithType: EnumMonths.May
+  fullName: Refinity.Enums.EnumMonths.May
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: May
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 71
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: May = 4
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.June
+  commentId: F:Refinity.Enums.EnumMonths.June
+  id: June
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: June
+  nameWithType: EnumMonths.June
+  fullName: Refinity.Enums.EnumMonths.June
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: June
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 73
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: June = 5
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.July
+  commentId: F:Refinity.Enums.EnumMonths.July
+  id: July
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: July
+  nameWithType: EnumMonths.July
+  fullName: Refinity.Enums.EnumMonths.July
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: July
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 75
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: July = 6
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.August
+  commentId: F:Refinity.Enums.EnumMonths.August
+  id: August
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: August
+  nameWithType: EnumMonths.August
+  fullName: Refinity.Enums.EnumMonths.August
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: August
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 77
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: August = 7
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.September
+  commentId: F:Refinity.Enums.EnumMonths.September
+  id: September
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: September
+  nameWithType: EnumMonths.September
+  fullName: Refinity.Enums.EnumMonths.September
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: September
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 79
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: September = 8
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.October
+  commentId: F:Refinity.Enums.EnumMonths.October
+  id: October
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: October
+  nameWithType: EnumMonths.October
+  fullName: Refinity.Enums.EnumMonths.October
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: October
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 81
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: October = 9
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.November
+  commentId: F:Refinity.Enums.EnumMonths.November
+  id: November
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: November
+  nameWithType: EnumMonths.November
+  fullName: Refinity.Enums.EnumMonths.November
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: November
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 83
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: November = 10
+    return:
+      type: Refinity.Enums.EnumMonths
+- uid: Refinity.Enums.EnumMonths.December
+  commentId: F:Refinity.Enums.EnumMonths.December
+  id: December
+  parent: Refinity.Enums.EnumMonths
+  langs:
+  - csharp
+  - vb
+  name: December
+  nameWithType: EnumMonths.December
+  fullName: Refinity.Enums.EnumMonths.December
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: December
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 85
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: December = 11
+    return:
+      type: Refinity.Enums.EnumMonths
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumMonths.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumMonths>(EnumMonths)
+  nameWithType: EnumsUtility.GetDescription<EnumMonths>(EnumMonths)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumMonths>(Refinity.Enums.EnumMonths)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumMonths)(EnumMonths)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumMonths)(Refinity.Enums.EnumMonths)
+  name.vb: GetDescription(Of EnumMonths)(EnumMonths)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumMonths)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumMonths
+    name: EnumMonths
+    href: Refinity.Enums.EnumMonths.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumMonths
+    name: EnumMonths
+    href: Refinity.Enums.EnumMonths.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumMonths)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumMonths
+    name: EnumMonths
+    href: Refinity.Enums.EnumMonths.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumMonths
+    name: EnumMonths
+    href: Refinity.Enums.EnumMonths.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumMonths
+  commentId: T:Refinity.Enums.EnumMonths
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumMonths.html
+  name: EnumMonths
+  nameWithType: EnumMonths
+  fullName: Refinity.Enums.EnumMonths

@@ -1,0 +1,438 @@
+### YamlMime:ManagedReference
+items:
+- uid: Refinity.Enums.EnumScaleWatts
+  commentId: T:Refinity.Enums.EnumScaleWatts
+  id: EnumScaleWatts
+  parent: Refinity.Enums
+  children:
+  - Refinity.Enums.EnumScaleWatts.Attowatts
+  - Refinity.Enums.EnumScaleWatts.Femtowatts
+  - Refinity.Enums.EnumScaleWatts.Gigawatts
+  - Refinity.Enums.EnumScaleWatts.Kilowatts
+  - Refinity.Enums.EnumScaleWatts.Megawatts
+  - Refinity.Enums.EnumScaleWatts.Microwatts
+  - Refinity.Enums.EnumScaleWatts.Milliwatts
+  - Refinity.Enums.EnumScaleWatts.Nanowatts
+  - Refinity.Enums.EnumScaleWatts.Picowatts
+  - Refinity.Enums.EnumScaleWatts.Terawatts
+  - Refinity.Enums.EnumScaleWatts.Watts
+  langs:
+  - csharp
+  - vb
+  name: EnumScaleWatts
+  nameWithType: EnumScaleWatts
+  fullName: Refinity.Enums.EnumScaleWatts
+  type: Enum
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: EnumScaleWatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 754
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  summary: Represents the scale of power in watts.
+  example: []
+  syntax:
+    content: public enum EnumScaleWatts
+    content.vb: Public Enum EnumScaleWatts
+  extensionMethods:
+  - Refinity.Enums.EnumScaleWatts.Refinity.Enums.EnumsUtility.GetDescription``1
+- uid: Refinity.Enums.EnumScaleWatts.Terawatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Terawatts
+  id: Terawatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Terawatts
+  nameWithType: EnumScaleWatts.Terawatts
+  fullName: Refinity.Enums.EnumScaleWatts.Terawatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Terawatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 756
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Terawatts = 0
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Gigawatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Gigawatts
+  id: Gigawatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Gigawatts
+  nameWithType: EnumScaleWatts.Gigawatts
+  fullName: Refinity.Enums.EnumScaleWatts.Gigawatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Gigawatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 759
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Gigawatts = 1
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Megawatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Megawatts
+  id: Megawatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Megawatts
+  nameWithType: EnumScaleWatts.Megawatts
+  fullName: Refinity.Enums.EnumScaleWatts.Megawatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Megawatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 762
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Megawatts = 2
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Kilowatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Kilowatts
+  id: Kilowatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Kilowatts
+  nameWithType: EnumScaleWatts.Kilowatts
+  fullName: Refinity.Enums.EnumScaleWatts.Kilowatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Kilowatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 765
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Kilowatts = 3
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Watts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Watts
+  id: Watts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Watts
+  nameWithType: EnumScaleWatts.Watts
+  fullName: Refinity.Enums.EnumScaleWatts.Watts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Watts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 768
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Watts = 4
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Milliwatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Milliwatts
+  id: Milliwatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Milliwatts
+  nameWithType: EnumScaleWatts.Milliwatts
+  fullName: Refinity.Enums.EnumScaleWatts.Milliwatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Milliwatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 771
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Milliwatts = 5
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Microwatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Microwatts
+  id: Microwatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Microwatts
+  nameWithType: EnumScaleWatts.Microwatts
+  fullName: Refinity.Enums.EnumScaleWatts.Microwatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Microwatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 774
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Microwatts = 6
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Nanowatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Nanowatts
+  id: Nanowatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Nanowatts
+  nameWithType: EnumScaleWatts.Nanowatts
+  fullName: Refinity.Enums.EnumScaleWatts.Nanowatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Nanowatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 777
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Nanowatts = 7
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Picowatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Picowatts
+  id: Picowatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Picowatts
+  nameWithType: EnumScaleWatts.Picowatts
+  fullName: Refinity.Enums.EnumScaleWatts.Picowatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Picowatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 780
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Picowatts = 8
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Femtowatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Femtowatts
+  id: Femtowatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Femtowatts
+  nameWithType: EnumScaleWatts.Femtowatts
+  fullName: Refinity.Enums.EnumScaleWatts.Femtowatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Femtowatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 783
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Femtowatts = 9
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+- uid: Refinity.Enums.EnumScaleWatts.Attowatts
+  commentId: F:Refinity.Enums.EnumScaleWatts.Attowatts
+  id: Attowatts
+  parent: Refinity.Enums.EnumScaleWatts
+  langs:
+  - csharp
+  - vb
+  name: Attowatts
+  nameWithType: EnumScaleWatts.Attowatts
+  fullName: Refinity.Enums.EnumScaleWatts.Attowatts
+  type: Field
+  source:
+    remote:
+      path: Refinity/Enums/EnumsUtility.cs
+      branch: dev
+      repo: https://github.com/InfinitySoftware-House/Refinity.git
+    id: Attowatts
+    path: Refinity/Enums/EnumsUtility.cs
+    startLine: 786
+  assemblies:
+  - Refinity
+  namespace: Refinity.Enums
+  syntax:
+    content: Attowatts = 10
+    return:
+      type: Refinity.Enums.EnumScaleWatts
+references:
+- uid: Refinity.Enums
+  commentId: N:Refinity.Enums
+  href: Refinity.html
+  name: Refinity.Enums
+  nameWithType: Refinity.Enums
+  fullName: Refinity.Enums
+  spec.csharp:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+  spec.vb:
+  - uid: Refinity
+    name: Refinity
+    href: Refinity.html
+  - name: .
+  - uid: Refinity.Enums
+    name: Enums
+    href: Refinity.Enums.html
+- uid: Refinity.Enums.EnumScaleWatts.Refinity.Enums.EnumsUtility.GetDescription``1
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  parent: Refinity.Enums.EnumsUtility
+  definition: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<EnumScaleWatts>(EnumScaleWatts)
+  nameWithType: EnumsUtility.GetDescription<EnumScaleWatts>(EnumScaleWatts)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<Refinity.Enums.EnumScaleWatts>(Refinity.Enums.EnumScaleWatts)
+  nameWithType.vb: EnumsUtility.GetDescription(Of EnumScaleWatts)(EnumScaleWatts)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of Refinity.Enums.EnumScaleWatts)(Refinity.Enums.EnumScaleWatts)
+  name.vb: GetDescription(Of EnumScaleWatts)(EnumScaleWatts)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumScaleWatts)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - uid: Refinity.Enums.EnumScaleWatts
+    name: EnumScaleWatts
+    href: Refinity.Enums.EnumScaleWatts.html
+  - name: '>'
+  - name: (
+  - uid: Refinity.Enums.EnumScaleWatts
+    name: EnumScaleWatts
+    href: Refinity.Enums.EnumScaleWatts.html
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(Refinity.Enums.EnumScaleWatts)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Refinity.Enums.EnumScaleWatts
+    name: EnumScaleWatts
+    href: Refinity.Enums.EnumScaleWatts.html
+  - name: )
+  - name: (
+  - uid: Refinity.Enums.EnumScaleWatts
+    name: EnumScaleWatts
+    href: Refinity.Enums.EnumScaleWatts.html
+  - name: )
+- uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  commentId: M:Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+  href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  name: GetDescription<T>(T)
+  nameWithType: EnumsUtility.GetDescription<T>(T)
+  fullName: Refinity.Enums.EnumsUtility.GetDescription<T>(T)
+  nameWithType.vb: EnumsUtility.GetDescription(Of T)(T)
+  fullName.vb: Refinity.Enums.EnumsUtility.GetDescription(Of T)(T)
+  name.vb: GetDescription(Of T)(T)
+  spec.csharp:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Refinity.Enums.EnumsUtility.GetDescription``1(``0)
+    name: GetDescription
+    href: Refinity.Enums.EnumsUtility.html#Refinity_Enums_EnumsUtility_GetDescription__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Refinity.Enums.EnumsUtility
+  commentId: T:Refinity.Enums.EnumsUtility
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumsUtility.html
+  name: EnumsUtility
+  nameWithType: EnumsUtility
+  fullName: Refinity.Enums.EnumsUtility
+- uid: Refinity.Enums.EnumScaleWatts
+  commentId: T:Refinity.Enums.EnumScaleWatts
+  parent: Refinity.Enums
+  href: Refinity.Enums.EnumScaleWatts.html
+  name: EnumScaleWatts
+  nameWithType: EnumScaleWatts
+  fullName: Refinity.Enums.EnumScaleWatts
