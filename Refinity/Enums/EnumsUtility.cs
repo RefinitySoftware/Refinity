@@ -3,6 +3,7 @@ using System.Globalization;
 
 namespace Refinity.Enums;
 
+
 /// <summary>
 /// Utility class for working with enums.
 /// </summary>
@@ -65,28 +66,64 @@ public static class EnumsUtility
 /// </summary>
 public enum EnumMonths
 {
+    /// <summary>
+    /// Represents the month of January.
+    /// </summary>
     [Description("January")]
     January,
+    /// <summary>
+    /// Represents the month of February.
+    /// </summary>
     [Description("February")]
     February,
+    /// <summary>
+    /// Represents the month of March.
+    /// </summary>
     [Description("March")]
     March,
+    /// <summary>
+    /// Represents the month of April.
+    /// </summary>
     [Description("April")]
     April,
+    /// <summary>
+    /// Represents the month of May.
+    /// </summary>
     [Description("May")]
     May,
+    /// <summary>
+    /// Represents the month of June.
+    /// </summary>
     [Description("June")]
     June,
+    /// <summary>
+    /// Represents the month of July.
+    /// </summary>
     [Description("July")]
     July,
+    /// <summary>
+    /// Represents the month of August.
+    /// </summary>
     [Description("August")]
     August,
+    /// <summary>
+    /// Represents the month of September.
+    /// </summary>
     [Description("September")]
     September,
+    /// <summary>
+    /// Represents the month of October.
+    /// </summary>
     [Description("October")]
     October,
+    /// <summary>
+    /// Represents the month of November.
+    /// </summary>
     [Description("November")]
     November,
+    /// <summary>
+    /// Represents the month of December.
+    /// </summary>
     [Description("December")]
     December
 }
@@ -101,8 +138,14 @@ public enum EnumFileTypes
     /// </summary>
     [Description(".rft")]
     RTF,
+    /// <summary>
+    /// Represents the TXT file format.
+    /// </summary>
     [Description(".txt")]
     TXT,
+    /// <summary>
+    /// Represents the console application type.
+    /// </summary>
     [Description(".exe")]
     CONSOLE,
     [Description(".log")]
