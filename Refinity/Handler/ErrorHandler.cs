@@ -1,3 +1,5 @@
+using Refinity.Http;
+
 namespace Refinity.Handler;
 
 /// <summary>
@@ -6,16 +8,10 @@ namespace Refinity.Handler;
 public class ErrorHandler
 {
     /// <summary>
-    /// Gets or sets a value indicating whether to use artificial intelligence.
-    /// </summary>
-    public bool useArtificialIntelligence { get; set; }
-    
-    /// <summary>
     /// Initializes a new instance of the ErrorHandler class.
     /// </summary>
-    public ErrorHandler(bool useArtificialIntelligence = false)
+    public ErrorHandler()
     {
-        this.useArtificialIntelligence = useArtificialIntelligence;
         AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(RefinityHandler);
     }
 
@@ -28,14 +24,5 @@ public class ErrorHandler
     {
         Exception e = (Exception)args.ExceptionObject;
         Console.WriteLine("Refinity has encountered an unhandled exception. Please report this to the developer.");
-        if (useArtificialIntelligence)
-        {
-            Console.WriteLine("Refinity is now attempting to fix the issue.");
-            Console.WriteLine("Refinity has successfully fixed the issue.");
-        }
-        else
-        {
-            Console.WriteLine("Refinity was unable to fix the issue.");
-        }
     }
 }

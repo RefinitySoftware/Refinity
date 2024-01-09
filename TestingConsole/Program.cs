@@ -1,5 +1,5 @@
-﻿using Refinity.Handler;
-new ErrorHandler();
+﻿using Refinity.Http;
 
-// Throw a test exception
-throw new ArgumentException("This is a test exception");
+var resu = HttpUtility.Get("http://www.google.com");
+Console.WriteLine(resu);
+
