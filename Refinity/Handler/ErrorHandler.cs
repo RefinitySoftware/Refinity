@@ -1,5 +1,3 @@
-using Refinity.Http;
-
 namespace Refinity.Handler;
 
 /// <summary>

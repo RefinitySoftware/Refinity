@@ -23,8 +23,10 @@ namespace Refinity.Logging
         }
 
         /// <summary>
-        /// Represents a utility class for logging. logFileName should not include the file extension.
+        /// Represents a utility class for logging operations.
         /// </summary>
+        /// <param name="logFileName">The name of the log file.</param>
+        /// <param name="EnumFileTypes">The file type for the log file.</param>
         public LoggingUtility(string logFileName, EnumFileTypes EnumFileTypes = EnumFileTypes.TXT)
         {
             logFileName = checkFileExtension(logFileName);

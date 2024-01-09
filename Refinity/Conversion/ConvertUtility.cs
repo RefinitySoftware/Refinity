@@ -30,6 +30,7 @@ public class LogEntry
     /// </summary>
     public int Severity { get; set; }
 }
+
 /// <summary>
 /// Represents a utility for converting files.
 /// </summary>
