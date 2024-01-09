@@ -3,6 +3,7 @@ using System.Globalization;
 
 namespace Refinity.Enums;
 
+
 /// <summary>
 /// Utility class for working with enums.
 /// </summary>
@@ -137,8 +138,14 @@ public enum EnumFileTypes
     /// </summary>
     [Description(".rft")]
     RTF,
+    /// <summary>
+    /// Represents the TXT file format.
+    /// </summary>
     [Description(".txt")]
     TXT,
+    /// <summary>
+    /// Represents the console application type.
+    /// </summary>
     [Description(".exe")]
     CONSOLE,
     [Description(".log")]

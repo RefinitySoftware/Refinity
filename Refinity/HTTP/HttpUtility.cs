@@ -23,7 +23,12 @@ public static class HttpUtility
     /// <returns>The encoded URL string.</returns>
     public static string UrlEncode(this string str)
     {
-        return System.Web.HttpUtility.UrlEncode(str);
+        if (string.IsNullOrEmpty(str))
+        {
+            throw new ArgumentNullException(nameof(str));
+        }
+
+        return WebUtility.UrlEncode(str);
     }
 
     /// <summary>
@@ -33,7 +38,12 @@ public static class HttpUtility
     /// <returns>The decoded string.</returns>
     public static string UrlDecode(this string str)
     {
-        return System.Web.HttpUtility.UrlDecode(str);
+        if (string.IsNullOrEmpty(str))
+        {
+            throw new ArgumentNullException(nameof(str));
+        }
+
+        return WebUtility.UrlDecode(str);
     }
 
     /// <summary>
@@ -43,7 +53,12 @@ public static class HttpUtility
     /// <returns>The encoded string.</returns>
     public static string HtmlEncode(this string str)
     {
-        return System.Web.HttpUtility.HtmlEncode(str);
+        if (string.IsNullOrEmpty(str))
+        {
+            throw new ArgumentNullException(nameof(str));
+        }
+
+        return WebUtility.HtmlEncode(str);
     }
 
     /// <summary>
@@ -53,17 +68,12 @@ public static class HttpUtility
     /// <returns>The decoded string.</returns>
     public static string HtmlDecode(this string str)
     {
-        return System.Web.HttpUtility.HtmlDecode(str);
-    }
+        if (string.IsNullOrEmpty(str))
+        {
+            throw new ArgumentNullException(nameof(str));
+        }
 
-    /// <summary>
-    /// Encodes a string for use in JavaScript by escaping special characters.
-    /// </summary>
-    /// <param name="str">The string to encode.</param>
-    /// <returns>The encoded string.</returns>
-    public static string JavaScriptStringEncode(this string str)
-    {
-        return System.Web.HttpUtility.JavaScriptStringEncode(str);
+        return WebUtility.HtmlDecode(str);
     }
 
     /// <summary>
@@ -75,6 +85,11 @@ public static class HttpUtility
     /// <returns>The response string from the server.</returns>
     public static dynamic Post(string url, string data, string contentType = "application/x-www-form-urlencoded")
     {
+        if (string.IsNullOrEmpty(url))
+        {
+            throw new ArgumentNullException(nameof(url));
+        }
+
         using (var client = new HttpClient())
         {
             var content = new StringContent(data, System.Text.Encoding.UTF8, contentType);
@@ -91,6 +106,11 @@ public static class HttpUtility
     /// <returns>The response from the GET request as a dynamic object.</returns>
     public static dynamic Get(string url)
     {
+        if (string.IsNullOrEmpty(url))
+        {
+            throw new ArgumentNullException(nameof(url));
+        }
+
         using (var client = new HttpClient())
         {
             var response = client.GetAsync(url).Result;
@@ -106,6 +126,10 @@ public static class HttpUtility
     /// <returns>The response from the GET request as a dynamic object.</returns>
     public static async Task<dynamic> GetAsync(string url)
     {
+        if (string.IsNullOrEmpty(url))
+        {
+            throw new ArgumentNullException(nameof(url));
+        }
         using (var client = new HttpClient())
         {
             var response = await client.GetAsync(url);
@@ -122,6 +146,10 @@ public static class HttpUtility
     /// <returns>The response from the GET request as a dynamic object.</returns>
     public static dynamic Get(string url, object data)
     {
+        if (string.IsNullOrEmpty(url))
+        {
+            throw new ArgumentNullException(nameof(url));
+        }
         using (var client = new HttpClient())
         {
             var response = client.GetAsync(url + "?" + data.ToQueryString()).Result;
@@ -138,6 +166,10 @@ public static class HttpUtility
     /// <returns>The response from the server as a dynamic object.</returns>
     public static async Task<dynamic> GetAsync(string url, object data)
     {
+        if (string.IsNullOrEmpty(url))
+        {
+            throw new ArgumentNullException(nameof(url));
+        }
         using (var client = new HttpClient())
         {
             var response = await client.GetAsync(url + "?" + data.ToQueryString());
