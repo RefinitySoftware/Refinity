@@ -2,9 +2,10 @@
 # Trigger the action on push to main
 name: Publish Docs
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: # Allow running the workflow manually from the GitHub UI
+  release:
+    types:
+      - published    # Run the workflow when a new GitHub release is published   
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
