@@ -37,11 +37,11 @@ namespace Refinity.Database
         /// </summary>
         /// <param name="column">The column to filter.</param>
         /// <param name="operator">The operator to use.</param>
-        /// <param name="isEqualTo">The value to filter by.</param>
-        public QueryBuilder Where(string column, SQLOperators @operator, string isEqualTo)
+        /// <param name="param">The value to filter by.</param>
+        public QueryBuilder Where(string column, Operators @operator, string param)
         {
             string _operator = @operator.GetDescription();
-            _query.Append($"WHERE {column} {_operator} {isEqualTo} ");
+            _query.Append($"WHERE {column} {_operator} {param} ");
             return this;
         }
 
@@ -49,10 +49,12 @@ namespace Refinity.Database
         /// Represents a query builder for constructing SQL queries.
         /// </summary>
         /// <param name="column">The column to filter.</param>
-        /// <param name="isEqualTo">The value to filter by.</param>
-        public QueryBuilder And(string column, string isEqualTo)
+        /// <param name="operator">The operator to use.</param>
+        /// <param name="param">The value to filter by.</param>
+        public QueryBuilder And(string column, Operators @operator, string param)
         {
-            _query.Append($"AND {column} = {isEqualTo} ");
+            string _operator = @operator.GetDescription();
+            _query.Append($"AND {column} {_operator} {param} ");
             return this;
         }
 
@@ -60,10 +62,12 @@ namespace Refinity.Database
         /// Represents a query builder for constructing SQL queries.
         /// </summary>
         /// <param name="column">The column to filter.</param>
-        /// <param name="isEqualTo">The value to filter by.</param>
-        public QueryBuilder Or(string column, string isEqualTo)
+        /// <param name="operator">The operator to use.</param>
+        /// <param name="param">The value to filter by.</param>
+        public QueryBuilder Or(string column, Operators @operator, string param)
         {
-            _query.Append($"OR {column} = {isEqualTo} ");
+            string _operator = @operator.GetDescription();
+            _query.Append($"OR {column} {_operator} {param} ");
             return this;
         }
 

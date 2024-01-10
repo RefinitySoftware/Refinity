@@ -1722,9 +1722,9 @@ public enum MeasurementUnit
 }
 
 /// <summary>
-/// Represents the SQL operators used in query conditions.
+/// Represents the operators used in a query.
 /// </summary>
-public enum SQLOperators
+public enum Operators
 {
     /// <summary>
     /// Represents the equal operator.
@@ -1734,7 +1734,7 @@ public enum SQLOperators
     /// <summary>
     /// Represents the not equal operator.
     /// </summary>
-    [Description("<>")]
+    [Description("!=")]
     NotEqual,
     /// <summary>
     /// Represents the greater than operator.
