@@ -1,3 +1,5 @@
+[![Publish NuGet](https://github.com/InfinitySoftware-House/Refinity/actions/workflows/nuget_publish.yml/badge.svg)](https://github.com/InfinitySoftware-House/Refinity/actions/workflows/nuget_publish.yml)
+
 # Refinity 🚀
 
 Welcome to Refinity, a robust C# library designed to supercharge developer productivity! 🌟
