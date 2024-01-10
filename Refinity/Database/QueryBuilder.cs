@@ -1,3 +1,4 @@
+using System;
 using System.Text;
 using Refinity.Enums;
 using Refinity.Math;

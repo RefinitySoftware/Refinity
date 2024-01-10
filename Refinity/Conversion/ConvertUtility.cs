@@ -1,4 +1,8 @@
+using System;
+using System.Collections.Generic;
 using System.Data;
+using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Xml;
@@ -7,397 +11,413 @@ using Newtonsoft.Json.Linq;
 using Refinity.Enums;
 using Refinity.Strings;
 
-namespace Refinity.Conversion;
-
-/// <summary>
-/// Represents a utility for converting files.
-/// </summary>
-public static class ConvertUtility
+namespace Refinity.Conversion
 {
     /// <summary>
-    /// Converts a file to a Base64 string representation.
+    /// Represents a utility for converting files.
     /// </summary>
-    /// <param name="path">The path of the file to convert.</param>
-    /// <returns>The Base64 string representation of the file.</returns>
-    public static string ConvertToBase64(string path)
+    public static class ConvertUtility
     {
-        byte[] bytes = File.ReadAllBytes(path);
-        return Convert.ToBase64String(bytes);
-    }
-
-    /// <summary>
-    /// Converts a CSV file to a list of objects of type T.
-    /// </summary>
-    /// <typeparam name="T">The type of objects to convert to.</typeparam>
-    /// <param name="stream">The stream containing the CSV data.</param>
-    /// <param name="delimiter">The delimiter used to separate values in the CSV file. Default is ','.</param>
-    /// <param name="ignoreCaseHeader">If true, the header is case insensitive. Default is false.</param>
-    /// <returns>A list of objects of type T.</returns>
-    public static List<T> ConvertCsvToObject<T>(Stream stream, char delimiter = ',', bool ignoreCaseHeader = false)
-    {
-        List<PropertyInfo> objectProperties = typeof(T).GetProperties().ToList();
-        List<T> objects = new();
-
-        using StreamReader reader = new(stream);
+        /// <summary>
+        /// Converts a file to a Base64 string representation.
+        /// </summary>
+        /// <param name="path">The path of the file to convert.</param>
+        /// <returns>The Base64 string representation of the file.</returns>
+        public static string ConvertToBase64(string path)
         {
-            bool isFirstLine = true;
-            string[]? headers = null;
-            while (!reader.EndOfStream)
+            byte[] bytes = File.ReadAllBytes(path);
+            return Convert.ToBase64String(bytes);
+        }
+
+        /// <summary>
+        /// Converts a CSV file to a list of objects of type T.
+        /// </summary>
+        /// <typeparam name="T">The type of objects to convert to.</typeparam>
+        /// <param name="stream">The stream containing the CSV data.</param>
+        /// <param name="delimiter">The delimiter used to separate values in the CSV file. Default is ','.</param>
+        /// <param name="ignoreCaseHeader">If true, the header is case insensitive. Default is false.</param>
+        /// <returns>A list of objects of type T.</returns>
+        public static List<T> ConvertCsvToObject<T>(Stream stream, char delimiter = ',', bool ignoreCaseHeader = false)
+        {
+            List<PropertyInfo> objectProperties = typeof(T).GetProperties().ToList();
+            List<T> objects = new();
+
+            using StreamReader reader = new(stream);
             {
-                string? line = reader.ReadLine();
-                if (line == null)
+                bool isFirstLine = true;
+                string[]? headers = null;
+                while (!reader.EndOfStream)
                 {
-                    continue;
-                }
-                string[] values = line.Split(delimiter);
-                if (isFirstLine)
-                {
-                    headers = values.Select(v => v.RemoveWhitespace()).ToArray();
-                    isFirstLine = false;
-                }
-                else
-                {
-                    if (headers == null)
+                    string? line = reader.ReadLine();
+                    if (line == null)
                     {
-                        throw new Exception("Headers not found");
+                        continue;
                     }
-                    if (values.Length != headers.Length)
+                    string[] values = line.Split(delimiter);
+                    if (isFirstLine)
                     {
-                        throw new Exception("The number of values in a row does not match the number of headers.");
+                        headers = values.Select(v => v.RemoveWhitespace()).ToArray();
+                        isFirstLine = false;
                     }
-                    T obj = Activator.CreateInstance<T>();
-                    for (int i = 0; i < headers.Length; i++)
+                    else
                     {
-                        PropertyInfo? property = objectProperties.FirstOrDefault(p => p.Name == headers[i]);
-                        if (ignoreCaseHeader && property == null)
+                        if (headers == null)
                         {
-                            property = objectProperties.FirstOrDefault(p => p.Name.Equals(headers[i], StringComparison.OrdinalIgnoreCase));
+                            throw new Exception("Headers not found");
                         }
-
-                        if (property == null)
+                        if (values.Length != headers.Length)
                         {
-                            throw new Exception($"Property \"{headers[i]}\" not found, if you want to ignore case set ignoreCaseHeader to true");
+                            throw new Exception("The number of values in a row does not match the number of headers.");
                         }
-
-                        object value = Convert.ChangeType(values[i], property.PropertyType);
-                        if (value is string)
+                        T obj = Activator.CreateInstance<T>();
+                        for (int i = 0; i < headers.Length; i++)
                         {
-                            value = ((string)value).Trim();
+                            PropertyInfo? property = objectProperties.FirstOrDefault(p => p.Name == headers[i]);
+                            if (ignoreCaseHeader && property == null)
+                            {
+                                property = objectProperties.FirstOrDefault(p => p.Name.Equals(headers[i], StringComparison.OrdinalIgnoreCase));
+                            }
+
+                            if (property == null)
+                            {
+                                throw new Exception($"Property \"{headers[i]}\" not found, if you want to ignore case set ignoreCaseHeader to true");
+                            }
+
+                            object value = Convert.ChangeType(values[i], property.PropertyType);
+                            if (value is string)
+                            {
+                                value = ((string)value).Trim();
+                            }
+                            property.SetValue(obj, value);
                         }
-                        property.SetValue(obj, value);
+                        objects.Add(obj);
                     }
-                    objects.Add(obj);
                 }
             }
-        }
-        return objects;
-    }
-
-    /// <summary>
-    /// Converts a CSV file to a DataTable.
-    /// </summary>
-    /// <param name="path">The path of the CSV file.</param>
-    /// <param name="delimiter">The delimiter used in the CSV file. Default is ','.</param>
-    /// <returns>A DataTable containing the data from the CSV file.</returns>
-    public static DataTable ConvertCsvToDataTable(string path, char delimiter = ',')
-    {
-        DataTable dataTable = new DataTable();
-
-        if (!File.Exists(path))
-        {
-            throw new FileNotFoundException("The specified CSV file does not exist.");
+            return objects;
         }
 
-        using (StreamReader reader = new StreamReader(path))
+        /// <summary>
+        /// Converts a CSV file to a DataTable.
+        /// </summary>
+        /// <param name="path">The path of the CSV file.</param>
+        /// <param name="delimiter">The delimiter used in the CSV file. Default is ','.</param>
+        /// <returns>A DataTable containing the data from the CSV file.</returns>
+        public static DataTable ConvertCsvToDataTable(string path, char delimiter = ',')
         {
-            bool isFirstLine = true;
-            while (!reader.EndOfStream)
+            DataTable dataTable = new DataTable();
+
+            if (!File.Exists(path))
             {
-                string? line = reader.ReadLine();
-                if (line == null)
-                {
-                    continue;
-                }
-                string[] values = line.Split(delimiter);
+                throw new FileNotFoundException("The specified CSV file does not exist.");
+            }
 
-                if (isFirstLine)
+            using (StreamReader reader = new StreamReader(path))
+            {
+                bool isFirstLine = true;
+                while (!reader.EndOfStream)
                 {
-                    foreach (string value in values)
+                    string? line = reader.ReadLine();
+                    if (line == null)
                     {
-                        dataTable.Columns.Add(value);
+                        continue;
                     }
-                    isFirstLine = false;
-                }
-                else
-                {
-                    if (values.Length != dataTable.Columns.Count)
+                    string[] values = line.Split(delimiter);
+
+                    if (isFirstLine)
                     {
-                        throw new InvalidDataException("The number of values in a row does not match the number of columns.");
+                        foreach (string value in values)
+                        {
+                            dataTable.Columns.Add(value);
+                        }
+                        isFirstLine = false;
                     }
-                    dataTable.Rows.Add(values);
+                    else
+                    {
+                        if (values.Length != dataTable.Columns.Count)
+                        {
+                            throw new InvalidDataException("The number of values in a row does not match the number of columns.");
+                        }
+                        dataTable.Rows.Add(values);
+                    }
                 }
             }
+
+            return dataTable;
         }
 
-        return dataTable;
-    }
-
-    /// <summary>
-    /// Converts an XML string to a JSON string.
-    /// </summary>
-    /// <param name="xml">The XML string to convert.</param>
-    /// <returns>The JSON string representation of the XML.</returns>
-    public static string ConvertXmlToJson(string xml)
-    {
-        XmlDocument xmlDoc = new XmlDocument();
-        xmlDoc.LoadXml(xml);
-        string json = JsonConvert.SerializeXmlNode(xmlDoc);
-        return json;
-    }
-
-    /// <summary>
-    /// Converts a JSON string to an XML string.
-    /// </summary>
-    /// <param name="json">The JSON string to convert.</param>
-    /// <returns>The XML string representation of the JSON.</returns>
-    public static string ConvertJsonToXml(string json)
-    {
-        XmlDocument? xmlDoc = JsonConvert.DeserializeXmlNode(json);
-        if (xmlDoc == null)
+        /// <summary>
+        /// Converts an XML string to a JSON string.
+        /// </summary>
+        /// <param name="xml">The XML string to convert.</param>
+        /// <returns>The JSON string representation of the XML.</returns>
+        public static string ConvertXmlToJson(string xml)
         {
-            throw new Exception("Failed to deserialize JSON to XML.");
-        }
-        return xmlDoc.OuterXml;
-    }
-
-    /// <summary>
-    /// Converts a DataTable to a CSV file.
-    /// </summary>
-    /// <param name="dataTable">The DataTable to convert.</param>
-    /// <param name="delimiter">The delimiter used to separate values in the CSV file. Default is ','.</param>
-    public static string ConvertDataTableToCsv(DataTable dataTable, char delimiter = ',')
-    {
-        StringBuilder stringBuilder = new StringBuilder();
-
-        // Append headers
-        stringBuilder.AppendLine(string.Join(delimiter, dataTable.Columns.Cast<DataColumn>().Select(column => column.ColumnName)));
-
-        // Append rows
-        foreach (DataRow row in dataTable.Rows)
-        {
-            stringBuilder.AppendLine(string.Join(delimiter, row.ItemArray));
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.LoadXml(xml);
+            string json = JsonConvert.SerializeXmlNode(xmlDoc);
+            return json;
         }
 
-        // Save to file
-        return stringBuilder.ToString();
-    }
-
-    /// <summary>
-    /// Converts an XML string to a CSV string.
-    /// </summary>
-    /// <param name="xml">The XML string to convert.</param>
-    /// <param name="delimiter">The delimiter character used in the CSV string. Default is ','.</param>
-    /// <returns>The CSV string representation of the XML data.</returns>
-    public static string ConvertXmlToCsv(string xml, char delimiter = ',')
-    {
-        XmlDocument? xmlDoc = new XmlDocument();
-        xmlDoc.LoadXml(xml);
-        if (xmlDoc == null)
-            throw new Exception("Failed to load XML.");
-
-        StringBuilder stringBuilder = new StringBuilder();
-
-        // Get all XML elements
-        XmlNodeList? xmlNodes = xmlDoc.DocumentElement?.SelectNodes("//*");
-        if (xmlNodes == null)
-            throw new Exception("Failed to get XML nodes.");
-
-        if (xmlNodes != null)
+        /// <summary>
+        /// Converts a JSON string to an XML string.
+        /// </summary>
+        /// <param name="json">The JSON string to convert.</param>
+        /// <returns>The XML string representation of the JSON.</returns>
+        public static string ConvertJsonToXml(string json)
         {
-            // Append headers
-            stringBuilder.AppendLine(string.Join(delimiter, xmlNodes.Cast<XmlNode>().Select(node => node.Name)));
-        }
-
-        // Append values
-        foreach (XmlNode node in xmlNodes!)
-        {
-            stringBuilder.AppendLine(string.Join(delimiter, node.ChildNodes.Cast<XmlNode>().Select(childNode => childNode.InnerText)));
-        }
-
-        return stringBuilder.ToString();
-    }
-
-    /// <summary>
-    /// Converts a JSON string to a CSV string.
-    /// </summary>
-    /// <param name="json">The JSON string to convert.</param>
-    /// <param name="delimiter">The delimiter character used in the CSV string. Default is ','.</param>
-    /// <returns>The CSV string representation of the JSON data.</returns>
-    public static string ConvertJsonToCsv(string json, char delimiter = ',')
-    {
-        // Deserialize the JSON string to a dynamic object
-        dynamic jsonObject = JsonConvert.DeserializeObject(json);
-
-        // Create a list to store the CSV rows
-        List<string> csvRows = new List<string>();
-
-        // Get the headers from the first object in the JSON array
-        var firstObject = jsonObject[0];
-        var headers = ((JObject)firstObject).Properties().Select(p => p.Name);
-
-        // Add the headers to the CSV rows
-        csvRows.Add(string.Join(delimiter, headers));
-
-        // Add the values for each object in the JSON array
-        foreach (var obj in jsonObject)
-        {
-            var values = ((JObject)obj).Properties().Select(p => p.Value.ToString());
-            csvRows.Add(string.Join(delimiter, values));
-        }
-
-        // Join the CSV rows into a single string
-        string csv = string.Join(Environment.NewLine, csvRows);
-
-        return csv;
-    }
-
-    public static string ConvertCsvToJson(string path, char delimiter = ',')
-    {
-        DataTable dataTable = new DataTable();
-
-        using (StreamReader reader = new StreamReader(path))
-        {
-            string[] headers = reader.ReadLine().Split(delimiter);
-            foreach (string header in headers)
+            XmlDocument? xmlDoc = JsonConvert.DeserializeXmlNode(json);
+            if (xmlDoc == null)
             {
-                dataTable.Columns.Add(header);
+                throw new Exception("Failed to deserialize JSON to XML.");
             }
-
-            while (!reader.EndOfStream)
-            {
-                string[] values = reader.ReadLine().Split(delimiter);
-                DataRow row = dataTable.NewRow();
-                for (int i = 0; i < headers.Length; i++)
-                {
-                    row[i] = values[i];
-                }
-                dataTable.Rows.Add(row);
-            }
+            return xmlDoc.OuterXml;
         }
 
-        string json = JsonConvert.SerializeObject(dataTable, Newtonsoft.Json.Formatting.Indented);
-        return json;
-    }
-
-    /// <summary>
-    /// Converts a text file to a CSV file.
-    /// </summary>
-    /// <param name="pathToTxt">The path to the input text file.</param>
-    /// <param name="delimiter">The character used to separate values in the text file. Default is ','.</param>
-    /// <param name="saveDelimiter">The character used to separate values in the CSV file. Default is ','.</param>
-    /// <param name="headers">The headers to use in the CSV file. Default is null.</param>
-    /// <returns>True if the conversion is successful, false otherwise.</returns>
-    public static byte[] ConvertTextToCSV(string pathToTxt, char delimiter = ',', char saveDelimiter = ',', string[]? headers = null)
-    {
-        try
+        /// <summary>
+        /// Converts a DataTable to a CSV file.
+        /// </summary>
+        /// <param name="dataTable">The DataTable to convert.</param>
+        /// <param name="delimiter">The delimiter used to separate values in the CSV file. Default is ','.</param>
+        public static string ConvertDataTableToCsv(DataTable dataTable, char delimiter = ',')
         {
-            string[] lines = File.ReadAllLines(pathToTxt);
             StringBuilder stringBuilder = new StringBuilder();
-            if (headers != null)
+
+            // Append headers
+            stringBuilder.AppendLine(string.Join(delimiter, dataTable.Columns.Cast<DataColumn>().Select(column => column.ColumnName)));
+
+            // Append rows
+            foreach (DataRow row in dataTable.Rows)
             {
-                stringBuilder.AppendLine(string.Join(saveDelimiter, headers));
+                stringBuilder.AppendLine(string.Join(delimiter, row.ItemArray));
             }
 
-            foreach (string line in lines)
+            // Save to file
+            return stringBuilder.ToString();
+        }
+
+        /// <summary>
+        /// Converts an XML string to a CSV string.
+        /// </summary>
+        /// <param name="xml">The XML string to convert.</param>
+        /// <param name="delimiter">The delimiter character used in the CSV string. Default is ','.</param>
+        /// <returns>The CSV string representation of the XML data.</returns>
+        public static string ConvertXmlToCsv(string xml, char delimiter = ',')
+        {
+            XmlDocument? xmlDoc = new XmlDocument();
+            xmlDoc.LoadXml(xml);
+            if (xmlDoc == null)
+                throw new Exception("Failed to load XML.");
+
+            StringBuilder stringBuilder = new StringBuilder();
+
+            // Get all XML elements
+            XmlNodeList? xmlNodes = xmlDoc.DocumentElement?.SelectNodes("//*");
+            if (xmlNodes == null)
+                throw new Exception("Failed to get XML nodes.");
+
+            if (xmlNodes != null)
             {
-                string[] values = line.Split(delimiter);
-                stringBuilder.AppendLine(string.Join(saveDelimiter, values));
+                // Append headers
+                stringBuilder.AppendLine(string.Join(delimiter, xmlNodes.Cast<XmlNode>().Select(node => node.Name)));
             }
-            byte[] bytes = Encoding.UTF8.GetBytes(stringBuilder.ToString());
-            return bytes;
+
+            // Append values
+            foreach (XmlNode node in xmlNodes!)
+            {
+                stringBuilder.AppendLine(string.Join(delimiter, node.ChildNodes.Cast<XmlNode>().Select(childNode => childNode.InnerText)));
+            }
+
+            return stringBuilder.ToString();
         }
-        catch (Exception)
+
+        /// <summary>
+        /// Converts a JSON string to a CSV string.
+        /// </summary>
+        /// <param name="json">The JSON string to convert.</param>
+        /// <param name="delimiter">The delimiter character used in the CSV string. Default is ','.</param>
+        /// <returns>The CSV string representation of the JSON data.</returns>
+        public static string ConvertJsonToCsv(string json, char delimiter = ',')
         {
-            return Array.Empty<byte>();
+            // Deserialize the JSON string to a dynamic object
+            dynamic? jsonObject = JsonConvert.DeserializeObject(json);
+            if (jsonObject == null)
+                throw new Exception("Failed to deserialize JSON.");
+            // Create a list to store the CSV rows
+            List<string> csvRows = new List<string>();
+
+            // Get the headers from the first object in the JSON array
+            var firstObject = jsonObject[0];
+            var headers = ((JObject)firstObject).Properties().Select(p => p.Name);
+
+            // Add the headers to the CSV rows
+            csvRows.Add(string.Join(delimiter, headers));
+
+            // Add the values for each object in the JSON array
+            foreach (var obj in jsonObject)
+            {
+                var values = ((JObject)obj).Properties().Select(p => p.Value.ToString());
+                csvRows.Add(string.Join(delimiter, values));
+            }
+
+            // Join the CSV rows into a single string
+            string csv = string.Join(Environment.NewLine, csvRows);
+
+            return csv;
         }
+
+        /// <summary>
+        /// Converts a CSV file to JSON format.
+        /// </summary>
+        /// <param name="path">The path to the CSV file.</param>
+        /// <param name="delimiter">The delimiter used in the CSV file. Default is ','.</param>
+        /// <returns>A string representing the JSON format of the CSV data.</returns>
+        public static string ConvertCsvToJson(string path, char delimiter = ',')
+        {
+            DataTable dataTable = new DataTable();
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string? line = reader.ReadLine();
+                if (line != null)
+                {
+                    string[] headers = line.Split(delimiter);
+                    foreach (string header in headers)
+                    {
+                        dataTable.Columns.Add(header);
+                    }
+
+                    while (!reader.EndOfStream)
+                    {
+                        if (line == null)
+                        {
+                            continue;
+                        }
+                        string[] values = line.Split(delimiter);
+                        DataRow row = dataTable.NewRow();
+                        for (int i = 0; i < headers.Length; i++)
+                        {
+                            row[i] = values[i];
+                        }
+                        dataTable.Rows.Add(row);
+                    }
+                }
+            }
+
+            string json = JsonConvert.SerializeObject(dataTable, Newtonsoft.Json.Formatting.Indented);
+            return json;
+        }
+
+        /// <summary>
+        /// Converts a text file to a CSV file.
+        /// </summary>
+        /// <param name="pathToTxt">The path to the input text file.</param>
+        /// <param name="delimiter">The character used to separate values in the text file. Default is ','.</param>
+        /// <param name="saveDelimiter">The character used to separate values in the CSV file. Default is ','.</param>
+        /// <param name="headers">The headers to use in the CSV file. Default is null.</param>
+        /// <returns>True if the conversion is successful, false otherwise.</returns>
+        public static byte[] ConvertTextToCSV(string pathToTxt, char delimiter = ',', char saveDelimiter = ',', string[]? headers = null)
+        {
+            try
+            {
+                string[] lines = File.ReadAllLines(pathToTxt);
+                StringBuilder stringBuilder = new StringBuilder();
+                if (headers != null)
+                {
+                    stringBuilder.AppendLine(string.Join(saveDelimiter, headers));
+                }
+
+                foreach (string line in lines)
+                {
+                    string[] values = line.Split(delimiter);
+                    stringBuilder.AppendLine(string.Join(saveDelimiter, values));
+                }
+                byte[] bytes = Encoding.UTF8.GetBytes(stringBuilder.ToString());
+                return bytes;
+            }
+            catch (Exception)
+            {
+                return Array.Empty<byte>();
+            }
+        }
+
+        /// <summary>
+        /// Converts a value from one unit of measurement to another.
+        /// </summary>
+        /// <param name="value">The value to convert.</param>
+        /// <param name="fromUnit">The unit of measurement to convert from.</param>
+        /// <param name="toUnit">The unit of measurement to convert to.</param>
+        /// <returns>The converted value.</returns>
+        public static double ConvertMeasurement(double value, MeasurementUnit fromUnit, MeasurementUnit toUnit)
+        {
+            const double metersInMile = 1609.34;
+            const double metersInKilometer = 1000;
+            const double metersInYard = 0.9144;
+            const double metersInFoot = 0.3048;
+            const double metersInInch = 0.0254;
+
+            double baseconversion = 0;
+
+            switch (fromUnit)
+            {
+                case MeasurementUnit.Meter:
+                    baseconversion = value;
+                    break;
+                case MeasurementUnit.Mile:
+                    baseconversion = value * metersInMile;
+                    break;
+                case MeasurementUnit.Kilometer:
+                    baseconversion = value * metersInKilometer;
+                    break;
+                case MeasurementUnit.Centimeters:
+                    baseconversion = value / 100;
+                    break;
+                case MeasurementUnit.Millimeters:
+                    baseconversion = value / 1000;
+                    break;
+                case MeasurementUnit.Yard:
+                    baseconversion = value * metersInYard;
+                    break;
+                case MeasurementUnit.Foot:
+                    baseconversion = value * metersInFoot;
+                    break;
+                case MeasurementUnit.Inch:
+                    baseconversion = value * metersInInch;
+                    break;
+            }
+
+            double convertedValue = 0;
+
+            switch (toUnit)
+            {
+                case MeasurementUnit.Meter:
+                    convertedValue = baseconversion;
+                    break;
+                case MeasurementUnit.Mile:
+                    convertedValue = baseconversion / metersInMile;
+                    break;
+                case MeasurementUnit.Kilometer:
+                    convertedValue = baseconversion / metersInKilometer;
+                    break;
+                case MeasurementUnit.Centimeters:
+                    convertedValue = baseconversion * 100;
+                    break;
+                case MeasurementUnit.Millimeters:
+                    convertedValue = baseconversion * 1000;
+                    break;
+                case MeasurementUnit.Yard:
+                    convertedValue = baseconversion / metersInYard;
+                    break;
+                case MeasurementUnit.Foot:
+                    convertedValue = baseconversion / metersInFoot;
+                    break;
+                case MeasurementUnit.Inch:
+                    convertedValue = baseconversion / metersInInch;
+                    break;
+            }
+
+            return convertedValue;
+        }
+
     }
-
-    /// <summary>
-    /// Converts a value from one unit of measurement to another.
-    /// </summary>
-    /// <param name="value">The value to convert.</param>
-    /// <param name="fromUnit">The unit of measurement to convert from.</param>
-    /// <param name="toUnit">The unit of measurement to convert to.</param>
-    /// <returns>The converted value.</returns>
-    public static double ConvertMeasurement(double value, MeasurementUnit fromUnit, MeasurementUnit toUnit)
-    {
-        const double metersInMile = 1609.34;
-        const double metersInKilometer = 1000;
-        const double metersInYard = 0.9144;
-        const double metersInFoot = 0.3048;
-        const double metersInInch = 0.0254;
-
-        double baseconversion = 0;
-
-        switch (fromUnit)
-        {
-            case MeasurementUnit.Meter:
-                baseconversion = value;
-                break;
-            case MeasurementUnit.Mile:
-                baseconversion = value * metersInMile;
-                break;
-            case MeasurementUnit.Kilometer:
-                baseconversion = value * metersInKilometer;
-                break;
-            case MeasurementUnit.Centimeters:
-                baseconversion = value / 100;
-                break;
-            case MeasurementUnit.Millimeters:
-                baseconversion = value / 1000;
-                break;
-            case MeasurementUnit.Yard:
-                baseconversion = value * metersInYard;
-                break;
-            case MeasurementUnit.Foot:
-                baseconversion = value * metersInFoot;
-                break;
-            case MeasurementUnit.Inch:
-                baseconversion = value * metersInInch;
-                break;
-        }
-
-        double convertedValue = 0;
-
-        switch (toUnit)
-        {
-            case MeasurementUnit.Meter:
-                convertedValue = baseconversion;
-                break;
-            case MeasurementUnit.Mile:
-                convertedValue = baseconversion / metersInMile;
-                break;
-            case MeasurementUnit.Kilometer:
-                convertedValue = baseconversion / metersInKilometer;
-                break;
-            case MeasurementUnit.Centimeters:
-                convertedValue = baseconversion * 100;
-                break;
-            case MeasurementUnit.Millimeters:
-                convertedValue = baseconversion * 1000;
-                break;
-            case MeasurementUnit.Yard:
-                convertedValue = baseconversion / metersInYard;
-                break;
-            case MeasurementUnit.Foot:
-                convertedValue = baseconversion / metersInFoot;
-                break;
-            case MeasurementUnit.Inch:
-                convertedValue = baseconversion / metersInInch;
-                break;
-        }
-
-        return convertedValue;
-    }
-
 }
