@@ -3,6 +3,7 @@
     <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
     <PackageId>Refinity</PackageId>
     <Authors>InfinitySoftware - Reflecto</Authors>
     <Company>InfinitySoftware - Reflecto</Company>
