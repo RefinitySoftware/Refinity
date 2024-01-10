@@ -1,4 +1,5 @@
 using System.Text;
+using Refinity.Enums;
 using Refinity.Math;
 
 namespace Refinity.Database
@@ -35,21 +36,12 @@ namespace Refinity.Database
         /// Represents a query builder for constructing SQL queries.
         /// </summary>
         /// <param name="column">The column to filter.</param>
+        /// <param name="operator">The operator to use.</param>
         /// <param name="isEqualTo">The value to filter by.</param>
-        public QueryBuilder Where(string column, string isEqualTo)
+        public QueryBuilder Where(string column, SQLOperators @operator, string isEqualTo)
         {
-            _query.Append($"WHERE {column} = {isEqualTo} ");
-            return this;
-        }
-
-        /// <summary>
-        /// Represents a query builder for constructing SQL queries.
-        /// </summary>
-        /// <param name="column">The column to filter.</param>
-        /// <param name="isNotEqualTo">The value to filter by.</param>
-        public QueryBuilder WhereNot(string column, string isNotEqualTo)
-        {
-            _query.Append($"WHERE {column} != {isNotEqualTo} ");
+            string _operator = @operator.GetDescription();
+            _query.Append($"WHERE {column} {_operator} {isEqualTo} ");
             return this;
         }
 
@@ -68,32 +60,10 @@ namespace Refinity.Database
         /// Represents a query builder for constructing SQL queries.
         /// </summary>
         /// <param name="column">The column to filter.</param>
-        /// <param name="isNotEqualTo">The value to filter by.</param>
-        public QueryBuilder AndNot(string column, string isNotEqualTo)
-        {
-            _query.Append($"AND {column} != {isNotEqualTo} ");
-            return this;
-        }
-
-        /// <summary>
-        /// Represents a query builder for constructing SQL queries.
-        /// </summary>
-        /// <param name="column">The column to filter.</param>
         /// <param name="isEqualTo">The value to filter by.</param>
         public QueryBuilder Or(string column, string isEqualTo)
         {
             _query.Append($"OR {column} = {isEqualTo} ");
-            return this;
-        }
-
-        /// <summary>
-        /// Represents a query builder for constructing SQL queries.
-        /// </summary>
-        /// <param name="column">The column to filter.</param>
-        /// <param name="isNotEqualTo">The value to filter by.</param>
-        public QueryBuilder OrNot(string column, string isNotEqualTo)
-        {
-            _query.Append($"OR {column} != {isNotEqualTo} ");
             return this;
         }
 

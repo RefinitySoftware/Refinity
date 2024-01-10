@@ -1674,3 +1674,40 @@ public enum EnumScaleLiters
     [Description("Attoliters")]
     Attoliters
 }
+
+/// <summary>
+/// Represents the SQL operators used in query conditions.
+/// </summary>
+public enum SQLOperators
+{
+    /// <summary>
+    /// Represents the equal operator.
+    /// </summary>
+    [Description("=")]
+    Equal,
+    /// <summary>
+    /// Represents the not equal operator.
+    /// </summary>
+    [Description("<>")]
+    NotEqual,
+    /// <summary>
+    /// Represents the greater than operator.
+    /// </summary>
+    [Description(">")]
+    GreaterThan,
+    /// <summary>
+    /// Represents the less than operator.
+    /// </summary>
+    [Description("<")]
+    LessThan,
+    /// <summary>
+    /// Represents the greater than or equal operator.
+    /// </summary>
+    [Description(">=")]
+    GreaterThanOrEqual,
+    /// <summary>
+    /// Represents the less than or equal operator.
+    /// </summary>
+    [Description("<=")]
+    LessThanOrEqual,
+}
