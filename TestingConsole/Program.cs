@@ -1,7 +1,4 @@
-﻿using Refinity.Http;
-using Refinity.Enums;
-using Refinity.Conversion;
+using Refinity.Http;
 
-
-var prova = ConvertUtility.ConvertMeasurement(100, MeasurementUnit.Mile, MeasurementUnit.Millimeters);
-Console.WriteLine(prova);
+var resu = HttpUtility.Get("http://www.google.com");
+Console.WriteLine(resu);

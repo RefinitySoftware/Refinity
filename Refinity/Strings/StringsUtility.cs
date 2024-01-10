@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
+using Refinity.Math;
 
 namespace Refinity.Strings;
 
@@ -229,5 +230,40 @@ public static class StringsUtility
         }
 
         return int.TryParse(value, out result);
+    }
+
+    /// <summary>
+    /// Checks the validity of an SQL query by ensuring it has the required clauses in the correct order.
+    /// </summary>
+    /// <param name="query">The SQL query to be checked.</param>
+    /// <returns>The trimmed SQL query if it is well-formed.</returns>
+    /// <exception cref="InvalidOperationException">Thrown when the query is not well-formed.</exception>
+    public static string CheckSQL(this string query)
+    {
+        string queryString = query;
+        var IgnoreCase = StringComparison.InvariantCultureIgnoreCase;
+
+        if (!queryString.Contains("SELECT", IgnoreCase) || !queryString.Contains("FROM", IgnoreCase))
+            throw new InvalidOperationException("Query is not well-formed. Missing SELECT or FROM clause.");
+
+        int whereIndex = queryString.IndexOf("WHERE", IgnoreCase);
+        int andIndex = queryString.IndexOf("AND", IgnoreCase);
+        int orIndex = queryString.IndexOf("OR", IgnoreCase);
+        int selectIndex = queryString.IndexOf("SELECT", IgnoreCase);
+        int fromIndex = queryString.IndexOf("FROM", IgnoreCase);
+
+        if (whereIndex == -1 || whereIndex < selectIndex || whereIndex < fromIndex)
+            throw new InvalidOperationException("Query is not well-formed. WHERE clause must come after SELECT and FROM clauses.");
+
+        if ((queryString.Contains("LIKE", IgnoreCase) || queryString.Contains("IN", IgnoreCase) || queryString.Contains("BETWEEN", IgnoreCase)) && whereIndex > MathUtility.Max(queryString.IndexOf("LIKE", IgnoreCase), MathUtility.Max(queryString.IndexOf("IN", IgnoreCase), queryString.IndexOf("BETWEEN", IgnoreCase))))
+            throw new InvalidOperationException("Query is not well-formed. WHERE clause must come before LIKE, IN, or BETWEEN clauses.");
+
+        if (andIndex != -1 && andIndex < whereIndex)
+            throw new InvalidOperationException("Query is not well-formed. AND clause must come after WHERE clause.");
+
+        if (orIndex != -1 && orIndex < whereIndex)
+            throw new InvalidOperationException("Query is not well-formed. OR clause must come after WHERE clause.");
+
+        return queryString.Trim();
     }
 }

@@ -879,4 +879,48 @@ public static class MathUtility
 
         return MatrixScalarMultiplication(result, 1 / determinant);
     }
+
+    /// <summary>
+    /// Returns the maximum of two integers.
+    /// </summary>
+    /// <param name="number1">The first integer.</param>
+    /// <param name="number2">The second integer.</param>
+    /// <returns>The maximum of the two integers.</returns>
+    public static int Max(int number1, int number2)
+    {
+        return number1 > number2 ? number1 : number2;
+    }
+
+    /// <summary>
+    /// Returns the maximum of two doubles.
+    /// </summary>
+    /// <param name="number1">The first double.</param>
+    /// <param name="number2">The second double.</param>
+    /// <returns>The maximum of the two doubles.</returns>
+    public static double Max(double number1, double number2)
+    {
+        return number1 > number2 ? number1 : number2;
+    }
+
+    /// <summary>
+    /// Returns the minimum of two integers.
+    /// </summary>
+    /// <param name="number1">The first integer.</param>
+    /// <param name="number2">The second integer.</param>
+    /// <returns>The minimum of the two integers.</returns>
+    public static int Min(int number1, int number2)
+    {
+        return number1 < number2 ? number1 : number2;
+    }
+
+    /// <summary>
+    /// Returns the minimum of two doubles.
+    /// </summary>
+    /// <param name="number1">The first double.</param>
+    /// <param name="number2">The second double.</param>
+    /// <returns>The minimum of the two doubles.</returns>
+    public static double Min(double number1, double number2)
+    {
+        return number1 < number2 ? number1 : number2;
+    }
 }
