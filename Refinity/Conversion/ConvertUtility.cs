@@ -6,32 +6,6 @@ using Refinity.Strings;
 namespace Refinity.Conversion;
 
 /// <summary>
-/// Represents a log entry.
-/// </summary>
-public class LogEntry
-{
-    /// <summary>
-    /// Gets or sets the time of the log entry.
-    /// </summary>
-    public DateTime Time { get; set; }
-
-    /// <summary>
-    /// Gets or sets the log level of the log entry.
-    /// </summary>
-    public string? LogLevel { get; set; }
-
-    /// <summary>
-    /// Gets or sets the message of the log entry.
-    /// </summary>
-    public string? Message { get; set; }
-
-    /// <summary>
-    /// Gets or sets the severity of the log entry.
-    /// </summary>
-    public int Severity { get; set; }
-}
-
-/// <summary>
 /// Represents a utility for converting files.
 /// </summary>
 public static class ConvertUtility
