@@ -1,4 +1,11 @@
-﻿using Refinity.Http;
+﻿using Refinity.Database;
 
-var resu = HttpUtility.Get("http://www.google.com");
-Console.WriteLine(resu);
+var query = new QueryBuilder()
+    .Select("id", "username", "password")
+    .From("users")
+    .Where("id", "1")
+    .AndNot("password", "123456")
+    .And("username", "admin")
+    .Build();
+
+Console.WriteLine(query);
