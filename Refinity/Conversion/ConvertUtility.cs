@@ -6,6 +6,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Refinity.Enums;
 using Refinity.Strings;
+using iTextSharp.text.pdf;
+using iTextSharp.text.pdf.parser;
 
 namespace Refinity.Conversion;
 
@@ -24,6 +26,19 @@ public static class ConvertUtility
         byte[] bytes = File.ReadAllBytes(path);
         return Convert.ToBase64String(bytes);
     }
+
+    public static string ConvertImageToBase64(string imagePath)
+    {
+        byte[] imageBytes = File.ReadAllBytes(imagePath);
+        return Convert.ToBase64String(imageBytes);
+    }
+
+    public static void ConvertBase64ToImage(string base64String, string outputPath)
+    {
+        byte[] imageBytes = Convert.FromBase64String(base64String);
+        File.WriteAllBytes(outputPath, imageBytes);
+    }
+
 
     /// <summary>
     /// Converts a CSV file to a list of objects of type T.
@@ -261,6 +276,12 @@ public static class ConvertUtility
         return csv;
     }
 
+    /// <summary>
+    /// Converts a CSV file to JSON format.
+    /// </summary>
+    /// <param name="path">The path to the CSV file.</param>
+    /// <param name="delimiter">The delimiter used in the CSV file. Default is ','.</param>
+    /// <returns>The JSON representation of the CSV data.</returns>
     public static string ConvertCsvToJson(string path, char delimiter = ',')
     {
         DataTable dataTable = new DataTable();
@@ -399,5 +420,49 @@ public static class ConvertUtility
 
         return convertedValue;
     }
+
+    /// <summary>
+    /// Converts the text from a file to binary data.
+    /// </summary>
+    /// <param name="textFilePath">The path of the text file.</param>
+    /// <returns>An array of bytes representing the binary data.</returns>
+    public static byte[] ConvertTextToBinary(string textFilePath)
+    {
+        string text = File.ReadAllText(textFilePath);
+        return Encoding.UTF8.GetBytes(text);
+    }
+
+    /// <summary>
+    /// Converts a binary file to text using UTF-8 encoding.
+    /// </summary>
+    /// <param name="binaryFilePath">The path of the binary file to convert.</param>
+    /// <returns>The text representation of the binary file.</returns>
+    public static string ConvertBinaryToText(string binaryFilePath)
+    {
+        byte[] binaryData = File.ReadAllBytes(binaryFilePath);
+        return Encoding.UTF8.GetString(binaryData);
+    }
+
+    /// <summary>
+    /// Converts a PDF file to text.
+    /// </summary>
+    /// <param name="pdfPath">The path of the PDF file.</param>
+    /// <returns>The extracted text from the PDF file.</returns>
+    public static string ConvertPdfToText(string pdfPath)
+    {
+        using (PdfReader reader = new PdfReader(pdfPath))
+        {
+            StringBuilder text = new StringBuilder();
+
+            for (int i = 1; i <= reader.NumberOfPages; i++)
+            {
+                text.Append(PdfTextExtractor.GetTextFromPage(reader, i));
+            }
+
+            return text.ToString();
+        }
+    }
+
+
 
 }
