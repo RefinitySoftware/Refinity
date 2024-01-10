@@ -1721,7 +1721,6 @@ public enum MeasurementUnit
     Inch
 }
 
-
 /// <summary>
 /// Represents the SQL operators used in query conditions.
 /// </summary>
