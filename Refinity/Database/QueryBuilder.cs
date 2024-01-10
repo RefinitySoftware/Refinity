@@ -1,4 +1,5 @@
 using System.Text;
+using Refinity.Math;
 
 namespace Refinity.Database
 {
@@ -173,7 +174,7 @@ namespace Refinity.Database
                 if (whereIndex == -1 || whereIndex < selectIndex || whereIndex < fromIndex)
                     throw new InvalidOperationException("Query is not well-formed. WHERE clause must come after SELECT and FROM clauses.");
 
-                if ((queryString.Contains("LIKE") || queryString.Contains("IN") || queryString.Contains("BETWEEN")) && whereIndex > System.Math.Max(queryString.IndexOf("LIKE"), System.Math.Max(queryString.IndexOf("IN"), queryString.IndexOf("BETWEEN"))))
+                if ((queryString.Contains("LIKE") || queryString.Contains("IN") || queryString.Contains("BETWEEN")) && whereIndex > MathUtility.Max(queryString.IndexOf("LIKE"), MathUtility.Max(queryString.IndexOf("IN"), queryString.IndexOf("BETWEEN"))))
                     throw new InvalidOperationException("Query is not well-formed. WHERE clause must come before LIKE, IN, or BETWEEN clauses.");
 
                 if (andIndex != -1 && andIndex < whereIndex)

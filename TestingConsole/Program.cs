@@ -1,11 +1,5 @@
-﻿using Refinity.Database;
+﻿using Refinity.Strings;
 
-var query = new QueryBuilder()
-    .Select("id", "username", "password")
-    .From("users")
-    .Where("id", "1")
-    .AndNot("password", "123456")
-    .And("username", "admin")
-    .Build();
+string query = "from users where id = 1 select id, username, password  and password != 123456 and username = admin".CheckSQL();
 
 Console.WriteLine(query);
