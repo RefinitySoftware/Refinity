@@ -54,13 +54,6 @@ public static class IOUtility
             string destination = Path.Combine(destinationPath, fileName);
             File.Copy(file, destination);
         }
-
-        foreach (string directory in Directory.GetDirectories(sourcePath))
-        {
-            string directoryName = Path.GetFileName(directory);
-            string destination = Path.Combine(destinationPath, directoryName);
-            CopyDirectory(directory, destination);
-        }
     }
 
     /// <summary>
@@ -87,14 +80,7 @@ public static class IOUtility
             File.Move(file, destination);
         }
 
-        foreach (string directory in Directory.GetDirectories(sourcePath))
-        {
-            string directoryName = Path.GetFileName(directory);
-            string destination = Path.Combine(destinationPath, directoryName);
-            MoveDirectory(directory, destination);
-        }
-
-        Directory.Delete(sourcePath);
+        Directory.Delete(sourcePath, true);
     }
 
     /// <summary>

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refinity", "Refinity\Refini
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingConsole", "TestingConsole\TestingConsole.csproj", "{DD651C33-DD69-49F1-BBEE-FCF7AD2588BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityTest", "RefinityTest\RefinityTest.csproj", "{741DCEB1-4919-405D-ACAD-546E50C56D8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DD651C33-DD69-49F1-BBEE-FCF7AD2588BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD651C33-DD69-49F1-BBEE-FCF7AD2588BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD651C33-DD69-49F1-BBEE-FCF7AD2588BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{741DCEB1-4919-405D-ACAD-546E50C56D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{741DCEB1-4919-405D-ACAD-546E50C56D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{741DCEB1-4919-405D-ACAD-546E50C56D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{741DCEB1-4919-405D-ACAD-546E50C56D8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
