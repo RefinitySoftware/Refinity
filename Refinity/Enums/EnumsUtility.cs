@@ -1676,6 +1676,53 @@ public enum EnumScaleLiters
 }
 
 /// <summary>
+/// Represents the units of measurement.
+/// </summary>
+public enum MeasurementUnit
+{
+    /// <summary>
+    /// Represents a unit of measurement for length, specifically the meter.
+    /// </summary>
+    Meter,
+
+    /// <summary>
+    /// Represents a unit of measurement for length, specifically the mile.
+    /// </summary>
+    Mile,
+
+    /// <summary>
+    /// Represents a unit of measurement for length, specifically the kilometer.
+    /// </summary>
+    Kilometer,
+
+    /// <summary>
+    /// Represents a unit of measurement for length, specifically centimeters.
+    /// </summary>
+    Centimeters,
+
+    /// <summary>
+    /// Represents a unit of measurement for length, specifically millimeters.
+    /// </summary>
+    Millimeters,
+
+    /// <summary>
+    /// Represents a unit of measurement for length, specifically the yard.
+    /// </summary>
+    Yard,
+
+    /// <summary>
+    /// Represents a unit of measurement for length, specifically the foot.
+    /// </summary>
+    Foot,
+
+    /// <summary>
+    /// Represents a unit of measurement for length, specifically the inch.
+    /// </summary>
+    Inch
+}
+
+
+/// <summary>
 /// Represents the SQL operators used in query conditions.
 /// </summary>
 public enum SQLOperators
