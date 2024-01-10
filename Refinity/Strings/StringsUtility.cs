@@ -214,4 +214,20 @@ public static class StringsUtility
         byte[] base64Bytes = Convert.FromBase64String(base64);
         return encoding.GetString(base64Bytes);
     }
+
+    /// <summary>
+    /// Converts a string representation of a number to its integer equivalent.
+    /// </summary>
+    /// <param name="value">The string to convert.</param>
+    /// <param name="result">When this method returns, contains the integer value equivalent to the string representation, if the conversion succeeded, or zero if the conversion failed.</param>
+    /// <returns><c>true</c> if the conversion succeeded; otherwise, <c>false</c>.</returns>
+    public static bool ToInt(this string value, ref int result)
+    {
+        if (string.IsNullOrEmpty(value))
+        {
+            throw new ArgumentException("Input string cannot be null or empty.");
+        }
+
+        return int.TryParse(value, out result);
+    }
 }
