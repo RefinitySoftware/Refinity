@@ -11,7 +11,6 @@ namespace Refinity.Date
     /// </summary>
     public static class DateUtility
     {
-
         /// <summary>
         /// Adds a specified number of years, months, days, hours, minutes, and seconds to the given DateTime value.
         /// </summary>
@@ -42,6 +41,23 @@ namespace Refinity.Date
             }
             var age = today.Year - birthDate.Year;
             if (birthDate.Date > today.AddYears(-age)) age--;
+            return age;
+        }
+
+        /// <summary>
+        /// Calculates the age based on the birth date and a given date.
+        /// </summary>
+        /// <param name="birthDate">The birth date.</param>
+        /// <param name="date">The date to calculate the age from.</param>
+        /// <returns>The calculated age.</returns>
+        public static int CalculateAge(this DateTime birthDate, DateTime date)
+        {
+            if (birthDate > date)
+            {
+                throw new ArgumentException("Birth date cannot be in the future.");
+            }
+            var age = date.Year - birthDate.Year;
+            if (birthDate.Date > date.AddYears(-age)) age--;
             return age;
         }
 
