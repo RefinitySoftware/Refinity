@@ -1,11 +1,3 @@
-using Refinity.Database;
-using Refinity.Enums;
+using Refinity.IO;
 
-var query = new QueryBuilder()
-    .Select("id", "name")
-    .From("users")
-    .Where("id", Operators.Equal, "1")
-    .And("name", Operators.NotEqual, "John Doe")
-    .Build();
-
-Console.WriteLine(query);
+IOUtility.CompressFile("/Users/francesco/Desktop/Screenshot 2023-12-30 alle 15.26.33.png", "/Users/francesco/Desktop/Screenshot 2023-12-30 alle 15.26.33.png.gz");

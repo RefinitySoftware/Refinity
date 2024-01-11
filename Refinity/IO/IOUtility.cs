@@ -302,6 +302,10 @@ namespace Refinity.IO
         /// <param name="compressedFilePath">The path where the compressed file will be created.</param>
         public static void CompressFile(string sourceFilePath, string compressedFilePath)
         {
+            if (!File.Exists(sourceFilePath))
+            {
+                throw new FileNotFoundException("The specified source file does not exist.");
+            }
             using (FileStream sourceFile = File.OpenRead(sourceFilePath))
             {
                 using (FileStream compressedFile = File.Create(compressedFilePath))
@@ -322,6 +326,10 @@ namespace Refinity.IO
         /// <returns>A task that represents the asynchronous operation.</returns>
         public static async Task CompressFileAsync(string sourceFilePath, string compressedFilePath)
         {
+            if (!File.Exists(sourceFilePath))
+            {
+                throw new FileNotFoundException("The specified source file does not exist.");
+            }
             using (FileStream sourceFile = File.OpenRead(sourceFilePath))
             {
                 using (FileStream compressedFile = File.Create(compressedFilePath))
