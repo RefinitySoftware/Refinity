@@ -19,6 +19,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>ExtensionMethods, Productivity, CodeQuality, Efficiency, Readability, OpenSource, CommunityDriven, Integration</PackageTags>
     <PackageProjectUrl>https://infinitysoftware-house.github.io/Refinity/</PackageProjectUrl>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
