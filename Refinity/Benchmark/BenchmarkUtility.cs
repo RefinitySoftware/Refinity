@@ -1,84 +1,86 @@
 using System.Diagnostics;
 using Refinity.Enums;
 using Refinity.Benchmark.Models;
+using System;
 
-namespace Refinity.Benchmark;
-
-/// <summary>
-/// Provides utility methods for running benchmarks on methods and actions.
-/// </summary>
-public static class BenchmarkUtility
+namespace Refinity.Benchmark
 {
     /// <summary>
-    /// Run a benchmark on a method.
+    /// Provides utility methods for running benchmarks on methods and actions.
     /// </summary>
-    /// <typeparam name="T">The type of the method's return value.</typeparam>
-    /// <param name="testMethod">The method to test.</param>
-    /// <param name="iterations">The number of iterations to run.</param>
-    /// <returns>A BenchmarkModels object containing the benchmark results.</returns>
-    public static BenchmarkModels RunCodeBenchmark<T>(Func<T> testMethod, int iterations = 1)
+    public static class BenchmarkUtility
     {
-        BenchmarkModels result = new()
+        /// <summary>
+        /// Run a benchmark on a method.
+        /// </summary>
+        /// <typeparam name="T">The type of the method's return value.</typeparam>
+        /// <param name="testMethod">The method to test.</param>
+        /// <param name="iterations">The number of iterations to run.</param>
+        /// <returns>A BenchmarkModels object containing the benchmark results.</returns>
+        public static BenchmarkModels RunCodeBenchmark<T>(Func<T> testMethod, int iterations = 1)
         {
-            Method = nameof(testMethod),
-            Iterations = iterations
-        };
-        Stopwatch stopwatch = new Stopwatch();
-        try
-        {
-            double timeElapsed = 0;
-            for (int i = 0; i < iterations; i++)
+            BenchmarkModels result = new()
             {
-                stopwatch.Start();
-                testMethod();
-                stopwatch.Stop();
-                timeElapsed += stopwatch.Elapsed.TotalMilliseconds;
+                Method = nameof(testMethod),
+                Iterations = iterations
+            };
+            Stopwatch stopwatch = new Stopwatch();
+            try
+            {
+                double timeElapsed = 0;
+                for (int i = 0; i < iterations; i++)
+                {
+                    stopwatch.Start();
+                    testMethod();
+                    stopwatch.Stop();
+                    timeElapsed += stopwatch.Elapsed.TotalMilliseconds;
+                }
+                result.ElapsedTimeMs = timeElapsed / iterations;
+                result.Result = EnumBenchmarkResult.Success;
             }
-            result.ElapsedTimeMs = timeElapsed / iterations;
-            result.Result = EnumBenchmarkResult.Success;
+            catch (Exception ex)
+            {
+                result.Result = EnumBenchmarkResult.Failure;
+                result.ElapsedTimeMs = stopwatch.Elapsed.TotalMilliseconds;
+                result.Exception = ex;
+            }
+            return result;
         }
-        catch (Exception ex)
-        {
-            result.Result = EnumBenchmarkResult.Failure;
-            result.ElapsedTimeMs = stopwatch.Elapsed.TotalMilliseconds;
-            result.Exception = ex;
-        }
-        return result;
-    }
 
-    /// <summary>
-    /// Run a benchmark on an action.
-    /// </summary>
-    /// <param name="testMethod">The method to test.</param>
-    /// <param name="iterations">The number of iterations to run.</param>
-    /// <returns>A BenchmarkModels object containing the benchmark results.</returns>
-    public static BenchmarkModels RunCodeBenchmark(Action testMethod, int iterations = 1)
-    {
-        BenchmarkModels result = new()
+        /// <summary>
+        /// Run a benchmark on an action.
+        /// </summary>
+        /// <param name="testMethod">The method to test.</param>
+        /// <param name="iterations">The number of iterations to run.</param>
+        /// <returns>A BenchmarkModels object containing the benchmark results.</returns>
+        public static BenchmarkModels RunCodeBenchmark(Action testMethod, int iterations = 1)
         {
-            Method = nameof(testMethod),
-            Iterations = iterations
-        };
-        Stopwatch stopwatch = new Stopwatch();
-        try
-        {
-            double timeElapsed = 0;
-            for (int i = 0; i < iterations; i++)
+            BenchmarkModels result = new()
             {
-                stopwatch.Start();
-                testMethod();
-                stopwatch.Stop();
-                timeElapsed += stopwatch.Elapsed.TotalMilliseconds;
+                Method = nameof(testMethod),
+                Iterations = iterations
+            };
+            Stopwatch stopwatch = new Stopwatch();
+            try
+            {
+                double timeElapsed = 0;
+                for (int i = 0; i < iterations; i++)
+                {
+                    stopwatch.Start();
+                    testMethod();
+                    stopwatch.Stop();
+                    timeElapsed += stopwatch.Elapsed.TotalMilliseconds;
+                }
+                result.ElapsedTimeMs = timeElapsed / iterations;
+                result.Result = EnumBenchmarkResult.Success;
             }
-            result.ElapsedTimeMs = timeElapsed / iterations;
-            result.Result = EnumBenchmarkResult.Success;
+            catch (Exception ex)
+            {
+                result.Result = EnumBenchmarkResult.Failure;
+                result.ElapsedTimeMs = stopwatch.Elapsed.TotalMilliseconds;
+                result.Exception = ex;
+            }
+            return result;
         }
-        catch (Exception ex)
-        {
-            result.Result = EnumBenchmarkResult.Failure;
-            result.ElapsedTimeMs = stopwatch.Elapsed.TotalMilliseconds;
-            result.Exception = ex;
-        }
-        return result;
     }
 }

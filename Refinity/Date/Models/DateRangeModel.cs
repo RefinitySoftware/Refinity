@@ -1,22 +1,26 @@
-namespace Refinity.Date;
+using System;
+using System.Collections.Generic;
 
-/// <summary>
-/// Represents a date range with start and end dates.
-/// </summary>
-public class DateRangeModel
+namespace Refinity.Date
 {
     /// <summary>
-    /// Gets or sets the start date of the date range.
+    /// Represents a date range with start and end dates.
     /// </summary>
-    public DateTime dateStart { get; set; }
+    public class DateRangeModel
+    {
+        /// <summary>
+        /// Gets or sets the start date of the date range.
+        /// </summary>
+        public DateTime dateStart { get; set; }
 
-    /// <summary>
-    /// Gets or sets the end date of the date range.
-    /// </summary>
-    public DateTime dateEnd { get; set; }
+        /// <summary>
+        /// Gets or sets the end date of the date range.
+        /// </summary>
+        public DateTime dateEnd { get; set; }
 
-    /// <summary>
-    /// Gets or sets the list of dates within the date range.
-    /// </summary>
-    public required List<DateTime> dateRange { get; set; }
+        /// <summary>
+        /// Gets or sets the list of dates within the date range.
+        /// </summary>
+        public List<DateTime>? dateRange { get; set; }
+    }
 }
