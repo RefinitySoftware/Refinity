@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>&#128230; Installation | Refinity </title>
+      <title>&#127775; Getting Started with Refinity | Refinity </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="&#128230; Installation | Refinity ">
+      <meta name="title" content="&#127775; Getting Started with Refinity | Refinity ">
       
       <link rel="icon" href="../icon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -15,7 +15,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/InfinitySoftware-House/Refinity/blob/dev/docs/installation.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/InfinitySoftware-House/Refinity/blob/dev/Documentation/docs/getting-started.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,24 +84,68 @@
         </div>
 
         <article data-uid="">
-<h1 id="-installation">📦 Installation</h1>
+<h1 id="-getting-started-with-refinity">🌟 Getting Started with Refinity</h1>
 
-<p>To install Refinity, follow these steps:</p>
-<ol>
-<li><strong>NuGet Package Manager</strong></li>
-</ol>
-<p>Open your project in Visual Studio and go to the <strong>NuGet Package Manager</strong>. Search for <code>Refinity</code> and install it by clicking on the 'Install' button.</p>
-<p>Or, you can use the <strong>Package Manager Console</strong>. Type the following command:</p>
-<pre><code class="lang-bash">Install-Package Refinity
+<p>Welcome to your first steps with Refinity, your go-to library for enhancing your C# coding experience! Let's dive into how to get Refinity set up and explore its capabilities through hands-on examples. 🎉</p>
+<h2 id="initializing-refinity-in-your-project-">Initializing Refinity in Your Project 🔨</h2>
+<p>Include Refinity in your project like so:</p>
+<pre><code class="lang-cs">using Refinity;
 </code></pre>
-<ol start="2">
-<li><strong>.NET CLI</strong></li>
-</ol>
-<p>If you prefer using the command line, you can install Refinity using the .NET CLI. Open your terminal and run the following command:</p>
-<pre><code class="lang-console">dotnet add package Refinity
+<h2 id="usage-examples-">Usage Examples 📖</h2>
+<p>Here are various examples to showcase the power and versatility of Refinity in action.</p>
+<h2 id="string-enhancements">String Enhancements</h2>
+<pre><code class="lang-cs">using Refinity.Strings;
+
+class Program
+{
+    static void Main()
+    {
+        string htmlString = &quot;&lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; paragraph.&lt;/p&gt;&quot;;
+        string result = htmlString.RemoveHTMLTags();
+
+        Console.WriteLine(&quot;Original String: &quot; + htmlString); // &lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; paragraph.&lt;/p&gt;
+        Console.WriteLine(&quot;String after removing HTML tags: &quot; + result); // This is a bold paragraph.
+    }
+}
 </code></pre>
-<h2 id="-support">🆘 Support</h2>
-<p>If you encounter any problems, please open an issue in our <a href="https://github.com/InfinitySoftware-House/Refinity">GitHub repository</a>.</p>
+<h2 id="date-operations">Date Operations</h2>
+<pre><code class="lang-cs">using Refinity.Date;
+
+class Program
+{
+    static void Main()
+    {
+        DateTime date = new DateTime(2023, (int)EnumMonths.June, 10);
+        date.GetWeekNumber(); // 20
+    }
+}
+</code></pre>
+<h2 id="advanced-use-cases">Advanced Use Cases</h2>
+<pre><code class="lang-cs">using Refinity.Finance;
+using Refinity.Math;
+
+class Program
+{
+    static void Main()
+    {
+        int value1 = 50;
+        int value2 = 30;
+
+        double differencePercentage = value1.DifferencePercentage(value2);
+
+        Console.WriteLine($&quot;The percentage difference between {value1} and {value2} is: {differencePercentage}%&quot;);  // 66,66666666666666%
+        differencePercentage = differencePercentage.ToStringPercentage(); // 66,67%
+    }
+}
+</code></pre>
+<h2 id="troubleshooting-tips-">Troubleshooting Tips 🛠️</h2>
+<p>Running into issues? Here's a quick guide to common problems and their solutions.</p>
+<!-- ## Additional Resources 📚
+
+For more detailed tutorials, visit our [documentation](https://github.com/InfinitySoftware-House/Refinity). -->
+<h2 id="community-and-support-">Community and Support 🤗</h2>
+<p>Connect with our community on platforms like <a href="https://github.com/InfinitySoftware-House/Refinity">GitHub</a> for support, sharing, and contributions.</p>
+<p>Let Refinity elevate your coding journey! 💻</p>
 
 </article>
 
