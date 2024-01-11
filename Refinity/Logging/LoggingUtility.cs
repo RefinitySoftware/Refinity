@@ -1,4 +1,6 @@
+using System;
 using System.Globalization;
+using System.IO;
 using System.Text;
 using Refinity.Conversion;
 using Refinity.Enums;
