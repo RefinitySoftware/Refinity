@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/Users/francescojr.venditti/GitHub/Refinity",
+  "source_base_path": "/Users/francescojr.venditti/GitHub/Refinity/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,26 +9,6 @@
           "relative_path": "index.json"
         }
       }
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "README.md",
-      "output": {
-        ".html": {
-          "relative_path": "README.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Refinity/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "Refinity/README.html"
-        }
-      },
-      "version": ""
     },
     {
       "type": "ManagedReference",
