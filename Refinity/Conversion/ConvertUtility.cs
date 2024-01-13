@@ -10,8 +10,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Refinity.Enums;
 using Refinity.Strings;
-using iTextSharp.text.pdf;
-using iTextSharp.text.pdf.parser;
+// using iTextSharp.text.pdf;
+// using iTextSharp.text.pdf.parser;
 
 namespace Refinity.Conversion;
 
@@ -332,25 +332,25 @@ public static class ConvertUtility
         return Encoding.UTF8.GetString(binaryData);
     }
 
-    /// <summary>
-    /// Converts a PDF file to text.
-    /// </summary>
-    /// <param name="pdfPath">The path of the PDF file.</param>
-    /// <returns>The extracted text from the PDF file.</returns>
-    public static string ConvertPdfToText(string pdfPath)
-    {
-        using (PdfReader reader = new PdfReader(pdfPath))
-        {
-            StringBuilder text = new StringBuilder();
+    // /// <summary>
+    // /// Converts a PDF file to text.
+    // /// </summary>
+    // /// <param name="pdfPath">The path of the PDF file.</param>
+    // /// <returns>The extracted text from the PDF file.</returns>
+    // public static string ConvertPdfToText(string pdfPath)
+    // {
+    //     using (PdfReader reader = new PdfReader(pdfPath))
+    //     {
+    //         StringBuilder text = new StringBuilder();
 
-            for (int i = 1; i <= reader.NumberOfPages; i++)
-            {
-                text.Append(PdfTextExtractor.GetTextFromPage(reader, i));
-            }
+    //         for (int i = 1; i <= reader.NumberOfPages; i++)
+    //         {
+    //             text.Append(PdfTextExtractor.GetTextFromPage(reader, i));
+    //         }
 
-            return text.ToString();
-        }
-    }
+    //         return text.ToString();
+    //     }
+    // }
 
     /// <summary>
     /// Converts a text file to a CSV file.
@@ -462,5 +462,4 @@ public static class ConvertUtility
 
         return convertedValue;
     }
-
 }

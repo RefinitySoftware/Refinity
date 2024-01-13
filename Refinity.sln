@@ -5,7 +5,9 @@ VisualStudioVersion = 25.0.1706.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refinity", "Refinity\Refinity.csproj", "{DAD8E27A-8E97-46C8-AEEA-0739400CA788}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingConsole", "TestingConsole\TestingConsole.csproj", "{DD651C33-DD69-49F1-BBEE-FCF7AD2588BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryConsole", "TestingConsole\TryConsole.csproj", "{DD651C33-DD69-49F1-BBEE-FCF7AD2588BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityTests", "RefinityTests\RefinityTests.csproj", "{AF05D39D-4DC9-41F3-8A02-01019620C4FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DD651C33-DD69-49F1-BBEE-FCF7AD2588BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD651C33-DD69-49F1-BBEE-FCF7AD2588BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD651C33-DD69-49F1-BBEE-FCF7AD2588BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF05D39D-4DC9-41F3-8A02-01019620C4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF05D39D-4DC9-41F3-8A02-01019620C4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF05D39D-4DC9-41F3-8A02-01019620C4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF05D39D-4DC9-41F3-8A02-01019620C4FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

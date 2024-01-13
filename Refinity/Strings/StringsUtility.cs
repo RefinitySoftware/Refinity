@@ -222,6 +222,21 @@ namespace Refinity.Strings
         /// Converts a string representation of a number to its integer equivalent.
         /// </summary>
         /// <param name="value">The string to convert.</param>
+        /// <returns><c>true</c> if the conversion succeeded; otherwise, <c>false</c>.</returns>
+        public static int ToInt(this string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                throw new ArgumentException("Input string cannot be null or empty.");
+            }
+
+            return int.Parse(value);
+        }
+
+        /// <summary>
+        /// Converts a string representation of a number to its integer equivalent.
+        /// </summary>
+        /// <param name="value">The string to convert.</param>
         /// <param name="result">When this method returns, contains the integer value equivalent to the string representation, if the conversion succeeded, or zero if the conversion failed.</param>
         /// <returns><c>true</c> if the conversion succeeded; otherwise, <c>false</c>.</returns>
         public static bool ToInt(this string value, ref int result)
@@ -267,6 +282,23 @@ namespace Refinity.Strings
                 throw new InvalidOperationException("Query is not well-formed. OR clause must come after WHERE clause.");
 
             return queryString.Trim();
+        }
+
+        /// <summary>
+        /// Converts a string to its double equivalent.
+        /// </summary>
+        /// <param name="value">The object to convert.</param>
+        /// <returns>The double equivalent of the input object.</returns>
+        public static double ToDouble(this string value)
+        {
+            if(value is string)
+            {
+                return double.Parse((string)(object)value);
+            }
+            else
+            {
+                throw new ArgumentException("Input value must be a string.");
+            }
         }
     }
 }

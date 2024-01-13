@@ -1,3 +1,7 @@
-using Refinity.IO;
+using Refinity.Collections;
+using Refinity.Collections.Models;
 
-IOUtility.CompressFile("/Users/francesco/Desktop/Screenshot 2023-12-30 alle 15.26.33.png", "/Users/francesco/Desktop/Screenshot 2023-12-30 alle 15.26.33.png.gz");
+var array = new string[] { "a", "b", "c" };
+
+CollectionsAnalysisResult result = CollectionsUtility.AnalyzeArray(array);
+Console.WriteLine($"Max: {result.Max}");
