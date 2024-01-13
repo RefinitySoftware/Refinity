@@ -1,7 +1,4 @@
-using System;
-using Refinity.Enums;
-
-namespace Refinity.Collections.Models
+namespace Refinity.Collections
 {
     /// <summary>
     /// Represents the result of a collection analysis.

@@ -1,68 +1,67 @@
-namespace Refinity.Conversion.Tests
+using Refinity.Conversion;
+
+public class TestObjectForCSV
 {
-    public class TestObjectForCSV
+    public string? Column1 { get; set; }
+    public string? Column2 { get; set; }
+    public string? Column3 { get; set; }
+}
+
+[TestFixture]
+public class ConvertUtilityTests
+{
+    string path = "../net8.0/TestFiles/test.csv";
+    [Test]
+    public void ConvertToBase64_ValidFile_ReturnsBase64String()
     {
-        public string? Column1 { get; set; }
-        public string? Column2 { get; set; }
-        public string? Column3 { get; set; }
+        // Arrange
+        // Act
+        var result = ConvertUtility.ConvertToBase64(path);
+
+        // Assert
+        Assert.IsNotNull(result);
+        // Add more assertions based on your expected output
     }
-    
-    [TestFixture]
-    public class ConvertUtilityTests
+
+    [Test]
+    public void ConvertCsvToObject_ValidCsv_ReturnsObjectList()
     {
-        string path = "../net8.0/TestFiles/test.csv";
-        [Test]
-        public void ConvertToBase64_ValidFile_ReturnsBase64String()
-        {
-            // Arrange
-            // Act
-            var result = ConvertUtility.ConvertToBase64(path);
+        // Arrange
+        Stream stream = new MemoryStream(); // Use a valid CSV stream
+        char delimiter = ',';
+        bool ignoreCaseHeader = false;
 
-            // Assert
-            Assert.IsNotNull(result);
-            // Add more assertions based on your expected output
-        }
+        // Act
+        var result = ConvertUtility.ConvertCsvToObject<TestObjectForCSV>(stream, delimiter, ignoreCaseHeader);
 
-        [Test]
-        public void ConvertCsvToObject_ValidCsv_ReturnsObjectList()
-        {
-            // Arrange
-            Stream stream = new MemoryStream(); // Use a valid CSV stream
-            char delimiter = ',';
-            bool ignoreCaseHeader = false;
+        // Assert
+        Assert.IsNotNull(result);
+        Assert.IsInstanceOf<List<TestObjectForCSV>>(result);
+        // Add more assertions based on your expected output
+    }
 
-            // Act
-            var result = ConvertUtility.ConvertCsvToObject<TestObjectForCSV>(stream, delimiter, ignoreCaseHeader);
+    [Test]
+    public void ConvertCsvToDataTable_ValidCsv_ReturnsDataTable()
+    {
+        // Act
+        var result = ConvertUtility.ConvertCsvToDataTable(path);
 
-            // Assert
-            Assert.IsNotNull(result);
-            Assert.IsInstanceOf<List<TestObjectForCSV>>(result);
-            // Add more assertions based on your expected output
-        }
+        // Assert
+        Assert.IsNotNull(result);
+        // Add more assertions based on your expected output
+    }
 
-        [Test]
-        public void ConvertCsvToDataTable_ValidCsv_ReturnsDataTable()
-        {
-            // Act
-            var result = ConvertUtility.ConvertCsvToDataTable(path);
+    [Test]
+    public void ConvertXmlToJson_ValidXml_ReturnsJson()
+    {
+        // Arrange
+        string xml = "<root><test>value</test></root>";
 
-            // Assert
-            Assert.IsNotNull(result);
-            // Add more assertions based on your expected output
-        }
+        // Act
+        var result = ConvertUtility.ConvertXmlToJson(xml);
 
-        [Test]
-        public void ConvertXmlToJson_ValidXml_ReturnsJson()
-        {
-            // Arrange
-            string xml = "<root><test>value</test></root>";
-
-            // Act
-            var result = ConvertUtility.ConvertXmlToJson(xml);
-
-            // Assert
-            Assert.IsNotNull(result);
-            // Add more assertions based on your expected output
-        }
+        // Assert
+        Assert.IsNotNull(result);
+        // Add more assertions based on your expected output
     }
 }
