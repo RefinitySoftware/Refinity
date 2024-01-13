@@ -1,7 +1,7 @@
 using System;
 using Refinity.Enums;
 
-namespace Refinity.Benchmark.Models
+namespace Refinity.Benchmark
 {
     /// <summary>
     /// Represents a benchmark model that stores information about a benchmark result.

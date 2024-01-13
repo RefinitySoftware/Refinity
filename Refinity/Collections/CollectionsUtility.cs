@@ -1,7 +1,6 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Refinity.Collections.Models;
 using Refinity.Strings;
 
 namespace Refinity.Collections

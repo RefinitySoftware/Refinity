@@ -1,6 +1,5 @@
 using System.Diagnostics;
 using Refinity.Enums;
-using Refinity.Benchmark.Models;
 using System;
 
 namespace Refinity.Benchmark
