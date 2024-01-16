@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace RefinityDate;
 /// <summary>
 /// Represents a date range with start and end dates.

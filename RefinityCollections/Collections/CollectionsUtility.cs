@@ -1,3 +1,6 @@
+using System;
+using System.Linq;
+
 namespace RefinityCollections;
 /// <summary>
 /// Provides utility methods for working with collections.
