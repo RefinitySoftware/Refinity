@@ -1,4 +1,6 @@
-﻿namespace RefinityGeometry;
+﻿using System;
+
+namespace RefinityGeometry;
 /// <summary>
 /// Represents the geometry utility.
 /// </summary>

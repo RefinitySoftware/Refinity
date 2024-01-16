@@ -1,3 +1,5 @@
+using System;
+
 namespace RefinityHandler;
 /// <summary>
 /// Represents an error handler that handles unhandled exceptions in the application.
