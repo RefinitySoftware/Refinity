@@ -1,26 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
-    <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <LangVersion>10.0</LangVersion>
-    <PackageId>Refinity</PackageId>
-    <Authors>InfinitySoftware - Reflecto</Authors>
-    <Company>InfinitySoftware - Reflecto</Company>
-    <!-- <GeneratePackageOnBuild>true</GeneratePackageOnBuild> -->
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/InfinitySoftware-House/Refinity</RepositoryUrl> 
-    <RepositoryType>git</RepositoryType> 
-    <PackageIcon>icon.png</PackageIcon>
-    <Description>A robust C# library designed to supercharge developer productivity!</Description>
-    <Copyright>Copyright (c) 2024 InfinitySoftware - Reflecto</Copyright>
-    <EnablePackageValidation>true</EnablePackageValidation>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageTags>ExtensionMethods, Productivity, CodeQuality, Efficiency, Readability, OpenSource, CommunityDriven, Integration</PackageTags>
-    <PackageProjectUrl>https://infinitysoftware-house.github.io/Refinity/</PackageProjectUrl>
-    <MinVerTagPrefix>v</MinVerTagPrefix>
-  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -49,4 +27,27 @@
     <ProjectReference Include="..\RefinityStrings\RefinityStrings.csproj" />
     <ProjectReference Include="..\RefinityMath\RefinityMath.csproj" />
   </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <PackageId>RefinitySuite</PackageId>
+    <Authors>InfinitySoftware - Reflecto</Authors>
+    <Company>InfinitySoftware - Reflecto</Company>
+    <!-- <GeneratePackageOnBuild>true</GeneratePackageOnBuild> -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/InfinitySoftware-House/Refinity</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType> 
+    <PackageIcon>icon.png</PackageIcon>
+    <Description>A robust C# library designed to supercharge developer productivity!</Description>
+    <Copyright>Copyright (c) 2024 InfinitySoftware - Reflecto</Copyright>
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>ExtensionMethods, Productivity, CodeQuality, Efficiency, Readability, OpenSource, CommunityDriven, Integration</PackageTags>
+    <PackageProjectUrl>https://infinitysoftware-house.github.io/Refinity/</PackageProjectUrl>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+  </PropertyGroup>
 </Project>
