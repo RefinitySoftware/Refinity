@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Refinity\Refinity.csproj" />
-    <ProjectReference Include="..\RefinityMath\RefinityMath.csproj" />
+    <ProjectReference Include="..\RefinityEnums\RefinityEnums.csproj" />
+    <ProjectReference Include="..\RefinityConversion\RefinityConversion.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>

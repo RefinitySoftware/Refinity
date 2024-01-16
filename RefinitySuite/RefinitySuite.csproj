@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <PackageId>Refinity</PackageId>
+    <Authors>InfinitySoftware - Reflecto</Authors>
+    <Company>InfinitySoftware - Reflecto</Company>
+    <!-- <GeneratePackageOnBuild>true</GeneratePackageOnBuild> -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/InfinitySoftware-House/Refinity</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType> 
+    <PackageIcon>icon.png</PackageIcon>
+    <Description>A robust C# library designed to supercharge developer productivity!</Description>
+    <Copyright>Copyright (c) 2024 InfinitySoftware - Reflecto</Copyright>
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>ExtensionMethods, Productivity, CodeQuality, Efficiency, Readability, OpenSource, CommunityDriven, Integration</PackageTags>
+    <PackageProjectUrl>https://infinitysoftware-house.github.io/Refinity/</PackageProjectUrl>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="MinVer" Version="4.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="LICENSE.txt" Pack="true" PackagePath="" />
+     <None Include="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RefinityBenchmark\RefinityBenchmark.csproj" />
+    <ProjectReference Include="..\RefinityCollections\RefinityCollections.csproj" />
+    <ProjectReference Include="..\RefinityConversion\RefinityConversion.csproj" />
+    <ProjectReference Include="..\RefinityDate\RefinityDate.csproj" />
+    <ProjectReference Include="..\RefinityEnums\RefinityEnums.csproj" />
+    <ProjectReference Include="..\RefinityFinance\RefinityFinance.csproj" />
+    <ProjectReference Include="..\RefinityGeometry\RefinityGeometry.csproj" />
+    <ProjectReference Include="..\RefinityHandler\RefinityHandler.csproj" />
+    <ProjectReference Include="..\RefinityIO\RefinityIO.csproj" />
+    <ProjectReference Include="..\RefinityLogging\RefinityLogging.csproj" />
+    <ProjectReference Include="..\RefinityStrings\RefinityStrings.csproj" />
+    <ProjectReference Include="..\RefinityMath\RefinityMath.csproj" />
+  </ItemGroup>
+</Project>
