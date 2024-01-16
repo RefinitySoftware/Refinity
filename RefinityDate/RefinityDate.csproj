@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MinVer" Version="4.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+      <None Include="README.md" Pack="true" PackagePath="..\RefinitySuite\" />
+    <None Include="LICENSE.txt" Pack="true" PackagePath="..\RefinitySuite" />
+    <None Include="icon.png" Pack="true" PackagePath="..\RefinitySuite\" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
