@@ -5,9 +5,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <None Include="README.md" Pack="true" PackagePath="\" />
-    <None Include="LICENSE.txt" Pack="true" PackagePath="" />
-    <None Include="icon.png" Pack="true" PackagePath="\" />
+    <None Include="README.md" Pack="true" PackagePath="..\RefinityFinance\" />
+    <None Include="LICENSE.txt" Pack="true" PackagePath="..\RefinityFinance\" />
+    <None Include="icon.png" Pack="true" PackagePath="..\RefinityFinance\" />
     <ProjectReference Include="..\RefinityDate\RefinityDate.csproj" />
   </ItemGroup>
 
