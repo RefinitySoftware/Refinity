@@ -5,11 +5,7 @@ VisualStudioVersion = 25.0.1706.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityMath", "RefinityMath\RefinityMath.csproj", "{E7CC904A-67AE-4737-9399-AA47B680D62E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityBenchmark", "RefinityBenchmark\RefinityBenchmark.csproj", "{BA0C097D-9BBB-4B16-96DC-0621DE6B373B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityEnums", "RefinityEnums\RefinityEnums.csproj", "{BD55AE34-E75A-4AAB-AF18-4187369AF66C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityCollections", "RefinityCollections\RefinityCollections.csproj", "{062AB427-3C46-4204-8CDE-3E1852A6E6E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityConversion", "RefinityConversion\RefinityConversion.csproj", "{06F3AF56-BDFD-4C15-B2B9-1785AC02B330}"
 EndProject
@@ -20,8 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityFinance", "RefinityFinance\RefinityFinance.csproj", "{EC19E4E5-2914-4F8C-87CA-DB61D10879D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityGeometry", "RefinityGeometry\RefinityGeometry.csproj", "{39586188-C5CE-4249-BD8A-BA27F0C67EDD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityHandler", "RefinityHandler\RefinityHandler.csproj", "{2860D8A3-F14F-425B-8172-514614956D45}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefinityIO", "RefinityIO\RefinityIO.csproj", "{552B9D60-4113-47AD-9AEE-3AE034160544}"
 EndProject
@@ -43,18 +37,10 @@ Global
 		{E7CC904A-67AE-4737-9399-AA47B680D62E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7CC904A-67AE-4737-9399-AA47B680D62E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7CC904A-67AE-4737-9399-AA47B680D62E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA0C097D-9BBB-4B16-96DC-0621DE6B373B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA0C097D-9BBB-4B16-96DC-0621DE6B373B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA0C097D-9BBB-4B16-96DC-0621DE6B373B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA0C097D-9BBB-4B16-96DC-0621DE6B373B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BD55AE34-E75A-4AAB-AF18-4187369AF66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BD55AE34-E75A-4AAB-AF18-4187369AF66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD55AE34-E75A-4AAB-AF18-4187369AF66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD55AE34-E75A-4AAB-AF18-4187369AF66C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{062AB427-3C46-4204-8CDE-3E1852A6E6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{062AB427-3C46-4204-8CDE-3E1852A6E6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{062AB427-3C46-4204-8CDE-3E1852A6E6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{062AB427-3C46-4204-8CDE-3E1852A6E6E8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06F3AF56-BDFD-4C15-B2B9-1785AC02B330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06F3AF56-BDFD-4C15-B2B9-1785AC02B330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06F3AF56-BDFD-4C15-B2B9-1785AC02B330}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,10 +61,6 @@ Global
 		{39586188-C5CE-4249-BD8A-BA27F0C67EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39586188-C5CE-4249-BD8A-BA27F0C67EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39586188-C5CE-4249-BD8A-BA27F0C67EDD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2860D8A3-F14F-425B-8172-514614956D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2860D8A3-F14F-425B-8172-514614956D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2860D8A3-F14F-425B-8172-514614956D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2860D8A3-F14F-425B-8172-514614956D45}.Release|Any CPU.Build.0 = Release|Any CPU
 		{552B9D60-4113-47AD-9AEE-3AE034160544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{552B9D60-4113-47AD-9AEE-3AE034160544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{552B9D60-4113-47AD-9AEE-3AE034160544}.Release|Any CPU.ActiveCfg = Release|Any CPU
