@@ -6,7 +6,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <None Include="README.md" Pack="true" PackagePath="..\RefinityLogging\" />
-    <None Include="LICENSE.txt" Pack="true" PackagePath="..\RefinityLogging\" />
+    <None Include="LICENSE.txt" Pack="true" PackagePath="" />
     <None Include="icon.png" Pack="true" PackagePath="..\RefinityLogging\" />
     <ProjectReference Include="..\RefinityEnums\RefinityEnums.csproj" />
     <ProjectReference Include="..\RefinityConversion\RefinityConversion.csproj" />

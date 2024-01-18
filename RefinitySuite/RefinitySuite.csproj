@@ -10,7 +10,7 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <None Include="README.md" Pack="true" PackagePath="..\RefinitySuite\" />
-    <None Include="LICENSE.txt" Pack="true" PackagePath="..\RefinitySuite\" />
+    <None Include="LICENSE.txt" Pack="true" PackagePath="" />
     <None Include="icon.png" Pack="true" PackagePath="..\RefinitySuite\" />
   </ItemGroup>
   <ItemGroup>
