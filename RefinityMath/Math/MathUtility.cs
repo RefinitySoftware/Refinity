@@ -667,7 +667,7 @@ public static class MathUtility
     /// <param name="matrix1">The first matrix.</param>
     /// <param name="matrix2">The second matrix.</param>
     /// <returns>The result of the matrix addition.</returns>
-    public static dynamic MatrixAddition(dynamic matrix1, dynamic matrix2)
+    public static double[,] MatrixAddition(double[,] matrix1, double[,] matrix2)
     {
         if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.GetLength(1) != matrix2.GetLength(1))
         {
@@ -676,7 +676,7 @@ public static class MathUtility
 
         int rows = matrix1.GetLength(0);
         int columns = matrix1.GetLength(1);
-        dynamic result = new double[rows, columns];
+        double[,] result = new double[rows, columns];
 
         for (int i = 0; i < rows; i++)
         {
@@ -695,7 +695,7 @@ public static class MathUtility
     /// <param name="matrix1">The first matrix.</param>
     /// <param name="matrix2">The second matrix.</param>
     /// <returns>The result of the matrix subtraction.</returns>
-    public static dynamic MatrixSubtraction(dynamic matrix1, dynamic matrix2)
+    public static double[,] MatrixSubtraction(double[,] matrix1, double[,] matrix2)
     {
         if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.GetLength(1) != matrix2.GetLength(1))
         {
@@ -704,7 +704,7 @@ public static class MathUtility
 
         int rows = matrix1.GetLength(0);
         int columns = matrix1.GetLength(1);
-        dynamic result = new double[rows, columns];
+        double[,] result = new double[rows, columns];
 
         for (int i = 0; i < rows; i++)
         {
@@ -718,12 +718,12 @@ public static class MathUtility
     }
 
     /// <summary>
-    /// Performs matrix multiplication on two dynamic matrices.
+    /// Performs matrix multiplication on two double[,] matrices.
     /// </summary>
     /// <param name="matrix1">The first matrix.</param>
     /// <param name="matrix2">The second matrix.</param>
     /// <returns>The result of the matrix multiplication.</returns>
-    public static dynamic MatrixMultiplication(dynamic matrix1, dynamic matrix2)
+    public static double[,] MatrixMultiplication(double[,] matrix1, double[,] matrix2)
     {
         if (matrix1.GetLength(1) != matrix2.GetLength(0))
         {
@@ -732,7 +732,7 @@ public static class MathUtility
 
         int rows = matrix1.GetLength(0);
         int columns = matrix2.GetLength(1);
-        dynamic result = new double[rows, columns];
+        double[,] result = new double[rows, columns];
 
         for (int i = 0; i < rows; i++)
         {
@@ -755,11 +755,11 @@ public static class MathUtility
     /// <param name="matrix">The matrix to be multiplied.</param>
     /// <param name="scalar">The scalar value to multiply the matrix by.</param>
     /// <returns>The result of the matrix scalar multiplication.</returns>
-    public static dynamic MatrixScalarMultiplication(dynamic matrix, double scalar)
+    public static double[,] MatrixScalarMultiplication(double[,] matrix, double scalar)
     {
         int rows = matrix.GetLength(0);
         int columns = matrix.GetLength(1);
-        dynamic result = new double[rows, columns];
+        double[,] result = new double[rows, columns];
 
         for (int i = 0; i < rows; i++)
         {
@@ -777,11 +777,11 @@ public static class MathUtility
     /// </summary>
     /// <param name="matrix">The matrix to transpose.</param>
     /// <returns>The transposed matrix.</returns>
-    public static dynamic MatrixTranspose(dynamic matrix)
+    public static double[,] MatrixTranspose(double[,] matrix)
     {
         int rows = matrix.GetLength(0);
         int columns = matrix.GetLength(1);
-        dynamic result = new double[columns, rows];
+        double[,] result = new double[columns, rows];
 
         for (int i = 0; i < columns; i++)
         {
@@ -799,11 +799,11 @@ public static class MathUtility
     /// </summary>
     /// <param name="matrix">The matrix for which to calculate the determinant.</param>
     /// <returns>The determinant of the matrix.</returns>
-    private static dynamic MatrixDeterminant(dynamic matrix)
+    private static double MatrixDeterminant(double[,] matrix)
     {
         int rows = matrix.GetLength(0);
         int columns = matrix.GetLength(1);
-        dynamic result = 0;
+        double result = 0;
 
         if (rows != columns)
         {
@@ -818,7 +818,7 @@ public static class MathUtility
         {
             for (int i = 0; i < rows; i++)
             {
-                dynamic[,] subMatrix = new dynamic[rows - 1, columns - 1];
+                double[,] subMatrix = new double[rows - 1, columns - 1];
                 for (int j = 1; j < rows; j++)
                 {
                     for (int k = 0; k < columns; k++)
@@ -844,11 +844,11 @@ public static class MathUtility
     /// <summary>
     /// Represents a type that can hold values of any type.
     /// </summary>
-    public static dynamic MatrixInverse(dynamic matrix)
+    public static double[,] MatrixInverse(double[,] matrix)
     {
         int rows = matrix.GetLength(0);
         int columns = matrix.GetLength(1);
-        dynamic result = new double[rows, columns];
+        double[,] result = new double[rows, columns];
 
         if (rows != columns)
         {
