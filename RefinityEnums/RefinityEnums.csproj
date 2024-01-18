@@ -5,9 +5,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <None Include="README.md" Pack="true" PackagePath="..\RefinityEnums\" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
     <None Include="LICENSE.txt" Pack="true" PackagePath="" />
-    <None Include="icon.png" Pack="true" PackagePath="..\RefinityEnums\" />
+    <None Include="icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
   
   <PropertyGroup>
