@@ -33,7 +33,7 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>10.0</LangVersion>
-    <PackageId>RefinitySuite</PackageId>
+    <PackageId>Refinity</PackageId>
     <Authors>InfinitySoftware - Reflecto</Authors>
     <Company>InfinitySoftware - Reflecto</Company>
     <!-- <GeneratePackageOnBuild>true</GeneratePackageOnBuild> -->
