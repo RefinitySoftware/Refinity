@@ -14,14 +14,11 @@
     <None Include="icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RefinityBenchmark\RefinityBenchmark.csproj" />
-    <ProjectReference Include="..\RefinityCollections\RefinityCollections.csproj" />
     <ProjectReference Include="..\RefinityConversion\RefinityConversion.csproj" />
     <ProjectReference Include="..\RefinityDate\RefinityDate.csproj" />
     <ProjectReference Include="..\RefinityEnums\RefinityEnums.csproj" />
     <ProjectReference Include="..\RefinityFinance\RefinityFinance.csproj" />
     <ProjectReference Include="..\RefinityGeometry\RefinityGeometry.csproj" />
-    <ProjectReference Include="..\RefinityHandler\RefinityHandler.csproj" />
     <ProjectReference Include="..\RefinityIO\RefinityIO.csproj" />
     <ProjectReference Include="..\RefinityLogging\RefinityLogging.csproj" />
     <ProjectReference Include="..\RefinityStrings\RefinityStrings.csproj" />
@@ -33,7 +30,7 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>10.0</LangVersion>
-    <PackageId>RefinitySuite</PackageId>
+    <PackageId>Refinity</PackageId>
     <Authors>InfinitySoftware - Reflecto</Authors>
     <Company>InfinitySoftware - Reflecto</Company>
     <!-- <GeneratePackageOnBuild>true</GeneratePackageOnBuild> -->
