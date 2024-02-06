@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "src": "../../Refinity",
+          "src": "../Refinity",
           "files": [
             "**/*.csproj"
           ]
